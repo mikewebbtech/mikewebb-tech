@@ -7,6 +7,9 @@ body {
   line-height: 1.2;
   color: #161616;
   background-color: #4c566a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .layout {
