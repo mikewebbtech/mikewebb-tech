@@ -85,7 +85,7 @@ body {
   border-bottom-right-radius: 1rem;
   font-weight:200;
   transform: translateX(-5px);
-  transition: all 0.4s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 .nav a {
@@ -93,7 +93,7 @@ body {
   text-decoration: none;
   color: #d8dee9;
   padding: 0.60rem 1em;
-  transition: all 0.4s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 .nav a i {
