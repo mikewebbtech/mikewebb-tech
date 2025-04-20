@@ -1,0 +1,357 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css');
+body {
+  font-family: system-ui, sans-serif;
+  font-size: 1.1em;
+  line-height: 1.2;
+  color: #161616;
+  background-color: #4c566a;
+  height: 100vh;
+  max-width: 1124px;
+  margin: auto; 
+}
+
+h1 {
+  font-size: 1.5em;
+}
+.layout {
+  display: grid;
+  grid-template-columns: 12rem 1fr;
+  grid-template-areas:
+    "sidebar header"
+    "sidebar main";
+  grid-template-rows: 4rem 1fr; 
+  min-height: 100vh; 
+}
+
+.sidebar {
+  grid-area: sidebar;
+  display: flex;
+  flex-direction: column;
+  position: fixed; 
+  top: 0;
+  width: 12rem;
+  height: 100vh;
+  background-color:  #353b43;
+  color: #fff;
+  z-index: 1000;
+}
+
+.logo {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #bf616a;
+  margin-bottom: 5rem;
+}
+
+.logo img {
+  margin-top: 9em;
+  width: 100%;
+  height: auto;
+}
+
+.byline {
+  text-align: center;
+  margin-top: 0.1rem;
+  font-weight:200; 
+  color: #d8dee9;
+
+}
+
+.byline i {
+  font-size: 1.2rem;
+}
+
+.byline a {
+  color: #d8dee9;
+  padding: 0 0.3rem;
+}
+.nav {
+  margin-top: 8em;
+  width: 100%;
+  font-size: 1rem;
+  line-height: 1rem;
+}
+
+.nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.nav li {
+  width: 90%;
+  padding-left: 0.4rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  font-weight:200;
+  transform: translateX(-5px);
+  transition: all 0.2s ease-in;
+}
+
+.nav a {
+  display: block;
+  text-decoration: none;
+  color: #d8dee9;
+  padding: 0.60rem 1em;
+  transition: all 0.2s ease-in;
+  text-transform: uppercase;
+}
+
+.nav a i {
+  margin-right: 0.7em;
+}
+
+.nav li:hover {
+  transform: translateX(0);
+  background-color: #4c566a;
+}
+
+/* 
+* .nav a:hover { 
+*   color: #D08A91; 
+* } 
+*/
+.nav-bottom {
+  width: 100%;
+  margin-top: auto;
+  padding: 0.5em 0;
+  text-align: center;
+  font-size: 0.65rem;
+  align-items: center;
+}
+
+.nav-bottom a {
+  color: inherit;
+  text-decoration: inherit;
+  margin: 0.4rem;
+} 
+
+
+.header {
+  grid-area: header;
+  height: 4rem;
+  background-color: #bf616a;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.main {
+  grid-area: main;
+  padding: 1rem 3rem 0 3rem;
+  background-color: #3b4252;
+  color: #afbac4;
+  overflow-wrap: break-word;
+  font-weight: 250;
+  word-break: keep-all;
+}
+
+.post-header {
+  padding: 0.1rem 0.5rem 0.5rem;
+  background-color: #afbac4;
+  color: #161616;
+  border-radius: 5px;
+  display: grid; /* Enable grid container */
+  grid-template-rows: auto auto; /* Define two rows that auto-size based on content */
+
+}
+.post-header h1 {
+  text-transform: uppercase;
+  line-height: 0.3rem;
+}
+
+.post-meta {
+  font-size: small;
+  display: flex; /* Enable flex container for meta items (optional, for spacing) */
+  gap: 1.1rem; /* Adjust spacing between meta items as needed */
+}
+
+.post-meta a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.post-meta > div {
+  display: flex; /* Align icon and text within each meta item */
+  align-items: center;
+  gap: 0.4rem; /* Adjust spacing between icon and text */
+}
+
+
+.tags h1 {
+  text-transform: uppercase;
+  line-height: 0.3rem;
+  word-spacing: 1.2rem;
+}
+
+.tags-list {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 0px;
+  list-style: none;
+  padding: 0;
+}
+
+.tags-list-item {
+  padding: 8px 12px;
+  
+  display: flex;
+  align-items: center;
+}
+
+/* Target the first item of each "row" (odd-numbered pairs) */
+.tags-list-item:nth-child(4n + 1),
+.tags-list-item:nth-child(4n + 2) {
+  background-color: #bec9d7; /* Light gray for the first row */
+  color: #3b4252;
+}
+
+/* Target the second item of each "row" (even-numbered pairs) */
+.tags-list-item:nth-child(4n + 3),
+.tags-list-item:nth-child(4n + 4) {
+  background-color: initial; /* Slightly darker gray for the second row */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.tags-list-item i {
+  margin-right: 8px;
+}
+
+
+/* Styles for the main list page */
+.article-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.article-list-item {
+  display: flex;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.article-image {
+  width: 30%;
+}
+
+.article-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.article-content-right {
+  background-color: #bec9d7;
+  padding: 15px;
+  flex-grow: 1;
+}
+
+.article-title {
+  margin-top: 0;
+  padding-bottom: 0.2rem;
+  font-size: 1.2em;
+  color: #3b4252;
+}
+
+.article-title a {
+  text-decoration: none;
+}
+
+/* .article-title a:hover { */
+/*   color: #D08A91;  */
+/* } */
+
+.article-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin-bottom: 10px;
+  font-size: 0.8em;
+  color: #777;
+}
+
+.article-description {
+  color: #3b4252;
+  margin-top: 10px;
+}
+
+.home {
+  text-align: justify;
+  text-justify: inter-word;
+  padding: 0 2rem;
+  position: relative; /* Add this to make it a positioning context */
+  margin-bottom: 20px; /* Add spacing between articles if you like */
+}
+
+.home-image {
+  width: 100%;
+  position: relative; /* Add this to contain the overlay within the image area */
+}
+
+.home-image img {
+  display: block; /* Prevent extra space below the image */
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  z-index: 2;
+}
+
+.home .subtitle {
+  position: absolute; /* Overlay the image */
+  top: 290px; /* Adjust as needed */
+  left: 160px; /* Adjust as needed */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  color: #d8dee9; 
+  margin: 0; /* Remove default heading margins */
+  z-index: 1; /* Ensure it's above the image */
+}
+
+.home a {
+  font-weight: bolder;
+}
+
+.home a:hover {
+  color: #fff ;
+}
+
+.home .highlight {
+  padding: 1rem 2rem 1rem 2rem;
+} 
+.home .highlight pre {
+  padding: 0 1rem 1rem 1rem;
+    background-color: #bec9d7!important;
+}
+
+.danger,
+.note,
+.warning {
+  background: #bec9d7;
+  border-left-style: solid;
+  border-left-width: 0.4rem;
+  border-radius: 0.2rem;
+  margin: 0 ;
+  color: #3b4252;
+  margin: 1rem 2rem 1rem 2rem;
+}  
+.danger, .note, .warning  > p {
+      padding: 0.5rem 1rem;
+}
+
+
+.warning {
+  border-left-color: #ffbb00;
+}
+
+.note {
+  border-left-color: #0000ee;
+}
+
+.danger {
+  border-left-color: #ee0000;
+}

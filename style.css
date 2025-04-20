@@ -136,7 +136,7 @@ body {
 
 .main {
   grid-area: main;
-  padding: 1.25rem;
+  padding: 0 3rem 0 3rem;
   background-color: #d8dee9;
 }
 
