@@ -9,11 +9,11 @@
     <lastBuildDate>Sun, 20 Apr 2025 12:08:01 +0800</lastBuildDate>
     <atom:link href="https://mikewebbtech.github.io/mikewebb-tech/tags/maker/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Example</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/example/</link>
+      <title>Place Holder - Diving into Hugo: My Journey with a Static Site Generator</title>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/my-hugo-experience/</link>
       <pubDate>Sun, 20 Apr 2025 12:08:01 +0800</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/example/</guid>
-      <description></description>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/my-hugo-experience/</guid>
+      <description>&lt;h1 id=&#34;embracing-the-speed-and-simplicity-of-hugo&#34;&gt;Embracing the Speed and Simplicity of Hugo&lt;/h1&gt;&#xA;&lt;p&gt;As I navigate the ever-evolving landscape of technology, I&amp;rsquo;m always on the lookout for tools that are efficient, powerful, and enjoyable to use. When it came to building this digital space to document my learning journey in cloud computing, networking, cybersecurity, and beyond, I landed on &lt;strong&gt;Hugo&lt;/strong&gt;, a static site generator, and I haven&amp;rsquo;t looked back since.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
