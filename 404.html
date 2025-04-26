@@ -1,11 +1,12 @@
-{{ define "main" }}
-  <div class="error-404">
-    <h1 class="error-404-title">O{{ partial "icon.html" (dict "ctx" $ "name" "frown") }}ps... </h1>
-    <p>The link you followed may be broken, or the page may have been removed.</p>
-    <a href="{{ "/" | relURL }}">Go home {{ partial "icon.html" (dict "ctx" $ "name" "arrow-right") }}</a>
-  </div>
-{{ end }}
->  <aside class="sidebar">
+<!doctype html>
+<html lang="en"><head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="generator" content="Hugo 0.146.3">
+  <title>404 Page not found</title><link rel="stylesheet" href="https://mikewebbtech.github.io/mikewebb-tech/css/style.css" />
+</head>
+<body>
+    <div class="layout">  <aside class="sidebar">
     <div class="logo">
       <img src="/mikewebb-tech/avatar.png" alt="avatar" width="192">
       <p class="byline">
