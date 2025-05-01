@@ -15,5 +15,12 @@
       <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/my-hugo-experience/</guid>
       <description>Exploring the power and simplicity of Hugo, the static site generator that powers this blog. Learn about my experiences and why I chose Hugo for my journey in tech.</description>
     </item>
+    <item>
+      <title>Fluba Hugo</title>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/flubah/</link>
+      <pubDate>Sun, 20 Apr 2025 12:08:01 +0800</pubDate>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/flubah/</guid>
+      <description>the static site generator that powers this blog. Learn about my experiences and why I chose Hugo for my journey in tech.</description>
+    </item>
   </channel>
 </rss>
