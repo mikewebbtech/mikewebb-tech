@@ -6,22 +6,8 @@
     <description>Recent content in Categories on Mike Webb Tech</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 27 Apr 2025 16:37:08 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 20 Apr 2025 12:08:01 +0800</lastBuildDate>
     <atom:link href="https://mikewebbtech.github.io/mikewebb-tech/categories/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Home Lab</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/categories/home-lab/</link>
-      <pubDate>Sun, 27 Apr 2025 16:37:08 +0800</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/categories/home-lab/</guid>
-      <description>&lt;p&gt;Building and experimenting in a personal tech playground. Exploring hardware setups, network configurations, virtualisation technologies, and homelab project ideas. Satisfying hands-on breaking and creating of personal services and infrastructure cos-playing.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>IoT</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/categories/iot/</link>
-      <pubDate>Sun, 27 Apr 2025 16:37:08 +0800</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/categories/iot/</guid>
-      <description>&lt;p&gt;Connecting the physical and digital worlds. Explore projects involving microcontrollers like Raspberry Pi and Arduino, sensor integration, data acquisition, and home automation. Learn about Matter, Thread and MQTT protocols and the potential of interconnected devices and build your own smart solutions.&lt;/p&gt;</description>
-    </item>
     <item>
       <title>Automation</title>
       <link>https://mikewebbtech.github.io/mikewebb-tech/categories/automation/</link>
@@ -44,11 +30,25 @@
       <description>&lt;p&gt;Fortifying my digital defences. Explore topics like threat detection, vulnerability analysis, security best practices, and ethical hacking. Learning how to protect my home network lab and personal data with transferable skill in a connected world.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Home Lab</title>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/categories/home-lab/</link>
+      <pubDate>Sun, 20 Apr 2025 12:08:01 +0800</pubDate>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/categories/home-lab/</guid>
+      <description>&lt;p&gt;Building and experimenting in a personal tech playground. Exploring hardware setups, network configurations, virtualisation technologies, and homelab project ideas. Satisfying hands-on breaking and creating of personal services and infrastructure cos-playing.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Hugo</title>
       <link>https://mikewebbtech.github.io/mikewebb-tech/categories/hugo/</link>
       <pubDate>Sun, 20 Apr 2025 12:08:01 +0800</pubDate>
       <guid>https://mikewebbtech.github.io/mikewebb-tech/categories/hugo/</guid>
       <description>&lt;p&gt;Creating my site using Hugo static site generator. Learn its architecture, templating system, shortcodes, and data organization. Explore practical examples of site development, theme creation and content creation, with a touch of deployment pipelines. Discover techniques for building performant and maintainable websites with a focus on speed and simplicity.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>IoT</title>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/categories/iot/</link>
+      <pubDate>Sun, 20 Apr 2025 12:08:01 +0800</pubDate>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/categories/iot/</guid>
+      <description>&lt;p&gt;Connecting the physical and digital worlds. Explore projects involving microcontrollers like Raspberry Pi and Arduino, sensor integration, data acquisition, and home automation. Learn about Matter, Thread and MQTT protocols and the potential of interconnected devices and build your own smart solutions.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Kubernetes</title>

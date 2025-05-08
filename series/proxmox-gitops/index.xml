@@ -6,27 +6,27 @@
     <description>Recent content in Proxmox as Code on Mike Webb Tech</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 27 Apr 2025 16:37:08 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 19 Feb 2025 16:37:08 +0800</lastBuildDate>
     <atom:link href="https://mikewebbtech.github.io/mikewebb-tech/series/proxmox-gitops/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>bar</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/bar/</link>
-      <pubDate>Sun, 27 Apr 2025 16:37:08 +0800</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/bar/</guid>
+      <title>Iot (art 3)</title>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/iot/</link>
+      <pubDate>Wed, 19 Feb 2025 16:37:08 +0800</pubDate>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/iot/</guid>
       <description>&lt;p&gt;My journey with Hugo is just beginning, and I&amp;rsquo;m excited to explore its more&#xA;advanced features, such as shortcodes for embedding dynamic content and data-&#xA;driven pages. For now, I&amp;rsquo;m incredibly satisfied with its speed, simplicity, and&#xA;the control it gives me over my blog&amp;rsquo;s presentation.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Foo</title>
+      <title>Foo (art 2)</title>
       <link>https://mikewebbtech.github.io/mikewebb-tech/articles/foo/</link>
-      <pubDate>Sat, 19 Apr 2025 16:37:08 +0800</pubDate>
+      <pubDate>Sun, 19 Jan 2025 16:37:08 +0800</pubDate>
       <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/foo/</guid>
       <description>&lt;p&gt;My journey with Hugo is just beginning, and I&amp;rsquo;m excited to explore its more&#xA;advanced features, such as shortcodes for embedding dynamic content and data-&#xA;driven pages. For now, I&amp;rsquo;m incredibly satisfied with its speed, simplicity, and&#xA;the control it gives me over my blog&amp;rsquo;s presentation.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Iot</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/iot/</link>
-      <pubDate>Sat, 19 Apr 2025 16:37:08 +0800</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/iot/</guid>
+      <title>bar (art 1)</title>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/bar/</link>
+      <pubDate>Sat, 27 Apr 2024 16:37:08 +0800</pubDate>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/bar/</guid>
       <description>&lt;p&gt;My journey with Hugo is just beginning, and I&amp;rsquo;m excited to explore its more&#xA;advanced features, such as shortcodes for embedding dynamic content and data-&#xA;driven pages. For now, I&amp;rsquo;m incredibly satisfied with its speed, simplicity, and&#xA;the control it gives me over my blog&amp;rsquo;s presentation.&lt;/p&gt;</description>
     </item>
   </channel>
