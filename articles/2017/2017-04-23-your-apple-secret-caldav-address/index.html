@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en"><head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="generator" content="Hugo 0.147.0">
+  <title>Your Apple secret CalDAV address</title><link rel="stylesheet" href="https://mikewebbtech.github.io/mikewebb-tech/css/style.min.21cb2879bdc9736d044cba6728046ef1ed8fe1faf4202b674e79b695f5552edd.css" />
+  <link rel="icon" type="image/x-icon"  href="/mikewebb-tech/img/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/mikewebb-tech/img/apple-touch-icon.png" />
+ 
+  <link rel="manifest" href="/mikewebb-tech/img/site.webmanifest" />
+</head>
+<body>
+    <div class="layout">  <aside class="sidebar">
+    <div class="logo">
+      <img src="/mikewebb-tech/avatar.png" alt="avatar" width="192">
+      <p class="byline">
+        MIKE WEBB TECH
+      </p>
+      <p class="byline">
+        <a href="https://github.com/mikewebbtech" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-github"></i></a>
+        <a href="https://www.linkedin.com/in/michael-webb-1a36b8a5/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+      </p>
+    </div>
+    <nav class="nav">
+  <ul>
+    
+    
+      
+      
+
+      
+      
+        
+        
+          
+        
+      
+      <li>
+        <a href="/mikewebb-tech/" ><i class="fa-solid fa-house"></i> Home</a>
+      </li>
+    
+      
+      
+
+      
+      
+        
+        
+          
+        
+      
+      <li>
+        <a href="/mikewebb-tech/articles/" ><i class="fa-solid fa-file-code"></i> Articles</a>
+      </li>
+    
+      
+      
+
+      
+      
+        
+        
+          
+        
+      
+      <li>
+        <a href="/mikewebb-tech/categories/" ><i class="fa-solid fa-list"></i> Categories</a>
+      </li>
+    
+      
+      
+
+      
+      
+        
+        
+          
+        
+      
+      <li>
+        <a href="/mikewebb-tech/series/" ><i class="fa-solid fa-layer-group"></i> Series</a>
+      </li>
+    
+      
+      
+
+      
+      
+        
+        
+          
+        
+      
+      <li>
+        <a href="/mikewebb-tech/tags/" ><i class="fa-solid fa-tags"></i> Tags</a>
+      </li>
+    
+      
+      
+
+      
+      
+        
+        
+          
+        
+      
+      <li>
+        <a href="/mikewebb-tech/about/" ><i class="fa-solid fa-circle-info"></i> About</a>
+      </li>
+    
+  </ul>
+</nav>
+    <div class="nav-bottom">
+      <a href="https://mikewebb.tech">
+        Designed by Mike Webb 
+      </a>
+      <a href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">
+        &copy; 2025 CC BY-NC 4.0
+      </a>
+      <p>
+      created using
+      </p> 
+      <a href="https://gohugo.io" target="_blank">
+        <img src="/mikewebb-tech/hugo-logo-wide.svg" alt="hugo.io" style="width: 40%">
+      </a>
+      <br><br>
+      Git commit 
+      
+      
+      <br><br>
+    </div>
+  </aside>
+  <header class="header">
+    <h1>Your Apple secret CalDAV address</h1>
+  </header>
+<main class="main">
+
+<article class="post">
+  <div class="post-header">
+    
+    <div class="article-meta">
+      <div>
+        <i class="fa-solid fa-calendar-days"></i>
+        Apr 23, 2017
+      </div>
+      <div>
+        <i class="fa-solid fa-file-lines"></i>
+        415 words
+      </div>
+    </div>
+  </div><div class="post-content"><p>Having a small collection idevices in our household, we tend use the icloud calendar app (and iCal on the mac&rsquo;s) to coordinate our appointments and reminders.  It just works and works well throughout the iVerse.</p>
+<p>Problem is, I don&rsquo;t always use Apple hardware.  Last year I looked long and hard as to what my dead iMac replacement would be and settled on a powerful Xeon workstation with buckets of memory and M.2 storage&hellip;.and it has room to grow.  I digress.  Point is, I&rsquo;m back to running linux on my daily rig and Apple doesn&rsquo;t really play well with with others.</p>
+<p>One thing that drove me nuts was the lake of connecting to my cal in the cloud with all my reminders.  I heard that Apple is useing some open standards for it&rsquo;s cloud service so I should be able to sync something up with it.</p>
+<p>I&rsquo;ve followed a few convoluted solutions that I have found on the net that have worked for both the calendar and also tasks;</p>
+<p>One way if you do have a Mac is to dive into your ~/Library/Calendars directory.  Depending on how many accounts you have linked to, this folder can be crowded, but what you are looking for as the <!-- raw HTML omitted -->.caldav directory  with a bunch of *.calendar directories, an Inbox and Attachments directory.  There you will find the pot of gold, the Info.plist.  Now let us begin:</p>
+<p>Open the Info.plist and search for uuid, the number string (e.g. 298471256) is your <strong>user_id.</strong> Now search for the key DefaultCalenderPath, the associated string should resemble /<strong>user_id</strong>/calendars/<strong>calendar_name</strong> (e.g. /298471256/calendars/home)</p>
+<p>Now we need the server address, search for the PrincipalURL key, the associated string should resemble <!-- raw HTML omitted -->https://p<strong>NN</strong>-caldav.icloud.com/<strong>user_id</strong>/principal/<!-- raw HTML omitted -->. E.g. (https://p<strong>11</strong>-caldav.icloud.com/298471256/principal/).  There you go, you now have enough pieces of the puzzle to start connecting to and syncing third party apps with Apples CalDAV (calendar and tasks) services.</p>
+<p>So to put it all together.  In your calender application (evolution, thunderbird, iceweazle etc) create a new calender with:</p>
+<ul>
+<li>Username: your email address you use to log into apple services (e.g. mail, itunes etc)</li>
+<li>Password: the password you use for above.</li>
+<li>Server: (e.g. <a href="https://p11-caldav.icloud.com/298471256/calendars/home">https://p11-caldav.icloud.com/298471256/calendars/home</a>)</li>
+<li>User secure login (words like TLS and SSL etc)</li>
+<li>Use CalDAV (not web)</li>
+</ul>
+<p>Some CalDAV/calendering apps handle the Server information required differently.</p>
+<ul>
+<li>Server Address: (e.g. <a href="https://p11-caldav.icloud.com:443">https://p11-caldav.icloud.com:443</a></li>
+<li>Server Path: (e.g. /298471256/principal/)</li>
+</ul>
+<p>******* ONE HUGE REAL BIG CAVEAT ********</p>
+<p>If you are using two-factor authentication.  THIS WILL NOT WORK in many many many cases.  Disable two-factor authentication online in your account settings and setup challenge phrases.</p>
+</div>
+
+  <div class="post-footer"></div></article>
+</main>
+    </div>
+  </body>
+</html>

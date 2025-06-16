@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en"><head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="generator" content="Hugo 0.147.0">
+  <title>Kernel patch and compile the Debian/Ubuntu way</title><link rel="stylesheet" href="https://mikewebbtech.github.io/mikewebb-tech/css/style.min.21cb2879bdc9736d044cba6728046ef1ed8fe1faf4202b674e79b695f5552edd.css" />
+  <link rel="icon" type="image/x-icon"  href="/mikewebb-tech/img/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/mikewebb-tech/img/apple-touch-icon.png" />
+ 
+  <link rel="manifest" href="/mikewebb-tech/img/site.webmanifest" />
+</head>
+<body>
+    <div class="layout">  <aside class="sidebar">
+    <div class="logo">
+      <img src="/mikewebb-tech/avatar.png" alt="avatar" width="192">
+      <p class="byline">
+        MIKE WEBB TECH
+      </p>
+      <p class="byline">
+        <a href="https://github.com/mikewebbtech" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-github"></i></a>
+        <a href="https://www.linkedin.com/in/michael-webb-1a36b8a5/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+      </p>
+    </div>
+    <nav class="nav">
+  <ul>
+    
+    
+      
+      
+
+      
+      
+        
+        
+          
+        
+      
+      <li>
+        <a href="/mikewebb-tech/" ><i class="fa-solid fa-house"></i> Home</a>
+      </li>
+    
+      
+      
+
+      
+      
+        
+        
+          
+        
+      
+      <li>
+        <a href="/mikewebb-tech/articles/" ><i class="fa-solid fa-file-code"></i> Articles</a>
+      </li>
+    
+      
+      
+
+      
+      
+        
+        
+          
+        
+      
+      <li>
+        <a href="/mikewebb-tech/categories/" ><i class="fa-solid fa-list"></i> Categories</a>
+      </li>
+    
+      
+      
+
+      
+      
+        
+        
+          
+        
+      
+      <li>
+        <a href="/mikewebb-tech/series/" ><i class="fa-solid fa-layer-group"></i> Series</a>
+      </li>
+    
+      
+      
+
+      
+      
+        
+        
+          
+        
+      
+      <li>
+        <a href="/mikewebb-tech/tags/" ><i class="fa-solid fa-tags"></i> Tags</a>
+      </li>
+    
+      
+      
+
+      
+      
+        
+        
+          
+        
+      
+      <li>
+        <a href="/mikewebb-tech/about/" ><i class="fa-solid fa-circle-info"></i> About</a>
+      </li>
+    
+  </ul>
+</nav>
+    <div class="nav-bottom">
+      <a href="https://mikewebb.tech">
+        Designed by Mike Webb 
+      </a>
+      <a href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">
+        &copy; 2025 CC BY-NC 4.0
+      </a>
+      <p>
+      created using
+      </p> 
+      <a href="https://gohugo.io" target="_blank">
+        <img src="/mikewebb-tech/hugo-logo-wide.svg" alt="hugo.io" style="width: 40%">
+      </a>
+      <br><br>
+      Git commit 
+      
+      
+      <br><br>
+    </div>
+  </aside>
+  <header class="header">
+    <h1>Kernel patch and compile the Debian/Ubuntu way</h1>
+  </header>
+<main class="main">
+
+<article class="post">
+  <div class="post-header">
+    
+    <div class="article-meta">
+      <div>
+        <i class="fa-solid fa-calendar-days"></i>
+        Jan 20, 2018
+      </div>
+      <div>
+        <i class="fa-solid fa-file-lines"></i>
+        930 words
+      </div>
+    </div>
+  </div><div class="post-content"><p>Here is how I patch and compile new kernels for Ubuntu/Debian distributions. More specifically, create .deb files to be used by the Advanced Packaging Tool (apt)</p>
+<p><strong>Prerequisites</strong></p>
+<p>make sure your system is updated and you have the required applications and libraries to compile a kernel.</p>
+<pre tabindex="0"><code>$ sudo apt update
+$ sudo apt install \
+  libelf-dev
+  bison \
+  build-essential \
+  ccache \
+  curl \
+  fakeroot \
+  flex \
+  git \
+  kernel-package \
+  libncurses5-dev \
+  libssl-dev \
+  wget -y
+</code></pre><p>There are two main ways to get the kernel source.  One is to grab the ubuntu source using apt</p>
+<pre tabindex="0"><code>$ sudo apt-get source linux-image-$(uname -r)
+</code></pre><p>or using git cloning the tree that matches your repository name direct from Ubuntu</p>
+<pre tabindex="0"><code>$ cd ~
+$ ubuntu\_name=$(lsb\_release -s -c) \
+  git clone git://kernel.ubuntu.com/ubuntu/ubuntu${ubuntu\_name}-.git
+</code></pre><p>Then there is the other way that I like. I go straight to the source, kernel.org. This gives me access to new or release candidate versions.</p>
+<p>You can download a tarball every time or keep that kernel and patch it to new versions as they are released (this saves on A LOT of bandwidth and time)</p>
+<p><strong>OR</strong></p>
+<p>As mentioned in other posts, use git, clone the official kernel tree and create a local branch every time you want to try a patch. This way I find best for me.</p>
+<p>I&rsquo;ll quickly go the first steps, for a more descriptive walk through see: <a href="http://webby.land/2018/01/19/a-more-elegant-quick-and-dirty-kernel-patch-and-build/">A more elegant: Quick and dirty kernel patch and build</a> .</p>
+<pre tabindex="0"><code>$ cd
+$ git clone git://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git
+$ cd ~/linux
+[~/linux]$ git tag -l | more
+[~/linux]$ git checkout -b custom v4.10
+</code></pre><p>*replace v4.10 with what ever the latest versions is or the kernel version that you are after.</p>
+<p><strong>Applying a patch</strong></p>
+<p>If applying a  (I am applying the add-acs-overrides patch in mail format here).  Use  <em>git am</em> patch-name.eml if your patch is in email format (as in you got it from a mailing list, use <em>git apply patch-name.patch</em> if a standard patch file</p>
+<pre tabindex="0"><code>[~/linux]$ git am ~/Downloads/add-acs-overrides.eml
+</code></pre><p> </p>
+<p><strong>Prep for Compile</strong></p>
+<p>You need  a .config, it is quick and easy to copy an existing one over from your /boot directory that you are happy with or your latest one with</p>
+<pre tabindex="0"><code>[~/linux]$ cp /boot/config-`uname -r`* ./.config
+</code></pre><p>If you do this, be sure to run</p>
+<pre tabindex="0"><code>[~/linux]$ yes &#39;&#39; | make oldconfig
+</code></pre><p>Omit the yes &rsquo; &rsquo; | part and this will run you through the new options, prompting you for the usual y/n/m responses. You can now edit the .config file to customise/optimise your kernel or go straight to compiling and creating the deb files. While editing the .config file, I highly recommend setting CONFIG_DEBUG_INFO=n to stop the <em>dbg</em> package being generated (unless you have a use case for it) and CONFIG_MODULES=y</p>
+<p>*an easy and interactive method for editing the .config file. but requires ncurses is to type:</p>
+<pre tabindex="0"><code>[~/linux]$ make menuconfig
+</code></pre><p>and go through the trees and select away</p>
+<p><strong>STEP TWO: Compile and make packages.</strong></p>
+<p>Compiling and creating the .deb packages is a relatively straight forward one liner. But there are some important options and alternatives as well as caveats and work arounds. I will go through some here that fall within my workflow that I&rsquo;m explaining here.</p>
+<p>from this point on tools really need to be run as root. But you really really should compile as root [note. add reasons/links]. So we will use fakeroot.</p>
+<p>Start with a clean source tree (this will preserve your existing .config file</p>
+<pre tabindex="0"><code>[~/linux]$ fakeroot make-kpkg clean
+</code></pre><p>Now compile and create .deb packages</p>
+<pre tabindex="0"><code>[~/linux]$ CONCURRENCY\_LEVEL=`getconf \_NPROCESSORS\_ONLN` \
+ MAKEFLAGS=&#34;HOSTCC=/usr/bin/gcc CCACHE\_PREFIX=distcc&#34; \ 
+ fakeroot make-kpkg --initrd \
+ --append-to-version=-acs \
+ --overlay-dir=$HOME/ubuntu-package \ 
+ binary-arch
+</code></pre><p>&ldquo;<strong>CONCURRENCY_LEVEL&rdquo;</strong> does the same as the -j (&ndash;jobs) option for the gcc make command and sets the number cpu threads assigned for concurrent use for the compile.  In this case, 8 threads of a 4 core CPU.</p>
+<p><strong>LOCALVERSION=</strong> creates our custom entry to version suffix of the kernel name. This defines the final name for the .deb files while also helping distinguish this kernel version from others in the GRUB menu. e.g. Ubuntu 17.10, kernel 4.14.0.acs.custom.  call it what ever you like</p>
+<p>The <em><strong>binary-arch</strong></em>target is one of the faster build targets, it creates two .deb files called linux_headers and the other,  linux_image.  For more information on the other targets and the files they generate, read through the make-kpkg man page <a href="https://manpages.debian.org/jessie/kernel-package/make-kpkg.1.en.html">[here]</a>
+<strong>Caveat:</strong> If your kernel images are being built as &ldquo;-dirty&rdquo; on the end of the version string, and you used the git method to clone the source tree, as well as, patching or modified  the local branch.  This is the result of your modifications being committed.   You can ideally commit the changes to the tree HEAD or just simply create an empty .scmversion file in the root of the kernel sources i.e</p>
+<pre tabindex="0"><code>[~/linux]$ touch .scmversion
+</code></pre><p><strong>STEP THREE: Install the files</strong></p>
+<p>The created .deb files can found in your $HOMEe directory and installed an example of installing them would be</p>
+<pre tabindex="0"><code>[~/linux]$ sudo dpkg -i $HOME/linux-*.deb
+</code></pre><p><strong>Clean up</strong></p>
+<p>If you want to keep your git branch called custom with the changes that you made but dont want to merge the changes back to the master (I recommend this, keep master pristine) , just stash it with</p>
+<pre tabindex="0"><code>$ git stash
+$ git checkout master
+</code></pre><p>In reality we are usually done with the branch that we were working with, so just delete it with</p>
+<pre tabindex="0"><code>$ git branch -D custom
+</code></pre><p>&lsquo;-D&rsquo; as the branched hasn&rsquo;t been merged.</p>
+<p>Now reboot, select the kernel and test</p>
+<p>Beer and profit.</p>
+<p>here are the links to &ldquo;official&rdquo; methods on the Ubuntu wiki. I&rsquo;ve never done it this way, your mileage may differ using these.
+<a href="https://wiki.ubuntu.com/KernelTeam/GitKernelBuild">https://wiki.ubuntu.com/KernelTeam/GitKernelBuild</a>
+<a href="https://wiki.ubuntu.com/Kernel/BuildYourOwnKernel">https://wiki.ubuntu.com/Kernel/BuildYourOwnKernel</a></p>
+</div>
+
+  <div class="post-footer"></div></article>
+</main>
+    </div>
+  </body>
+</html>

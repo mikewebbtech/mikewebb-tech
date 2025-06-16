@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en"><head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="generator" content="Hugo 0.147.0">
+  <title>Bootable USB install device in Linux</title><link rel="stylesheet" href="https://mikewebbtech.github.io/mikewebb-tech/css/style.min.21cb2879bdc9736d044cba6728046ef1ed8fe1faf4202b674e79b695f5552edd.css" />
+  <link rel="icon" type="image/x-icon"  href="/mikewebb-tech/img/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/mikewebb-tech/img/apple-touch-icon.png" />
+ 
+  <link rel="manifest" href="/mikewebb-tech/img/site.webmanifest" />
+</head>
+<body>
+    <div class="layout">  <aside class="sidebar">
+    <div class="logo">
+      <img src="/mikewebb-tech/avatar.png" alt="avatar" width="192">
+      <p class="byline">
+        MIKE WEBB TECH
+      </p>
+      <p class="byline">
+        <a href="https://github.com/mikewebbtech" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-github"></i></a>
+        <a href="https://www.linkedin.com/in/michael-webb-1a36b8a5/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+      </p>
+    </div>
+    <nav class="nav">
+  <ul>
+    
+    
+      
+      
+
+      
+      
+        
+        
+          
+        
+      
+      <li>
+        <a href="/mikewebb-tech/" ><i class="fa-solid fa-house"></i> Home</a>
+      </li>
+    
+      
+      
+
+      
+      
+        
+        
+          
+        
+      
+      <li>
+        <a href="/mikewebb-tech/articles/" ><i class="fa-solid fa-file-code"></i> Articles</a>
+      </li>
+    
+      
+      
+
+      
+      
+        
+        
+          
+        
+      
+      <li>
+        <a href="/mikewebb-tech/categories/" ><i class="fa-solid fa-list"></i> Categories</a>
+      </li>
+    
+      
+      
+
+      
+      
+        
+        
+          
+        
+      
+      <li>
+        <a href="/mikewebb-tech/series/" ><i class="fa-solid fa-layer-group"></i> Series</a>
+      </li>
+    
+      
+      
+
+      
+      
+        
+        
+          
+        
+      
+      <li>
+        <a href="/mikewebb-tech/tags/" ><i class="fa-solid fa-tags"></i> Tags</a>
+      </li>
+    
+      
+      
+
+      
+      
+        
+        
+          
+        
+      
+      <li>
+        <a href="/mikewebb-tech/about/" ><i class="fa-solid fa-circle-info"></i> About</a>
+      </li>
+    
+  </ul>
+</nav>
+    <div class="nav-bottom">
+      <a href="https://mikewebb.tech">
+        Designed by Mike Webb 
+      </a>
+      <a href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">
+        &copy; 2025 CC BY-NC 4.0
+      </a>
+      <p>
+      created using
+      </p> 
+      <a href="https://gohugo.io" target="_blank">
+        <img src="/mikewebb-tech/hugo-logo-wide.svg" alt="hugo.io" style="width: 40%">
+      </a>
+      <br><br>
+      Git commit 
+      
+      
+      <br><br>
+    </div>
+  </aside>
+  <header class="header">
+    <h1>Bootable USB install device in Linux</h1>
+  </header>
+<main class="main">
+
+<article class="post">
+  <div class="post-header">
+    
+    <div class="article-meta">
+      <div>
+        <i class="fa-solid fa-calendar-days"></i>
+        Apr 27, 2017
+      </div>
+      <div>
+        <i class="fa-solid fa-file-lines"></i>
+        440 words
+      </div>
+    </div>
+  </div><div class="post-content"><p>These instructions will create a bootable install medium for the installation of a operating system using a .iso file downloaded from the network, the dd command and a standard USB stick.  You need root level access (to run the sudo command). This covers Linux [for MacOS see <a href="https://mikewebblive.wordpress.com/2017/04/27/bootable-usb-install-device-in-macos/">Bootable USB install device in MacOS</a>]</p>
+<h3 id="let-us-begin">Let us begin</h3>
+<p>Copy the .iso file to your home directory (<em>~/</em>)on the local workstation for speed and convenience if possible, also to rule out issues created due to network errors during the write.</p>
+<p>Open a terminal if not using a tty console. Run the <em>lsblk</em> command, Plug in the USB stick Now find the USB sticks device ID by using <em>lsblk</em> command again.  The new device that shows is the one you want to use (and the size will match the size written on the stick.  There may be partitions showing (e.g. /dev/sdd1 /dev/sdd2 etc) use the top level device ID</p>
+<p>[include output example]</p>
+<p>*in my case the USB stick is /dev/sdd so I will use that in example commands, replace with your own lsblk output.</p>
+<p>At this point, if there is ANY data on that device you which to keep, back it up now.  The next stage will completely erase all existing partitions and data.  This is also why it is important to know the device ID of the USB stick, using the wrong ID <strong>WILL</strong>destroy your current operating system.</p>
+<p>Also ensure that the operating system hasn&rsquo;t auto-mounted the USB device. &lsquo;dd&rsquo; will fail if the device is mounted into the file system tree.  Type the <em>mount</em>command, if you see your the device ID of your USB stick listed, you have to unmount it.</p>
+<pre tabindex="0"><code>$ mount
+</code></pre><p>[include output example]</p>
+<pre tabindex="0"><code>$ sudo unmount /dev/sdd1
+</code></pre><p><em>&ldquo;The <strong>dd command</strong> stands for “<strong>data duplicator</strong>” and used for copying and converting data. It is very powerful low level utility which can do much like, backup and restore an entire drive or partition.&rdquo;</em></p>
+<p>Use dd to &lsquo;bit level&rsquo; copy the the .iso image to the USB device</p>
+<pre tabindex="0"><code>$ sudo dd if=~/ubuntu-17.04-desktop-amd64.iso of=/dev/sdd1 bs=1M
+</code></pre><p>(replace ubuntu-17.04-desktop-amd64.iso with the name of your own .iso file).  There will be no output for a while depending on the size of the .iso file and USB speed being used.  When <em>dd</em> has successfully copied over the .iso file your should see something resembling the following output</p>
+<pre tabindex="0"><code>3441325+0 records in
+3441325+0 records out
+3441325000 bytes (3.4 GB, 3.2 GiB) copied, 1.00036 s, 3.4 GB/s
+</code></pre><p>Ensure the the USB stick has not been auto mounted and unmount it (eject) it before physically removing the USB stick from the workstation.</p>
+<h3 id="done">DONE.</h3>
+<p>See also:</p>
+<p><a href="https://www.gnu.org/software/coreutils/manual/html_node/dd-invocation.html">dd man page</a>
+<a href="https://en.wikipedia.org/wiki/Dd_(Unix)">dd on wikipedia</a></p>
+</div>
+
+  <div class="post-footer"></div></article>
+</main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en"><head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="generator" content="Hugo 0.147.0">
+  <title>FreeIPA Centos 8 lxc Replica Server</title><link rel="stylesheet" href="https://mikewebbtech.github.io/mikewebb-tech/css/style.min.21cb2879bdc9736d044cba6728046ef1ed8fe1faf4202b674e79b695f5552edd.css" />
+  <link rel="icon" type="image/x-icon"  href="/mikewebb-tech/img/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/mikewebb-tech/img/apple-touch-icon.png" />
+ 
+  <link rel="manifest" href="/mikewebb-tech/img/site.webmanifest" />
+</head>
+<body>
+    <div class="layout">  <aside class="sidebar">
+    <div class="logo">
+      <img src="/mikewebb-tech/avatar.png" alt="avatar" width="192">
+      <p class="byline">
+        MIKE WEBB TECH
+      </p>
+      <p class="byline">
+        <a href="https://github.com/mikewebbtech" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-github"></i></a>
+        <a href="https://www.linkedin.com/in/michael-webb-1a36b8a5/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+      </p>
+    </div>
+    <nav class="nav">
+  <ul>
+    
+    
+      
+      
+
+      
+      
+        
+        
+          
+        
+      
+      <li>
+        <a href="/mikewebb-tech/" ><i class="fa-solid fa-house"></i> Home</a>
+      </li>
+    
+      
+      
+
+      
+      
+        
+        
+          
+        
+      
+      <li>
+        <a href="/mikewebb-tech/articles/" ><i class="fa-solid fa-file-code"></i> Articles</a>
+      </li>
+    
+      
+      
+
+      
+      
+        
+        
+          
+        
+      
+      <li>
+        <a href="/mikewebb-tech/categories/" ><i class="fa-solid fa-list"></i> Categories</a>
+      </li>
+    
+      
+      
+
+      
+      
+        
+        
+          
+        
+      
+      <li>
+        <a href="/mikewebb-tech/series/" ><i class="fa-solid fa-layer-group"></i> Series</a>
+      </li>
+    
+      
+      
+
+      
+      
+        
+        
+          
+        
+      
+      <li>
+        <a href="/mikewebb-tech/tags/" ><i class="fa-solid fa-tags"></i> Tags</a>
+      </li>
+    
+      
+      
+
+      
+      
+        
+        
+          
+        
+      
+      <li>
+        <a href="/mikewebb-tech/about/" ><i class="fa-solid fa-circle-info"></i> About</a>
+      </li>
+    
+  </ul>
+</nav>
+    <div class="nav-bottom">
+      <a href="https://mikewebb.tech">
+        Designed by Mike Webb 
+      </a>
+      <a href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">
+        &copy; 2025 CC BY-NC 4.0
+      </a>
+      <p>
+      created using
+      </p> 
+      <a href="https://gohugo.io" target="_blank">
+        <img src="/mikewebb-tech/hugo-logo-wide.svg" alt="hugo.io" style="width: 40%">
+      </a>
+      <br><br>
+      Git commit 
+      
+      
+      <br><br>
+    </div>
+  </aside>
+  <header class="header">
+    <h1>FreeIPA Centos 8 lxc Replica Server</h1>
+  </header>
+<main class="main">
+
+<article class="post">
+  <div class="post-header">
+    
+    <div class="article-meta">
+      <div>
+        <i class="fa-solid fa-calendar-days"></i>
+        Aug 15, 2022
+      </div>
+      <div>
+        <i class="fa-solid fa-file-lines"></i>
+        921 words
+      </div>
+    </div>
+  </div><div class="post-content"><p>If you haven&rsquo;t followed through the steps in my previous post on setting up FreeIPA in a lxc container, I strongly recommend you give it once over as this will follow on from that:</p>
+<p>Stage 1:</p>
+<h2 id="let-us-begin">Let us begin</h2>
+<p>let’s go over some preliminary house keeping again.</p>
+<p>My environment:</p>
+<pre tabindex="0"><code>LXC containers = 2 x CentOS 8
+domain = hugel.lan
+firewall zone = internal
+first instance name = ipa01
+first instance ip = 192.168.1.35
+first instance hostname = ip01.hugel.lan
+second instance name =ipa02
+second instance ip = 192.168.1.36
+second instance hostname = ipa02.hugel.lan
+DNS forwarders:	192.168.1.5 1.1.1.1
+container user = conop
+ntp servers = 192.168.1.1, 2.au.pool.ntp.org
+</code></pre><p>We are setting up ipa02 so create another container with the minimal requirements. Gain shell/console access into your container using either lxc console ipa01 or lxc exec ipa01 &ndash; /bin/sh.</p>
+<p>Do a yum update, setup and check ip address and internet connectivity. create a user with wheel group membership.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> useradd conop
+</span></span><span style="display:flex;"><span> passwd conop
+</span></span><span style="display:flex;"><span> usermod -aG wheel conop
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> nmcli connection modify eth0 <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>&gt; ipv4.method manual <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>&gt; ipv4.address 192.168.1.35/24 <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>&gt; ipv4.gateway 192.168.1.5 <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>&gt; ipv4.dns 1.1.1.1
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> nmcli connection down eth0 ; nmcli c up eth0
+</span></span><span style="display:flex;"><span> ping 1.1.1.1
+</span></span><span style="display:flex;"><span> ping redhat.com
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> timedatectl set-timezone Austrlia/Perth
+</span></span><span style="display:flex;"><span> timedatectl set-ntp true
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> hostnamectl set-hostname ipa02.hugel.lan
+</span></span><span style="display:flex;"><span> echo <span style="color:#e6db74">&#34;192.168.1.35 ipa01.hugel.lan ipa01 \n192.168.1.36 ipa02.hugel.lan ipa02&#34;</span> &gt;&gt; /etc/hosts
+</span></span><span style="display:flex;"><span> mv /etc/resolv.conf /etc/resolv.conf-BAK
+</span></span><span style="display:flex;"><span> echo -e <span style="color:#e6db74">&#34;search hugel.lan\nnameserver 192.168.1.5 \nnameserver 1.1.1.1&#34;</span> &gt; /etc/resolv.conf
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> dnf update
+</span></span><span style="display:flex;"><span> dnf install openssh-server sudo less firewalld audit -y
+</span></span><span style="display:flex;"><span> systemctl enable sshd --now
+</span></span><span style="display:flex;"><span> systemctl status sshd
+</span></span><span style="display:flex;"><span> systemctl enable firewalld --now
+</span></span><span style="display:flex;"><span> systemctl status firewalld
+</span></span></code></pre></div><p>Now is a good time to take a snaphot and reboot. SSH into your container as conop and su to root make sure all is as it should be.</p>
+<h2 id="on-wards">On Wards</h2>
+<p>There are few &ldquo;gotcha&rsquo;s&rdquo; that still apply to setting up a replica just as outlined previously with installing a primary. Also there are few ways set up replication as stated in RedHat and FreeIPA documentation. The method I chose to implement is &ldquo;upgrade from a client&rdquo; simply because if I can install a FreeIPA client then the bones required to migrate up to a replica must be working. Also, it is how I&rsquo;ve done it in the past on Centos 7 (<a href="https://gist.github.com/mikewebb70/c9722d443ac38e553490ee12d5386748">https://gist.github.com/mikewebb70/c9722d443ac38e553490ee12d5386748</a> &lt;- a good read but outdated for CentOS 8)</p>
+<p>This is a 3 part process 1. install Freeipa client and requirements on ipa02 container: 2. deal with some dns and host group stuff on ipa02 container: 3. Back on ipa02 container to migrate it up to a replica server.</p>
+<h2 id="1">1:</h2>
+<p>Add the -x fix for chronyd and restart the service, setup the firewall policy, install the AppStream module and install the client.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span># dnf module -y install idm:DL1/client
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span># ipa-client-install -v \
+</span></span><span style="display:flex;"><span>&gt; --ntp-server=192.168.1.1 \
+</span></span><span style="display:flex;"><span>&gt; --ntp-server=2.au.pool.ntp.org
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span># firewall-cmd --get-active-zone
+</span></span><span style="display:flex;"><span># firewall-cmd --set-default-zone=internal
+</span></span><span style="display:flex;"><span># firewall-cmd --zone=internal --list-services
+</span></span><span style="display:flex;"><span># firewall-cmd --add-service={freeipa-ldap,freeipa-ldaps,freeipa-replication,dns,ntp} --permanent
+</span></span><span style="display:flex;"><span># firewall-cmd --reload
+</span></span><span style="display:flex;"><span># firewall-cmd --zone=internal --list-services
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span># kinit admin
+</span></span></code></pre></div><h2 id="2">2:</h2>
+<p>On ipa01, the first (and only) FreeIPA server we will double check that that it &ldquo;knows&rdquo; about ipa02, add ipa02 to the &ldquo;ipaservers&rdquo; host group and then fix up</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> kinit
+</span></span><span style="display:flex;"><span> ipa host-find ipa02
+</span></span><span style="display:flex;"><span> ipa dnsrecord-find hugel.lan ipa02
+</span></span><span style="display:flex;"><span> ipa dnsrecord-find 1.168.192.in-addr.arpa <span style="color:#ae81ff">36</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#*(hmmm...no reverse lookup records, let&#39;s fix that manually)*</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> ipa dnsrecord-add 1.168.192.in-addr.arpa <span style="color:#ae81ff">36</span> --ptr-rec ip02.hugel.lan
+</span></span><span style="display:flex;"><span> ipa dnsrecord-find 1.168.192.in-addr.arpa <span style="color:#ae81ff">36</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#*(yay!)*</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> ipa hostgroup-add-member ipaservers --hosts ipa02.hugel.lan
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> ipa hostgroup-show ipaservers
+</span></span><span style="display:flex;"><span>  Host-group: ipaservers
+</span></span><span style="display:flex;"><span>  Description: IPA server hosts
+</span></span><span style="display:flex;"><span>  Member hosts: ipa01.hugel.lan, ipa02.hugel.lan
+</span></span></code></pre></div><h2 id="3">3:</h2>
+<p>Now back onto ipa02 again for the throw down finishing move. Install the idm server module stream, run replica install command, do some verifications and reboot&hellip;ah, the reboot.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf module install idm:DL1/<span style="color:#f92672">{</span>dns,adtrust<span style="color:#f92672">}</span> -y
+</span></span><span style="display:flex;"><span> ipa-replica-conncheck --master ipa01.hugel.lan
+</span></span><span style="display:flex;"><span> kinit admin
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> ipa-replica-install -v <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>&gt; --setup-ca <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>&gt; --setup-dns
+</span></span><span style="display:flex;"><span>&gt; --forwarder<span style="color:#f92672">=</span>192.168.1.5 <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>&gt; --forwarder<span style="color:#f92672">=</span>1.1.1.1
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> reboot
+</span></span></code></pre></div><p>After connecting back to the ip02 container and running some checks, you will see that nothing is working as in the post about setting up freeIPA in a container. Read through that post if you would like more insight into the issue. To fix the issue install the <strong>389-ds-base-legacy-tools</strong> and reboot and run some checks to see if all good in the hood</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>dnf install 389-ds-base-legacy-tools -y
+</span></span><span style="display:flex;"><span> reboot
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> kinit
+</span></span><span style="display:flex;"><span> klist
+</span></span><span style="display:flex;"><span> ipactl status
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> ipa server-find
+</span></span><span style="display:flex;"><span>---------------------
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">2</span> IPA servers matched
+</span></span><span style="display:flex;"><span>---------------------
+</span></span><span style="display:flex;"><span>  Server name: ipa01.hugel.lan
+</span></span><span style="display:flex;"><span>  Min domain level: <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>  Max domain level: <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  Server name: ipa02.hugel.lan
+</span></span><span style="display:flex;"><span>  Min domain level: <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>  Max domain level: <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>----------------------------
+</span></span><span style="display:flex;"><span>Number of entries returned <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>----------------------------
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> ipa dnsconfig-show
+</span></span><span style="display:flex;"><span>---------------------------------
+</span></span><span style="display:flex;"><span>Global DNS configuration is empty
+</span></span><span style="display:flex;"><span>---------------------------------
+</span></span><span style="display:flex;"><span>IPA DNS servers: ipa01.hugel.lan, ipa02.hugel.lan
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> ipa healtcheck --output-type human
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> ipa-replica-manage list
+</span></span><span style="display:flex;"><span>ipa01.hugel.lan: master
+</span></span><span style="display:flex;"><span>ipa02.hugel.lan: master
+</span></span></code></pre></div><p>AND&hellip;there you go. you now have two redundant freeIPA servers s well as two DNS servers (point your clients at both or add them to your dhcp server configuration).</p>
+<p>In my deployment, these containers are just freeIPA servers only handling IDm, policy, dns, etc. No file serving or any other services for the network. Those services will be installed into other containers or virtual machines, but call on the freeIPA servers for authentication and access. I&rsquo;ll document those as I set them up and work through any &ldquo;gotcha&rsquo;s&rdquo;</p>
+<p>As you may have worked out by now, freeIPA provides directory services for unix hosts/services only, it isn&rsquo;t a drop in active directory replacement for windows environments. That is best served using samba 4 (or a Windows Server). but is can be combined with, using trusts. Something I will do when providing smb file services to the network.</p>
+<p>Since LXC containers use next to nothing resources when just sitting there doing nothing. maybe we should set up some as test clients to test out a few scenarios&hellip;.but in another post.</p>
+<p><strong>As always, beer and profit</strong></p>
+</div>
+
+  <div class="post-footer"></div></article>
+</main>
+    </div>
+  </body>
+</html>

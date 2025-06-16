@@ -9,24 +9,24 @@
     <lastBuildDate>Sun, 20 Apr 2025 12:08:01 +0800</lastBuildDate>
     <atom:link href="https://mikewebbtech.github.io/mikewebb-tech/categories/home-lab/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Diving into Hugo</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/my-hugo-experience/</link>
-      <pubDate>Sun, 20 Apr 2025 12:08:01 +0800</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/my-hugo-experience/</guid>
-      <description>Exploring the power and simplicity of Hugo, the static site generator that powers this blog. Learn about my experiences and why I chose Hugo for my journey in tech.</description>
-    </item>
-    <item>
       <title>Fluba Hugo</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/flubah/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/flubah/</link>
       <pubDate>Sun, 20 Apr 2025 12:08:01 +0800</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/flubah/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/flubah/</guid>
       <description>the static site generator that powers this blog. Learn about my experiences and why I chose Hugo for my journey in tech.</description>
     </item>
     <item>
+      <title>Diving into Hugo</title>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/my-hugo-experience/</link>
+      <pubDate>Mon, 10 Feb 2025 12:08:01 +0800</pubDate>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/my-hugo-experience/</guid>
+      <description>Exploring the power and simplicity of Hugo, the static site generator that powers this blog. Learn about my experiences and why I chose Hugo for my journey in tech.</description>
+    </item>
+    <item>
       <title>bar (art 1)</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/bar/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/bar/</link>
       <pubDate>Sat, 27 Apr 2024 16:37:08 +0800</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/bar/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/bar/</guid>
       <description>&lt;p&gt;My journey with Hugo is just beginning, and I&amp;rsquo;m excited to explore its more&#xA;advanced features, such as shortcodes for embedding dynamic content and data-&#xA;driven pages. For now, I&amp;rsquo;m incredibly satisfied with its speed, simplicity, and&#xA;the control it gives me over my blog&amp;rsquo;s presentation.&lt;/p&gt;</description>
     </item>
   </channel>

@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en"><head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="generator" content="Hugo 0.147.0">
+  <title>Kernel patch and compile the Fedora way</title><link rel="stylesheet" href="https://mikewebbtech.github.io/mikewebb-tech/css/style.min.21cb2879bdc9736d044cba6728046ef1ed8fe1faf4202b674e79b695f5552edd.css" />
+  <link rel="icon" type="image/x-icon"  href="/mikewebb-tech/img/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/mikewebb-tech/img/apple-touch-icon.png" />
+ 
+  <link rel="manifest" href="/mikewebb-tech/img/site.webmanifest" />
+</head>
+<body>
+    <div class="layout">  <aside class="sidebar">
+    <div class="logo">
+      <img src="/mikewebb-tech/avatar.png" alt="avatar" width="192">
+      <p class="byline">
+        MIKE WEBB TECH
+      </p>
+      <p class="byline">
+        <a href="https://github.com/mikewebbtech" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-github"></i></a>
+        <a href="https://www.linkedin.com/in/michael-webb-1a36b8a5/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+      </p>
+    </div>
+    <nav class="nav">
+  <ul>
+    
+    
+      
+      
+
+      
+      
+        
+        
+          
+        
+      
+      <li>
+        <a href="/mikewebb-tech/" ><i class="fa-solid fa-house"></i> Home</a>
+      </li>
+    
+      
+      
+
+      
+      
+        
+        
+          
+        
+      
+      <li>
+        <a href="/mikewebb-tech/articles/" ><i class="fa-solid fa-file-code"></i> Articles</a>
+      </li>
+    
+      
+      
+
+      
+      
+        
+        
+          
+        
+      
+      <li>
+        <a href="/mikewebb-tech/categories/" ><i class="fa-solid fa-list"></i> Categories</a>
+      </li>
+    
+      
+      
+
+      
+      
+        
+        
+          
+        
+      
+      <li>
+        <a href="/mikewebb-tech/series/" ><i class="fa-solid fa-layer-group"></i> Series</a>
+      </li>
+    
+      
+      
+
+      
+      
+        
+        
+          
+        
+      
+      <li>
+        <a href="/mikewebb-tech/tags/" ><i class="fa-solid fa-tags"></i> Tags</a>
+      </li>
+    
+      
+      
+
+      
+      
+        
+        
+          
+        
+      
+      <li>
+        <a href="/mikewebb-tech/about/" ><i class="fa-solid fa-circle-info"></i> About</a>
+      </li>
+    
+  </ul>
+</nav>
+    <div class="nav-bottom">
+      <a href="https://mikewebb.tech">
+        Designed by Mike Webb 
+      </a>
+      <a href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">
+        &copy; 2025 CC BY-NC 4.0
+      </a>
+      <p>
+      created using
+      </p> 
+      <a href="https://gohugo.io" target="_blank">
+        <img src="/mikewebb-tech/hugo-logo-wide.svg" alt="hugo.io" style="width: 40%">
+      </a>
+      <br><br>
+      Git commit 
+      
+      
+      <br><br>
+    </div>
+  </aside>
+  <header class="header">
+    <h1>Kernel patch and compile the Fedora way</h1>
+  </header>
+<main class="main">
+
+<article class="post">
+  <div class="post-header">
+    
+    <div class="article-meta">
+      <div>
+        <i class="fa-solid fa-calendar-days"></i>
+        Jan 18, 2018
+      </div>
+      <div>
+        <i class="fa-solid fa-file-lines"></i>
+        672 words
+      </div>
+    </div>
+  </div><div class="post-content"><p>Each distribution has a preferred way which tends to result in a nice reusable packaged compatible to specific package management system.  For this scenario I&rsquo;ll focus on Fedora 27 (I don&rsquo;t know elements of this will work with Centos 7, I&rsquo;ll confirm next time I run up a Centos VM) and:</p>
+<p>a) Patch using the ACS patch commonly used to fix IOMMU grouping for many motherboards so PCIe devices can be passed through to VM&rsquo;s.</p>
+<p>b) Compile the customised kernel using an official fedora kernel src.rpm resulting in reusable and manageable rpm packages complete with official fedora signed modules and additional errata patches (hello meltdown and Intel microcode)</p>
+<p>I&rsquo;ve compiled this compendium mainly for my own use from some confusing or outdated methods that had varying degrees of success or frustration (i.e. <a href="https://fedoraproject.org/wiki/Building_a_custom_kernel#Building_Vanilla_upstream_kernel">fedoraproject)</a>and from an assortment of other blogs and forum posts  So this is neither definitive or for all use cases, but it works for me</p>
+<p><strong>STEP ONE: Gather the tools and setup the environment:</strong></p>
+<pre tabindex="0"><code>$ sudo dnf update
+$ sudo dnf install -y rpmdevtools numactl-devel pesign
+$ sudo dnf groupinstall &#34;Development Tools&#34;
+$ sudo dnf build-dep kernel
+</code></pre><p>*NOTE: To see what packages get installed with a &ldquo;groupinstall&rdquo; command, just do:
+$ sudo dnf group info &ldquo;Development Tools&rdquo;</p>
+<p>Now create the RPM build environment witrh</p>
+<pre tabindex="0"><code>$ rpmdev-setuptree
+</code></pre><p>This will create a directory called rpmbuild in your $HOME root and an accompanying sub directory filesystem structure. Move into the rpmbuild/SOURCES directory and download the official Fedora kernel source and unpack it. The default is to download the kernel source for the currently running kernel.</p>
+<pre tabindex="0"><code>$ cd ~/rpmbuild/SOURCES
+$ sudo dnf download --source kernel
+$ rpm2cpio kernel-* | cpio -i --make-directories
+$ mv kernel-*.src.rpm ../SRPMS
+</code></pre><p>do a <code>$ ls ~/rpmbuild/SOURCES</code> and the output will show a multitude of new files and directories. You can see all the *.patch files that get compiled in to the official Fedora kernel</p>
+<p><strong>STEP TWO (optional): Patch the kernel.</strong></p>
+<p>If applying a patch to your kernel, copy the patch file to ~/rpmbuild/SOURCE (giving it a suffex of .patch is not mandatory, just a good practice for easy identification). In this case I will copy over the add-acs-overrides.patch downloaded from <a href="https://github.com/f4bio/linux-c0mbine/blob/master/add-acs-overrides.patch">github</a> ** and move the kernel.spec file from ~/rpmbuildd/SOURCES to ~/rpmbuild/SPECS in preperation for editing.</p>
+<p>** (This patch is reported to no longer work with newer versions i.e. fedora 29 up. use <a href="https://aur.archlinux.org/cgit/aur.git/plain/add-acs-overrides.patch?h=linux-vfio">THIS ONE</a> instead)</p>
+<p>Now change directory to the ~/rpmbuild/SPECS directory and edit the .kernel.spec file.</p>
+<pre tabindex="0"><code>$ cp ~/Downloads/add-acs-overrides.patch ~/rpmbuild/SOURCES
+$ mv ~/rpmbuild/SOURCES/kernel.spec ~/rpmbuild/SPECS
+$ cd ~/rpmbuild/SPECS
+$ vi kernel.spec
+</code></pre><p>change
+<code># define buildid .local</code>
+to
+<code>%define buildid ACS.local</code></p>
+<p>If patching, declare the patch in the same kernel.spec file. Search for # END OF PATCH DEFINIIONS
+and just above that line, add:
+<code>PATCH900: add-acs-overrides.patch</code>
+<strong>STEP THREE: Build and install time.</strong></p>
+<p>Use rpmbuild command to compile the kernel using the edited kernel.spec file and then build the .rpm packages.  This will take some considerable time to complete with an equal considerable amount of output.</p>
+<p><code>$ rpmbuild -ba ~/rpmbuild/SPECS/kernel.spec</code></p>
+<p>If you don&rsquo;t require specialty kernels (e.g.pae) or debug symbols, you can save considerable compile time with</p>
+<pre tabindex="0"><code>$ rpmbuild -ba --without debug --without doc --without perf \
+--without tools --without debuginfo --without kdump \
+--without bootwrapper --without cross\_headers ~/rpmbuild/SPECS/kernel.spec
+</code></pre><p>The freshly built .rpm files can be found in ~/rpmbuild/RPMS/x86_64/. a <code>$ ls ~/rpmbuild/RPMS/x86_64</code> will show that the rpmbuild -ba command builds more then just a standard kernel.</p>
+<p>Now install the kernel .rpm files that you require. At a minimum do:</p>
+<pre tabindex="0"><code>$ cd ../RPMS/x86\_64
+$ sudo dnf install -y kernel-core*.rpm kernel-devel*.rpm kernel-headers*.rpm kernel-modules*.rpm
+</code></pre><p>I&rsquo;ve used this technique a few times now testing patches and kernel features with sucess, so I&rsquo;ve not had the opportunity of resolving errors that aren&rsquo;t related to what I testing</p>
+<p><strong>FINAL STEP: Reboot and use.</strong></p>
+<p>After backing up important files, or varifing existing backup strategy. to start using the new kernel install, reboot the machine and select the new kernel version or ensure it is the default kernel to load at boot.</p>
+<p><code>$ sudo reboot</code></p>
+<p>Beer and profit.</p>
+</div>
+
+  <div class="post-footer"></div></article>
+</main>
+    </div>
+  </body>
+</html>

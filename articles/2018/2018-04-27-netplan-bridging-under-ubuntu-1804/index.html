@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en"><head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="generator" content="Hugo 0.147.0">
+  <title>Netplan bridging under Ubuntu 18.04</title><link rel="stylesheet" href="https://mikewebbtech.github.io/mikewebb-tech/css/style.min.21cb2879bdc9736d044cba6728046ef1ed8fe1faf4202b674e79b695f5552edd.css" />
+  <link rel="icon" type="image/x-icon"  href="/mikewebb-tech/img/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/mikewebb-tech/img/apple-touch-icon.png" />
+ 
+  <link rel="manifest" href="/mikewebb-tech/img/site.webmanifest" />
+</head>
+<body>
+    <div class="layout">  <aside class="sidebar">
+    <div class="logo">
+      <img src="/mikewebb-tech/avatar.png" alt="avatar" width="192">
+      <p class="byline">
+        MIKE WEBB TECH
+      </p>
+      <p class="byline">
+        <a href="https://github.com/mikewebbtech" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-github"></i></a>
+        <a href="https://www.linkedin.com/in/michael-webb-1a36b8a5/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+      </p>
+    </div>
+    <nav class="nav">
+  <ul>
+    
+    
+      
+      
+
+      
+      
+        
+        
+          
+        
+      
+      <li>
+        <a href="/mikewebb-tech/" ><i class="fa-solid fa-house"></i> Home</a>
+      </li>
+    
+      
+      
+
+      
+      
+        
+        
+          
+        
+      
+      <li>
+        <a href="/mikewebb-tech/articles/" ><i class="fa-solid fa-file-code"></i> Articles</a>
+      </li>
+    
+      
+      
+
+      
+      
+        
+        
+          
+        
+      
+      <li>
+        <a href="/mikewebb-tech/categories/" ><i class="fa-solid fa-list"></i> Categories</a>
+      </li>
+    
+      
+      
+
+      
+      
+        
+        
+          
+        
+      
+      <li>
+        <a href="/mikewebb-tech/series/" ><i class="fa-solid fa-layer-group"></i> Series</a>
+      </li>
+    
+      
+      
+
+      
+      
+        
+        
+          
+        
+      
+      <li>
+        <a href="/mikewebb-tech/tags/" ><i class="fa-solid fa-tags"></i> Tags</a>
+      </li>
+    
+      
+      
+
+      
+      
+        
+        
+          
+        
+      
+      <li>
+        <a href="/mikewebb-tech/about/" ><i class="fa-solid fa-circle-info"></i> About</a>
+      </li>
+    
+  </ul>
+</nav>
+    <div class="nav-bottom">
+      <a href="https://mikewebb.tech">
+        Designed by Mike Webb 
+      </a>
+      <a href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">
+        &copy; 2025 CC BY-NC 4.0
+      </a>
+      <p>
+      created using
+      </p> 
+      <a href="https://gohugo.io" target="_blank">
+        <img src="/mikewebb-tech/hugo-logo-wide.svg" alt="hugo.io" style="width: 40%">
+      </a>
+      <br><br>
+      Git commit 
+      
+      
+      <br><br>
+    </div>
+  </aside>
+  <header class="header">
+    <h1>Netplan bridging under Ubuntu 18.04</h1>
+  </header>
+<main class="main">
+
+<article class="post">
+  <div class="post-header">
+    
+    <div class="article-meta">
+      <div>
+        <i class="fa-solid fa-calendar-days"></i>
+        Apr 27, 2018
+      </div>
+      <div>
+        <i class="fa-solid fa-file-lines"></i>
+        675 words
+      </div>
+    </div>
+  </div><div class="post-content"><p>I just completed a fresh (minimal) install of Ubuntu 18.04 Desktop. I used the new LTS release as an excuse to redo my workstation to simplify and unify since my use case flipped from more KVM virtual machines to more LXD containers. In fact I&rsquo;ve gone from over provisioning 8 KVM VM&rsquo;s to a much higher density of 20 containers when really getting into things (on a 4 core XEON 64GB).</p>
+<p>I used Open VSwitch for my last setup. But OVS didn&rsquo;t go too smooth on this new install and I&rsquo;m a bit pressed at the moment to work my way through it (looking at you with stink eye netplan). So, I&rsquo;ll stick with the standard, yet easy and fast, linux bridging using bridge-utils.</p>
+<p>First up, I&rsquo;ve got some mixed opinions on this push by many Linux Distros to make NetworkManager (NM) the main tool for network&hellip;um&hellip;management. On my laptop, brilliant and it makes sense as jumping around from wifi, to ethernet, using VPNs etc is a breeze with the NetworkManager gui and use of profiles. BUT it is a REAL PAIN with bridging. On a server and workstation, I think it adds more pain then it&rsquo;s worth. So it makes sense to to use systemd.network (netd)</p>
+<p>(edit: Ubuntu 18.04 Desktop defaults to NetworkManager and Server defaults to systemd.network).</p>
+<p>But wait there is more and another curve ball introduced to the new 18.04 LTS and it&rsquo;s called Netplan <a href="https://netplan.io/">(would you like to know more?)</a>. After a quick read about it (re OVS not working) I get why it exists, but geez another level of complexity (or just yet another markup language to learn)..great!</p>
+<p>OK! so netplan is a renderer and is used to configure NM or networkd but to quote the website linked above <em>&ldquo;Using networkd as a renderer does not let devices automatically come up using DHCP; each interface needs to be specified in a file in /etc/netplan for its configuration to be written and for it to be used in networkd.&rdquo;</em> (I think this also applies to OVS). Yep and I&rsquo;m using DHCP so learn yaml for short.</p>
+<p><strong>Sleeves up.</strong>
+make sure you bridge-utilites installed</p>
+<pre tabindex="0"><code>mike@obsidian:~]$sudo apt install bridge-utilites -y
+</code></pre><p>Make a backup the yaml file 01-network-manager-all.yaml</p>
+<pre tabindex="0"><code>[mike@obsidian:~]$cd /etc/netplan/
+[mike@obsidian:netplan]$ sudo cp cp 01-network-manager-all.yaml 01-network-manager-all.yaml-NM
+</code></pre><p>Find the name of your active network interface, using ip is probably the easiest, the active one is the one with the ip address in the same subnet as your network (in my case its enp7s0
+$ ip a</p>
+<p>Open the yaml file for editing</p>
+<pre tabindex="0"><code>[mike@obsidian:netplan]$sudo vi 01-network-manager-all.yaml
+</code></pre><p>and change its contents to read</p>
+<pre tabindex="0"><code>#Let networkd manage all devices on this system
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    enp7s0:
+     dhcp4: no
+     dhcp6: no
+
+  bridges:
+    br0:
+      interfaces: [enp7s0]
+      dhcp4: true 
+      dhcp6: no 
+    br1:
+      interfaces: [enp7s0]
+      dhcp4: true
+      dhcp6: no
+</code></pre><ul>
+<li>Don&rsquo;t copy and pass the above, WP striped the proper yaml formatting so it won&rsquo;t work. I have a properly formatted example in my gist over at github <a href="https://gist.github.com/mikewebb70/c46be8216e8f1594b1077f3d5220c22b">If you are interested</a></li>
+</ul>
+<hr>
+<p>Found a great resource on more properties you could declare in this file specific to your network (static IP, VLANS, bonds, routes etc). <a href="https://cloudinit.readthedocs.io/en/latest/topics/network-config-format-v2.html#examples">Check it out</a></p>
+<hr>
+<p>Generate the required configuration for the renderers.</p>
+<pre tabindex="0"><code>mike@obsidian:~]$sudo netplan generate
+</code></pre><p>Apply all configuration for the renderers, restarting them as necessary.</p>
+<pre tabindex="0"><code>**mike@ob**sidian:~]$sudo netplan apply
+</code></pre><p>Check your handy work.</p>
+<pre tabindex="0"><code>mike@obsidian:~]$ networkctl list
+IDX LINK             TYPE               OPERATIONAL SETUP     
+  1 lo               loopback           carrier     unmanaged 
+  2 enp7s0           ether              carrier     configured
+  3 enp0s31f6        ether              off         unmanaged 
+  4 enp65s0f0        ether              off         unmanaged 
+  5 enp65s0f1        ether              off         unmanaged 
+  6 br0              ether              routable  configured
+  7 virbr0           ether              no-carrier  unmanaged 
+  8 virbr0-nic       ether              off         unmanaged 
+  9 lxdbr0           ether              routable  unmanaged 
+</code></pre><p>That should be enough ping out from the host and use br0 as the interface for lxd and KVM and the guest OS will pull valid IP settings from your network DHCP server and be able to ping out and be accessible from the local network (even pull down an install image from the network tftp server if you have set your KVM up fro network boot).</p>
+<p>As always. Beer and profit.</p>
+</div>
+
+  <div class="post-footer"></div></article>
+</main>
+    </div>
+  </body>
+</html>

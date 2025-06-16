@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en"><head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="generator" content="Hugo 0.147.0">
+  <title>Arch Linux UEFI install on NVMe drives</title><link rel="stylesheet" href="https://mikewebbtech.github.io/mikewebb-tech/css/style.min.21cb2879bdc9736d044cba6728046ef1ed8fe1faf4202b674e79b695f5552edd.css" />
+  <link rel="icon" type="image/x-icon"  href="/mikewebb-tech/img/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/mikewebb-tech/img/apple-touch-icon.png" />
+ 
+  <link rel="manifest" href="/mikewebb-tech/img/site.webmanifest" />
+</head>
+<body>
+    <div class="layout">  <aside class="sidebar">
+    <div class="logo">
+      <img src="/mikewebb-tech/avatar.png" alt="avatar" width="192">
+      <p class="byline">
+        MIKE WEBB TECH
+      </p>
+      <p class="byline">
+        <a href="https://github.com/mikewebbtech" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-github"></i></a>
+        <a href="https://www.linkedin.com/in/michael-webb-1a36b8a5/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+      </p>
+    </div>
+    <nav class="nav">
+  <ul>
+    
+    
+      
+      
+
+      
+      
+        
+        
+          
+        
+      
+      <li>
+        <a href="/mikewebb-tech/" ><i class="fa-solid fa-house"></i> Home</a>
+      </li>
+    
+      
+      
+
+      
+      
+        
+        
+          
+        
+      
+      <li>
+        <a href="/mikewebb-tech/articles/" ><i class="fa-solid fa-file-code"></i> Articles</a>
+      </li>
+    
+      
+      
+
+      
+      
+        
+        
+          
+        
+      
+      <li>
+        <a href="/mikewebb-tech/categories/" ><i class="fa-solid fa-list"></i> Categories</a>
+      </li>
+    
+      
+      
+
+      
+      
+        
+        
+          
+        
+      
+      <li>
+        <a href="/mikewebb-tech/series/" ><i class="fa-solid fa-layer-group"></i> Series</a>
+      </li>
+    
+      
+      
+
+      
+      
+        
+        
+          
+        
+      
+      <li>
+        <a href="/mikewebb-tech/tags/" ><i class="fa-solid fa-tags"></i> Tags</a>
+      </li>
+    
+      
+      
+
+      
+      
+        
+        
+          
+        
+      
+      <li>
+        <a href="/mikewebb-tech/about/" ><i class="fa-solid fa-circle-info"></i> About</a>
+      </li>
+    
+  </ul>
+</nav>
+    <div class="nav-bottom">
+      <a href="https://mikewebb.tech">
+        Designed by Mike Webb 
+      </a>
+      <a href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">
+        &copy; 2025 CC BY-NC 4.0
+      </a>
+      <p>
+      created using
+      </p> 
+      <a href="https://gohugo.io" target="_blank">
+        <img src="/mikewebb-tech/hugo-logo-wide.svg" alt="hugo.io" style="width: 40%">
+      </a>
+      <br><br>
+      Git commit 
+      
+      
+      <br><br>
+    </div>
+  </aside>
+  <header class="header">
+    <h1>Arch Linux UEFI install on NVMe drives</h1>
+  </header>
+<main class="main">
+
+<article class="post">
+  <div class="post-header">
+    
+    <div class="article-meta">
+      <div>
+        <i class="fa-solid fa-calendar-days"></i>
+        Feb 10, 2017
+      </div>
+      <div>
+        <i class="fa-solid fa-file-lines"></i>
+        1742 words
+      </div>
+    </div>
+  </div><div class="post-content"><p>This guid has been created from memory and some notes I used when installing, I will validate as I will use this as a guide when I get around to doing another Arch Linux install.
+Out of all the modern linux distributions I&rsquo;ve been trying out, Arch Linux would have to be one of the more complex ones I&rsquo;ve come across.  It has a reputation for being &ldquo;hard because you have to do everything yourself&rdquo;, which I think is a bit undeserved and and &ldquo;not for newbies&rdquo;, which sounds like elitist drivel and counter intuitive really.  I won&rsquo;t argue the point on it being complex, but that doesn&rsquo;t make it hard.  The wiki and forums have had any stopping point I came across well and truely covered.  It is the perfect modern Linux distribution for someone looking to learn the &ldquo;how to&rsquo;s&rdquo; of linux.</p>
+<p>Mind you.  The likes of Linux Mint or Ubuntu are pretty flash and all bells and singing and will have you up and running in 10 minutes.  But it is still good to know what&rsquo;s going on under the hood for the odd time when you have go there&hellip;&hellip;like you need to do with EVERY operating system I have ever used.</p>
+<p>The experience of installing and using Arch was very reminiscent of my pre-millennium days of linux  except there is now a missive online community who&rsquo;s shoulders you can stand upon.</p>
+<p>For a primer you should read the official Arch Linux install wiki page. <a href="https://wiki.archlinux.org/index.php/Installation_guide">https://wiki.archlinux.org/index.php/Installation_guide</a> and definitely should read <a href="https://wiki.archlinux.org/index.php/User:Soloturn/Quick_Installation_guide_UEFI">https://wiki.archlinux.org/index.php/User:Soloturn/Quick_Installation_guide_UEFI</a>.</p>
+<p>But we are going to use GRUB as the boot loader as it &ldquo;the common loader&rdquo; amongst linux and it now supports NVMe drives.  However it still doesn&rsquo;t support &ldquo;exotic&rdquo; (e.g. LVM) file systems for the root partition (/).  We will use LVM on the root partition so we know how to work around the limitation as well as being able to capitalise on the advantages of using LVM or even more exotic root partition setups like LUKS to which LVM can be layered upon (<a href="https://en.wikipedia.org/wiki/Logical_Volume_Manager_(Linux)">Logical Volume Manager</a> , <a href="https://wiki.archlinux.org/index.php/Dm-crypt/Encrypting_an_entire_system">Linux Unified Key Setup</a>).  Instead of creating the traditional partition for swap, we will make a swap volume ala LVM style.</p>
+<h3 id="settle-in-this-is-going-to-take-a-while">Settle in.  This is going to take a while.</h3>
+<p>Download the latest .iso of Arch Linux from your nearest mirror <a href="https://www.archlinux.org/download/">Arch Linux mirror list</a></p>
+<p>For me the fastest on would be <a href="http://mirror.internode.on.net/pub/archlinux/iso/latest/archlinux-2017.04.01-x86_64.iso">http://mirror.internode.on.net/pub/archlinux/iso/latest/archlinux-2017.04.01-x86_64.iso</a></p>
+<p>Create a bootable USB stick using the .iso file using the instructions here Bootable USB install device in Linux</p>
+<p>Boot/Reboot with the new Arch Linux install USB stick in the target computer using the usual method for selecting the boot device (for me that f12 when the BIOS splash screen comes up.  After some scrolling text you should be presented with a command line prompt of raw 64bit power chomping at the bit to be released.</p>
+<hr>
+<p>Ensure that you actually have boot up using UEFI mode and not legacy mode. type</p>
+<pre tabindex="0"><code># ls /sys/var/firmware/efi/efivars
+</code></pre><p>if your screen fills up with number of long named files, it is populated and you are in UEFI mode.  If not, you will have make the appropriate changes in you BIOS (consult google or motherboard manual)</p>
+<p>Your NIC (wireless is not in the scope of this tutorial) should have been detected on boot up and your home router should have dished out an address to it via DHCP.  Let&rsquo;s check,  type in</p>
+<pre tabindex="0"><code># ping -c 5 www.google.com
+</code></pre><p>If you have a response, great, you have a connection to the internet and are good to continue. If not, manually start the dhcp client or setup networking with what is relevant to your network e.g.</p>
+<p>Start dhcp client</p>
+<pre tabindex="0"><code># systemctl start dhcpcd@eth0
+</code></pre><p>Setup ipv4 networking</p>
+<pre tabindex="0"><code># ip address add 192.168.1.159/24 dev eth0 
+# ip route add default via 192.168.1.1 
+# echo &#34;nameserver 192.168.1.1&#34; &gt;&gt; /etc/resolv.conf 
+# ping www.google.com
+</code></pre><h3 id="look-for-the-nvme-drive">Look for the NVMe drive</h3>
+<pre tabindex="0"><code># lsblk
+sda      8:0    0  477G  0 disk 
+├─sda1   8:1    0    1G  0 part [rescue]
+├─sda2   8:2    0   12G  0 part [swap]
+└─sda3   8:3    0  430G  0 part [snapshot]
+sdd      8:32   1  7.5G  0 disk 
+└─sdd1   8:33   1  7.5G  0 part /run/media/arch/SANDISK\_16GB
+nvme0n1      8:32   1  500G  0 disk 
+└─nvme0n1p1   8:33   1  400G  0 part
+</code></pre><p>So on my system there is an existing SATA drive (sda), my boot USB stick (add) and the NVMe (nvme0n1) drive with a single partition of &ldquo;god knows what but I don&rsquo;t care if it goes&rdquo;.  Yes this process will permanently delete all data on that drive (or any drive that is attached to the computer if you accidentally type the wrong command&hellip;fear).</p>
+<h3 id="create-partitions">Create Partitions</h3>
+<p>Use what ever disk partitioning system you are familiar with. by default you have disk, parted, gdisk, cgdisk and cfdisk available to you.  Pick your poison so we can create 3 partitions on the nvme0n1 drive.  I use cfdisk so I would type:</p>
+<pre tabindex="0"><code># cfdisk /dev/nvme0n1
+</code></pre><p>Really really important that you define the your nvme drive as cfdisk would automatically select my sda drive and that would be horrible.</p>
+<p>So I delete all partitions from the disk, create my 3 partitions:</p>
+<pre tabindex="0"><code>nvme0n1p1  size 512MB type: EFI (/mnt/boot/efi)
+nvme0n1p2 size  1024MB type: LINUX (/mnt/boot)
+nvme0np3 size 100% type: LVM (root/)
+</code></pre><p>[include lsblk output of final layout]</p>
+<h3 id="format-the-partitions-and-setup-lvm-general-filesystem">Format the partitions and setup LVM general filesystem</h3>
+<pre tabindex="0"><code># mkfs.fat -F32 /dev/nvme0n1p1
+</code></pre><pre tabindex="0"><code># mkfs.ext3 /dev/nvmen0n1p2
+</code></pre><pre tabindex="0"><code># pvcreate /dev/nvme0n1p3
+# vgcreate vg\_root /dev/nvme0n1p3
+# lvcreate -L 8G vg\_root -n lv\_swap
+# lvcreate -l 100%FREE vg\_root -n lv\_root
+</code></pre><p>The same partiction setup could all be done using parted which is another viable and quick method</p>
+<pre tabindex="0"><code># parted /dev/nvme0n1 
+(parted) mklabel gpt
+(parted) mkpart ESP fat32 1MiB 513MiB
+(parted) set 1 boot on
+(parted) name 1 efi-partition
+(parted) mkpart primary 513MiB 1536MiB
+(parted) name 2 boot-partition
+(parted) mkpart primary 1536MiB 100%
+(parted) name 3 lvm-partition
+(parted) print
+(parted) quit&lt;/pre
+</code></pre><hr>
+<p>Create the filesystems on the logical volumes</p>
+<pre tabindex="0"><code># mkswap -L swap /dev/mapper/vg\_root-lv\_swap
+# swapon /dev/mapper/vg\_root-lv\_swap
+# mkfs.ext4 /dev/mapper/vg\_root-lv\_root
+</code></pre><hr>
+<p>mount the partitions and logical volumes, creating a new filesystem structure ready for bootstrapping the OS install into it.</p>
+<pre tabindex="0"><code># mount /dev/mapper/vg\_root-lv\_root /mnt
+# mkdir /mnt/boot
+# mount /dev/nvme0n1p2 /mnt/boot
+# mkdir /mnt/boot/efi
+# mount /dev/nvme0n1p1 /mnt/boot/efi
+</code></pre><p>Edit your /etc/pacman.d/mirrors file and uncomment a server that is faster to you (hint: search for the name of the site that your downloaded the .iso file from, chances are that they have for a full repository as well)</p>
+<h3 id="install-the-system-files-into-your-new-filesystem-tree">Install the system files into your new filesystem tree</h3>
+<p>We are now set to start install the base Arch Linux system along with a few other tools needed to get a UEFI working so your BIOS has something to hand over the booting your system  too.</p>
+<p><strong>#pacstrap /mnt base base-devel grub-eft-x86_64 efibootmgr git</strong></p>
+<p>There, you now have the bare bones of Arch Linux installed onto your system.  Now we can actually start the process of setting up your system and getting able to boot up by itself.</p>
+<p>Preserve the new filesystem tree and make optimisations for NVMe devices by creating the fstab and modifying it.</p>
+<pre tabindex="0"><code># genfstab -pU /mnt &gt;&gt; /mnt/etc/fstab
+</code></pre><p>open the new /mnt/etc/fstab file editing (nano is my goto for this).</p>
+<pre tabindex="0"><code># nano /mnt/etc/fstab
+</code></pre><p>and make the change relatime to noatime on all non boot partitions (in this case /) and add a /tmp ramdisk to speed up and reduse wear on the NVMe drive.</p>
+<pre tabindex="0"><code>tmpfs    /tmp     tmpfs   defaults,noatime,mode=1777       0 0
+</code></pre><p>make /mnt the new root file system and pivot to it.</p>
+<pre tabindex="0"><code>root@archiso /etc # arch-root /mnt /bin/bash
+[root@archiso /]#
+</code></pre><p>From now on, all the changes we make to files will be on the Arch Linux system we will be booting into.</p>
+<p>We need to open up for editing /etc/mkinitcpio.conf to amend the HOOKS= and MODULES= section ensure the boot strapper (GRUB2) has a suitable initialisation ram disk image.</p>
+<pre tabindex="0"><code>[root@archiso /]# nano /etc/mkinitcpio.conf
+</code></pre><p>Add ext4 to MODULES
+Add lvm2 to HOOKS before filesystems and after udev
+Add resume after lvm2 (also has to be after &lsquo;udev&rsquo;)</p>
+<p>Generate the the new initrd image.</p>
+<pre tabindex="0"><code>[root@archiso /]# mkinitcpio -p linux
+</code></pre><p>Now install the uefi ready GRUB loader</p>
+<pre tabindex="0"><code>grub-install --target=x86\_64-efi --efi-directory=/boot/efi \
+--bootloader-id=arch\_grub --recheck --debug
+</code></pre><p>Technically your system is ready to reboot, but wait there is more to be sure so carry on.</p>
+<p>Setup system timezone and clock. Look in /usr/share/zoneinfo to find your timezone and link the file into /etc/localtime then set the hardwareclock. There may already be a soft link /etc/localtime to /etc/share/zoneinfo/UTC, just delete it.</p>
+<pre tabindex="0"><code>[root@archiso /]# rm /etc/localtime
+[root@archiso /]# ln -s /usr/share/zoneinfo/Australia/Perth /etc/localtime
+[root@archiso /]# hwclock --systohc --utc
+</code></pre><p>Set the system hostname</p>
+<pre tabindex="0"><code>[root@archiso /]# hostname ArchLinux
+[root@archiso /]# echo ArchLinux &gt; /etc/hostname
+</code></pre><p>Generate a local. This defines which language the system uses, and other regional considerations such as currency denomination, numerology, and character sets etc. Values are listed in /etc/locale.gen. Edit local.gen and uncomment en_AU.UTF-8 (as I&rsquo;m in Australia), as well as other needed localisations. Save the file, and generate the new locales</p>
+<pre tabindex="0"><code>[root@archiso /]# locale-gen
+[root@archiso /]# localectl set-locale LANG=en\_AU.UTF-8
+[root@archiso /]# echo LANG=en\_AU.UTF-8 &gt;&gt; /etc/locale.conf
+[root@archiso /]# echo LANGUAGE=en\_AU &gt;&gt; /etc/locale.conf
+[root@archiso /]# echo LC\_ALL= &gt;&gt; /etc/locale.conf
+</code></pre><p>NOTE: some instructions will include &ldquo;LC_ALL=C &raquo; /etc/locale.conf&rdquo;. Do not set this to avoid issues with gnome-teminal if you are going to use this as your graphical terminal application, use LC_ALL= as shown in the above example</p>
+<p>Set password for root</p>
+<pre tabindex="0"><code>[root@archiso /]# passwd
+</code></pre><p>Create another user account for yourself and give it a password</p>
+<pre tabindex="0"><code>[root@archiso /]# useradd -m -g users -G wheel -s /bin/bash 
+[root@archiso /]# passwd
+</code></pre><p>Modify the /etc/sudoers file so you can use your new user account to do administrative tasks using sudo and never have to login or use the root account again. First set the default editor for the root account as the visudo command is set to use vim, which is not installed. I will set nano.</p>
+<pre tabindex="0"><code>[root@archiso /]# echo &#34;export EDITOR=nano&#34; &gt;&gt; ~/.bashrc
+[root@archiso /]# source ~/.bashrc
+[root@archiso /]# visudo
+</code></pre><p>Uncomment the line</p>
+<h1 id="wheel-allall-all">%wheel ALL=(ALL) ALL</h1>
+<p>to read
+%wheel ALL=(ALL) ALL
+save the file</p>
+<h3 id="lets-wrap-it-up">Lets Wrap it Up</h3>
+<p>There is a shed load of work to do still before this system could be considered anywhere near a usable server or workstation (still need video card drivers, services, Xorg or Wayland, a Desktop Environment etc etc) but we, at least have a minimal system that can boot up so we can begin the task of creating the system we desire.</p>
+<p>Hold up, remember that we are still in a chroot environment, let&rsquo;s deal with that then reboot.</p>
+<pre tabindex="0"><code>[root@archiso /]# exit
+root@archiso# umount -R /mnt
+root@archiso# reboot
+</code></pre><p>Good Luck!!</p>
+</div>
+
+  <div class="post-footer"></div></article>
+</main>
+    </div>
+  </body>
+</html>

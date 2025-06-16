@@ -11,10 +11,7 @@
     <loc>https://mikewebbtech.github.io/mikewebb-tech/categories/automation/</loc>
     <lastmod>2025-04-20T12:08:01+08:00</lastmod>
   </url><url>
-    <loc>https://mikewebbtech.github.io/mikewebb-tech/articles/blah/</loc>
-    <lastmod>2025-04-20T12:08:01+08:00</lastmod>
-  </url><url>
-    <loc>https://mikewebbtech.github.io/mikewebb-tech/articles/noseries2/</loc>
+    <loc>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/noseries2/</loc>
     <lastmod>2025-04-20T12:08:01+08:00</lastmod>
   </url><url>
     <loc>https://mikewebbtech.github.io/mikewebb-tech/categories/</loc>
@@ -26,16 +23,13 @@
     <loc>https://mikewebbtech.github.io/mikewebb-tech/categories/security/</loc>
     <lastmod>2025-04-20T12:08:01+08:00</lastmod>
   </url><url>
-    <loc>https://mikewebbtech.github.io/mikewebb-tech/articles/my-hugo-experience/</loc>
-    <lastmod>2025-04-20T12:08:01+08:00</lastmod>
-  </url><url>
     <loc>https://mikewebbtech.github.io/mikewebb-tech/tags/docker/</loc>
     <lastmod>2025-04-20T12:08:01+08:00</lastmod>
   </url><url>
     <loc>https://mikewebbtech.github.io/mikewebb-tech/tags/firewall/</loc>
     <lastmod>2025-04-20T12:08:01+08:00</lastmod>
   </url><url>
-    <loc>https://mikewebbtech.github.io/mikewebb-tech/articles/flubah/</loc>
+    <loc>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/flubah/</loc>
     <lastmod>2025-04-20T12:08:01+08:00</lastmod>
   </url><url>
     <loc>https://mikewebbtech.github.io/mikewebb-tech/categories/home-lab/</loc>
@@ -62,7 +56,7 @@
     <loc>https://mikewebbtech.github.io/mikewebb-tech/categories/networking/</loc>
     <lastmod>2025-04-20T12:08:01+08:00</lastmod>
   </url><url>
-    <loc>https://mikewebbtech.github.io/mikewebb-tech/articles/noseries1/</loc>
+    <loc>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/noseries1/</loc>
     <lastmod>2025-04-20T12:08:01+08:00</lastmod>
   </url><url>
     <loc>https://mikewebbtech.github.io/mikewebb-tech/series/</loc>
@@ -74,19 +68,175 @@
     <loc>https://mikewebbtech.github.io/mikewebb-tech/categories/virtualisation/</loc>
     <lastmod>2025-04-20T12:08:01+08:00</lastmod>
   </url><url>
-    <loc>https://mikewebbtech.github.io/mikewebb-tech/articles/iot/</loc>
+    <loc>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/iot/</loc>
     <lastmod>2025-02-19T16:37:08+08:00</lastmod>
   </url><url>
     <loc>https://mikewebbtech.github.io/mikewebb-tech/series/proxmox-gitops/</loc>
     <lastmod>2025-02-19T16:37:08+08:00</lastmod>
   </url><url>
+    <loc>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/my-hugo-experience/</loc>
+    <lastmod>2025-02-10T12:08:01+08:00</lastmod>
+  </url><url>
     <loc>https://mikewebbtech.github.io/mikewebb-tech/</loc>
     <lastmod>2025-01-30T03:36:57-08:00</lastmod>
   </url><url>
-    <loc>https://mikewebbtech.github.io/mikewebb-tech/articles/foo/</loc>
+    <loc>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/blah/</loc>
+    <lastmod>2025-01-25T12:08:01+08:00</lastmod>
+  </url><url>
+    <loc>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/foo/</loc>
     <lastmod>2025-01-19T16:37:08+08:00</lastmod>
   </url><url>
-    <loc>https://mikewebbtech.github.io/mikewebb-tech/articles/bar/</loc>
+    <loc>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/bar/</loc>
     <lastmod>2024-04-27T16:37:08+08:00</lastmod>
+  </url><url>
+    <loc>https://mikewebbtech.github.io/mikewebb-tech/articles/2023/2023-12-19-big-movehang-in-there/</loc>
+    <lastmod>2023-12-19T10:04:08+08:00</lastmod>
+  </url><url>
+    <loc>https://mikewebbtech.github.io/mikewebb-tech/articles/2022/2022-08-15-freeipa-centos-8-lxc-replica-server/</loc>
+    <lastmod>2022-08-15T11:13:50+00:00</lastmod>
+  </url><url>
+    <loc>https://mikewebbtech.github.io/mikewebb-tech/articles/2021/2021-04-01-freeipa-in-centos-8-lxc-container/</loc>
+    <lastmod>2021-04-01T10:57:39+00:00</lastmod>
+  </url><url>
+    <loc>https://mikewebbtech.github.io/mikewebb-tech/articles/2020/2020-09-29-no-nfs-on-boot/</loc>
+    <lastmod>2020-09-29T10:27:11+00:00</lastmod>
+  </url><url>
+    <loc>https://mikewebbtech.github.io/mikewebb-tech/articles/2020/2020-03-21-busy-busy/</loc>
+    <lastmod>2020-03-21T11:25:23+00:00</lastmod>
+  </url><url>
+    <loc>https://mikewebbtech.github.io/mikewebb-tech/articles/2019/2019-09-12-icloud-contacts-on-linux-2-years-on/</loc>
+    <lastmod>2019-09-12T08:42:26+00:00</lastmod>
+  </url><url>
+    <loc>https://mikewebbtech.github.io/mikewebb-tech/articles/2019/2019-01-17-created-a-github-repo/</loc>
+    <lastmod>2019-01-17T14:28:12+00:00</lastmod>
+  </url><url>
+    <loc>https://mikewebbtech.github.io/mikewebb-tech/articles/2019/2019-01-05-toe-dip-into-home-automation/</loc>
+    <lastmod>2019-01-05T13:24:45+00:00</lastmod>
+  </url><url>
+    <loc>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-10-24-beatport-pro-working-on-macos-mojave/</loc>
+    <lastmod>2018-10-24T16:59:13+00:00</lastmod>
+  </url><url>
+    <loc>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-10-08-sas-disk-power-mode-control/</loc>
+    <lastmod>2018-10-08T15:54:58+00:00</lastmod>
+  </url><url>
+    <loc>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-09-07-powering-onoff-juniper-srx320/</loc>
+    <lastmod>2018-09-07T09:48:15+00:00</lastmod>
+  </url><url>
+    <loc>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-06-15-simple-payment-id/</loc>
+    <lastmod>2018-06-15T03:09:38+00:00</lastmod>
+  </url><url>
+    <loc>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-06-01-using-ipmi-to-control-pwm-fans-reference/</loc>
+    <lastmod>2018-06-01T10:02:55+00:00</lastmod>
+  </url><url>
+    <loc>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-04-28-etcher-does-away-with-dd/</loc>
+    <lastmod>2018-04-28T15:53:25+00:00</lastmod>
+  </url><url>
+    <loc>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-04-27-netplan-bridging-under-ubuntu-1804/</loc>
+    <lastmod>2018-04-27T16:40:42+00:00</lastmod>
+  </url><url>
+    <loc>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-01-20-kernel-patch-and-compile-the-ubuntu-way/</loc>
+    <lastmod>2018-01-20T23:31:53+00:00</lastmod>
+  </url><url>
+    <loc>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-01-19-a-more-elegant-quick-and-dirty-kernel/</loc>
+    <lastmod>2018-01-19T09:28:51+00:00</lastmod>
+  </url><url>
+    <loc>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-01-18-kernel-patch-and-compile-the-fedora-way/</loc>
+    <lastmod>2018-01-18T21:15:04+00:00</lastmod>
+  </url><url>
+    <loc>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-10-02-generate-new-host-keys-after-sysprep/</loc>
+    <lastmod>2017-10-02T12:58:14+00:00</lastmod>
+  </url><url>
+    <loc>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-09-25-explainshellcom-is-awesome/</loc>
+    <lastmod>2017-09-25T11:45:56+00:00</lastmod>
+  </url><url>
+    <loc>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-09-24-gdm-display-on-the-monitor-you-want/</loc>
+    <lastmod>2017-09-24T17:58:32+00:00</lastmod>
+  </url><url>
+    <loc>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-09-14-my-libvirt-clonesysprep-work-flow/</loc>
+    <lastmod>2017-09-14T09:21:42+00:00</lastmod>
+  </url><url>
+    <loc>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-08-16-peer-certificate-error-when-smime-signing/</loc>
+    <lastmod>2017-08-16T10:41:21+00:00</lastmod>
+  </url><url>
+    <loc>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-08-11-using-your-icloud-address-book-in-linux/</loc>
+    <lastmod>2017-08-11T13:11:32+00:00</lastmod>
+  </url><url>
+    <loc>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-07-08-youtube-dl-bombs-and-needs-updating/</loc>
+    <lastmod>2017-07-08T16:59:01+00:00</lastmod>
+  </url><url>
+    <loc>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-06-06-storage-clusteringa-living-project/</loc>
+    <lastmod>2017-06-06T18:46:10+00:00</lastmod>
+  </url><url>
+    <loc>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-05-24-improve-ffmpeg-x264aac-quality/</loc>
+    <lastmod>2017-05-24T11:30:43+00:00</lastmod>
+  </url><url>
+    <loc>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-04-27-bootable-usb-install-device-in-macos/</loc>
+    <lastmod>2017-04-27T10:48:52+00:00</lastmod>
+  </url><url>
+    <loc>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-04-27-bootable-usb-install-device-in-linux/</loc>
+    <lastmod>2017-04-27T10:31:03+00:00</lastmod>
+  </url><url>
+    <loc>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-04-24-kernel-fatal-error-openssl/</loc>
+    <lastmod>2017-04-24T23:23:28+00:00</lastmod>
+  </url><url>
+    <loc>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-04-24-apple-caldav-addresswithout-plist/</loc>
+    <lastmod>2017-04-24T00:25:18+00:00</lastmod>
+  </url><url>
+    <loc>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-04-23-your-apple-secret-caldav-address/</loc>
+    <lastmod>2017-04-23T23:56:21+00:00</lastmod>
+  </url><url>
+    <loc>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-03-30-ppa-public-key-error-apt-get/</loc>
+    <lastmod>2017-03-30T12:35:52+00:00</lastmod>
+  </url><url>
+    <loc>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-03-27-qemu-glusterfs-native-integration/</loc>
+    <lastmod>2017-03-27T10:13:52+00:00</lastmod>
+  </url><url>
+    <loc>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-03-22-nested-virtualisation/</loc>
+    <lastmod>2017-03-22T17:16:48+00:00</lastmod>
+  </url><url>
+    <loc>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-03-18-wireshark-capture-permission-errors/</loc>
+    <lastmod>2017-03-18T14:30:06+00:00</lastmod>
+  </url><url>
+    <loc>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-02-13-bluetooth-usb-dongle-firmware-error/</loc>
+    <lastmod>2017-02-13T10:44:09+00:00</lastmod>
+  </url><url>
+    <loc>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-02-10-arch-linux-uefi-install-on-nvme-drives/</loc>
+    <lastmod>2017-02-10T15:45:36+00:00</lastmod>
+  </url><url>
+    <loc>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-01-27-debian-8-installed-on-uefi-systems/</loc>
+    <lastmod>2017-01-27T20:27:41+00:00</lastmod>
+  </url><url>
+    <loc>https://mikewebbtech.github.io/mikewebb-tech/articles/2015/2015-11-06-the-imove-to-appleverse/</loc>
+    <lastmod>2015-11-06T10:01:42+00:00</lastmod>
+  </url><url>
+    <loc>https://mikewebbtech.github.io/mikewebb-tech/articles/2015/2015-07-09-macports-the-tools-im-used-to/</loc>
+    <lastmod>2015-07-09T20:02:07+00:00</lastmod>
+  </url><url>
+    <loc>https://mikewebbtech.github.io/mikewebb-tech/articles/2008/2008-05-12-db30-done-and-dusted/</loc>
+    <lastmod>2008-05-12T22:56:44+00:00</lastmod>
+  </url><url>
+    <loc>https://mikewebbtech.github.io/mikewebb-tech/articles/2008/2008-05-01-been-a-whilebeen-busy/</loc>
+    <lastmod>2008-05-01T15:19:31+00:00</lastmod>
+  </url><url>
+    <loc>https://mikewebbtech.github.io/mikewebb-tech/articles/2008/2008-03-18-lost-in-sydney-with-sore-thumbs/</loc>
+    <lastmod>2008-03-18T10:19:41+00:00</lastmod>
+  </url><url>
+    <loc>https://mikewebbtech.github.io/mikewebb-tech/articles/2008/2008-02-10-on-the-go-again/</loc>
+    <lastmod>2008-02-10T15:27:31+00:00</lastmod>
+  </url><url>
+    <loc>https://mikewebbtech.github.io/mikewebb-tech/articles/2008/2008-02-09-thank-god-thats-over-with/</loc>
+    <lastmod>2008-02-09T11:45:44+00:00</lastmod>
+  </url><url>
+    <loc>https://mikewebbtech.github.io/mikewebb-tech/articles/2008/2008-01-25-seems-to-be-the-order-of-the-month/</loc>
+    <lastmod>2008-01-25T19:51:51+00:00</lastmod>
+  </url><url>
+    <loc>https://mikewebbtech.github.io/mikewebb-tech/tags/archive/</loc>
+    <lastmod>2008-01-21T10:41:53+08:00</lastmod>
+  </url><url>
+    <loc>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/damit-damit-dami-it/</loc>
+    <lastmod>2008-01-21T10:41:53+08:00</lastmod>
+  </url><url>
+    <loc>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/damit/</loc>
+    <lastmod>2008-01-14T06:22:50+08:00</lastmod>
   </url>
 </urlset>

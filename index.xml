@@ -16,60 +16,403 @@
       <description>&lt;blockquote&gt;&#xA;&lt;h3 id=&#34;what-am-i-about&#34; class=&#34;one&#34;&gt;What am I about?&lt;/h3&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;In short my main goal in life is contentment.&lt;/p&gt;&#xA;&lt;p&gt;For me, contentment is not something that just happens; it grows when I take&#xA;personal responsibility for putting in the effort to get the outcomes that make&#xA;my life richer and more meaningful. It&amp;rsquo;s not done until &amp;ldquo;I am happy with that&amp;rdquo;.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>BLAH BLAH</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/blah/</link>
-      <pubDate>Sun, 20 Apr 2025 12:08:01 +0800</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/blah/</guid>
-      <description>&lt;h3 id=&#34;embracing-the-speed-and-simplicity-of-hugo&#34;&gt;Embracing the Speed and Simplicity of Hugo&lt;/h3&gt;&#xA;&lt;p&gt;As I navigate the ever-evolving landscape of technology, I&amp;rsquo;m always on the&#xA;lookout for tools that are efficient, powerful, and enjoyable to use. When it&#xA;came to building this digital space to document my learning journey in cloud&#xA;computing, networking, cybersecurity, and beyond, I landed on Hugo, a static&#xA;site generator, and I haven&amp;rsquo;t looked back&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>BLAH no Series 2</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/noseries2/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/noseries2/</link>
       <pubDate>Sun, 20 Apr 2025 12:08:01 +0800</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/noseries2/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/noseries2/</guid>
       <description>&lt;h3 id=&#34;embracing-the-speed-and-simplicity-of-hugo&#34;&gt;Embracing the Speed and Simplicity of Hugo&lt;/h3&gt;&#xA;&lt;p&gt;As I navigate the ever-evolving landscape of technology, I&amp;rsquo;m always on the&#xA;lookout for tools that are efficient, powerful, and enjoyable to use. When it&#xA;came to building this digital space to document my learning journey in cloud&#xA;computing, networking, cybersecurity, and beyond, I landed on Hugo, a static&#xA;site generator, and I haven&amp;rsquo;t looked back&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Diving into Hugo</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/my-hugo-experience/</link>
-      <pubDate>Sun, 20 Apr 2025 12:08:01 +0800</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/my-hugo-experience/</guid>
-      <description>Exploring the power and simplicity of Hugo, the static site generator that powers this blog. Learn about my experiences and why I chose Hugo for my journey in tech.</description>
     </item>
     <item>
       <title>Fluba Hugo</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/flubah/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/flubah/</link>
       <pubDate>Sun, 20 Apr 2025 12:08:01 +0800</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/flubah/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/flubah/</guid>
       <description>the static site generator that powers this blog. Learn about my experiences and why I chose Hugo for my journey in tech.</description>
     </item>
     <item>
       <title>no series 1BLAH</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/noseries1/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/noseries1/</link>
       <pubDate>Sun, 20 Apr 2025 12:08:01 +0800</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/noseries1/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/noseries1/</guid>
       <description>&lt;h3 id=&#34;embracing-the-speed-and-simplicity-of-hugo&#34;&gt;Embracing the Speed and Simplicity of Hugo&lt;/h3&gt;&#xA;&lt;p&gt;As I navigate the ever-evolving landscape of technology, I&amp;rsquo;m always on the&#xA;lookout for tools that are efficient, powerful, and enjoyable to use. When it&#xA;came to building this digital space to document my learning journey in cloud&#xA;computing, networking, cybersecurity, and beyond, I landed on Hugo, a static&#xA;site generator, and I haven&amp;rsquo;t looked back&lt;/p&gt;</description>
     </item>
     <item>
       <title>Iot (art 3)</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/iot/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/iot/</link>
       <pubDate>Wed, 19 Feb 2025 16:37:08 +0800</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/iot/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/iot/</guid>
       <description>&lt;p&gt;My journey with Hugo is just beginning, and I&amp;rsquo;m excited to explore its more&#xA;advanced features, such as shortcodes for embedding dynamic content and data-&#xA;driven pages. For now, I&amp;rsquo;m incredibly satisfied with its speed, simplicity, and&#xA;the control it gives me over my blog&amp;rsquo;s presentation.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Diving into Hugo</title>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/my-hugo-experience/</link>
+      <pubDate>Mon, 10 Feb 2025 12:08:01 +0800</pubDate>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/my-hugo-experience/</guid>
+      <description>Exploring the power and simplicity of Hugo, the static site generator that powers this blog. Learn about my experiences and why I chose Hugo for my journey in tech.</description>
+    </item>
+    <item>
+      <title>BLAH BLAH</title>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/blah/</link>
+      <pubDate>Sat, 25 Jan 2025 12:08:01 +0800</pubDate>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/blah/</guid>
+      <description>&lt;h3 id=&#34;embracing-the-speed-and-simplicity-of-hugo&#34;&gt;Embracing the Speed and Simplicity of Hugo&lt;/h3&gt;&#xA;&lt;p&gt;As I navigate the ever-evolving landscape of technology, I&amp;rsquo;m always on the&#xA;lookout for tools that are efficient, powerful, and enjoyable to use. When it&#xA;came to building this digital space to document my learning journey in cloud&#xA;computing, networking, cybersecurity, and beyond, I landed on Hugo, a static&#xA;site generator, and I haven&amp;rsquo;t looked back&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Foo (art 2)</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/foo/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/foo/</link>
       <pubDate>Sun, 19 Jan 2025 16:37:08 +0800</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/foo/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/foo/</guid>
       <description>&lt;p&gt;My journey with Hugo is just beginning, and I&amp;rsquo;m excited to explore its more&#xA;advanced features, such as shortcodes for embedding dynamic content and data-&#xA;driven pages. For now, I&amp;rsquo;m incredibly satisfied with its speed, simplicity, and&#xA;the control it gives me over my blog&amp;rsquo;s presentation.&lt;/p&gt;</description>
     </item>
     <item>
       <title>bar (art 1)</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/bar/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/bar/</link>
       <pubDate>Sat, 27 Apr 2024 16:37:08 +0800</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/bar/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/bar/</guid>
       <description>&lt;p&gt;My journey with Hugo is just beginning, and I&amp;rsquo;m excited to explore its more&#xA;advanced features, such as shortcodes for embedding dynamic content and data-&#xA;driven pages. For now, I&amp;rsquo;m incredibly satisfied with its speed, simplicity, and&#xA;the control it gives me over my blog&amp;rsquo;s presentation.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Big move...Hang in  there</title>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2023/2023-12-19-big-movehang-in-there/</link>
+      <pubDate>Tue, 19 Dec 2023 10:04:08 +0800</pubDate>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2023/2023-12-19-big-movehang-in-there/</guid>
+      <description>The Wordpress.com gouging is over. Since moving to a new house with business class internet and a new server rack with a High availability server/storage solution, I&amp;rsquo;m in the process&amp;hellip;</description>
+    </item>
+    <item>
+      <title>FreeIPA Centos 8 lxc Replica Server</title>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2022/2022-08-15-freeipa-centos-8-lxc-replica-server/</link>
+      <pubDate>Mon, 15 Aug 2022 11:13:50 +0000</pubDate>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2022/2022-08-15-freeipa-centos-8-lxc-replica-server/</guid>
+      <description>If you haven&amp;rsquo;t followed through the steps in my previous post on setting up FreeIPA in a lxc container, I strongly recommend you give it once over as this will&amp;hellip;</description>
+    </item>
+    <item>
+      <title>FreeIPA in CentOS 8 LXC container</title>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2021/2021-04-01-freeipa-in-centos-8-lxc-container/</link>
+      <pubDate>Thu, 01 Apr 2021 10:57:39 +0000</pubDate>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2021/2021-04-01-freeipa-in-centos-8-lxc-container/</guid>
+      <description>FreeIPA setup and running in CentOS 8 LXC container on Proxmox VE server</description>
+    </item>
+    <item>
+      <title>No NFS on boot</title>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2020/2020-09-29-no-nfs-on-boot/</link>
+      <pubDate>Tue, 29 Sep 2020 10:27:11 +0000</pubDate>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2020/2020-09-29-no-nfs-on-boot/</guid>
+      <description>Issue: NFS mounts in fstab not mounting on boot but working with mount -a command works as expected.. I upgraded to Ubuntu 20.04 an noticed that my NFS (v3 and&amp;hellip;</description>
+    </item>
+    <item>
+      <title>Busy busy</title>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2020/2020-03-21-busy-busy/</link>
+      <pubDate>Sat, 21 Mar 2020 11:25:23 +0000</pubDate>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2020/2020-03-21-busy-busy/</guid>
+      <description>It’s been a flat out year so far with work doing various commissioning and testing jobs around OZ. With all that has been happening lately with COVID-19 and the risk&amp;hellip;</description>
+    </item>
+    <item>
+      <title>iCloud contacts on Linux. 2 years on</title>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2019/2019-09-12-icloud-contacts-on-linux-2-years-on/</link>
+      <pubDate>Thu, 12 Sep 2019 08:42:26 +0000</pubDate>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2019/2019-09-12-icloud-contacts-on-linux-2-years-on/</guid>
+      <description>Two years ago I began migrating away from the Appleverse to Linux and opensource. The biggest issue I faced was my calendars and contacts. I still use my iPhone and&amp;hellip;</description>
+    </item>
+    <item>
+      <title>Created a GitHub Repo</title>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2019/2019-01-17-created-a-github-repo/</link>
+      <pubDate>Thu, 17 Jan 2019 14:28:12 +0000</pubDate>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2019/2019-01-17-created-a-github-repo/</guid>
+      <description>Lately I&amp;rsquo;ve been focusing on home automation using Home Assistant and I&amp;rsquo;ve created a GitHub repository for my configuration to help version control and roll backs (and another source for&amp;hellip;</description>
+    </item>
+    <item>
+      <title>Toe dip into Home Automation</title>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2019/2019-01-05-toe-dip-into-home-automation/</link>
+      <pubDate>Sat, 05 Jan 2019 13:24:45 +0000</pubDate>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2019/2019-01-05-toe-dip-into-home-automation/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;Should only be on when people are home * Turn on when the room is becoming dark (about an hour before the sun is setting) * Some turn off&amp;hellip;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;</description>
+    </item>
+    <item>
+      <title>Beatport Pro working on MacOS Mojave</title>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-10-24-beatport-pro-working-on-macos-mojave/</link>
+      <pubDate>Wed, 24 Oct 2018 16:59:13 +0000</pubDate>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-10-24-beatport-pro-working-on-macos-mojave/</guid>
+      <description>In an act of desperation I tried replicating a part of the dropbox install process. When I installed dropbox it asked me, ever so politely, to manually add it to&amp;hellip;</description>
+    </item>
+    <item>
+      <title>SAS disk power mode control</title>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-10-08-sas-disk-power-mode-control/</link>
+      <pubDate>Mon, 08 Oct 2018 15:54:58 +0000</pubDate>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-10-08-sas-disk-power-mode-control/</guid>
+      <description>My hard drives were spinning at 7600 RPM 24/7&amp;hellip;Arrgg! Why do I want power control over my spinning rust&amp;hellip;spin down to save noise and heat = save energy For my&amp;hellip;</description>
+    </item>
+    <item>
+      <title>Powering On/Off Juniper SRX320	.</title>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-09-07-powering-onoff-juniper-srx320/</link>
+      <pubDate>Fri, 07 Sep 2018 09:48:15 +0000</pubDate>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-09-07-powering-onoff-juniper-srx320/</guid>
+      <description>Graceful method with physical access to device with no console: Press and immediately release the Power button. The device begins gracefully shutting down the operating system and then powers itself&amp;hellip;</description>
+    </item>
+    <item>
+      <title>eBay Score of the Century ]</title>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-06-15-simple-payment-id/</link>
+      <pubDate>Fri, 15 Jun 2018 03:09:38 +0000</pubDate>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-06-15-simple-payment-id/</guid>
+      <description>smoking network I&amp;rsquo;m redoing my home and lab network with the goal&amp;hellip;</description>
+    </item>
+    <item>
+      <title>Using IPMI to control PWM fans	References:</title>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-06-01-using-ipmi-to-control-pwm-fans-reference/</link>
+      <pubDate>Fri, 01 Jun 2018 10:02:55 +0000</pubDate>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-06-01-using-ipmi-to-control-pwm-fans-reference/</guid>
+      <description>1 - &lt;a href=&#34;https://en.wikipedia.org/wiki/Intelligent_Platform_Management_Interface&#34;&gt;What is the Intelligent Platform Management Interface&lt;/a&gt; 2 - Whats the difference between a &lt;a href=&#34;http://www.tomshardware.com/answers/id-3151794/confused-pwm-mode-fans-asus-bios.html&#34;&gt;PWM vs DC (i.e. normal) fan&lt;/a&gt; 3 - IPMI control over PWM (Supermicro style)&amp;hellip;</description>
+    </item>
+    <item>
+      <title>Etcher does away with dd*</title>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-04-28-etcher-does-away-with-dd/</link>
+      <pubDate>Sat, 28 Apr 2018 15:53:25 +0000</pubDate>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-04-28-etcher-does-away-with-dd/</guid>
+      <description>dd has being my go to tool for everything-imges-and-iso, especially ever since the usb stick became ubiquitous and norm for installing new a OS. For the past month I&amp;rsquo;ve been&amp;hellip;</description>
+    </item>
+    <item>
+      <title>Netplan bridging under Ubuntu 18.04</title>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-04-27-netplan-bridging-under-ubuntu-1804/</link>
+      <pubDate>Fri, 27 Apr 2018 16:40:42 +0000</pubDate>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-04-27-netplan-bridging-under-ubuntu-1804/</guid>
+      <description>I just completed a fresh (minimal) install of Ubuntu 18.04 Desktop. I used the new LTS release as an excuse to redo my workstation to simplify and unify since my&amp;hellip;</description>
+    </item>
+    <item>
+      <title>Kernel patch and compile the Debian/Ubuntu way</title>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-01-20-kernel-patch-and-compile-the-ubuntu-way/</link>
+      <pubDate>Sat, 20 Jan 2018 23:31:53 +0000</pubDate>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-01-20-kernel-patch-and-compile-the-ubuntu-way/</guid>
+      <description>Continuing on with my theme of compiling and patching linux kernels a la: &lt;a href=&#34;http://webby.land/2018/01/18/kernel-patch-and-compile-the-fedora-way/&#34;&gt;Kernel patch and compile the Fedora way&lt;/a&gt; &lt;a href=&#34;http://webby.land/2018/01/19/a-more-elegant-quick-and-dirty-kernel-patch-and-build/&#34;&gt;A more elegant: Quick and dirty kernel patch and build&lt;/a&gt;&amp;hellip;</description>
+    </item>
+    <item>
+      <title>A more elegant: Quick and dirty kernel</title>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-01-19-a-more-elegant-quick-and-dirty-kernel/</link>
+      <pubDate>Fri, 19 Jan 2018 09:28:51 +0000</pubDate>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-01-19-a-more-elegant-quick-and-dirty-kernel/</guid>
+      <description>As we have seen, the original/traditional/generic way to install new kernels or patch existing kernels is a relatively straight forward affair but requires manual management in regards to downloading the&amp;hellip;</description>
+    </item>
+    <item>
+      <title>Kernel patch and compile the Fedora way</title>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-01-18-kernel-patch-and-compile-the-fedora-way/</link>
+      <pubDate>Thu, 18 Jan 2018 21:15:04 +0000</pubDate>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-01-18-kernel-patch-and-compile-the-fedora-way/</guid>
+      <description>Each distribution has a preferred way which tends to result in a nice reusable packaged compatible to specific package management system. For this scenario I&amp;rsquo;ll focus on Fedora 27 (I&amp;hellip;</description>
+    </item>
+    <item>
+      <title>Generate new host keys after sysprep</title>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-10-02-generate-new-host-keys-after-sysprep/</link>
+      <pubDate>Mon, 02 Oct 2017 12:58:14 +0000</pubDate>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-10-02-generate-new-host-keys-after-sysprep/</guid>
+      <description>&lt;a href=&#34;http://webby.land/2017/09/14/my-libvirt-work-flow-explained/&#34;&gt;libvirt work flow explained&lt;/a&gt; The host ssh keys will be wiped from the guest image (this is a good thing) meaning that you will no longer be able to ssh&amp;hellip;</description>
+    </item>
+    <item>
+      <title>explainshell.com is awesome</title>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-09-25-explainshellcom-is-awesome/</link>
+      <pubDate>Mon, 25 Sep 2017 11:45:56 +0000</pubDate>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-09-25-explainshellcom-is-awesome/</guid>
+      <description>Well I came across this site today and putting it out there as a strong recommendation for bookmarking &lt;a href=&#34;https://explainshell.com/&#34;&gt;https://explainshell.com/&lt;/a&gt; OK, awesome is over kill. It does a good job at&amp;hellip;</description>
+    </item>
+    <item>
+      <title>GDM display on the monitor you want</title>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-09-24-gdm-display-on-the-monitor-you-want/</link>
+      <pubDate>Sun, 24 Sep 2017 17:58:32 +0000</pubDate>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-09-24-gdm-display-on-the-monitor-you-want/</guid>
+      <description>I have a duel monitor setup and I&amp;rsquo;m running Gnome3 and the GNOME Display Manager (GDM) which handles graphical user login, as well as other duties&amp;hellip;.My primary monitor is&amp;hellip;</description>
+    </item>
+    <item>
+      <title>My libVirt clone/sysprep work flow</title>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-09-14-my-libvirt-clonesysprep-work-flow/</link>
+      <pubDate>Thu, 14 Sep 2017 09:21:42 +0000</pubDate>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-09-14-my-libvirt-clonesysprep-work-flow/</guid>
+      <description>My workstation runs linux. Using KVM for my virtual environment made sense, it is kernel level native, very powerful, flexible, well documented and community supported, comes with a plethora of&amp;hellip;</description>
+    </item>
+    <item>
+      <title>Peer certificate error when S/MIME signing email</title>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-08-16-peer-certificate-error-when-smime-signing/</link>
+      <pubDate>Wed, 16 Aug 2017 10:41:21 +0000</pubDate>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-08-16-peer-certificate-error-when-smime-signing/</guid>
+      <description>Peer&amp;rsquo;s certificate issuer has been marked as not trusted by the user. Cannot add MS SMIMEEncKeyPrefs attribute, you may need to select different mail options</description>
+    </item>
+    <item>
+      <title>Using your iCloud address book in Linux</title>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-08-11-using-your-icloud-address-book-in-linux/</link>
+      <pubDate>Fri, 11 Aug 2017 13:11:32 +0000</pubDate>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-08-11-using-your-icloud-address-book-in-linux/</guid>
+      <description>&lt;h5 id=&#34;not-just-linux-but-any-application-that-supports-webdav-or-carddav-following-on-from-previous-posts-about-using-apples-icloud-services-on-non-apple-devices-or-operating-systems-see&#34;&gt;Not just linux but any application that supports WebDAV or CardDAV. Following on from previous posts about using Apples iCloud services on non Apple devices or operating systems. See&amp;hellip;.&lt;/h5&gt;&#xA;</description>
+    </item>
+    <item>
+      <title>youtube-dl bombs and needs updating</title>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-07-08-youtube-dl-bombs-and-needs-updating/</link>
+      <pubDate>Sat, 08 Jul 2017 16:59:01 +0000</pubDate>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-07-08-youtube-dl-bombs-and-needs-updating/</guid>
+      <description>unable to extract html5 player; please report this issue on &lt;a href=&#34;https://yt-dl.org/bug&#34;&gt;https://yt-dl.org/bug&lt;/a&gt; . Make sure you are using the latest version; type youtube-dl -U to update. Be sure to&amp;hellip;</description>
+    </item>
+    <item>
+      <title>Storage Clustering....a living project</title>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-06-06-storage-clusteringa-living-project/</link>
+      <pubDate>Tue, 06 Jun 2017 18:46:10 +0000</pubDate>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-06-06-storage-clusteringa-living-project/</guid>
+      <description>This is really just a place holder that I&amp;rsquo;ll be updating while I examine the various was to skin the cat called storage clustering. My main focus will be for&amp;hellip;</description>
+    </item>
+    <item>
+      <title>Improve FFmpeg x264/AAC quality</title>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-05-24-improve-ffmpeg-x264aac-quality/</link>
+      <pubDate>Wed, 24 May 2017 11:30:43 +0000</pubDate>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-05-24-improve-ffmpeg-x264aac-quality/</guid>
+      <description>I use FFmpeg a lot. It is open source and free. It is the driving back end used by many commercial and shareware applications. Why pay for a front end&amp;hellip;</description>
+    </item>
+    <item>
+      <title>Bootable USB install device in MacOS</title>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-04-27-bootable-usb-install-device-in-macos/</link>
+      <pubDate>Thu, 27 Apr 2017 10:48:52 +0000</pubDate>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-04-27-bootable-usb-install-device-in-macos/</guid>
+      <description>These instructions will create a bootable install medium for the installation of a operating system using a .iso file downloaded from the network, the dd command and a standard USB&amp;hellip;</description>
+    </item>
+    <item>
+      <title>Bootable USB install device in Linux</title>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-04-27-bootable-usb-install-device-in-linux/</link>
+      <pubDate>Thu, 27 Apr 2017 10:31:03 +0000</pubDate>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-04-27-bootable-usb-install-device-in-linux/</guid>
+      <description>These instructions will create a bootable install medium for the installation of a operating system using a .iso file downloaded from the network, the dd command and a standard USB&amp;hellip;</description>
+    </item>
+    <item>
+      <title>Kernel fatal error: openssl/aes.h</title>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-04-24-kernel-fatal-error-openssl/</link>
+      <pubDate>Mon, 24 Apr 2017 23:23:28 +0000</pubDate>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-04-24-kernel-fatal-error-openssl/</guid>
+      <description>So, I&amp;rsquo;ve walked into this one a few times when compiling a new kernel for the first time after a new distro install. Each time I shake my head and&amp;hellip;</description>
+    </item>
+    <item>
+      <title>Apple CalDAV address...without .plist</title>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-04-24-apple-caldav-addresswithout-plist/</link>
+      <pubDate>Mon, 24 Apr 2017 00:25:18 +0000</pubDate>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-04-24-apple-caldav-addresswithout-plist/</guid>
+      <description>You will need three ingredients for to string together your CalDAV address: a. your calendar&amp;rsquo;s server address especially, the number xx in pxx-caldav.icloud.com b. your user ID dsid c. the&amp;hellip;</description>
+    </item>
+    <item>
+      <title>Your Apple secret CalDAV address</title>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-04-23-your-apple-secret-caldav-address/</link>
+      <pubDate>Sun, 23 Apr 2017 23:56:21 +0000</pubDate>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-04-23-your-apple-secret-caldav-address/</guid>
+      <description>Having a small collection idevices in our household, we tend use the icloud calendar app and iCal on the mac&amp;rsquo;s to coordinate our appointments and reminders. It just works and&amp;hellip;</description>
+    </item>
+    <item>
+      <title>PPA Public Key Error</title>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-03-30-ppa-public-key-error-apt-get/</link>
+      <pubDate>Thu, 30 Mar 2017 12:35:52 +0000</pubDate>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-03-30-ppa-public-key-error-apt-get/</guid>
+      <description>Though, every now and then I hit a snag when installing a new package, especially from a PPA. The most common of these relate to security/verification using PKI. to varify&amp;hellip;</description>
+    </item>
+    <item>
+      <title>QEMU-GlusterFS native integration</title>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-03-27-qemu-glusterfs-native-integration/</link>
+      <pubDate>Mon, 27 Mar 2017 10:13:52 +0000</pubDate>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-03-27-qemu-glusterfs-native-integration/</guid>
+      <description>I was never a fan of FUSE performance (looking at you QNAP), the performance boost in block device access for Qemu/KVM based hosts using POSIX vs FUSE is impressive. Gluster&amp;hellip;</description>
+    </item>
+    <item>
+      <title>Nested Virtualisation</title>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-03-22-nested-virtualisation/</link>
+      <pubDate>Wed, 22 Mar 2017 17:16:48 +0000</pubDate>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-03-22-nested-virtualisation/</guid>
+      <description>Hosting a virtual machine inside a virtual machine KVM trickery for conceptualisation and testing. If your server/host supports VT-x, it goes to say so should the guests. When trying&amp;hellip;</description>
+    </item>
+    <item>
+      <title>Wireshark capture permission errors</title>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-03-18-wireshark-capture-permission-errors/</link>
+      <pubDate>Sat, 18 Mar 2017 14:30:06 +0000</pubDate>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-03-18-wireshark-capture-permission-errors/</guid>
+      <description>I installed Wireshark the other day on Ubuntu 16.10 so I could analyse what is going over the wire in GNS3 and later on physical network topologies. Unfortunately, due to&amp;hellip;</description>
+    </item>
+    <item>
+      <title>Bluetooth USB dongle firmware error in Ubuntu</title>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-02-13-bluetooth-usb-dongle-firmware-error/</link>
+      <pubDate>Mon, 13 Feb 2017 10:44:09 +0000</pubDate>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-02-13-bluetooth-usb-dongle-firmware-error/</guid>
+      <description>After having a running battle with my, what turns out, cheap Chinese CSR clone bluetooth USB adaptor (maybe more on that in another post). I purchased a more expensive adaptor&amp;hellip;</description>
+    </item>
+    <item>
+      <title>Arch Linux UEFI install on NVMe drives</title>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-02-10-arch-linux-uefi-install-on-nvme-drives/</link>
+      <pubDate>Fri, 10 Feb 2017 15:45:36 +0000</pubDate>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-02-10-arch-linux-uefi-install-on-nvme-drives/</guid>
+      <description>This guid has been created from memory and some notes I used when installing, I will validate as I will use this as a guide when I get around to&amp;hellip;</description>
+    </item>
+    <item>
+      <title>Debian 8 installed on UEFI systems</title>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-01-27-debian-8-installed-on-uefi-systems/</link>
+      <pubDate>Fri, 27 Jan 2017 20:27:41 +0000</pubDate>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-01-27-debian-8-installed-on-uefi-systems/</guid>
+      <description>Absolute pain getting Debian installed on my UEFI only sytem. When working through the installation process until the boot loader tries to install and this message occurs. ``` An installation&amp;hellip;</description>
+    </item>
+    <item>
+      <title>The iMove to Appleverse</title>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2015/2015-11-06-the-imove-to-appleverse/</link>
+      <pubDate>Fri, 06 Nov 2015 10:01:42 +0000</pubDate>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2015/2015-11-06-the-imove-to-appleverse/</guid>
+      <description>Mac and their OS&amp;rsquo;s have always been spouted as being a pinnacle of consumer grade IT design and user interface experience. Pfft, what ever. I&amp;rsquo;ve been using Mac ever since&amp;hellip;</description>
+    </item>
+    <item>
+      <title>macports, the tools I&#39;m used to</title>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2015/2015-07-09-macports-the-tools-im-used-to/</link>
+      <pubDate>Thu, 09 Jul 2015 20:02:07 +0000</pubDate>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2015/2015-07-09-macports-the-tools-im-used-to/</guid>
+      <description>YAY! Awesome, a HUGE amount of tools and libraries that I&amp;rsquo;ve gotten used to having at my fingertips can be had on my Mac&amp;rsquo;s thanks to macports</description>
+    </item>
+    <item>
+      <title>DB30 done and dusted</title>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2008/2008-05-12-db30-done-and-dusted/</link>
+      <pubDate>Mon, 12 May 2008 22:56:44 +0000</pubDate>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2008/2008-05-12-db30-done-and-dusted/</guid>
+      <description>&lt;p&gt;Got the official end of contract in the mail the other day, so thayts all folks for the topside work on the barge. McD&amp;rsquo;s were making noises that sounded like there was sat support comming up for air divers, but thats all it turned out to be..just noise. Oh well funn was had and money made by all.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Been a while..Been busy</title>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2008/2008-05-01-been-a-whilebeen-busy/</link>
+      <pubDate>Thu, 01 May 2008 15:19:31 +0000</pubDate>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2008/2008-05-01-been-a-whilebeen-busy/</guid>
+      <description>Been ages since I have done anything here. I have been real busy. Not much in the way of diving work but plenty of offshore work going on at the&amp;hellip;</description>
+    </item>
+    <item>
+      <title>Lost in Sydney with sore thumbs</title>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2008/2008-03-18-lost-in-sydney-with-sore-thumbs/</link>
+      <pubDate>Tue, 18 Mar 2008 10:19:41 +0000</pubDate>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2008/2008-03-18-lost-in-sydney-with-sore-thumbs/</guid>
+      <description>It has seriously been a long and mobile month so far. Went to Sydney for the Caltex TAR, what an emotional experience.</description>
+    </item>
+    <item>
+      <title>On the go again</title>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2008/2008-02-10-on-the-go-again/</link>
+      <pubDate>Sun, 10 Feb 2008 15:27:31 +0000</pubDate>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2008/2008-02-10-on-the-go-again/</guid>
+      <description>Well after a short stay at home (sorry Tan), I&amp;rsquo;m waiting at Perth airport off to another job. Caltex in Sydney for 20 odd days doing something, not to sure&amp;hellip;</description>
+    </item>
+    <item>
+      <title>Thank god that&#39;s over with</title>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2008/2008-02-09-thank-god-thats-over-with/</link>
+      <pubDate>Sat, 09 Feb 2008 11:45:44 +0000</pubDate>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2008/2008-02-09-thank-god-thats-over-with/</guid>
+      <description>Hot hot hot hot hot humid sticky dirty sweaty hot humid Well that last trip out was the longest couple of weeks I&amp;rsquo;ve had in a while. Good location, good&amp;hellip;</description>
+    </item>
+    <item>
+      <title>Seems to be the order of the month</title>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2008/2008-01-25-seems-to-be-the-order-of-the-month/</link>
+      <pubDate>Fri, 25 Jan 2008 19:51:51 +0000</pubDate>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2008/2008-01-25-seems-to-be-the-order-of-the-month/</guid>
+      <description>Shafted by another company (a different one this time) that had already canned a job on me. First time they rang me up, booked me in and gave me the&amp;hellip;</description>
+    </item>
+    <item>
+      <title>DAMIT DAMIT DAM IT</title>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/damit-damit-dami-it/</link>
+      <pubDate>Mon, 21 Jan 2008 10:41:53 +0800</pubDate>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/damit-damit-dami-it/</guid>
+      <description>Dont you hate it when a company calls you up and says they need you URGENT for a job for days they go on about it you get your gear&amp;hellip;</description>
+    </item>
+    <item>
+      <title>Damit</title>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/damit/</link>
+      <pubDate>Mon, 14 Jan 2008 06:22:50 +0800</pubDate>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/damit/</guid>
+      <description>&lt;p&gt;Don&amp;rsquo;t you hate it when a company calls you up and says they need you &lt;strong&gt;URGENT&lt;/strong&gt; for a job, for days they go on about it, you get your gear all sorted mobilise to the deployment point only to find out that the jobs been canned.  &lt;strong&gt;BUGGER!&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

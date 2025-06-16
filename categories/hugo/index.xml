@@ -9,39 +9,46 @@
     <lastBuildDate>Sun, 20 Apr 2025 12:08:01 +0800</lastBuildDate>
     <atom:link href="https://mikewebbtech.github.io/mikewebb-tech/categories/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>BLAH BLAH</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/blah/</link>
-      <pubDate>Sun, 20 Apr 2025 12:08:01 +0800</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/blah/</guid>
-      <description>&lt;h3 id=&#34;embracing-the-speed-and-simplicity-of-hugo&#34;&gt;Embracing the Speed and Simplicity of Hugo&lt;/h3&gt;&#xA;&lt;p&gt;As I navigate the ever-evolving landscape of technology, I&amp;rsquo;m always on the&#xA;lookout for tools that are efficient, powerful, and enjoyable to use. When it&#xA;came to building this digital space to document my learning journey in cloud&#xA;computing, networking, cybersecurity, and beyond, I landed on Hugo, a static&#xA;site generator, and I haven&amp;rsquo;t looked back&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>BLAH no Series 2</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/noseries2/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/noseries2/</link>
       <pubDate>Sun, 20 Apr 2025 12:08:01 +0800</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/noseries2/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/noseries2/</guid>
       <description>&lt;h3 id=&#34;embracing-the-speed-and-simplicity-of-hugo&#34;&gt;Embracing the Speed and Simplicity of Hugo&lt;/h3&gt;&#xA;&lt;p&gt;As I navigate the ever-evolving landscape of technology, I&amp;rsquo;m always on the&#xA;lookout for tools that are efficient, powerful, and enjoyable to use. When it&#xA;came to building this digital space to document my learning journey in cloud&#xA;computing, networking, cybersecurity, and beyond, I landed on Hugo, a static&#xA;site generator, and I haven&amp;rsquo;t looked back&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Diving into Hugo</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/my-hugo-experience/</link>
-      <pubDate>Sun, 20 Apr 2025 12:08:01 +0800</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/my-hugo-experience/</guid>
-      <description>Exploring the power and simplicity of Hugo, the static site generator that powers this blog. Learn about my experiences and why I chose Hugo for my journey in tech.</description>
     </item>
     <item>
       <title>Fluba Hugo</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/flubah/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/flubah/</link>
       <pubDate>Sun, 20 Apr 2025 12:08:01 +0800</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/flubah/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/flubah/</guid>
       <description>the static site generator that powers this blog. Learn about my experiences and why I chose Hugo for my journey in tech.</description>
     </item>
     <item>
       <title>no series 1BLAH</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/noseries1/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/noseries1/</link>
       <pubDate>Sun, 20 Apr 2025 12:08:01 +0800</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/noseries1/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/noseries1/</guid>
       <description>&lt;h3 id=&#34;embracing-the-speed-and-simplicity-of-hugo&#34;&gt;Embracing the Speed and Simplicity of Hugo&lt;/h3&gt;&#xA;&lt;p&gt;As I navigate the ever-evolving landscape of technology, I&amp;rsquo;m always on the&#xA;lookout for tools that are efficient, powerful, and enjoyable to use. When it&#xA;came to building this digital space to document my learning journey in cloud&#xA;computing, networking, cybersecurity, and beyond, I landed on Hugo, a static&#xA;site generator, and I haven&amp;rsquo;t looked back&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Diving into Hugo</title>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/my-hugo-experience/</link>
+      <pubDate>Mon, 10 Feb 2025 12:08:01 +0800</pubDate>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/my-hugo-experience/</guid>
+      <description>Exploring the power and simplicity of Hugo, the static site generator that powers this blog. Learn about my experiences and why I chose Hugo for my journey in tech.</description>
+    </item>
+    <item>
+      <title>BLAH BLAH</title>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/blah/</link>
+      <pubDate>Sat, 25 Jan 2025 12:08:01 +0800</pubDate>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/blah/</guid>
+      <description>&lt;h3 id=&#34;embracing-the-speed-and-simplicity-of-hugo&#34;&gt;Embracing the Speed and Simplicity of Hugo&lt;/h3&gt;&#xA;&lt;p&gt;As I navigate the ever-evolving landscape of technology, I&amp;rsquo;m always on the&#xA;lookout for tools that are efficient, powerful, and enjoyable to use. When it&#xA;came to building this digital space to document my learning journey in cloud&#xA;computing, networking, cybersecurity, and beyond, I landed on Hugo, a static&#xA;site generator, and I haven&amp;rsquo;t looked back&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>DB30 done and dusted</title>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2008/2008-05-12-db30-done-and-dusted/</link>
+      <pubDate>Mon, 12 May 2008 22:56:44 +0000</pubDate>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2008/2008-05-12-db30-done-and-dusted/</guid>
+      <description>&lt;p&gt;Got the official end of contract in the mail the other day, so thayts all folks for the topside work on the barge. McD&amp;rsquo;s were making noises that sounded like there was sat support comming up for air divers, but thats all it turned out to be..just noise. Oh well funn was had and money made by all.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

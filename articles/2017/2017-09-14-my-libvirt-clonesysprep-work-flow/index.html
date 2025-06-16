@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en"><head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="generator" content="Hugo 0.147.0">
+  <title>My libVirt clone/sysprep work flow</title><link rel="stylesheet" href="https://mikewebbtech.github.io/mikewebb-tech/css/style.min.21cb2879bdc9736d044cba6728046ef1ed8fe1faf4202b674e79b695f5552edd.css" />
+  <link rel="icon" type="image/x-icon"  href="/mikewebb-tech/img/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/mikewebb-tech/img/apple-touch-icon.png" />
+ 
+  <link rel="manifest" href="/mikewebb-tech/img/site.webmanifest" />
+</head>
+<body>
+    <div class="layout">  <aside class="sidebar">
+    <div class="logo">
+      <img src="/mikewebb-tech/avatar.png" alt="avatar" width="192">
+      <p class="byline">
+        MIKE WEBB TECH
+      </p>
+      <p class="byline">
+        <a href="https://github.com/mikewebbtech" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-github"></i></a>
+        <a href="https://www.linkedin.com/in/michael-webb-1a36b8a5/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+      </p>
+    </div>
+    <nav class="nav">
+  <ul>
+    
+    
+      
+      
+
+      
+      
+        
+        
+          
+        
+      
+      <li>
+        <a href="/mikewebb-tech/" ><i class="fa-solid fa-house"></i> Home</a>
+      </li>
+    
+      
+      
+
+      
+      
+        
+        
+          
+        
+      
+      <li>
+        <a href="/mikewebb-tech/articles/" ><i class="fa-solid fa-file-code"></i> Articles</a>
+      </li>
+    
+      
+      
+
+      
+      
+        
+        
+          
+        
+      
+      <li>
+        <a href="/mikewebb-tech/categories/" ><i class="fa-solid fa-list"></i> Categories</a>
+      </li>
+    
+      
+      
+
+      
+      
+        
+        
+          
+        
+      
+      <li>
+        <a href="/mikewebb-tech/series/" ><i class="fa-solid fa-layer-group"></i> Series</a>
+      </li>
+    
+      
+      
+
+      
+      
+        
+        
+          
+        
+      
+      <li>
+        <a href="/mikewebb-tech/tags/" ><i class="fa-solid fa-tags"></i> Tags</a>
+      </li>
+    
+      
+      
+
+      
+      
+        
+        
+          
+        
+      
+      <li>
+        <a href="/mikewebb-tech/about/" ><i class="fa-solid fa-circle-info"></i> About</a>
+      </li>
+    
+  </ul>
+</nav>
+    <div class="nav-bottom">
+      <a href="https://mikewebb.tech">
+        Designed by Mike Webb 
+      </a>
+      <a href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">
+        &copy; 2025 CC BY-NC 4.0
+      </a>
+      <p>
+      created using
+      </p> 
+      <a href="https://gohugo.io" target="_blank">
+        <img src="/mikewebb-tech/hugo-logo-wide.svg" alt="hugo.io" style="width: 40%">
+      </a>
+      <br><br>
+      Git commit 
+      
+      
+      <br><br>
+    </div>
+  </aside>
+  <header class="header">
+    <h1>My libVirt clone/sysprep work flow</h1>
+  </header>
+<main class="main">
+
+<article class="post">
+  <div class="post-header">
+    
+    <div class="article-meta">
+      <div>
+        <i class="fa-solid fa-calendar-days"></i>
+        Sep 14, 2017
+      </div>
+      <div>
+        <i class="fa-solid fa-file-lines"></i>
+        774 words
+      </div>
+    </div>
+  </div><div class="post-content"><p>My workstation runs linux.  Using KVM for my virtual environment made sense, it is kernel level native, very powerful, flexible, well documented and community supported, comes with a plethora of tools to work with. I&rsquo;ve opted to use libVirt, think of it as a management layer on top of QEMU.  It does introduce it&rsquo;s own issues compared to work just with QEMU but it brings an amazing amount of benefits to the party.</p>
+<p>OK now!&hellip;Flow.
+1.
+1. Create a master image, install common services, accounts and apply security updates and bug fixes.
+2. Clone master image.
+3. Prep clone into a new running VM.</p>
+<p><strong>1.  Creation</strong>
+There are many ways to do this.  Having first started creating KVM guests using command line QEMU, I can attest that LibVirt and applications from the Virt Tools community make life easy can provide a lot of automation, check them out <a href="http://www.virt-tools.org/">http://www.virt-tools.org/</a>
+<strong>2. Cloning</strong>
+Cloning a VM guest is a straight forward with the aid of libVirt.  From the command line is the quickest way but the Virtual Machine Manager app can be very effective as well.  First up, there is no online cloning, but that&rsquo;s OK as a master image should not be running anyway.  But let&rsquo;s assume it is running and called LTS-Master, as well as a second disk attached, so you can see that procedure</p>
+<p>From the command line:
+$su
+#virsh list
+( or &lsquo;virsh list &ndash;all&rsquo; to see all the VM&rsquo;s, know as domains, not just the running ones)</p>
+<pre tabindex="0"><code>virsh # list --all
+ Id   Name             State
+----------------------------------------------------
+ 9    VyOS\_Switch      running
+ 13   ubuntu-cl1       running
+ 15   LTS-Master       running
+ -    centos-cl1       shut off
+</code></pre><pre tabindex="0"><code># virsh suspend LTS-Master
+# virt-clone --connect qemu:///system \
+ --original LTS-Master \
+ --name LTS-cl1 \
+ --file /var/lib/libvirt/images/LTS-cl1.qcow2 \
+ --file /var/lib/libvirt/images/LTS-cl1-1.qcow2
+(lots of out put)
+
+Allocating &#39;LTS-cl1.qcow2&#39; | 5.0 GB 00:00:02 
+Allocating &#39;LTS01-cl1-1.qcow2&#39; | 2.0 GB 00:00:00
+
+Clone &#39;LTS01&#39; created successfull
+</code></pre><p>There that&rsquo;s it, a new clone is born called LTS-cl1 and it is in a non running state (shut off).</p>
+<p>*NOTE:  the &ndash;connect qemu:///system switch gives a peek into some of the power of this tool.  we can clone KVM (qemu) guests on the local system or we can connect to a remote system.  It doesn&rsquo;t have to be KVM guests, we could have defined a lxc or lxd conatiners or a xen guest.  We could even clone guests across hypervisors.</p>
+<p><strong>3. Decontextualise the image</strong>
+The clones created from the master image are exactly that.  If we spin it up, it will be exactly like the master image.  Spin a couple of these clones up at the same time, there will be issues and a lot of manual intervention and configuration changes to make.  We need a way to make each cloned virtual machine a unique install and we need a way to automate it.  Yep! libVirt to the rescue.</p>
+<p>The virt-sysprep tool is a command line tool with a huge amount of functionality, have a read up on it over at libguestfs.org. Anyone who&rsquo;s done a windows rollout would be familiar with what sysprep can do and is used for, same deal here. As pointed out over at libguestfs, virt-sysprep is not for windows guests&hellip;..just yet.</p>
+<p>A very simple example that would do a very reasonable job using the defaults would be</p>
+<pre tabindex="0"><code>[root@VMHOST~]# virt-sysprep -d LTS-cl1
+[ 0.0] Examining the guest ...
+(lots of out put)
+[ 171.0] Performing &#34;abrt-data&#34; ...
+[ 171.0] Performing &#34;bash-history&#34; ...
+[ 171.0] Performing &#34;blkid-tab&#34; ...
+
+
+[ 172.0] Setting a random seed
+[ 173.0] Performing &#34;lvm-uuids&#34; ...
+[root@VMHOST ~]#
+</code></pre><p>To peek into the default operations applied, run:</p>
+<pre tabindex="0"><code>[root@VMHOST~]# virt-sysprep –list-operations
+</code></pre><p>To quote libguestfs.org <em>&ldquo;The first field is the operation name, which can be supplied to &ndash;enable. The second field is a * character if the operation is enabled by default or blank if not. Subsequent fields on the same line are the description of the operation.&rdquo;</em></p>
+<p>A common example of how I use virt-sysprep is</p>
+<pre tabindex="0"><code>[root@VMHOST~]# virt-sysprep -d LTS-cl1 \
+--append-line &#34;/etc/hosts:10.0.0.2 SRV01&#34; \
+--verbose \
+--keep-user-accounts=mike \
+--timezone &#34;Australia/West&#34; \
+--network \
+--update \
+--operations bash-history,lvm-uuids,user-account \
+**--dry-run**
+</code></pre><p>Note the &ndash;dry-run. Very important, when first running a new virt-sysprep command. add &ndash;dry-run to it. It will <em>&ldquo;perform a read-only &ldquo;dry run&rdquo; on the guest. This runs the sysprep operation, but throws away any changes to the disk at the end.&rdquo;.</em> It gives an oppertunity to review the output of the command for errors etc.  When you are happy with the operation, remove &ndash;dry-run and run the command again and your cloned image is ready run.</p>
+<pre tabindex="0"><code>[root@VMHOST~]# virsh start LTS-cli
+[root@VMHOST~] visrh list
+Id         Name            State
+----------------------------------------------------
+ 9          LTS-cl1        running
+ 13        LTS-Master     shut off
+</code></pre><p>Yay! beer and profit.</p>
+</div>
+
+  <div class="post-footer"></div></article>
+</main>
+    </div>
+  </body>
+</html>
