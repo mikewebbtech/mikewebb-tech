@@ -1,423 +1,205 @@
-<!doctype html>
-<html lang="en"><head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="generator" content="Hugo 0.147.0">
-  <title>FreeIPA in CentOS 8 LXC container</title><link rel="stylesheet" href="https://mikewebbtech.github.io/mikewebb-tech/css/style.min.21cb2879bdc9736d044cba6728046ef1ed8fe1faf4202b674e79b695f5552edd.css" />
-  <link rel="icon" type="image/x-icon"  href="/mikewebb-tech/img/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/mikewebb-tech/img/apple-touch-icon.png" />
- 
-  <link rel="manifest" href="/mikewebb-tech/img/site.webmanifest" />
-</head>
-<body>
-    <div class="layout">  <aside class="sidebar">
-    <div class="logo">
-      <img src="/mikewebb-tech/avatar.png" alt="avatar" width="192">
-      <p class="byline">
-        MIKE WEBB TECH
-      </p>
-      <p class="byline">
-        <a href="https://github.com/mikewebbtech" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-github"></i></a>
-        <a href="https://www.linkedin.com/in/michael-webb-1a36b8a5/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
-      </p>
-    </div>
-    <nav class="nav">
-  <ul>
-    
-    
-      
-      
-
-      
-      
-        
-        
-          
-        
-      
-      <li>
-        <a href="/mikewebb-tech/" ><i class="fa-solid fa-house"></i> Home</a>
-      </li>
-    
-      
-      
-
-      
-      
-        
-        
-          
-        
-      
-      <li>
-        <a href="/mikewebb-tech/articles/" ><i class="fa-solid fa-file-code"></i> Articles</a>
-      </li>
-    
-      
-      
-
-      
-      
-        
-        
-          
-        
-      
-      <li>
-        <a href="/mikewebb-tech/categories/" ><i class="fa-solid fa-list"></i> Categories</a>
-      </li>
-    
-      
-      
-
-      
-      
-        
-        
-          
-        
-      
-      <li>
-        <a href="/mikewebb-tech/series/" ><i class="fa-solid fa-layer-group"></i> Series</a>
-      </li>
-    
-      
-      
-
-      
-      
-        
-        
-          
-        
-      
-      <li>
-        <a href="/mikewebb-tech/tags/" ><i class="fa-solid fa-tags"></i> Tags</a>
-      </li>
-    
-      
-      
-
-      
-      
-        
-        
-          
-        
-      
-      <li>
-        <a href="/mikewebb-tech/about/" ><i class="fa-solid fa-circle-info"></i> About</a>
-      </li>
-    
-  </ul>
-</nav>
-    <div class="nav-bottom">
-      <a href="https://mikewebb.tech">
-        Designed by Mike Webb 
-      </a>
-      <a href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">
-        &copy; 2025 CC BY-NC 4.0
-      </a>
-      <p>
-      created using
-      </p> 
-      <a href="https://gohugo.io" target="_blank">
-        <img src="/mikewebb-tech/hugo-logo-wide.svg" alt="hugo.io" style="width: 40%">
-      </a>
-      <br><br>
-      Git commit 
-      
-      
-      <br><br>
-    </div>
-  </aside>
-  <header class="header">
-    <h1>FreeIPA in CentOS 8 LXC container</h1>
-  </header>
-<main class="main">
-
-<article class="post">
-  <div class="post-header">
-    
-    <div class="article-meta">
-      <div>
-        <i class="fa-solid fa-calendar-days"></i>
-        Apr 1, 2021
-      </div>
-      <div>
-        <i class="fa-solid fa-file-lines"></i>
-        2135 words
-      </div>
-    </div>
-  </div><div class="post-content"><ul>
-<li>What is FreeIPA - <a href="http://www.freeipa.org">www.freeipa.org</a></li>
-<li>LXC and LXD containers - <a href="http://linuxcontainers.org">linuxcontainers.org</a></li>
-<li>What is a nice drink - <a href="https://en.wikipedia.org/wiki/Negroni">https://en.wikipedia.org/wiki/Negroni</a></li>
-</ul>
-<p>As part of creating a new home lab and home services and network infrastructure, I&rsquo;ve opted to go with FreeIPA with integrated DNS as my centralised identity management platform. I could have installed Windows Server 2019 on my servers and called it a day with added cost, but with AAA idm, storage, hypervisor, etc., in a single shiny package, but&hellip;back on topic.</p>
-<p>FreeIPA in a container. Why? Containers allow for greater density in my servers. I&rsquo;m using Proxmox as my storage and hypervisor cluster infrastructure. I&rsquo;ve seen information on running FreeIPA as a Docker application as well as in a virtual machine. My decision to run it in a machine container was mainly resource constraints, and Proxmox supports LXC out of the box and is the way they do containers.</p>
-<p>The assumptions here are that you:</p>
-<ul>
-<li>Have created a CentOS 8 LXC container using whatever method (Proxmox GUI/CLI or LXD) and whatever server (Proxmox, cloud VM, or other Linux server).</li>
-<li>Are going to set up two containers with FreeIPA in master/master replication. I mean, this will be the lifeblood of auth, access, and DNS for the entire network; let’s have a spare up our sleeve. Oh, and containers in a cluster can be moved around the different servers. Nothing like a bit of redundancy.</li>
-</ul>
-<p>Only gotcha at this point is if you are controlling container resources, is to make sure you have 2048M memory minimum, or ipa-server-install will fail at [6/9] updating and a whole lot of LDAP errors.</p>
-<p>For my setup, I have:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>root@pve1:~ pct config <span style="color:#ae81ff">501</span>
-</span></span><span style="display:flex;"><span>arch: amd64
-</span></span><span style="display:flex;"><span>cores: <span style="color:#ae81ff">2</span> features:
-</span></span><span style="display:flex;"><span>keyctl<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>
-</span></span><span style="display:flex;"><span>hostname: ipa01
-</span></span><span style="display:flex;"><span>memory: <span style="color:#ae81ff">4096</span>
-</span></span><span style="display:flex;"><span>onboot: <span style="color:#ae81ff">1</span>
-</span></span><span style="display:flex;"><span>ostype: centos
-</span></span><span style="display:flex;"><span>rootfs: size<span style="color:#f92672">=</span>8G
-</span></span><span style="display:flex;"><span>swap: <span style="color:#ae81ff">512</span>
-</span></span><span style="display:flex;"><span>unprivileged: <span style="color:#ae81ff">1</span>
-</span></span></code></pre></div><h2 id="let-us-begin">Let us begin</h2>
-<p>Let’s get some preliminary housekeeping out of the way first.</p>
-<p>My environment:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>LXC containers <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span> x CentOS <span style="color:#ae81ff">8</span>
-</span></span><span style="display:flex;"><span>domain <span style="color:#f92672">=</span> hugel.lan
-</span></span><span style="display:flex;"><span>firewall zone <span style="color:#f92672">=</span> internal
-</span></span><span style="display:flex;"><span>first instance name <span style="color:#f92672">=</span> ipa01
-</span></span><span style="display:flex;"><span>first instance ip <span style="color:#f92672">=</span> 192.168.1.35
-</span></span><span style="display:flex;"><span>first instance hostname <span style="color:#f92672">=</span> ip01.hugel.lan
-</span></span><span style="display:flex;"><span>second instance name <span style="color:#f92672">=</span>ipa02
-</span></span><span style="display:flex;"><span>second instance ip <span style="color:#f92672">=</span> 192.168.1.36
-</span></span><span style="display:flex;"><span>second instance hostname <span style="color:#f92672">=</span> ipa02.hugel.lan
-</span></span><span style="display:flex;"><span>DNS forwarders:	192.168.1.5 1.1.1.1
-</span></span><span style="display:flex;"><span>container user <span style="color:#f92672">=</span> conop
-</span></span><span style="display:flex;"><span>ntp servers <span style="color:#f92672">=</span> 192.168.1.1, 2.au.pool.ntp.org
-</span></span></code></pre></div><p>Gain shell/console access into your container using either lxc console ipa01 or lxc exec ipa01 &ndash; /bin/sh.</p>
-<p>Do a yum update, set up, and check ip address and internet connectivity. Create a user with wheel group membership.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>root@pve1:~ useradd conop
-</span></span><span style="display:flex;"><span>root@pve1:~ passwd conop
-</span></span><span style="display:flex;"><span>root@pve1:~ usermod -aG wheel conop
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>root@pve1:~ nmcli connection modify eth0 <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>&gt; ipv4.method manual <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>&gt; ipv4.address 192.168.1.35/24 <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>&gt; ipv4.gateway 192.168.1.5 <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>&gt; ipv4.dns 1.1.1.1
-</span></span><span style="display:flex;"><span>root@pve1:~ nmcli connection down eth0 ; nmcli c up eth0
-</span></span><span style="display:flex;"><span>root@pve1:~ ping 1.1.1.1
-</span></span><span style="display:flex;"><span>root@pve1:~ ping redhat.com
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>root@pve1:~ timedatectl set-timezone Australia/Perth
-</span></span><span style="display:flex;"><span>root@pve1:~ timedatectl set-ntp true
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>root@pve1:~ hostnamectl set-hostname ipa01.hugel.lan
-</span></span><span style="display:flex;"><span>root@pve1:~ echo <span style="color:#e6db74">&#34;192.168.1.35 ipa01.hugel.lan ipa01 \n192.168.1.36 ipa02.hugel.lan ipa02&#34;</span> &gt;&gt; /etc/hosts
-</span></span><span style="display:flex;"><span>root@pve1:~ mv /etc/resolv.conf /etc/resolv.conf-BAK
-</span></span><span style="display:flex;"><span>root@pve1:~ echo -e <span style="color:#e6db74">&#34;search hugel.lan\nnameserver 192.168.1.5 \nnameserver 1.1.1.1&#34;</span> &gt; /etc/resolv.conf
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>root@pve1:~ yum update
-</span></span><span style="display:flex;"><span>root@pve1:~ yum install openssh-server sudo less firewalld audit -y
-</span></span><span style="display:flex;"><span>root@pve1:~ systemctl enable sshd --now
-</span></span><span style="display:flex;"><span>root@pve1:~ systemctl status sshd
-</span></span><span style="display:flex;"><span>root@pve1:~ systemctl enable firewalld --now
-</span></span><span style="display:flex;"><span>root@pve1:~ systemctl status firewalld
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>root@pve1:~ exit
-</span></span></code></pre></div><p>There, now we have a functional, connected, and fresh container that we can SSH into as conop, probably using a laptop sitting in a comfy chair with a nice drink&hellip;just saying.</p>
-<p>OK! Settle in to install and set up FreeIPA (Hint: nice drink!).</p>
-<h2 id="install-and-configure-freeipa">Install and Configure FreeIPA</h2>
-<p>(and also fix)</p>
-<p>Since we are running FreeIPA in a container (system cgroups) vs. a virtual machine (paravirtualised hardware), there are some things that will bite the installation and running process as we are running an OS within another OS, not on top of it.</p>
-<p>FreeIPA in LXC gotcha! It will fail to install with</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#e6db74">&#34;Fatal error : adjtimex(0x8001) failed : Operation not permitted&#34;</span>
-</span></span></code></pre></div><p>Apparently, chronyd doesn&rsquo;t like running in a container. Lucky enough, developers involved with chronyd wanted to do just that, so a fix was made. Tell it that it is running in a container (why this change is not part of the container image is a mystery).</p>
-<p>Edit (i.e. vi) /etc/sysconfig/chronyd and add -x to OPTIONS=&quot;&quot; e.g.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Command-line options for chronyd</span>
-</span></span><span style="display:flex;"><span>OPTIONS<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;-x&#34;</span>
-</span></span><span style="display:flex;"><span>/etc/sysconfig/chronyd <span style="color:#f92672">(</span>END<span style="color:#f92672">)</span>
-</span></span></code></pre></div><p>Now we need to take care of SELinux and the firewall. Set SELinux to permissive mode and make it permanent and open up ALL the ports required by FreeIPA and replication: If you forget, the install will give you a nice reminder e.g.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>You must make sure these network ports are open:
-</span></span><span style="display:flex;"><span>  TCP Ports:
-</span></span><span style="display:flex;"><span>    * 80, 443: HTTP/HTTPS
-</span></span><span style="display:flex;"><span>    * 389, 636: LDAP/LDAPS
-</span></span><span style="display:flex;"><span>    * 88, 464: kerberos
-</span></span><span style="display:flex;"><span>    * 53: bind
-</span></span><span style="display:flex;"><span>  UDP Ports:
-</span></span><span style="display:flex;"><span>    * 88, 464: kerberos
-</span></span><span style="display:flex;"><span>    * 53: bind
-</span></span><span style="display:flex;"><span>    * 123: ntp
-</span></span></code></pre></div><p>Use the built-in firewall-cmd profiles to easily take care of the ports.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>firewall-cmd --get-active-zone
-</span></span><span style="display:flex;"><span>firewall-cmd --set-default-zone<span style="color:#f92672">=</span>internal
-</span></span><span style="display:flex;"><span>firewall-cmd --zone<span style="color:#f92672">=</span>internal --list-services
-</span></span><span style="display:flex;"><span>firewall-cmd --add-service<span style="color:#f92672">={</span>freeipa-ldap,freeipa-ldaps,freeipa-replication,dns,ntp<span style="color:#f92672">}</span> --permanent
-</span></span><span style="display:flex;"><span>firewall-cmd --reload
-</span></span><span style="display:flex;"><span>firewall-cmd --zone<span style="color:#f92672">=</span>internal --list-services
-</span></span></code></pre></div><p>We also need to deal with security-enhanced Linux (SELinux), kernel-level LSM (Linux Security Modules) by putting it into Permissive mode and making the change stick over reboots, basically disabling it from enforcing policy but still logging violations so we can get a sense of what is happening and make the required SELinux policy changes after we have everything working (a much later blog post).</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>root@pve1:~ setenforce Permissive
-</span></span><span style="display:flex;"><span>root@pve1:~ sed -i <span style="color:#e6db74">&#39;s/SELINUX=enforcing/SELINUX=permisive/&#39;</span> /etc/selinux/config
-</span></span></code></pre></div><p>Now is a good time to reboot the container (a couple of seconds) before we put the meat into this sandwich, just to make sure that everything is as it should be, maybe get a refill of that nice drink.</p>
-<h2 id="here-be-dragons">Here be Dragons!</h2>
-<p>CentOS and Red Hat 8 have introduced AppStream modules. That is, installing freeipa is a bit different nowadays&hellip;and a bit better (but not perfect). Install the DL1 stream of the IDM module</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#a6e22e">root</span><span style="color:#960050;background-color:#1e0010">@</span><span style="color:#a6e22e">pve1</span>:~ <span style="color:#a6e22e">dnf</span> <span style="color:#a6e22e">module</span> <span style="color:#f92672">-</span><span style="color:#a6e22e">y</span> <span style="color:#a6e22e">install</span> <span style="color:#a6e22e">idm</span>:<span style="color:#a6e22e">DL1</span><span style="color:#f92672">/</span>{<span style="color:#a6e22e">server</span>,<span style="color:#a6e22e">dns</span>}
-</span></span></code></pre></div><p>and run <strong>ipa-server-install</strong> and good luck&hellip;&hellip;..</p>
-<p>No, there is a bit more to it if you would like to increase your success in installing and running FreeIPA, though just running the above command will prompt you through to the finish, you may be missing out on some items.</p>
-<p>Run &ldquo;ipa-server-install &ndash;help&rdquo; for a list of all the switches and a better understanding of what I have used.</p>
-<blockquote>
-<p>[!CAUTION]
-Be aware that the way I did it will put the directory manager and the admin user password in plain text in history (and on the screen).</p></blockquote>
-<p>Get comfy and run:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>root@pve1:~ ipa-server-install -v <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>&gt; --unattended <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>&gt; --setup-dns <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>&gt; --auto-reverse <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>&gt; --forwarder 192.168.1.5 <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>&gt; --forwarder 1.1.1.1 <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>&gt; --domain<span style="color:#f92672">=</span>hugel.lan <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>&gt; --realm<span style="color:#f92672">=</span>HUGEL.LAN <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>&gt; --no-host-dns <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>&gt; --idstart<span style="color:#f92672">=</span><span style="color:#ae81ff">3000</span>
-</span></span><span style="display:flex;"><span>&gt; --idmax<span style="color:#f92672">=</span><span style="color:#ae81ff">10000</span> <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>&gt; --setup-kra <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>&gt; --reverse-zone<span style="color:#f92672">=</span>1.168.195.in-add.arpa
-</span></span><span style="display:flex;"><span>&gt; -p dsStrong5ecret99 <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>&gt; -a aStrong5ecret99 <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>&gt; --ntp-server<span style="color:#f92672">=</span>192.168.1.1 <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>&gt; --ntp-server<span style="color:#f92672">=</span>2.au.pool.ntp.org
-</span></span></code></pre></div><p>AND&hellip;.if all went well and after a lot of information scrolling up the screen and some time had passed (and maybe another refill of a nice drink), you should be greeted with</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Be sure to back up the CA certificates stored in /root/cacert.p12
-</span></span><span style="display:flex;"><span>These files are required to create replicas. The password <span style="color:#66d9ef">for</span> these
-</span></span><span style="display:flex;"><span>files is the Directory Manager password
-</span></span><span style="display:flex;"><span>The ipa-server-install command was successful
-</span></span></code></pre></div><p>There is some good advice there&hellip;back up the CA certificates. Oh and since it is a LXC container, take a snapshot.</p>
-<p>Let&rsquo;s verify the install and check in on FreeIPA and Kerberos.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> ipactl status
-</span></span><span style="display:flex;"><span>Directory Service: RUNNING
-</span></span><span style="display:flex;"><span>krb5kdc Service: RUNNING
-</span></span><span style="display:flex;"><span>kadmin Service: RUNNING
-</span></span><span style="display:flex;"><span>named Service: RUNNING
-</span></span><span style="display:flex;"><span>httpd Service: RUNNING
-</span></span><span style="display:flex;"><span>ipa-custodia Service: RUNNING
-</span></span><span style="display:flex;"><span>pki-tomcatd Service: RUNNING
-</span></span><span style="display:flex;"><span>ipa-otpd Service: RUNNING
-</span></span><span style="display:flex;"><span>ipa-dnskeysyncd Service: RUNNING
-</span></span><span style="display:flex;"><span>ipa: INFO: The ipactl command was successful
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span> kinit admin
-</span></span><span style="display:flex;"><span>Password <span style="color:#66d9ef">for</span> admin@HUGEL.LAN:
-</span></span><span style="display:flex;"><span> klist
-</span></span><span style="display:flex;"><span>Ticket cache: FILE:/tmp/krb5cc_0
-</span></span><span style="display:flex;"><span>Default principal: admin@HUGEL.LAN
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>Valid starting     Expires            Service principal
-</span></span><span style="display:flex;"><span>31/03/21 16:27:46  01/04/21 16:27:38  krbtgt/HUGEL.LAN@HUGEL.LAN
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span> ipa config-show
-</span></span><span style="display:flex;"><span>  Maximum username length: <span style="color:#ae81ff">32</span>
-</span></span><span style="display:flex;"><span>  Maximum hostname length: <span style="color:#ae81ff">64</span>
-</span></span><span style="display:flex;"><span>  Home directory base: /home
-</span></span><span style="display:flex;"><span>  Default shell: /bin/sh
-</span></span><span style="display:flex;"><span>  Default users group: ipausers
-</span></span><span style="display:flex;"><span>  Default e-mail domain: hugel.lan
-</span></span><span style="display:flex;"><span>  Search time limit: <span style="color:#ae81ff">2</span>
-</span></span><span style="display:flex;"><span>  Search size limit: <span style="color:#ae81ff">100</span>
-</span></span><span style="display:flex;"><span>  User search fields: uid,givenname,sn,telephonenumber,ou,title
-</span></span><span style="display:flex;"><span>  Group search fields: cn,description
-</span></span><span style="display:flex;"><span>  Enable migration mode: FALSE
-</span></span><span style="display:flex;"><span>  Certificate Subject base: O<span style="color:#f92672">=</span>HUGEL.LAN
-</span></span><span style="display:flex;"><span>  Password Expiration Notification <span style="color:#f92672">(</span>days<span style="color:#f92672">)</span>: <span style="color:#ae81ff">4</span>
-</span></span><span style="display:flex;"><span>  Password plugin features: AllowNThash, KDC:Disable Last Success
-</span></span><span style="display:flex;"><span>  SELinux user map order: guest_u:s0$xguest_u:s0$user_u:s0$staff_u:s0-s0:c0.c1023$sysadm_u:s0-s0:c0.c1023$unconfined_u:s0-s0:c0.c1023
-</span></span><span style="display:flex;"><span>  Default SELinux user: unconfined_u:s0-s0:c0.c1023
-</span></span><span style="display:flex;"><span>  Default PAC types: MS-PAC, nfs:NONE
-</span></span><span style="display:flex;"><span>  IPA masters: ipa01.hugel.lan
-</span></span><span style="display:flex;"><span>  IPA master capable of PKINIT: ipa01.hugel.lan
-</span></span><span style="display:flex;"><span>  IPA CA servers: ipa01.hugel.lan
-</span></span><span style="display:flex;"><span>  IPA CA renewal master: ipa01.hugel.lan
-</span></span><span style="display:flex;"><span>  IPA DNS servers: ipa01.hugel.lan
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span> ping redhat.com -c <span style="color:#ae81ff">1</span>
-</span></span><span style="display:flex;"><span>PING redhat.com <span style="color:#f92672">(</span>209.132.183.105<span style="color:#f92672">)</span> 56<span style="color:#f92672">(</span>84<span style="color:#f92672">)</span> bytes of data.
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">64</span> bytes from redirect.redhat.com <span style="color:#f92672">(</span>209.132.183.105<span style="color:#f92672">)</span>: icmp_seq<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span> ttl<span style="color:#f92672">=</span><span style="color:#ae81ff">139</span> time<span style="color:#f92672">=</span><span style="color:#ae81ff">134</span> ms
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>--- redhat.com ping statistics ---
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">1</span> packets transmitted, <span style="color:#ae81ff">1</span> received, 0% packet loss, time 0ms
-</span></span><span style="display:flex;"><span>rtt min/avg/max/mdev <span style="color:#f92672">=</span> 133.794/133.794/133.794/0.000 ms
-</span></span></code></pre></div><p>All appears to be as it should. On a desktop or workstation, change the DNS server setting to point to the ip address of the FreeIPA container (for me 192.168.1.35) and point a browser to the hostname of the FreeIPA container, you should be greeted with a login page, use admin and the admin password defined during the install.</p>
-<p>Now point the browser to the search engine of your choice, if the page comes up, DNS is working and you have a resource at hand to help with troubleshooting the next bit.</p>
-<p>Reboot the container and rerun the verification commands you just ran before&hellip;..OH JOY!!!</p>
-<h2 id="coercion-to--result">Coercion to +++ result</h2>
-<p>Yep it&rsquo;s broken (maybe not, if so..good for you, thanks for stopping by and look out for my blogs on using FreeIPA). Let’s look at some commands to help you troubleshoot and research on the internet.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> systemctl status ipa.service
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span> systemctl status dirsrv@HUGEL-LAN.service
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span> journelctl -xe
-</span></span></code></pre></div><p>In my case, which was the case in five container installs of FreeIPA on CentOS 8, the issue was the 389 Directory service. Specifically, dirsrv.service was failing to start due to missing files or directories:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> journalctl -xe
-</span></span><span style="display:flex;"><span>...
-</span></span><span style="display:flex;"><span>Mar <span style="color:#ae81ff">28</span> 19:25:26 ip01 systemd-tmpfiles<span style="color:#f92672">[</span>206<span style="color:#f92672">]</span>: Failed to create directory /var/lock/dirsrv: No such file or directory
-</span></span><span style="display:flex;"><span>Mar <span style="color:#ae81ff">28</span> 19:25:26 ipa01 systemd-tmpfiles<span style="color:#f92672">[</span>206<span style="color:#f92672">]</span>: Failed to create directory /var/lock/dirsrv/slapd-HUGEL-LAN: No such file or directory
-</span></span><span style="display:flex;"><span>...
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span> journalctl -fu systemd-tmpfiles
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>Mar <span style="color:#ae81ff">28</span> 19:24:19 ip01 systemd-tmpfiles<span style="color:#f92672">[</span>47<span style="color:#f92672">]</span>: Failed to create directory or subvolume <span style="color:#e6db74">&#34;/var/lock/dirsrv&#34;</span>: No such file or directory
-</span></span><span style="display:flex;"><span>Mar <span style="color:#ae81ff">28</span> 19:24:19 ip01 systemd-tmpfiles<span style="color:#f92672">[</span>47<span style="color:#f92672">]</span>: Failed to create directory or subvolume <span style="color:#e6db74">&#34;/var/lock/dirsrv/slapd-HUGEL-LAN&#34;</span>: No such file or directory
-</span></span></code></pre></div><p>Dam, these are temp directories and files created at start-up, not as easy as creating the directory and calling it a day. Anyway, after learning more about 389ds and systemd-tmpfiles than I ever really wanted to, this appears to be some kind of bug that raised its head seven years ago and now others seem to have the same issue now, again, with CentOS 8. Not sure if it is related to running in a LXC container&hellip;.but it is known.</p>
-<p>As some internetian put it, &ldquo;this is some strange race condition on boot for systemd-tmpfiles when traversing the symlinks (perhaps the double symlink for /var/lock as opposed to the single for /var/run) to the final destination to create the directories.&rdquo;</p>
-<p>Manually creating the temporary directory and files using the systemd-tmpfiles command proves this and manually starting dirsrv.service works or just manually starting ipa.service which starts all the dependent services WORKS as expected.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> systemd-tmpfiles --create
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span> systemctl start ipa.service
-</span></span><span style="display:flex;"><span><span style="color:#f92672">(</span>or <span style="color:#75715e">#ipactl start)</span>
-</span></span><span style="display:flex;"><span> ipactl status
-</span></span></code></pre></div><p>systemd-tmpfiles &ndash;create will complain about some /var/lock vs some /var/run entries in dirsrv-HUGEL-LAN.conf. Make the changes or ignore it, it made no difference as ipa.service still failed to start after a reboot. Everything is now running&hellip;.though not automagically at startup&hellip;but we now know that the startup of 389ds (dirsrv) and slapd is KAPUT!&hellip;&hellip;now to unKUPT</p>
-<p>In a bid to look more into 389ds, I looked at what packages CentOS had that could help me.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> rpm -qa | grep <span style="color:#ae81ff">389</span>
-</span></span><span style="display:flex;"><span>python3-lib389-1.4.3.8-6.module_el8.3.0+604+ab7bf9cc.noarch
-</span></span><span style="display:flex;"><span>**389-ds-base-legacy-tools-1.4.3.8-6.module<span style="color:#ae81ff">\_</span>el8.3.0+604+ab7bf9cc.x86<span style="color:#ae81ff">\_</span>64**
-</span></span><span style="display:flex;"><span>389-ds-base-libs-1.4.3.8-6.module_el8.3.0+604+ab7bf9cc.x86_64
-</span></span><span style="display:flex;"><span>389-ds-base-1.4.3.8-6.module_el8.3.0+604+ab7bf9cc.x86_64
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span> rpm -ql 389-ds-base-legacy-tools
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>/etc/dirsrv/config/template-initconfig
-</span></span></code></pre></div><p>OMG! what is that file in that package&hellip;.lets install it and have a look</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf install 389-ds-base-legacy-tools -y
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span> less /etc/dirsrv/config/template-initconfig
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span> <span style="color:#75715e">#(contents of file)</span>
-</span></span><span style="display:flex;"><span> This file is sourced by dirsrv upon startup to set
-</span></span><span style="display:flex;"><span> the default environment <span style="color:#66d9ef">for</span> a single specific directory
-</span></span><span style="display:flex;"><span> server instances. To set defaults <span style="color:#66d9ef">for</span> all instances, edit
-</span></span><span style="display:flex;"><span> the file in the same directory called dirsrv.
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span> These settings are used by the start-dirsrv and
-</span></span><span style="display:flex;"><span> start-slapd scripts <span style="color:#f92672">(</span>as well as their associates stop
-</span></span><span style="display:flex;"><span> and restart scripts<span style="color:#f92672">)</span>. Do not edit them unless you know
-</span></span><span style="display:flex;"><span> what you are doing.
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># This file is in systemd EnvironmentFile format - see man systemd.exec</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span> <span style="color:#75715e"># /etc/dirsrv/config/template-initconfig (END)</span>
-</span></span></code></pre></div><p>Really! Actually, I said WTF! The gerddam missing link for dirsrv service start-up. Let&rsquo;s reboot and see.</p>
-<p>A couple of seconds later&hellip;.check IPA services are running, check internet connectivity and resolution, bring up the management page from a workstation. Reboot and check again</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> ipactl status
-</span></span><span style="display:flex;"><span> ipa-healthcheck --output-type human
-</span></span></code></pre></div><h2 id="its-alive-and-kicking">IT&rsquo;S ALIVE AND KICKING!!</h2>
-<p>and not broken.</p>
-<p>Now that we have a working freeIPA install in a container, that survives reboots, and know the missing ingredients to success:</p>
-<ul>
-<li>-x command line switch for chronyd, and</li>
-<li>Install 389-ds-base-legacy-tools &lt;&mdash; THIS</li>
-</ul>
-<p>We can now move onto creating replicated FreeIPA master&hellip;.but in another post, I feel as though this has been epic enough.</p>
-<p>Stage 2. Setting up MASTER/MASTER FreeIPA replica server in CentOS 8:</p>
-<p>[[2021-04-01-freeipa-in-centos-8-lxc-container]]</p>
-<p>As always&hellip;.Beer and profit.</p>
-</div>
-
-  <div class="post-footer"></div></article>
-</main>
-    </div>
-  </body>
-</html>
+<!doctype html><html lang=en><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=generator content="Hugo 0.147.7"><title>FreeIPA in CentOS 8 LXC container</title><link rel=stylesheet href=https://mikewebbtech.github.io/mikewebb-tech/css/style.min.1cf20735f340168887f3a69f2e8572e69284c55776860c0cd0a2e5a75b81d443.css><link rel=icon type=image/x-icon href=/mikewebb-tech/img/favicon.ico><link rel=apple-touch-icon sizes=180x180 href=/mikewebb-tech/img/apple-touch-icon.png><link rel=manifest href=/mikewebb-tech/img/site.webmanifest></head><body data-theme=dark><div class=layout><aside class=sidebar><div class=logo><img src=/mikewebb-tech/avatar.png alt=avatar width=192><p class=byline>MIKE WEBB TECH</p><p class=byline><a href=https://github.com/mikewebbtech target=_blank rel="noopener noreferrer"><i class="fa-brands fa-square-github"></i></a>
+<a href=https://www.linkedin.com/in/michael-webb-1a36b8a5/ target=_blank rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a></p></div><nav class=nav><ul><li><a href=/mikewebb-tech/><i class="fa-solid fa-house"></i> Home</a></li><li><a href=/mikewebb-tech/articles/><i class="fa-solid fa-file-code"></i> Articles</a></li><li><a href=/mikewebb-tech/categories/><i class="fa-solid fa-list"></i> Categories</a></li><li><a href=/mikewebb-tech/series/><i class="fa-solid fa-layer-group"></i> Series</a></li><li><a href=/mikewebb-tech/tags/><i class="fa-solid fa-tags"></i> Tags</a></li><li><a href=/mikewebb-tech/about/><i class="fa-solid fa-circle-info"></i> About</a></li></ul></nav><div class=nav-bottom><a href=https://mikewebb.tech>Designed by Mike Webb
+</a><a href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target=_blank rel="license noopener noreferrer" style=display:inline-block>&copy; 2025 CC BY-NC 4.0</a><p>created using</p><a href=https://gohugo.io target=_blank><img src=/mikewebb-tech/hugo-logo-wide.svg alt=hugo.io style=width:40%></a><br><br>Git commit
+85efa84
+25-06-16<br><br></div></aside><header class=header><h1>FreeIPA in CentOS 8 LXC container</h1></header><main class=main><article class=post><div class=post-header><div class=article-meta><div><i class="fa-solid fa-calendar-days"></i>
+Apr 1, 2021</div><div><i class="fa-solid fa-file-lines"></i>
+2135 words</div></div></div><div class=post-content><ul><li>What is FreeIPA - <a href=http://www.freeipa.org>www.freeipa.org</a></li><li>LXC and LXD containers - <a href=http://linuxcontainers.org>linuxcontainers.org</a></li><li>What is a nice drink - <a href=https://en.wikipedia.org/wiki/Negroni>https://en.wikipedia.org/wiki/Negroni</a></li></ul><p>As part of creating a new home lab and home services and network infrastructure, I&rsquo;ve opted to go with FreeIPA with integrated DNS as my centralised identity management platform. I could have installed Windows Server 2019 on my servers and called it a day with added cost, but with AAA idm, storage, hypervisor, etc., in a single shiny package, but&mldr;back on topic.</p><p>FreeIPA in a container. Why? Containers allow for greater density in my servers. I&rsquo;m using Proxmox as my storage and hypervisor cluster infrastructure. I&rsquo;ve seen information on running FreeIPA as a Docker application as well as in a virtual machine. My decision to run it in a machine container was mainly resource constraints, and Proxmox supports LXC out of the box and is the way they do containers.</p><p>The assumptions here are that you:</p><ul><li>Have created a CentOS 8 LXC container using whatever method (Proxmox GUI/CLI or LXD) and whatever server (Proxmox, cloud VM, or other Linux server).</li><li>Are going to set up two containers with FreeIPA in master/master replication. I mean, this will be the lifeblood of auth, access, and DNS for the entire network; let’s have a spare up our sleeve. Oh, and containers in a cluster can be moved around the different servers. Nothing like a bit of redundancy.</li></ul><p>Only gotcha at this point is if you are controlling container resources, is to make sure you have 2048M memory minimum, or ipa-server-install will fail at [6/9] updating and a whole lot of LDAP errors.</p><p>For my setup, I have:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>root@pve1:~ pct config <span style=color:#ae81ff>501</span>
+</span></span><span style=display:flex><span>arch: amd64
+</span></span><span style=display:flex><span>cores: <span style=color:#ae81ff>2</span> features:
+</span></span><span style=display:flex><span>keyctl<span style=color:#f92672>=</span><span style=color:#ae81ff>1</span>
+</span></span><span style=display:flex><span>hostname: ipa01
+</span></span><span style=display:flex><span>memory: <span style=color:#ae81ff>4096</span>
+</span></span><span style=display:flex><span>onboot: <span style=color:#ae81ff>1</span>
+</span></span><span style=display:flex><span>ostype: centos
+</span></span><span style=display:flex><span>rootfs: size<span style=color:#f92672>=</span>8G
+</span></span><span style=display:flex><span>swap: <span style=color:#ae81ff>512</span>
+</span></span><span style=display:flex><span>unprivileged: <span style=color:#ae81ff>1</span>
+</span></span></code></pre></div><h2 id=let-us-begin>Let us begin</h2><p>Let’s get some preliminary housekeeping out of the way first.</p><p>My environment:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>LXC containers <span style=color:#f92672>=</span> <span style=color:#ae81ff>2</span> x CentOS <span style=color:#ae81ff>8</span>
+</span></span><span style=display:flex><span>domain <span style=color:#f92672>=</span> hugel.lan
+</span></span><span style=display:flex><span>firewall zone <span style=color:#f92672>=</span> internal
+</span></span><span style=display:flex><span>first instance name <span style=color:#f92672>=</span> ipa01
+</span></span><span style=display:flex><span>first instance ip <span style=color:#f92672>=</span> 192.168.1.35
+</span></span><span style=display:flex><span>first instance hostname <span style=color:#f92672>=</span> ip01.hugel.lan
+</span></span><span style=display:flex><span>second instance name <span style=color:#f92672>=</span>ipa02
+</span></span><span style=display:flex><span>second instance ip <span style=color:#f92672>=</span> 192.168.1.36
+</span></span><span style=display:flex><span>second instance hostname <span style=color:#f92672>=</span> ipa02.hugel.lan
+</span></span><span style=display:flex><span>DNS forwarders:	192.168.1.5 1.1.1.1
+</span></span><span style=display:flex><span>container user <span style=color:#f92672>=</span> conop
+</span></span><span style=display:flex><span>ntp servers <span style=color:#f92672>=</span> 192.168.1.1, 2.au.pool.ntp.org
+</span></span></code></pre></div><p>Gain shell/console access into your container using either lxc console ipa01 or lxc exec ipa01 &ndash; /bin/sh.</p><p>Do a yum update, set up, and check ip address and internet connectivity. Create a user with wheel group membership.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>root@pve1:~ useradd conop
+</span></span><span style=display:flex><span>root@pve1:~ passwd conop
+</span></span><span style=display:flex><span>root@pve1:~ usermod -aG wheel conop
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>root@pve1:~ nmcli connection modify eth0 <span style=color:#ae81ff>\
+</span></span></span><span style=display:flex><span><span style=color:#ae81ff></span>&gt; ipv4.method manual <span style=color:#ae81ff>\
+</span></span></span><span style=display:flex><span><span style=color:#ae81ff></span>&gt; ipv4.address 192.168.1.35/24 <span style=color:#ae81ff>\
+</span></span></span><span style=display:flex><span><span style=color:#ae81ff></span>&gt; ipv4.gateway 192.168.1.5 <span style=color:#ae81ff>\
+</span></span></span><span style=display:flex><span><span style=color:#ae81ff></span>&gt; ipv4.dns 1.1.1.1
+</span></span><span style=display:flex><span>root@pve1:~ nmcli connection down eth0 ; nmcli c up eth0
+</span></span><span style=display:flex><span>root@pve1:~ ping 1.1.1.1
+</span></span><span style=display:flex><span>root@pve1:~ ping redhat.com
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>root@pve1:~ timedatectl set-timezone Australia/Perth
+</span></span><span style=display:flex><span>root@pve1:~ timedatectl set-ntp true
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>root@pve1:~ hostnamectl set-hostname ipa01.hugel.lan
+</span></span><span style=display:flex><span>root@pve1:~ echo <span style=color:#e6db74>&#34;192.168.1.35 ipa01.hugel.lan ipa01 \n192.168.1.36 ipa02.hugel.lan ipa02&#34;</span> &gt;&gt; /etc/hosts
+</span></span><span style=display:flex><span>root@pve1:~ mv /etc/resolv.conf /etc/resolv.conf-BAK
+</span></span><span style=display:flex><span>root@pve1:~ echo -e <span style=color:#e6db74>&#34;search hugel.lan\nnameserver 192.168.1.5 \nnameserver 1.1.1.1&#34;</span> &gt; /etc/resolv.conf
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>root@pve1:~ yum update
+</span></span><span style=display:flex><span>root@pve1:~ yum install openssh-server sudo less firewalld audit -y
+</span></span><span style=display:flex><span>root@pve1:~ systemctl enable sshd --now
+</span></span><span style=display:flex><span>root@pve1:~ systemctl status sshd
+</span></span><span style=display:flex><span>root@pve1:~ systemctl enable firewalld --now
+</span></span><span style=display:flex><span>root@pve1:~ systemctl status firewalld
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>root@pve1:~ exit
+</span></span></code></pre></div><p>There, now we have a functional, connected, and fresh container that we can SSH into as conop, probably using a laptop sitting in a comfy chair with a nice drink&mldr;just saying.</p><p>OK! Settle in to install and set up FreeIPA (Hint: nice drink!).</p><h2 id=install-and-configure-freeipa>Install and Configure FreeIPA</h2><p>(and also fix)</p><p>Since we are running FreeIPA in a container (system cgroups) vs. a virtual machine (paravirtualised hardware), there are some things that will bite the installation and running process as we are running an OS within another OS, not on top of it.</p><p>FreeIPA in LXC gotcha! It will fail to install with</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#e6db74>&#34;Fatal error : adjtimex(0x8001) failed : Operation not permitted&#34;</span>
+</span></span></code></pre></div><p>Apparently, chronyd doesn&rsquo;t like running in a container. Lucky enough, developers involved with chronyd wanted to do just that, so a fix was made. Tell it that it is running in a container (why this change is not part of the container image is a mystery).</p><p>Edit (i.e. vi) /etc/sysconfig/chronyd and add -x to OPTIONS="" e.g.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#75715e># Command-line options for chronyd</span>
+</span></span><span style=display:flex><span>OPTIONS<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;-x&#34;</span>
+</span></span><span style=display:flex><span>/etc/sysconfig/chronyd <span style=color:#f92672>(</span>END<span style=color:#f92672>)</span>
+</span></span></code></pre></div><p>Now we need to take care of SELinux and the firewall. Set SELinux to permissive mode and make it permanent and open up ALL the ports required by FreeIPA and replication: If you forget, the install will give you a nice reminder e.g.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>You must make sure these network ports are open:
+</span></span><span style=display:flex><span>  TCP Ports:
+</span></span><span style=display:flex><span>    * 80, 443: HTTP/HTTPS
+</span></span><span style=display:flex><span>    * 389, 636: LDAP/LDAPS
+</span></span><span style=display:flex><span>    * 88, 464: kerberos
+</span></span><span style=display:flex><span>    * 53: bind
+</span></span><span style=display:flex><span>  UDP Ports:
+</span></span><span style=display:flex><span>    * 88, 464: kerberos
+</span></span><span style=display:flex><span>    * 53: bind
+</span></span><span style=display:flex><span>    * 123: ntp
+</span></span></code></pre></div><p>Use the built-in firewall-cmd profiles to easily take care of the ports.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>firewall-cmd --get-active-zone
+</span></span><span style=display:flex><span>firewall-cmd --set-default-zone<span style=color:#f92672>=</span>internal
+</span></span><span style=display:flex><span>firewall-cmd --zone<span style=color:#f92672>=</span>internal --list-services
+</span></span><span style=display:flex><span>firewall-cmd --add-service<span style=color:#f92672>={</span>freeipa-ldap,freeipa-ldaps,freeipa-replication,dns,ntp<span style=color:#f92672>}</span> --permanent
+</span></span><span style=display:flex><span>firewall-cmd --reload
+</span></span><span style=display:flex><span>firewall-cmd --zone<span style=color:#f92672>=</span>internal --list-services
+</span></span></code></pre></div><p>We also need to deal with security-enhanced Linux (SELinux), kernel-level LSM (Linux Security Modules) by putting it into Permissive mode and making the change stick over reboots, basically disabling it from enforcing policy but still logging violations so we can get a sense of what is happening and make the required SELinux policy changes after we have everything working (a much later blog post).</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>root@pve1:~ setenforce Permissive
+</span></span><span style=display:flex><span>root@pve1:~ sed -i <span style=color:#e6db74>&#39;s/SELINUX=enforcing/SELINUX=permisive/&#39;</span> /etc/selinux/config
+</span></span></code></pre></div><p>Now is a good time to reboot the container (a couple of seconds) before we put the meat into this sandwich, just to make sure that everything is as it should be, maybe get a refill of that nice drink.</p><h2 id=here-be-dragons>Here be Dragons!</h2><p>CentOS and Red Hat 8 have introduced AppStream modules. That is, installing freeipa is a bit different nowadays&mldr;and a bit better (but not perfect). Install the DL1 stream of the IDM module</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=display:flex><span><span style=color:#a6e22e>root</span><span style=color:#960050;background-color:#1e0010>@</span><span style=color:#a6e22e>pve1</span>:~ <span style=color:#a6e22e>dnf</span> <span style=color:#a6e22e>module</span> <span style=color:#f92672>-</span><span style=color:#a6e22e>y</span> <span style=color:#a6e22e>install</span> <span style=color:#a6e22e>idm</span>:<span style=color:#a6e22e>DL1</span><span style=color:#f92672>/</span>{<span style=color:#a6e22e>server</span>,<span style=color:#a6e22e>dns</span>}
+</span></span></code></pre></div><p>and run <strong>ipa-server-install</strong> and good luck&mldr;&mldr;..</p><p>No, there is a bit more to it if you would like to increase your success in installing and running FreeIPA, though just running the above command will prompt you through to the finish, you may be missing out on some items.</p><p>Run &ldquo;ipa-server-install &ndash;help&rdquo; for a list of all the switches and a better understanding of what I have used.</p><link rel=stylesheet href=/mikewebb-tech/css/vendors/admonitions.b66974752dc3bdf7426a6db74d5ae889b5fa3a28c1b4408786b9ee97a8e5bd68.css integrity="sha256-tml0dS3DvfdCam23TVroibX6OijBtECHhrnul6jlvWg=" crossorigin=anonymous><div class="admonition caution"><div class=admonition-header><svg viewBox="0 0 512 512"><path d="M256 32c14.2.0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7.2 40.1S486.3 480 472 480H40c-14.3.0-27.6-7.7-34.7-20.1s-7-27.8.2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3.0-24 10.7-24 24v112c0 13.3 10.7 24 24 24s24-10.7 24-24V184c0-13.3-10.7-24-24-24zm32 224a32 32 0 10-64 0 32 32 0 1064 0z"/></svg>
+<span>Caution</span></div><div class=admonition-content><p>Be aware that the way I did it will put the directory manager and the admin user password in plain text in history (and on the screen).</p></div></div><p>Get comfy and run:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>root@pve1:~ ipa-server-install -v <span style=color:#ae81ff>\
+</span></span></span><span style=display:flex><span><span style=color:#ae81ff></span>&gt; --unattended <span style=color:#ae81ff>\
+</span></span></span><span style=display:flex><span><span style=color:#ae81ff></span>&gt; --setup-dns <span style=color:#ae81ff>\
+</span></span></span><span style=display:flex><span><span style=color:#ae81ff></span>&gt; --auto-reverse <span style=color:#ae81ff>\
+</span></span></span><span style=display:flex><span><span style=color:#ae81ff></span>&gt; --forwarder 192.168.1.5 <span style=color:#ae81ff>\
+</span></span></span><span style=display:flex><span><span style=color:#ae81ff></span>&gt; --forwarder 1.1.1.1 <span style=color:#ae81ff>\
+</span></span></span><span style=display:flex><span><span style=color:#ae81ff></span>&gt; --domain<span style=color:#f92672>=</span>hugel.lan <span style=color:#ae81ff>\
+</span></span></span><span style=display:flex><span><span style=color:#ae81ff></span>&gt; --realm<span style=color:#f92672>=</span>HUGEL.LAN <span style=color:#ae81ff>\
+</span></span></span><span style=display:flex><span><span style=color:#ae81ff></span>&gt; --no-host-dns <span style=color:#ae81ff>\
+</span></span></span><span style=display:flex><span><span style=color:#ae81ff></span>&gt; --idstart<span style=color:#f92672>=</span><span style=color:#ae81ff>3000</span>
+</span></span><span style=display:flex><span>&gt; --idmax<span style=color:#f92672>=</span><span style=color:#ae81ff>10000</span> <span style=color:#ae81ff>\
+</span></span></span><span style=display:flex><span><span style=color:#ae81ff></span>&gt; --setup-kra <span style=color:#ae81ff>\
+</span></span></span><span style=display:flex><span><span style=color:#ae81ff></span>&gt; --reverse-zone<span style=color:#f92672>=</span>1.168.195.in-add.arpa
+</span></span><span style=display:flex><span>&gt; -p dsStrong5ecret99 <span style=color:#ae81ff>\
+</span></span></span><span style=display:flex><span><span style=color:#ae81ff></span>&gt; -a aStrong5ecret99 <span style=color:#ae81ff>\
+</span></span></span><span style=display:flex><span><span style=color:#ae81ff></span>&gt; --ntp-server<span style=color:#f92672>=</span>192.168.1.1 <span style=color:#ae81ff>\
+</span></span></span><span style=display:flex><span><span style=color:#ae81ff></span>&gt; --ntp-server<span style=color:#f92672>=</span>2.au.pool.ntp.org
+</span></span></code></pre></div><p>AND&mldr;.if all went well and after a lot of information scrolling up the screen and some time had passed (and maybe another refill of a nice drink), you should be greeted with</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>Be sure to back up the CA certificates stored in /root/cacert.p12
+</span></span><span style=display:flex><span>These files are required to create replicas. The password <span style=color:#66d9ef>for</span> these
+</span></span><span style=display:flex><span>files is the Directory Manager password
+</span></span><span style=display:flex><span>The ipa-server-install command was successful
+</span></span></code></pre></div><p>There is some good advice there&mldr;back up the CA certificates. Oh and since it is a LXC container, take a snapshot.</p><p>Let&rsquo;s verify the install and check in on FreeIPA and Kerberos.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span> ipactl status
+</span></span><span style=display:flex><span>Directory Service: RUNNING
+</span></span><span style=display:flex><span>krb5kdc Service: RUNNING
+</span></span><span style=display:flex><span>kadmin Service: RUNNING
+</span></span><span style=display:flex><span>named Service: RUNNING
+</span></span><span style=display:flex><span>httpd Service: RUNNING
+</span></span><span style=display:flex><span>ipa-custodia Service: RUNNING
+</span></span><span style=display:flex><span>pki-tomcatd Service: RUNNING
+</span></span><span style=display:flex><span>ipa-otpd Service: RUNNING
+</span></span><span style=display:flex><span>ipa-dnskeysyncd Service: RUNNING
+</span></span><span style=display:flex><span>ipa: INFO: The ipactl command was successful
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span> kinit admin
+</span></span><span style=display:flex><span>Password <span style=color:#66d9ef>for</span> admin@HUGEL.LAN:
+</span></span><span style=display:flex><span> klist
+</span></span><span style=display:flex><span>Ticket cache: FILE:/tmp/krb5cc_0
+</span></span><span style=display:flex><span>Default principal: admin@HUGEL.LAN
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>Valid starting     Expires            Service principal
+</span></span><span style=display:flex><span>31/03/21 16:27:46  01/04/21 16:27:38  krbtgt/HUGEL.LAN@HUGEL.LAN
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span> ipa config-show
+</span></span><span style=display:flex><span>  Maximum username length: <span style=color:#ae81ff>32</span>
+</span></span><span style=display:flex><span>  Maximum hostname length: <span style=color:#ae81ff>64</span>
+</span></span><span style=display:flex><span>  Home directory base: /home
+</span></span><span style=display:flex><span>  Default shell: /bin/sh
+</span></span><span style=display:flex><span>  Default users group: ipausers
+</span></span><span style=display:flex><span>  Default e-mail domain: hugel.lan
+</span></span><span style=display:flex><span>  Search time limit: <span style=color:#ae81ff>2</span>
+</span></span><span style=display:flex><span>  Search size limit: <span style=color:#ae81ff>100</span>
+</span></span><span style=display:flex><span>  User search fields: uid,givenname,sn,telephonenumber,ou,title
+</span></span><span style=display:flex><span>  Group search fields: cn,description
+</span></span><span style=display:flex><span>  Enable migration mode: FALSE
+</span></span><span style=display:flex><span>  Certificate Subject base: O<span style=color:#f92672>=</span>HUGEL.LAN
+</span></span><span style=display:flex><span>  Password Expiration Notification <span style=color:#f92672>(</span>days<span style=color:#f92672>)</span>: <span style=color:#ae81ff>4</span>
+</span></span><span style=display:flex><span>  Password plugin features: AllowNThash, KDC:Disable Last Success
+</span></span><span style=display:flex><span>  SELinux user map order: guest_u:s0$xguest_u:s0$user_u:s0$staff_u:s0-s0:c0.c1023$sysadm_u:s0-s0:c0.c1023$unconfined_u:s0-s0:c0.c1023
+</span></span><span style=display:flex><span>  Default SELinux user: unconfined_u:s0-s0:c0.c1023
+</span></span><span style=display:flex><span>  Default PAC types: MS-PAC, nfs:NONE
+</span></span><span style=display:flex><span>  IPA masters: ipa01.hugel.lan
+</span></span><span style=display:flex><span>  IPA master capable of PKINIT: ipa01.hugel.lan
+</span></span><span style=display:flex><span>  IPA CA servers: ipa01.hugel.lan
+</span></span><span style=display:flex><span>  IPA CA renewal master: ipa01.hugel.lan
+</span></span><span style=display:flex><span>  IPA DNS servers: ipa01.hugel.lan
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span> ping redhat.com -c <span style=color:#ae81ff>1</span>
+</span></span><span style=display:flex><span>PING redhat.com <span style=color:#f92672>(</span>209.132.183.105<span style=color:#f92672>)</span> 56<span style=color:#f92672>(</span>84<span style=color:#f92672>)</span> bytes of data.
+</span></span><span style=display:flex><span><span style=color:#ae81ff>64</span> bytes from redirect.redhat.com <span style=color:#f92672>(</span>209.132.183.105<span style=color:#f92672>)</span>: icmp_seq<span style=color:#f92672>=</span><span style=color:#ae81ff>1</span> ttl<span style=color:#f92672>=</span><span style=color:#ae81ff>139</span> time<span style=color:#f92672>=</span><span style=color:#ae81ff>134</span> ms
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>--- redhat.com ping statistics ---
+</span></span><span style=display:flex><span><span style=color:#ae81ff>1</span> packets transmitted, <span style=color:#ae81ff>1</span> received, 0% packet loss, time 0ms
+</span></span><span style=display:flex><span>rtt min/avg/max/mdev <span style=color:#f92672>=</span> 133.794/133.794/133.794/0.000 ms
+</span></span></code></pre></div><p>All appears to be as it should. On a desktop or workstation, change the DNS server setting to point to the ip address of the FreeIPA container (for me 192.168.1.35) and point a browser to the hostname of the FreeIPA container, you should be greeted with a login page, use admin and the admin password defined during the install.</p><p>Now point the browser to the search engine of your choice, if the page comes up, DNS is working and you have a resource at hand to help with troubleshooting the next bit.</p><p>Reboot the container and rerun the verification commands you just ran before&mldr;..OH JOY!!!</p><h2 id=coercion-to--result>Coercion to +++ result</h2><p>Yep it&rsquo;s broken (maybe not, if so..good for you, thanks for stopping by and look out for my blogs on using FreeIPA). Let’s look at some commands to help you troubleshoot and research on the internet.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span> systemctl status ipa.service
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span> systemctl status dirsrv@HUGEL-LAN.service
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span> journelctl -xe
+</span></span></code></pre></div><p>In my case, which was the case in five container installs of FreeIPA on CentOS 8, the issue was the 389 Directory service. Specifically, dirsrv.service was failing to start due to missing files or directories:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span> journalctl -xe
+</span></span><span style=display:flex><span>...
+</span></span><span style=display:flex><span>Mar <span style=color:#ae81ff>28</span> 19:25:26 ip01 systemd-tmpfiles<span style=color:#f92672>[</span>206<span style=color:#f92672>]</span>: Failed to create directory /var/lock/dirsrv: No such file or directory
+</span></span><span style=display:flex><span>Mar <span style=color:#ae81ff>28</span> 19:25:26 ipa01 systemd-tmpfiles<span style=color:#f92672>[</span>206<span style=color:#f92672>]</span>: Failed to create directory /var/lock/dirsrv/slapd-HUGEL-LAN: No such file or directory
+</span></span><span style=display:flex><span>...
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span> journalctl -fu systemd-tmpfiles
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>Mar <span style=color:#ae81ff>28</span> 19:24:19 ip01 systemd-tmpfiles<span style=color:#f92672>[</span>47<span style=color:#f92672>]</span>: Failed to create directory or subvolume <span style=color:#e6db74>&#34;/var/lock/dirsrv&#34;</span>: No such file or directory
+</span></span><span style=display:flex><span>Mar <span style=color:#ae81ff>28</span> 19:24:19 ip01 systemd-tmpfiles<span style=color:#f92672>[</span>47<span style=color:#f92672>]</span>: Failed to create directory or subvolume <span style=color:#e6db74>&#34;/var/lock/dirsrv/slapd-HUGEL-LAN&#34;</span>: No such file or directory
+</span></span></code></pre></div><p>Dam, these are temp directories and files created at start-up, not as easy as creating the directory and calling it a day. Anyway, after learning more about 389ds and systemd-tmpfiles than I ever really wanted to, this appears to be some kind of bug that raised its head seven years ago and now others seem to have the same issue now, again, with CentOS 8. Not sure if it is related to running in a LXC container&mldr;.but it is known.</p><p>As some internetian put it, &ldquo;this is some strange race condition on boot for systemd-tmpfiles when traversing the symlinks (perhaps the double symlink for /var/lock as opposed to the single for /var/run) to the final destination to create the directories.&rdquo;</p><p>Manually creating the temporary directory and files using the systemd-tmpfiles command proves this and manually starting dirsrv.service works or just manually starting ipa.service which starts all the dependent services WORKS as expected.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span> systemd-tmpfiles --create
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span> systemctl start ipa.service
+</span></span><span style=display:flex><span><span style=color:#f92672>(</span>or <span style=color:#75715e>#ipactl start)</span>
+</span></span><span style=display:flex><span> ipactl status
+</span></span></code></pre></div><p>systemd-tmpfiles &ndash;create will complain about some /var/lock vs some /var/run entries in dirsrv-HUGEL-LAN.conf. Make the changes or ignore it, it made no difference as ipa.service still failed to start after a reboot. Everything is now running&mldr;.though not automagically at startup&mldr;but we now know that the startup of 389ds (dirsrv) and slapd is KAPUT!&mldr;&mldr;now to unKUPT</p><p>In a bid to look more into 389ds, I looked at what packages CentOS had that could help me.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span> rpm -qa | grep <span style=color:#ae81ff>389</span>
+</span></span><span style=display:flex><span>python3-lib389-1.4.3.8-6.module_el8.3.0+604+ab7bf9cc.noarch
+</span></span><span style=display:flex><span>**389-ds-base-legacy-tools-1.4.3.8-6.module<span style=color:#ae81ff>\_</span>el8.3.0+604+ab7bf9cc.x86<span style=color:#ae81ff>\_</span>64**
+</span></span><span style=display:flex><span>389-ds-base-libs-1.4.3.8-6.module_el8.3.0+604+ab7bf9cc.x86_64
+</span></span><span style=display:flex><span>389-ds-base-1.4.3.8-6.module_el8.3.0+604+ab7bf9cc.x86_64
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span> rpm -ql 389-ds-base-legacy-tools
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>/etc/dirsrv/config/template-initconfig
+</span></span></code></pre></div><p>OMG! what is that file in that package&mldr;.lets install it and have a look</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span> dnf install 389-ds-base-legacy-tools -y
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span> less /etc/dirsrv/config/template-initconfig
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span> <span style=color:#75715e>#(contents of file)</span>
+</span></span><span style=display:flex><span> This file is sourced by dirsrv upon startup to set
+</span></span><span style=display:flex><span> the default environment <span style=color:#66d9ef>for</span> a single specific directory
+</span></span><span style=display:flex><span> server instances. To set defaults <span style=color:#66d9ef>for</span> all instances, edit
+</span></span><span style=display:flex><span> the file in the same directory called dirsrv.
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span> These settings are used by the start-dirsrv and
+</span></span><span style=display:flex><span> start-slapd scripts <span style=color:#f92672>(</span>as well as their associates stop
+</span></span><span style=display:flex><span> and restart scripts<span style=color:#f92672>)</span>. Do not edit them unless you know
+</span></span><span style=display:flex><span> what you are doing.
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># This file is in systemd EnvironmentFile format - see man systemd.exec</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span> <span style=color:#75715e># /etc/dirsrv/config/template-initconfig (END)</span>
+</span></span></code></pre></div><p>Really! Actually, I said WTF! The gerddam missing link for dirsrv service start-up. Let&rsquo;s reboot and see.</p><p>A couple of seconds later&mldr;.check IPA services are running, check internet connectivity and resolution, bring up the management page from a workstation. Reboot and check again</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span> ipactl status
+</span></span><span style=display:flex><span> ipa-healthcheck --output-type human
+</span></span></code></pre></div><h2 id=its-alive-and-kicking>IT&rsquo;S ALIVE AND KICKING!!</h2><p>and not broken.</p><p>Now that we have a working freeIPA install in a container, that survives reboots, and know the missing ingredients to success:</p><ul><li>-x command line switch for chronyd, and</li><li>Install 389-ds-base-legacy-tools &lt;&mdash; THIS</li></ul><p>We can now move onto creating replicated FreeIPA master&mldr;.but in another post, I feel as though this has been epic enough.</p><p>Stage 2. Setting up MASTER/MASTER FreeIPA replica server in CentOS 8:</p><p>[[2021-04-01-freeipa-in-centos-8-lxc-container]]</p><p>As always&mldr;.Beer and profit.</p></div><div class=post-footer></div></article></main></div></body></html>

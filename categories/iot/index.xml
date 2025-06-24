@@ -1,40 +1,7 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>IoT on Mike Webb Tech</title>
-    <link>https://mikewebbtech.github.io/mikewebb-tech/categories/iot/</link>
-    <description>Recent content in IoT on Mike Webb Tech</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sun, 20 Apr 2025 12:08:01 +0800</lastBuildDate>
-    <atom:link href="https://mikewebbtech.github.io/mikewebb-tech/categories/iot/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Fluba Hugo</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/flubah/</link>
-      <pubDate>Sun, 20 Apr 2025 12:08:01 +0800</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/flubah/</guid>
-      <description>the static site generator that powers this blog. Learn about my experiences and why I chose Hugo for my journey in tech.</description>
-    </item>
-    <item>
-      <title>Iot (art 3)</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/iot/</link>
-      <pubDate>Wed, 19 Feb 2025 16:37:08 +0800</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/iot/</guid>
-      <description>&lt;p&gt;My journey with Hugo is just beginning, and I&amp;rsquo;m excited to explore its more&#xA;advanced features, such as shortcodes for embedding dynamic content and data-&#xA;driven pages. For now, I&amp;rsquo;m incredibly satisfied with its speed, simplicity, and&#xA;the control it gives me over my blog&amp;rsquo;s presentation.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Diving into Hugo</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/my-hugo-experience/</link>
-      <pubDate>Mon, 10 Feb 2025 12:08:01 +0800</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/my-hugo-experience/</guid>
-      <description>Exploring the power and simplicity of Hugo, the static site generator that powers this blog. Learn about my experiences and why I chose Hugo for my journey in tech.</description>
-    </item>
-    <item>
-      <title>bar (art 1)</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/bar/</link>
-      <pubDate>Sat, 27 Apr 2024 16:37:08 +0800</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/bar/</guid>
-      <description>&lt;p&gt;My journey with Hugo is just beginning, and I&amp;rsquo;m excited to explore its more&#xA;advanced features, such as shortcodes for embedding dynamic content and data-&#xA;driven pages. For now, I&amp;rsquo;m incredibly satisfied with its speed, simplicity, and&#xA;the control it gives me over my blog&amp;rsquo;s presentation.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>IoT on Mike Webb Tech</title><link>https://mikewebbtech.github.io/mikewebb-tech/categories/iot/</link><description>Recent content in IoT on Mike Webb Tech</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://mikewebbtech.github.io/mikewebb-tech/categories/iot/index.xml" rel="self" type="application/rss+xml"/><item><title>Fluba Hugo</title><link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/flubah/</link><pubDate>Sun, 20 Apr 2025 12:08:01 +0800</pubDate><guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/flubah/</guid><description>the static site generator that powers this blog. Learn about my experiences and why I chose Hugo for my journey in tech.</description></item><item><title>Iot (art 3)</title><link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/iot/</link><pubDate>Wed, 19 Feb 2025 16:37:08 +0800</pubDate><guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/iot/</guid><description>&lt;p>My journey with Hugo is just beginning, and I&amp;rsquo;m excited to explore its more
+advanced features, such as shortcodes for embedding dynamic content and data-
+driven pages. For now, I&amp;rsquo;m incredibly satisfied with its speed, simplicity, and
+the control it gives me over my blog&amp;rsquo;s presentation.&lt;/p></description></item><item><title>Diving into Hugo</title><link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/my-hugo-experience/</link><pubDate>Mon, 10 Feb 2025 12:08:01 +0800</pubDate><guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/my-hugo-experience/</guid><description>Exploring the power and simplicity of Hugo, the static site generator that powers this blog. Learn about my experiences and why I chose Hugo for my journey in tech.</description></item><item><title>bar (art 1)</title><link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/bar/</link><pubDate>Sat, 27 Apr 2024 16:37:08 +0800</pubDate><guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/bar/</guid><description>&lt;p>My journey with Hugo is just beginning, and I&amp;rsquo;m excited to explore its more
+advanced features, such as shortcodes for embedding dynamic content and data-
+driven pages. For now, I&amp;rsquo;m incredibly satisfied with its speed, simplicity, and
+the control it gives me over my blog&amp;rsquo;s presentation.&lt;/p></description></item></channel></rss>

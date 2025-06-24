@@ -1,188 +1,21 @@
-<!doctype html>
-<html lang="en"><head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="generator" content="Hugo 0.147.0">
-  <title>Using your iCloud address book in Linux</title><link rel="stylesheet" href="https://mikewebbtech.github.io/mikewebb-tech/css/style.min.21cb2879bdc9736d044cba6728046ef1ed8fe1faf4202b674e79b695f5552edd.css" />
-  <link rel="icon" type="image/x-icon"  href="/mikewebb-tech/img/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/mikewebb-tech/img/apple-touch-icon.png" />
- 
-  <link rel="manifest" href="/mikewebb-tech/img/site.webmanifest" />
-</head>
-<body>
-    <div class="layout">  <aside class="sidebar">
-    <div class="logo">
-      <img src="/mikewebb-tech/avatar.png" alt="avatar" width="192">
-      <p class="byline">
-        MIKE WEBB TECH
-      </p>
-      <p class="byline">
-        <a href="https://github.com/mikewebbtech" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-github"></i></a>
-        <a href="https://www.linkedin.com/in/michael-webb-1a36b8a5/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
-      </p>
-    </div>
-    <nav class="nav">
-  <ul>
-    
-    
-      
-      
-
-      
-      
-        
-        
-          
-        
-      
-      <li>
-        <a href="/mikewebb-tech/" ><i class="fa-solid fa-house"></i> Home</a>
-      </li>
-    
-      
-      
-
-      
-      
-        
-        
-          
-        
-      
-      <li>
-        <a href="/mikewebb-tech/articles/" ><i class="fa-solid fa-file-code"></i> Articles</a>
-      </li>
-    
-      
-      
-
-      
-      
-        
-        
-          
-        
-      
-      <li>
-        <a href="/mikewebb-tech/categories/" ><i class="fa-solid fa-list"></i> Categories</a>
-      </li>
-    
-      
-      
-
-      
-      
-        
-        
-          
-        
-      
-      <li>
-        <a href="/mikewebb-tech/series/" ><i class="fa-solid fa-layer-group"></i> Series</a>
-      </li>
-    
-      
-      
-
-      
-      
-        
-        
-          
-        
-      
-      <li>
-        <a href="/mikewebb-tech/tags/" ><i class="fa-solid fa-tags"></i> Tags</a>
-      </li>
-    
-      
-      
-
-      
-      
-        
-        
-          
-        
-      
-      <li>
-        <a href="/mikewebb-tech/about/" ><i class="fa-solid fa-circle-info"></i> About</a>
-      </li>
-    
-  </ul>
-</nav>
-    <div class="nav-bottom">
-      <a href="https://mikewebb.tech">
-        Designed by Mike Webb 
-      </a>
-      <a href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">
-        &copy; 2025 CC BY-NC 4.0
-      </a>
-      <p>
-      created using
-      </p> 
-      <a href="https://gohugo.io" target="_blank">
-        <img src="/mikewebb-tech/hugo-logo-wide.svg" alt="hugo.io" style="width: 40%">
-      </a>
-      <br><br>
-      Git commit 
-      
-      
-      <br><br>
-    </div>
-  </aside>
-  <header class="header">
-    <h1>Using your iCloud address book in Linux</h1>
-  </header>
-<main class="main">
-
-<article class="post">
-  <div class="post-header">
-    
-    <div class="article-meta">
-      <div>
-        <i class="fa-solid fa-calendar-days"></i>
-        Aug 11, 2017
-      </div>
-      <div>
-        <i class="fa-solid fa-file-lines"></i>
-        261 words
-      </div>
-    </div>
-  </div><div class="post-content"><h5 id="not-just-linux-but-any-application-that-supports-webdav-or-carddav">Not just linux but any application that supports WebDAV or CardDAV.</h5>
-<p>Following on from previous posts about using Apples iCloud services on non Apple devices or operating systems.  See.</p>
-<ul>
-<li><a href="https://mikewebblive.wordpress.com/2017/04/24/apple-caldav-address-without-plist/">Apple CalDAV address…without .plist</a></li>
-<li><a href="https://mikewebblive.wordpress.com/2017/04/23/your-apple-secret-caldav-address/">Your Apple “secret” CalDAV address</a></li>
-</ul>
-<p>Once you have found the dsid for your iCloud account you will also need to setup two factor authentication for the computer/device you are setting up your address book on.</p>
-<p>. Log into you apple accoun management page via icloud.com to setup TFA</p>
-<p>For the next step, I&rsquo;m using Evolution Mail, but you can use any application that supports CardDAV or WebDAV</p>
-<p>If you followed the steps in one of the two links above, you would have you CalDAV addess that looks something similar to:
-<a href="https://pxx-caldav.icloud.com//calanders/">https://pxx-caldav.icloud.com//calanders/</a>
-e.g. <a href="https://p10-caldav.icloud/223445234/calanders/home/">https://p10-caldav.icloud/223445234/calanders/home/</a></p>
-<p>Convert this to the iCloud CardDAV address:
-e.g. <a href="https://p10-contacts.icloud/223445234/carddavhome/card/">https://p10-contacts.icloud/223445234/carddavhome/card/</a></p>
-<p>So the important information is:
+<!doctype html><html lang=en><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=generator content="Hugo 0.147.7"><title>Using your iCloud address book in Linux</title><link rel=stylesheet href=https://mikewebbtech.github.io/mikewebb-tech/css/style.min.1cf20735f340168887f3a69f2e8572e69284c55776860c0cd0a2e5a75b81d443.css><link rel=icon type=image/x-icon href=/mikewebb-tech/img/favicon.ico><link rel=apple-touch-icon sizes=180x180 href=/mikewebb-tech/img/apple-touch-icon.png><link rel=manifest href=/mikewebb-tech/img/site.webmanifest></head><body data-theme=dark><div class=layout><aside class=sidebar><div class=logo><img src=/mikewebb-tech/avatar.png alt=avatar width=192><p class=byline>MIKE WEBB TECH</p><p class=byline><a href=https://github.com/mikewebbtech target=_blank rel="noopener noreferrer"><i class="fa-brands fa-square-github"></i></a>
+<a href=https://www.linkedin.com/in/michael-webb-1a36b8a5/ target=_blank rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a></p></div><nav class=nav><ul><li><a href=/mikewebb-tech/><i class="fa-solid fa-house"></i> Home</a></li><li><a href=/mikewebb-tech/articles/><i class="fa-solid fa-file-code"></i> Articles</a></li><li><a href=/mikewebb-tech/categories/><i class="fa-solid fa-list"></i> Categories</a></li><li><a href=/mikewebb-tech/series/><i class="fa-solid fa-layer-group"></i> Series</a></li><li><a href=/mikewebb-tech/tags/><i class="fa-solid fa-tags"></i> Tags</a></li><li><a href=/mikewebb-tech/about/><i class="fa-solid fa-circle-info"></i> About</a></li></ul></nav><div class=nav-bottom><a href=https://mikewebb.tech>Designed by Mike Webb
+</a><a href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target=_blank rel="license noopener noreferrer" style=display:inline-block>&copy; 2025 CC BY-NC 4.0</a><p>created using</p><a href=https://gohugo.io target=_blank><img src=/mikewebb-tech/hugo-logo-wide.svg alt=hugo.io style=width:40%></a><br><br>Git commit
+51f1e6f
+25-06-14<br><br></div></aside><header class=header><h1>Using your iCloud address book in Linux</h1></header><main class=main><article class=post><div class=post-header><div class=article-meta><div><i class="fa-solid fa-calendar-days"></i>
+Aug 11, 2017</div><div><i class="fa-solid fa-file-lines"></i>
+261 words</div></div></div><div class=post-content><h5 id=not-just-linux-but-any-application-that-supports-webdav-or-carddav>Not just linux but any application that supports WebDAV or CardDAV.</h5><p>Following on from previous posts about using Apples iCloud services on non Apple devices or operating systems.  See.</p><ul><li><a href=https://mikewebblive.wordpress.com/2017/04/24/apple-caldav-address-without-plist/>Apple CalDAV address…without .plist</a></li><li><a href=https://mikewebblive.wordpress.com/2017/04/23/your-apple-secret-caldav-address/>Your Apple “secret” CalDAV address</a></li></ul><p>Once you have found the dsid for your iCloud account you will also need to setup two factor authentication for the computer/device you are setting up your address book on.</p><p>. Log into you apple accoun management page via icloud.com to setup TFA</p><p>For the next step, I&rsquo;m using Evolution Mail, but you can use any application that supports CardDAV or WebDAV</p><p>If you followed the steps in one of the two links above, you would have you CalDAV addess that looks something similar to:
+<a href=https://pxx-caldav.icloud.com//calanders/>https://pxx-caldav.icloud.com//calanders/</a>
+e.g. <a href=https://p10-caldav.icloud/223445234/calanders/home/>https://p10-caldav.icloud/223445234/calanders/home/</a></p><p>Convert this to the iCloud CardDAV address:
+e.g. <a href=https://p10-contacts.icloud/223445234/carddavhome/card/>https://p10-contacts.icloud/223445234/carddavhome/card/</a></p><p>So the important information is:
 Server: hhttps://p10-contacts.icloud/223445234/carddavhome/card/
 User Name: your iCloud login
 Password: your iCloud two factor authentication password for the device/computer
-Name: iCloud Adressbook (or what ever)</p>
-<p>In Evolution Mail (one of a couple very popular linux mail and calendar applications) create a new address book.</p>
-<p>File -&gt; New -&gt; Address book
+Name: iCloud Adressbook (or what ever)</p><p>In Evolution Mail (one of a couple very popular linux mail and calendar applications) create a new address book.</p><p>File -> New -> Address book
 Type: = WebDAV
 Name = iCloud
 select &ldquo;Mark as deault address book&rdquo; (optional)
 select &ldquo;autocomplete with this address book&rdquo;
 select &ldquo;Copy book content locally for offline operation&rdquo;
-URL: = <a href="https://p10-contacts.icloud/223445234/carddavhome/card/">https://p10-contacts.icloud/223445234/carddavhome/card/</a> (&lt;-e.g.)
-User: = your_iCloud_login</p>
-<p>When you first sync to the address book you will be prompted for a password, don&rsquo;t use your iCloud accound password, this will fail, use the Two Factor Authentication password you setup for the device/computer.</p>
-<p>Done, beer and profit.</p>
-</div>
-
-  <div class="post-footer"></div></article>
-</main>
-    </div>
-  </body>
-</html>
+URL: = <a href=https://p10-contacts.icloud/223445234/carddavhome/card/>https://p10-contacts.icloud/223445234/carddavhome/card/</a> (&lt;-e.g.)
+User: = your_iCloud_login</p><p>When you first sync to the address book you will be prompted for a password, don&rsquo;t use your iCloud accound password, this will fail, use the Two Factor Authentication password you setup for the device/computer.</p><p>Done, beer and profit.</p></div><div class=post-footer></div></article></main></div></body></html>

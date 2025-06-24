@@ -1,181 +1,27 @@
-<!doctype html>
-<html lang="en"><head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="generator" content="Hugo 0.147.0">
-  <title>PPA Public Key Error</title><link rel="stylesheet" href="https://mikewebbtech.github.io/mikewebb-tech/css/style.min.21cb2879bdc9736d044cba6728046ef1ed8fe1faf4202b674e79b695f5552edd.css" />
-  <link rel="icon" type="image/x-icon"  href="/mikewebb-tech/img/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/mikewebb-tech/img/apple-touch-icon.png" />
- 
-  <link rel="manifest" href="/mikewebb-tech/img/site.webmanifest" />
-</head>
-<body>
-    <div class="layout">  <aside class="sidebar">
-    <div class="logo">
-      <img src="/mikewebb-tech/avatar.png" alt="avatar" width="192">
-      <p class="byline">
-        MIKE WEBB TECH
-      </p>
-      <p class="byline">
-        <a href="https://github.com/mikewebbtech" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-github"></i></a>
-        <a href="https://www.linkedin.com/in/michael-webb-1a36b8a5/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
-      </p>
-    </div>
-    <nav class="nav">
-  <ul>
-    
-    
-      
-      
-
-      
-      
-        
-        
-          
-        
-      
-      <li>
-        <a href="/mikewebb-tech/" ><i class="fa-solid fa-house"></i> Home</a>
-      </li>
-    
-      
-      
-
-      
-      
-        
-        
-          
-        
-      
-      <li>
-        <a href="/mikewebb-tech/articles/" ><i class="fa-solid fa-file-code"></i> Articles</a>
-      </li>
-    
-      
-      
-
-      
-      
-        
-        
-          
-        
-      
-      <li>
-        <a href="/mikewebb-tech/categories/" ><i class="fa-solid fa-list"></i> Categories</a>
-      </li>
-    
-      
-      
-
-      
-      
-        
-        
-          
-        
-      
-      <li>
-        <a href="/mikewebb-tech/series/" ><i class="fa-solid fa-layer-group"></i> Series</a>
-      </li>
-    
-      
-      
-
-      
-      
-        
-        
-          
-        
-      
-      <li>
-        <a href="/mikewebb-tech/tags/" ><i class="fa-solid fa-tags"></i> Tags</a>
-      </li>
-    
-      
-      
-
-      
-      
-        
-        
-          
-        
-      
-      <li>
-        <a href="/mikewebb-tech/about/" ><i class="fa-solid fa-circle-info"></i> About</a>
-      </li>
-    
-  </ul>
-</nav>
-    <div class="nav-bottom">
-      <a href="https://mikewebb.tech">
-        Designed by Mike Webb 
-      </a>
-      <a href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">
-        &copy; 2025 CC BY-NC 4.0
-      </a>
-      <p>
-      created using
-      </p> 
-      <a href="https://gohugo.io" target="_blank">
-        <img src="/mikewebb-tech/hugo-logo-wide.svg" alt="hugo.io" style="width: 40%">
-      </a>
-      <br><br>
-      Git commit 
-      
-      
-      <br><br>
-    </div>
-  </aside>
-  <header class="header">
-    <h1>PPA Public Key Error</h1>
-  </header>
-<main class="main">
-
-<article class="post">
-  <div class="post-header">
-    
-    <div class="article-meta">
-      <div>
-        <i class="fa-solid fa-calendar-days"></i>
-        Mar 30, 2017
-      </div>
-      <div>
-        <i class="fa-solid fa-file-lines"></i>
-        349 words
-      </div>
-    </div>
-  </div><div class="post-content"><p>Though, every now and then I hit a snag when installing a new package, especially from a PPA.  The most common of these relate to security/verification using PKI.  to varify the authenticity of a package, usually you check the md5 hash and compare it with what the developer has published.  <a href="https://www.canonical.com/">Canonical</a> goes one step further and uses GPG (PGP) signing on packages in their repositories and those found in launchpad PPA repositories as well as hosting a key server (<a href="http://keyserver.ubuntu.com">keyserver.ubuntu.com</a>).</p>
-<p>Every so often this gets out of whack.  Keys expire, maintainers change or wrong phase of the moon and you end up with something resembling:</p>
-<pre tabindex="0"><code>mike@obsidian:/etc/network$ sudo apt update
-Get:14 http://ppa.launchpad.net/gns3/ppa/ubuntu yakkety InRelease [17.5 kB] 
-Err:14 http://ppa.launchpad.net/gns3/ppa/ubuntu yakkety InRelease 
- The following signatures couldn&#39;t be verified because the public key is not available: NO\_PUBKEY 9A2FD067A2E3EF7B
-W: GPG error: http://ppa.launchpad.net/gns3/ppa/ubuntu yakkety InRelease: The following signatures couldn&#39;t be verified because the public key is not available: NO\_PUBKEY 9A2FD067A2E3EF7B
-E: The repository &#39;http://ppa.launchpad.net/gns3/ppa/ubuntu yakkety InRelease&#39; is not signed.
-N: Updating from such a repository can&#39;t be done securely, and is therefore disabled by default.
-N: See apt-secure(8) manpage for repository creation and user configuration details.
-</code></pre><p>Or better know as &ldquo;splat&rdquo;.  Like in any self respecting system, there are many ways to skin a cat depending on circumstances and personal preferences.  The easiest way I usually find to resolve PPA key issues with the most succes is to use the apt-key command.</p>
-<pre tabindex="0"><code>mike@obsidian:~/$ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 9A2FD067A2E3EF7B
-Executing: /tmp/tmp.DSAfPm9NVu/gpg.1.sh --keyserver
-keyserver.ubuntu.com
---recv-keys
-9A2FD067A2E3EF7B
-gpg: key 9A2FD067A2E3EF7B: public key &#34;Launchpad PPA for GNS3&#34; imported
-gpg: Total number processed: 1
-</code></pre><p>Of course a developer doesn&rsquo;t have to use the Canonical key server.  They maybe using one of a myriad of trusted and secure key servers already to host their public key as shown in this example for an alternative way to import a key used for package signing.</p>
-<p>:<del>/$sudo gpg &ndash;keyserver keyserver.pgp.com &ndash;recv-key <!-- raw HTML omitted -->
-:</del>/$sudo gpg -a &ndash;export <!-- raw HTML omitted --> | sudo apt-key add -
-:~/$sudo apt-get update</p>
-<p>P.S.  We all should be using some sort of PKI for the transmission of data over the internet</p>
-</div>
-
-  <div class="post-footer"></div></article>
-</main>
-    </div>
-  </body>
-</html>
+<!doctype html><html lang=en><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=generator content="Hugo 0.147.7"><title>PPA Public Key Error</title><link rel=stylesheet href=https://mikewebbtech.github.io/mikewebb-tech/css/style.min.1cf20735f340168887f3a69f2e8572e69284c55776860c0cd0a2e5a75b81d443.css><link rel=icon type=image/x-icon href=/mikewebb-tech/img/favicon.ico><link rel=apple-touch-icon sizes=180x180 href=/mikewebb-tech/img/apple-touch-icon.png><link rel=manifest href=/mikewebb-tech/img/site.webmanifest></head><body data-theme=dark><div class=layout><aside class=sidebar><div class=logo><img src=/mikewebb-tech/avatar.png alt=avatar width=192><p class=byline>MIKE WEBB TECH</p><p class=byline><a href=https://github.com/mikewebbtech target=_blank rel="noopener noreferrer"><i class="fa-brands fa-square-github"></i></a>
+<a href=https://www.linkedin.com/in/michael-webb-1a36b8a5/ target=_blank rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a></p></div><nav class=nav><ul><li><a href=/mikewebb-tech/><i class="fa-solid fa-house"></i> Home</a></li><li><a href=/mikewebb-tech/articles/><i class="fa-solid fa-file-code"></i> Articles</a></li><li><a href=/mikewebb-tech/categories/><i class="fa-solid fa-list"></i> Categories</a></li><li><a href=/mikewebb-tech/series/><i class="fa-solid fa-layer-group"></i> Series</a></li><li><a href=/mikewebb-tech/tags/><i class="fa-solid fa-tags"></i> Tags</a></li><li><a href=/mikewebb-tech/about/><i class="fa-solid fa-circle-info"></i> About</a></li></ul></nav><div class=nav-bottom><a href=https://mikewebb.tech>Designed by Mike Webb
+</a><a href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target=_blank rel="license noopener noreferrer" style=display:inline-block>&copy; 2025 CC BY-NC 4.0</a><p>created using</p><a href=https://gohugo.io target=_blank><img src=/mikewebb-tech/hugo-logo-wide.svg alt=hugo.io style=width:40%></a><br><br>Git commit
+93c13a9
+25-06-17<br><br></div></aside><header class=header><h1>PPA Public Key Error</h1></header><main class=main><article class=post><div class=post-header><div class=article-meta><div><i class="fa-solid fa-calendar-days"></i>
+Mar 30, 2017</div><div><i class="fa-solid fa-file-lines"></i>
+367 words</div></div></div><div class=post-content><p>Though, every now and then I hit a snag when installing a new package, especially from a PPA.  The most common of these relate to security/verification using PKI.  to varify the authenticity of a package, usually you check the md5 hash and compare it with what the developer has published.  <a href=https://www.canonical.com/>Canonical</a> goes one step further and uses GPG (PGP) signing on packages in their repositories and those found in launchpad PPA repositories as well as hosting a key server (<a href=http://keyserver.ubuntu.com>keyserver.ubuntu.com</a>).</p><p>Every so often this gets out of whack.  Keys expire, maintainers change or wrong phase of the moon and you end up with something resembling:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-text data-lang=text><span style=display:flex><span>mike@obsidian:/etc/network$ sudo apt update
+</span></span><span style=display:flex><span>Get:14 http://ppa.launchpad.net/gns3/ppa/ubuntu yakkety InRelease [17.5 kB] 
+</span></span><span style=display:flex><span>Err:14 http://ppa.launchpad.net/gns3/ppa/ubuntu yakkety InRelease 
+</span></span><span style=display:flex><span> The following signatures couldn&#39;t be verified because the public key is not available: NO\_PUBKEY 9A2FD067A2E3EF7B
+</span></span><span style=display:flex><span>W: GPG error: http://ppa.launchpad.net/gns3/ppa/ubuntu yakkety InRelease: The following signatures couldn&#39;t be verified because the public key is not available: NO\_PUBKEY 9A2FD067A2E3EF7B
+</span></span><span style=display:flex><span>E: The repository &#39;http://ppa.launchpad.net/gns3/ppa/ubuntu yakkety InRelease&#39; is not signed.
+</span></span><span style=display:flex><span>N: Updating from such a repository can&#39;t be done securely, and is therefore disabled by default.
+</span></span><span style=display:flex><span>N: See apt-secure(8) manpage for repository creation and user configuration details.
+</span></span></code></pre></div><p>Or better know as &ldquo;splat&rdquo;.  Like in any self respecting system, there are many ways to skin a cat depending on circumstances and personal preferences.  The easiest way I usually find to resolve PPA key issues with the most succes is to use the apt-key command.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-text data-lang=text><span style=display:flex><span>mike@obsidian:~/$ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 9A2FD067A2E3EF7B
+</span></span><span style=display:flex><span>Executing: /tmp/tmp.DSAfPm9NVu/gpg.1.sh --keyserver
+</span></span><span style=display:flex><span>keyserver.ubuntu.com
+</span></span><span style=display:flex><span>--recv-keys
+</span></span><span style=display:flex><span>9A2FD067A2E3EF7B
+</span></span><span style=display:flex><span>gpg: key 9A2FD067A2E3EF7B: public key &#34;Launchpad PPA for GNS3&#34; imported
+</span></span><span style=display:flex><span>gpg: Total number processed: 1
+</span></span></code></pre></div><p>Of course a developer doesn&rsquo;t have to use the Canonical key server.  They maybe using one of a myriad of trusted and secure key servers already to host their public key as shown in this example for an alternative way to import a key used for package signing.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-text data-lang=text><span style=display:flex><span>mike@obsidian:~/$ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 9A2FD067A2E3EF7B
+</span></span><span style=display:flex><span>$sudo gpg --keyserver keyserver.pgp.com --recv-key &lt;PUBKEY&gt;
+</span></span><span style=display:flex><span>$sudo gpg -a --export &lt;PUBKEY&gt; | sudo apt-key add -
+</span></span><span style=display:flex><span>$sudo apt-get update
+</span></span></code></pre></div><p>mike@obsidian:~/$ sudo apt-key adv &ndash;keyserver keyserver.ubuntu.com &ndash;recv-keys 9A2FD067A2E3EF7B
+P.S.  We all should be using some sort of PKI for the transmission of data over the internet</p></div><div class=post-footer></div></article></main></div></body></html>

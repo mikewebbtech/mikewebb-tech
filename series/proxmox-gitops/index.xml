@@ -1,33 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Proxmox as Code on Mike Webb Tech</title>
-    <link>https://mikewebbtech.github.io/mikewebb-tech/series/proxmox-gitops/</link>
-    <description>Recent content in Proxmox as Code on Mike Webb Tech</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Wed, 19 Feb 2025 16:37:08 +0800</lastBuildDate>
-    <atom:link href="https://mikewebbtech.github.io/mikewebb-tech/series/proxmox-gitops/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Iot (art 3)</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/iot/</link>
-      <pubDate>Wed, 19 Feb 2025 16:37:08 +0800</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/iot/</guid>
-      <description>&lt;p&gt;My journey with Hugo is just beginning, and I&amp;rsquo;m excited to explore its more&#xA;advanced features, such as shortcodes for embedding dynamic content and data-&#xA;driven pages. For now, I&amp;rsquo;m incredibly satisfied with its speed, simplicity, and&#xA;the control it gives me over my blog&amp;rsquo;s presentation.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Foo (art 2)</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/foo/</link>
-      <pubDate>Sun, 19 Jan 2025 16:37:08 +0800</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/foo/</guid>
-      <description>&lt;p&gt;My journey with Hugo is just beginning, and I&amp;rsquo;m excited to explore its more&#xA;advanced features, such as shortcodes for embedding dynamic content and data-&#xA;driven pages. For now, I&amp;rsquo;m incredibly satisfied with its speed, simplicity, and&#xA;the control it gives me over my blog&amp;rsquo;s presentation.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>bar (art 1)</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/bar/</link>
-      <pubDate>Sat, 27 Apr 2024 16:37:08 +0800</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/bar/</guid>
-      <description>&lt;p&gt;My journey with Hugo is just beginning, and I&amp;rsquo;m excited to explore its more&#xA;advanced features, such as shortcodes for embedding dynamic content and data-&#xA;driven pages. For now, I&amp;rsquo;m incredibly satisfied with its speed, simplicity, and&#xA;the control it gives me over my blog&amp;rsquo;s presentation.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Proxmox as Code on Mike Webb Tech</title><link>https://mikewebbtech.github.io/mikewebb-tech/series/proxmox-gitops/</link><description>Recent content in Proxmox as Code on Mike Webb Tech</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://mikewebbtech.github.io/mikewebb-tech/series/proxmox-gitops/index.xml" rel="self" type="application/rss+xml"/><item><title>Iot (art 3)</title><link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/iot/</link><pubDate>Wed, 19 Feb 2025 16:37:08 +0800</pubDate><guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/iot/</guid><description>&lt;p>My journey with Hugo is just beginning, and I&amp;rsquo;m excited to explore its more
+advanced features, such as shortcodes for embedding dynamic content and data-
+driven pages. For now, I&amp;rsquo;m incredibly satisfied with its speed, simplicity, and
+the control it gives me over my blog&amp;rsquo;s presentation.&lt;/p></description></item><item><title>Foo (art 2)</title><link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/foo/</link><pubDate>Sun, 19 Jan 2025 16:37:08 +0800</pubDate><guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/foo/</guid><description>&lt;p>My journey with Hugo is just beginning, and I&amp;rsquo;m excited to explore its more
+advanced features, such as shortcodes for embedding dynamic content and data-
+driven pages. For now, I&amp;rsquo;m incredibly satisfied with its speed, simplicity, and
+the control it gives me over my blog&amp;rsquo;s presentation.&lt;/p></description></item><item><title>bar (art 1)</title><link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/bar/</link><pubDate>Sat, 27 Apr 2024 16:37:08 +0800</pubDate><guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/bar/</guid><description>&lt;p>My journey with Hugo is just beginning, and I&amp;rsquo;m excited to explore its more
+advanced features, such as shortcodes for embedding dynamic content and data-
+driven pages. For now, I&amp;rsquo;m incredibly satisfied with its speed, simplicity, and
+the control it gives me over my blog&amp;rsquo;s presentation.&lt;/p></description></item></channel></rss>

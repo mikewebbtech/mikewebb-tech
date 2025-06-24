@@ -1,164 +1,10 @@
-<!doctype html>
-<html lang="en"><head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="generator" content="Hugo 0.147.0">
-  <title>SAS disk power mode control</title><link rel="stylesheet" href="https://mikewebbtech.github.io/mikewebb-tech/css/style.min.21cb2879bdc9736d044cba6728046ef1ed8fe1faf4202b674e79b695f5552edd.css" />
-  <link rel="icon" type="image/x-icon"  href="/mikewebb-tech/img/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/mikewebb-tech/img/apple-touch-icon.png" />
- 
-  <link rel="manifest" href="/mikewebb-tech/img/site.webmanifest" />
-</head>
-<body>
-    <div class="layout">  <aside class="sidebar">
-    <div class="logo">
-      <img src="/mikewebb-tech/avatar.png" alt="avatar" width="192">
-      <p class="byline">
-        MIKE WEBB TECH
-      </p>
-      <p class="byline">
-        <a href="https://github.com/mikewebbtech" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-github"></i></a>
-        <a href="https://www.linkedin.com/in/michael-webb-1a36b8a5/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
-      </p>
-    </div>
-    <nav class="nav">
-  <ul>
-    
-    
-      
-      
-
-      
-      
-        
-        
-          
-        
-      
-      <li>
-        <a href="/mikewebb-tech/" ><i class="fa-solid fa-house"></i> Home</a>
-      </li>
-    
-      
-      
-
-      
-      
-        
-        
-          
-        
-      
-      <li>
-        <a href="/mikewebb-tech/articles/" ><i class="fa-solid fa-file-code"></i> Articles</a>
-      </li>
-    
-      
-      
-
-      
-      
-        
-        
-          
-        
-      
-      <li>
-        <a href="/mikewebb-tech/categories/" ><i class="fa-solid fa-list"></i> Categories</a>
-      </li>
-    
-      
-      
-
-      
-      
-        
-        
-          
-        
-      
-      <li>
-        <a href="/mikewebb-tech/series/" ><i class="fa-solid fa-layer-group"></i> Series</a>
-      </li>
-    
-      
-      
-
-      
-      
-        
-        
-          
-        
-      
-      <li>
-        <a href="/mikewebb-tech/tags/" ><i class="fa-solid fa-tags"></i> Tags</a>
-      </li>
-    
-      
-      
-
-      
-      
-        
-        
-          
-        
-      
-      <li>
-        <a href="/mikewebb-tech/about/" ><i class="fa-solid fa-circle-info"></i> About</a>
-      </li>
-    
-  </ul>
-</nav>
-    <div class="nav-bottom">
-      <a href="https://mikewebb.tech">
-        Designed by Mike Webb 
-      </a>
-      <a href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">
-        &copy; 2025 CC BY-NC 4.0
-      </a>
-      <p>
-      created using
-      </p> 
-      <a href="https://gohugo.io" target="_blank">
-        <img src="/mikewebb-tech/hugo-logo-wide.svg" alt="hugo.io" style="width: 40%">
-      </a>
-      <br><br>
-      Git commit 
-      
-      
-      <br><br>
-    </div>
-  </aside>
-  <header class="header">
-    <h1>SAS disk power mode control</h1>
-  </header>
-<main class="main">
-
-<article class="post">
-  <div class="post-header">
-    
-    <div class="article-meta">
-      <div>
-        <i class="fa-solid fa-calendar-days"></i>
-        Oct 8, 2018
-      </div>
-      <div>
-        <i class="fa-solid fa-file-lines"></i>
-        1651 words
-      </div>
-    </div>
-  </div><div class="post-content"><p>My hard drives were spinning at 7600 RPM 24/7&hellip;Arrgg!</p>
-<p>Why do I want power control over my spinning rust&hellip;spin down to save noise and heat = save energy</p>
-<p>For my home lab I buy enterprise HDD&rsquo;s from ebay et al at amazing price points per Gb.  Very few have issues  but all need some amount attention beyond that when purchasing consumer grade new.</p>
-<p>My defaults are to always integrate and update and wipe with a bad blocks check , adjust block size if needed  and stress test prior to adding them to a storage pool.</p>
-<p>My latest acquisitions were 8 x 4Tb SAS drives.  HGST Ultrastar 7K600 ($50 each).  After doing my default and setting up a pool (RAID2z) and having the server run for awhile, I realised that the PWM fans wouldn&rsquo;t throttle.</p>
-<p>After writing a little script to monitor temperature and fan sensors via IPMI and then querying the HDD temps using smartmontools, it became clear that the unaccounted heat was coming from the HDD&rsquo;s.  They weren&rsquo;t spinning down, but why and how to change that behavior.</p>
-<p>These are SCSI drives, the usual hdparm tool command don&rsquo;t work.</p>
-<p><strong>Information Gathering</strong></p>
-<p>Let&rsquo;s get some basics</p>
-<pre tabindex="0"><code># smartctl -i /dev/sda
+<!doctype html><html lang=en><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=generator content="Hugo 0.147.7"><title>SAS disk power mode control</title><link rel=stylesheet href=https://mikewebbtech.github.io/mikewebb-tech/css/style.min.1cf20735f340168887f3a69f2e8572e69284c55776860c0cd0a2e5a75b81d443.css><link rel=icon type=image/x-icon href=/mikewebb-tech/img/favicon.ico><link rel=apple-touch-icon sizes=180x180 href=/mikewebb-tech/img/apple-touch-icon.png><link rel=manifest href=/mikewebb-tech/img/site.webmanifest></head><body data-theme=dark><div class=layout><aside class=sidebar><div class=logo><img src=/mikewebb-tech/avatar.png alt=avatar width=192><p class=byline>MIKE WEBB TECH</p><p class=byline><a href=https://github.com/mikewebbtech target=_blank rel="noopener noreferrer"><i class="fa-brands fa-square-github"></i></a>
+<a href=https://www.linkedin.com/in/michael-webb-1a36b8a5/ target=_blank rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a></p></div><nav class=nav><ul><li><a href=/mikewebb-tech/><i class="fa-solid fa-house"></i> Home</a></li><li><a href=/mikewebb-tech/articles/><i class="fa-solid fa-file-code"></i> Articles</a></li><li><a href=/mikewebb-tech/categories/><i class="fa-solid fa-list"></i> Categories</a></li><li><a href=/mikewebb-tech/series/><i class="fa-solid fa-layer-group"></i> Series</a></li><li><a href=/mikewebb-tech/tags/><i class="fa-solid fa-tags"></i> Tags</a></li><li><a href=/mikewebb-tech/about/><i class="fa-solid fa-circle-info"></i> About</a></li></ul></nav><div class=nav-bottom><a href=https://mikewebb.tech>Designed by Mike Webb
+</a><a href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target=_blank rel="license noopener noreferrer" style=display:inline-block>&copy; 2025 CC BY-NC 4.0</a><p>created using</p><a href=https://gohugo.io target=_blank><img src=/mikewebb-tech/hugo-logo-wide.svg alt=hugo.io style=width:40%></a><br><br>Git commit
+51f1e6f
+25-06-14<br><br></div></aside><header class=header><h1>SAS disk power mode control</h1></header><main class=main><article class=post><div class=post-header><div class=article-meta><div><i class="fa-solid fa-calendar-days"></i>
+Oct 8, 2018</div><div><i class="fa-solid fa-file-lines"></i>
+1651 words</div></div></div><div class=post-content><p>My hard drives were spinning at 7600 RPM 24/7&mldr;Arrgg!</p><p>Why do I want power control over my spinning rust&mldr;spin down to save noise and heat = save energy</p><p>For my home lab I buy enterprise HDD&rsquo;s from ebay et al at amazing price points per Gb.  Very few have issues  but all need some amount attention beyond that when purchasing consumer grade new.</p><p>My defaults are to always integrate and update and wipe with a bad blocks check , adjust block size if needed  and stress test prior to adding them to a storage pool.</p><p>My latest acquisitions were 8 x 4Tb SAS drives.  HGST Ultrastar 7K600 ($50 each).  After doing my default and setting up a pool (RAID2z) and having the server run for awhile, I realised that the PWM fans wouldn&rsquo;t throttle.</p><p>After writing a little script to monitor temperature and fan sensors via IPMI and then querying the HDD temps using smartmontools, it became clear that the unaccounted heat was coming from the HDD&rsquo;s.  They weren&rsquo;t spinning down, but why and how to change that behavior.</p><p>These are SCSI drives, the usual hdparm tool command don&rsquo;t work.</p><p><strong>Information Gathering</strong></p><p>Let&rsquo;s get some basics</p><pre tabindex=0><code># smartctl -i /dev/sda
 smartctl 6.5 2016-05-07 r4318 [x86_64-linux-3.10.0-862.14.4.el7.x86_64] (local build)
 Copyright (C) 2002-16, Bruce Allen, Christian Franke, www.smartmontools.org
 
@@ -187,8 +33,7 @@ Copyright (C) 2002-16, Bruce Allen, Christian Franke, www.smartmontools.org
 
 === START OF READ SMART DATA SECTION ===
 SMART Health Status: OK`
-</code></pre><p>And a bit more information including the temperature</p>
-<pre tabindex="0"><code># smartctl -A /dev/sda
+</code></pre><p>And a bit more information including the temperature</p><pre tabindex=0><code># smartctl -A /dev/sda
 smartctl 6.5 2016-05-07 r4318 [x86_64-linux-3.10.0-862.14.4.el7.x86_64] (local build)
 Copyright (C) 2002-16, Bruce Allen, Christian Franke, www.smartmontools.org
 
@@ -205,8 +50,7 @@ Elements in grown defect list: 0
 
 Vendor (Seagate) cache information
 Blocks sent to initiator = 1063292319563776
-</code></pre><p>Examine selftest history</p>
-<pre tabindex="0"><code># smartctl -l selftest /dev/sda
+</code></pre><p>Examine selftest history</p><pre tabindex=0><code># smartctl -l selftest /dev/sda
 smartctl 6.5 2016-05-07 r4318 [x86_64-linux-3.10.0-862.14.4.el7.x86_64] (local build)
 Copyright (C) 2002-16, Bruce Allen, Christian Franke, www.smartmontools.org
 
@@ -218,8 +62,7 @@ Description number (hours)
 # 2 Background long Completed - 45 - [- - -]
 
 Long (extended) Self Test duration: 6 seconds [0.1 minutes]
-</code></pre><p>Start a short forground selftest and varify results</p>
-<pre tabindex="0"><code># smartctl -C -t short /dev/sda
+</code></pre><p>Start a short forground selftest and varify results</p><pre tabindex=0><code># smartctl -C -t short /dev/sda
 smartctl 6.5 2016-05-07 r4318 [x86_64-linux-3.10.0-862.14.4.el7.x86_64] (local build)
 Copyright (C) 2002-16, Bruce Allen, Christian Franke, www.smartmontools.org
 
@@ -236,8 +79,7 @@ Description number (hours)
 # 3 Background long Completed - 45 - [- - -]
 
 Short Foreground Self Test Successful
-</code></pre><p>Look at the error log</p>
-<pre tabindex="0"><code># smartctl -l error /dev/sda
+</code></pre><p>Look at the error log</p><pre tabindex=0><code># smartctl -l error /dev/sda
 smartctl 6.5 2016-05-07 r4318 [x86_64-linux-3.10.0-862.14.4.el7.x86_64] (local build)
 Copyright (C) 2002-16, Bruce Allen, Christian Franke, www.smartmontools.org
 
@@ -251,8 +93,7 @@ write: 0 0 0 0 7138 15571.768 0
 verify: 0 0 0 0 15629 0.000 0
 
 Non-medium error count: 0
-</code></pre><p>Examine smarttools extended output with background media scan (BMS) is active</p>
-<pre tabindex="0"><code># smartctl -x /dev/sda
+</code></pre><p>Examine smarttools extended output with background media scan (BMS) is active</p><pre tabindex=0><code># smartctl -x /dev/sda
 &lt;--snip--&gt;
 Background scan results log
 Status: scan is active
@@ -260,23 +101,15 @@ Accumulated power on time, hours:minutes 763:09 [45786 minutes]
 Number of background scans performed: 8, scan progress: 66.08%
 Number of background medium scans performed: 8
 &lt;--snip--&gt;
-</code></pre><p>Background scanning is active, this wont affect disk performance as &ldquo;The BMS process works at idle time, when the disk received no commands&rdquo; i.e. the disk wont spin down as usual when it is idle.</p>
-<p><em>(Please read the sdparm man page before blindly doing a copy paste and to get a better understanding of the options and switches. They may not be compatible with your drive.)</em></p>
-<p>Let&rsquo;s urn off BMS on this SAS drive</p>
-<pre tabindex="0"><code># sdparm --clear=EN_BMS --save /dev/sda
-</code></pre><p>Query the disks abilty and value for standby</p>
-<pre tabindex="0"><code># sdparm --flexible -6 -p po -l /dev/sda | grep -e SCT
+</code></pre><p>Background scanning is active, this wont affect disk performance as &ldquo;The BMS process works at idle time, when the disk received no commands&rdquo; i.e. the disk wont spin down as usual when it is idle.</p><p><em>(Please read the sdparm man page before blindly doing a copy paste and to get a better understanding of the options and switches. They may not be compatible with your drive.)</em></p><p>Let&rsquo;s urn off BMS on this SAS drive</p><pre tabindex=0><code># sdparm --clear=EN_BMS --save /dev/sda
+</code></pre><p>Query the disks abilty and value for standby</p><pre tabindex=0><code># sdparm --flexible -6 -p po -l /dev/sda | grep -e SCT
 SCT 0 [cha: y, def: 0, sav: 0] Standby_z condition timer (100 ms)
-</code></pre><p>No counters defined (SCT 0 = not countdown time till standby)</p>
-<pre tabindex="0"><code># sdparm --flexible -6 -p po -l /dev/sda | grep -e &#34;STANDBY &#34;
+</code></pre><p>No counters defined (SCT 0 = not countdown time till standby)</p><pre tabindex=0><code># sdparm --flexible -6 -p po -l /dev/sda | grep -e &#34;STANDBY &#34;
 STANDBY 0 [cha: y, def: 0, sav: 0] Standby_z timer enable
-</code></pre><p>Standby not enabled (STANDBY 0)</p>
-<p><em>what is Standby (standby_Z)</em>
+</code></pre><p>Standby not enabled (STANDBY 0)</p><p><em>what is Standby (standby_Z)</em>
 <em>• Heads are unloaded to drive ramp.</em>
 <em>• Drive motor is spun down.</em>
-<em>• Drive still responds to non-media access host commands</em></p>
-<p>Let&rsquo;s enable it</p>
-<pre tabindex="0"><code># sdparm --flexible -6 -v -S -p po --set=STANDBY=1 /dev/sda
+<em>• Drive still responds to non-media access host commands</em></p><p>Let&rsquo;s enable it</p><pre tabindex=0><code># sdparm --flexible -6 -v -S -p po --set=STANDBY=1 /dev/sda
 mp_settings: page,subpage=0x1a,0x0 num=1
 pdt=-1 start_byte=0x3 start_bit=0 num_bits=1 val=1 acronym: STANDBY
 &gt;&gt;&gt; about to open device name: /dev/sda
@@ -284,11 +117,9 @@ pdt=-1 start_byte=0x3 start_bit=0 num_bits=1 val=1 acronym: STANDBY
 mode sense (6) cdb: 1a 00 1a 00 04 00
 mode sense (6) cdb: 1a 00 1a 00 34 00
 mode select (6) cdb: 15 11 00 00 34 00
-</code></pre><p>Verify</p>
-<pre tabindex="0"><code># sdparm --flexible -6 -p po -l /dev/sda |grep -e &#34;STANDBY &#34;
+</code></pre><p>Verify</p><pre tabindex=0><code># sdparm --flexible -6 -p po -l /dev/sda |grep -e &#34;STANDBY &#34;
 STANDBY 1 [cha: y, def: 0, sav: 1] Standby_z timer enable
-</code></pre><p>Set the SCT (Standby_z condition timer in units of 100ms so 9000=15 minutes)</p>
-<pre tabindex="0"><code># sdparm --flexible -6 -v -S -p po --set=SCT=9000 /dev/sda
+</code></pre><p>Set the SCT (Standby_z condition timer in units of 100ms so 9000=15 minutes)</p><pre tabindex=0><code># sdparm --flexible -6 -v -S -p po --set=SCT=9000 /dev/sda
 mp_settings: page,subpage=0x1a,0x0 num=1
 pdt=-1 start_byte=0x8 start_bit=7 num_bits=32 val=9000 acronym: SCT
 &gt;&gt;&gt; about to open device name: /dev/sda
@@ -296,11 +127,9 @@ pdt=-1 start_byte=0x8 start_bit=7 num_bits=32 val=9000 acronym: SCT
 mode sense (6) cdb: 1a 00 1a 00 04 00
 mode sense (6) cdb: 1a 00 1a 00 34 00
 mode select (6) cdb: 15 11 00 00 34 00
-</code></pre><p>Verify</p>
-<pre tabindex="0"><code># sdparm --flexible -6 -p po -l /dev/sda |grep -e SCT
+</code></pre><p>Verify</p><pre tabindex=0><code># sdparm --flexible -6 -p po -l /dev/sda |grep -e SCT
 SCT 9000 [cha: y, def: 0, sav:9000] Standby_z condition timer (100 ms)
-</code></pre><p>View all contents of the Power condition [po] mode page</p>
-<pre tabindex="0"><code># sdparm --flexible -6 -p po -l /dev/sda
+</code></pre><p>View all contents of the Power condition [po] mode page</p><pre tabindex=0><code># sdparm --flexible -6 -p po -l /dev/sda
 /dev/sdb: HGST HUS726040ALS214 MS00
 Direct access device specific parameters: WP=0 DPOFUA=1
 Power condition [po] mode page:
@@ -318,12 +147,10 @@ SYCT 0 [cha: y, def: 0, sav: 0] Standby_y condition timer (100 ms)
 CCF_IDLE 0 [cha: y, def: 0, sav: 0] check condition on transition from idle
 CCF_STAND 0 [cha: y, def: 0, sav: 0] check condition on transition from standby
 CCF_STOPP 0 [cha: y, def: 0, sav: 0] check condition on transition from stopped
-</code></pre><p>NOTE: IBCT (Idle_b condition timer) has has a condition of 6000 (10 minutes) but is not enable (IDLE_B 0) it.   Let&rsquo;s enable and reduce it down to 5 minutes as this is a disk used in a zpool for archives and backups and occasional media file access</p>
-<p><em>What is Idle_B</em>
+</code></pre><p>NOTE: IBCT (Idle_b condition timer) has has a condition of 6000 (10 minutes) but is not enable (IDLE_B 0) it.   Let&rsquo;s enable and reduce it down to 5 minutes as this is a disk used in a zpool for archives and backups and occasional media file access</p><p><em>What is Idle_B</em>
 <em>• Disables most of the servo system, reduces processor and channel power consumption</em>
 <em>• Heads are unloaded to drive ramp.</em>
-<em>• Disks rotating at full speed (7200 RPM)</em></p>
-<pre tabindex="0"><code># sdparm --flexible -6 -v -S -p po --set=IDLE_B=1 /dev/sda
+<em>• Disks rotating at full speed (7200 RPM)</em></p><pre tabindex=0><code># sdparm --flexible -6 -v -S -p po --set=IDLE_B=1 /dev/sda
 mp_settings: page,subpage=0x1a,0x0 num=1
 pdt=-1 start_byte=0x3 start_bit=2 num_bits=1 val=1 acronym: IDLE_B
 &gt;&gt;&gt; about to open device name: /dev/sda
@@ -331,7 +158,7 @@ pdt=-1 start_byte=0x3 start_bit=2 num_bits=1 val=1 acronym: IDLE_B
 mode sense (6) cdb: 1a 00 1a 00 04 00
 mode sense (6) cdb: 1a 00 1a 00 34 00
 mode select (6) cdb: 15 11 00 00 34 00
-</code></pre><pre tabindex="0"><code># sdparm --flexible -6 -v -S -p po --set=ICT=3000 /dev/sda
+</code></pre><pre tabindex=0><code># sdparm --flexible -6 -v -S -p po --set=ICT=3000 /dev/sda
 mp_settings: page,subpage=0x1a,0x0 num=1
 pdt=-1 start_byte=0x4 start_bit=7 num_bits=32 val=3000 acronym: ICT
 &gt;&gt;&gt; about to open device name: /dev/sda
@@ -339,18 +166,8 @@ pdt=-1 start_byte=0x4 start_bit=7 num_bits=32 val=3000 acronym: ICT
 mode sense (6) cdb: 1a 00 1a 00 04 00
 mode sense (6) cdb: 1a 00 1a 00 34 00
 mode select (6) cdb: 15 11 00 00 34 00
-</code></pre><p>Now verify the changes</p>
-<pre tabindex="0"><code># sdparm --flexible -6 -p po -l /dev/sda |grep -e &#34;ICT\|IDLE_C &#34;
+</code></pre><p>Now verify the changes</p><pre tabindex=0><code># sdparm --flexible -6 -p po -l /dev/sda |grep -e &#34;ICT\|IDLE_C &#34;
 IDLE_C 1 [cha: y, def: 0, sav: 1] Idle_c timer enable
 ICT 3000 [cha: y, def: 20, sav:3000] Idle_a condition timer (100 ms)
 </code></pre><p>Repeat all of the above for all SAS drives in your storage pool. (hint FOR LOOP)
-Bonus points: Reboot and verify changes to power condition survives power cycle.</p>
-<p>I just need to workout how to get the power state of the drives. I see a difference in power consumption as the drives draw less power and the chassis is cooler so the PWM fans drop to around 500-600 RPM, drawing less power, instead of screaming at 1600RPM. But everytime I use smartctl to query the drives it must bee spinning them up again as noise, heat and power consumption goes up.</p>
-<p>Beer and profit people!</p>
-</div>
-
-  <div class="post-footer"></div></article>
-</main>
-    </div>
-  </body>
-</html>
+Bonus points: Reboot and verify changes to power condition survives power cycle.</p><p>I just need to workout how to get the power state of the drives. I see a difference in power consumption as the drives draw less power and the chassis is cooler so the PWM fans drop to around 500-600 RPM, drawing less power, instead of screaming at 1600RPM. But everytime I use smartctl to query the drives it must bee spinning them up again as noise, heat and power consumption goes up.</p><p>Beer and profit people!</p></div><div class=post-footer></div></article></main></div></body></html>
