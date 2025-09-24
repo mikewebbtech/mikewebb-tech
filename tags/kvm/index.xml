@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Kvm on Mike Webb Tech</title>
-    <link>https://mikewebbtech.github.io/tags/kvm/</link>
+    <link>https://mikewebbtech.github.io/mikewebb-tech/tags/kvm/</link>
     <description>Recent content in Kvm on Mike Webb Tech</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 14 Sep 2017 09:21:42 +0000</lastBuildDate>
-    <atom:link href="https://mikewebbtech.github.io/tags/kvm/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mikewebbtech.github.io/mikewebb-tech/tags/kvm/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My libVirt clone/sysprep work flow</title>
-      <link>https://mikewebbtech.github.io/articles/2017/2017-09-14-my-libvirt-clonesysprep-work-flow/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-09-14-my-libvirt-clonesysprep-work-flow/</link>
       <pubDate>Thu, 14 Sep 2017 09:21:42 +0000</pubDate>
-      <guid>https://mikewebbtech.github.io/articles/2017/2017-09-14-my-libvirt-clonesysprep-work-flow/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-09-14-my-libvirt-clonesysprep-work-flow/</guid>
       <description>An insight in to my workflow for creating KVM, LibVirt virtual machines on my Linux Workstation. Using KVM for my virtual environment makes sense, it is kernel level native, very powerful, flexible, well documented and community supported.</description>
     </item>
     <item>
       <title>Nested Virtualisation</title>
-      <link>https://mikewebbtech.github.io/articles/2017/2017-03-22-nested-virtualisation/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-03-22-nested-virtualisation/</link>
       <pubDate>Wed, 22 Mar 2017 17:16:48 +0000</pubDate>
-      <guid>https://mikewebbtech.github.io/articles/2017/2017-03-22-nested-virtualisation/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-03-22-nested-virtualisation/</guid>
       <description>Hosting a virtual machine inside a virtual machine KVM trickery for conceptualisation and testing. If your server/host supports VT-x, it goes to say so should the guests.</description>
     </item>
   </channel>

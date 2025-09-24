@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog on Mike Webb Tech</title>
-    <link>https://mikewebbtech.github.io/tags/blog/</link>
+    <link>https://mikewebbtech.github.io/mikewebb-tech/tags/blog/</link>
     <description>Recent content in Blog on Mike Webb Tech</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 02 May 2025 10:49:58 +0800</lastBuildDate>
-    <atom:link href="https://mikewebbtech.github.io/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mikewebbtech.github.io/mikewebb-tech/tags/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Testing markup callouts</title>
-      <link>https://mikewebbtech.github.io/articles/2025/2025-05-02-testing-hugo-admonitions/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-05-02-testing-hugo-admonitions/</link>
       <pubDate>Fri, 02 May 2025 10:49:58 +0800</pubDate>
-      <guid>https://mikewebbtech.github.io/articles/2025/2025-05-02-testing-hugo-admonitions/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-05-02-testing-hugo-admonitions/</guid>
       <description>Testing out markup callout styles from external module and local shortcodes. As I navigate the ever-evolving landscape of technology, I’m always on the lookout for tools that are efficient, powerful, and enjoyable to use.</description>
     </item>
     <item>
       <title>Hugo Codeblock Testing</title>
-      <link>https://mikewebbtech.github.io/articles/2025/2025-02-01-hugo-codeblock-testing/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-02-01-hugo-codeblock-testing/</link>
       <pubDate>Sat, 01 Feb 2025 06:06:51 +0800</pubDate>
-      <guid>https://mikewebbtech.github.io/articles/2025/2025-02-01-hugo-codeblock-testing/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-02-01-hugo-codeblock-testing/</guid>
       <description>Testing Hugo codeblocks without using custom layout _default _markup render-codeblock.html. Restyling using CSS and overiding for overflow-x</description>
     </item>
     <item>
       <title>Embracing Hugo</title>
-      <link>https://mikewebbtech.github.io/articles/2024/2024-05-25-embracing-hugo/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2024/2024-05-25-embracing-hugo/</link>
       <pubDate>Sat, 25 Jan 2025 12:08:01 +0800</pubDate>
-      <guid>https://mikewebbtech.github.io/articles/2024/2024-05-25-embracing-hugo/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2024/2024-05-25-embracing-hugo/</guid>
       <description>I’ve embraced Hugo to power my blog, valuing its speed, simplicity, and security over database-driven platforms. Writing in Markdown, version control integration, and easy deployment make it perfect for documenting my journey in cloud, networking, and cybersecurity. Hugo keeps the focus on learning and sharing—not maintenance headaches.</description>
     </item>
     <item>
       <title>A new blog</title>
-      <link>https://mikewebbtech.github.io/articles/2024/2024-04-27-a-new-blog/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2024/2024-04-27-a-new-blog/</link>
       <pubDate>Sat, 27 Apr 2024 16:37:08 +0800</pubDate>
-      <guid>https://mikewebbtech.github.io/articles/2024/2024-04-27-a-new-blog/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2024/2024-04-27-a-new-blog/</guid>
       <description>After years of battling WordPress hacks, rising costs, and home-lab hosting experiments, I’ve decided to reboot my blog with a new approach. Moving from dynamic sites to Hugo’s fast, static simplicity feels like the right balance of security, control, and creativity. A fresh start for sharing tech notes and learning.</description>
     </item>
     <item>
       <title>Big move...Hang in  there</title>
-      <link>https://mikewebbtech.github.io/articles/2022/2022-12-19-big-movehang-in-there/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2022/2022-12-19-big-movehang-in-there/</link>
       <pubDate>Mon, 19 Dec 2022 10:04:08 +0800</pubDate>
-      <guid>https://mikewebbtech.github.io/articles/2022/2022-12-19-big-movehang-in-there/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2022/2022-12-19-big-movehang-in-there/</guid>
       <description>The Wordpress.com gouging is over. Since moving to a new house with business class internet and a new server rack with a High availability server/storage solution.  Its a process&amp;hellip;</description>
     </item>
   </channel>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Debian on Mike Webb Tech</title>
-    <link>https://mikewebbtech.github.io/tags/debian/</link>
+    <link>https://mikewebbtech.github.io/mikewebb-tech/tags/debian/</link>
     <description>Recent content in Debian on Mike Webb Tech</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 27 Jan 2017 20:27:41 +0000</lastBuildDate>
-    <atom:link href="https://mikewebbtech.github.io/tags/debian/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mikewebbtech.github.io/mikewebb-tech/tags/debian/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Debian 8 installed on UEFI systems</title>
-      <link>https://mikewebbtech.github.io/articles/2017/2017-01-27-debian-8-installed-on-uefi-systems/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-01-27-debian-8-installed-on-uefi-systems/</link>
       <pubDate>Fri, 27 Jan 2017 20:27:41 +0000</pubDate>
-      <guid>https://mikewebbtech.github.io/articles/2017/2017-01-27-debian-8-installed-on-uefi-systems/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-01-27-debian-8-installed-on-uefi-systems/</guid>
       <description>Absolute pain getting Debian installed on my UEFI only sytem. When working through the installation process until the boot loader tries to install and this message occurs.</description>
     </item>
   </channel>

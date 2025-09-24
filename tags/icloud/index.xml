@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Icloud on Mike Webb Tech</title>
-    <link>https://mikewebbtech.github.io/tags/icloud/</link>
+    <link>https://mikewebbtech.github.io/mikewebb-tech/tags/icloud/</link>
     <description>Recent content in Icloud on Mike Webb Tech</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 11 Aug 2017 13:11:32 +0000</lastBuildDate>
-    <atom:link href="https://mikewebbtech.github.io/tags/icloud/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mikewebbtech.github.io/mikewebb-tech/tags/icloud/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Using your iCloud address book in Linux</title>
-      <link>https://mikewebbtech.github.io/articles/2017/2017-08-11-using-your-icloud-address-book-in-linux/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-08-11-using-your-icloud-address-book-in-linux/</link>
       <pubDate>Fri, 11 Aug 2017 13:11:32 +0000</pubDate>
-      <guid>https://mikewebbtech.github.io/articles/2017/2017-08-11-using-your-icloud-address-book-in-linux/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-08-11-using-your-icloud-address-book-in-linux/</guid>
       <description>Notes on how to get any application that supports WebDAV or CardDAV to access apple iCloud resources. Following on from previous posts about using Apples iCloud services on non Apple devices or operating systems.</description>
     </item>
   </channel>

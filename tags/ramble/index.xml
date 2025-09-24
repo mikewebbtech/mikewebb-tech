@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ramble on Mike Webb Tech</title>
-    <link>https://mikewebbtech.github.io/tags/ramble/</link>
+    <link>https://mikewebbtech.github.io/mikewebb-tech/tags/ramble/</link>
     <description>Recent content in Ramble on Mike Webb Tech</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 27 Apr 2024 16:37:08 +0800</lastBuildDate>
-    <atom:link href="https://mikewebbtech.github.io/tags/ramble/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mikewebbtech.github.io/mikewebb-tech/tags/ramble/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A new blog</title>
-      <link>https://mikewebbtech.github.io/articles/2024/2024-04-27-a-new-blog/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2024/2024-04-27-a-new-blog/</link>
       <pubDate>Sat, 27 Apr 2024 16:37:08 +0800</pubDate>
-      <guid>https://mikewebbtech.github.io/articles/2024/2024-04-27-a-new-blog/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2024/2024-04-27-a-new-blog/</guid>
       <description>After years of battling WordPress hacks, rising costs, and home-lab hosting experiments, I’ve decided to reboot my blog with a new approach. Moving from dynamic sites to Hugo’s fast, static simplicity feels like the right balance of security, control, and creativity. A fresh start for sharing tech notes and learning.</description>
     </item>
   </channel>
