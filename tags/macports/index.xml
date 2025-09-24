@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Macports on Mike Webb Tech</title>
+    <link>https://mikewebbtech.github.io/tags/macports/</link>
+    <description>Recent content in Macports on Mike Webb Tech</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 24 May 2017 11:30:43 +0000</lastBuildDate>
+    <atom:link href="https://mikewebbtech.github.io/tags/macports/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Improve FFmpeg x264/AAC quality</title>
+      <link>https://mikewebbtech.github.io/articles/2017/2017-05-24-improve-ffmpeg-x264aac-quality/</link>
+      <pubDate>Wed, 24 May 2017 11:30:43 +0000</pubDate>
+      <guid>https://mikewebbtech.github.io/articles/2017/2017-05-24-improve-ffmpeg-x264aac-quality/</guid>
+      <description>Install and use the open source FFmpeg utility on macOS for high quality audio and video encoding and transcoding with support for x two AAC-LC encoders (aac &amp;amp; libfdk_aac) and one HE-AAC(v1/2) encoder (libfdk_aac).</description>
+    </item>
+    <item>
+      <title>macports, the tools I&#39;m used to</title>
+      <link>https://mikewebbtech.github.io/articles/2015/2015-07-09-macports-the-tools-im-used-to/</link>
+      <pubDate>Thu, 09 Jul 2015 20:02:07 +0000</pubDate>
+      <guid>https://mikewebbtech.github.io/articles/2015/2015-07-09-macports-the-tools-im-used-to/</guid>
+      <description>YAY! Awesome, a HUGE amount of tools and libraries that I&amp;rsquo;ve gotten used to having at my fingertips can be had on my Mac&amp;rsquo;s thanks to macports</description>
+    </item>
+  </channel>
+</rss>

@@ -1,7 +1,166 @@
-<!doctype html><html lang=en><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=generator content="Hugo 0.147.7"><title>macports, the tools I'm used to</title><link rel=stylesheet href=https://mikewebbtech.github.io/mikewebb-tech/css/style.min.1cf20735f340168887f3a69f2e8572e69284c55776860c0cd0a2e5a75b81d443.css><link rel=icon type=image/x-icon href=/mikewebb-tech/img/favicon.ico><link rel=apple-touch-icon sizes=180x180 href=/mikewebb-tech/img/apple-touch-icon.png><link rel=manifest href=/mikewebb-tech/img/site.webmanifest></head><body data-theme=dark><div class=layout><aside class=sidebar><div class=logo><img src=/mikewebb-tech/avatar.png alt=avatar width=192><p class=byline>MIKE WEBB TECH</p><p class=byline><a href=https://github.com/mikewebbtech target=_blank rel="noopener noreferrer"><i class="fa-brands fa-square-github"></i></a>
-<a href=https://www.linkedin.com/in/michael-webb-1a36b8a5/ target=_blank rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a></p></div><nav class=nav><ul><li><a href=/mikewebb-tech/><i class="fa-solid fa-house"></i> Home</a></li><li><a href=/mikewebb-tech/articles/><i class="fa-solid fa-file-code"></i> Articles</a></li><li><a href=/mikewebb-tech/categories/><i class="fa-solid fa-list"></i> Categories</a></li><li><a href=/mikewebb-tech/series/><i class="fa-solid fa-layer-group"></i> Series</a></li><li><a href=/mikewebb-tech/tags/><i class="fa-solid fa-tags"></i> Tags</a></li><li><a href=/mikewebb-tech/about/><i class="fa-solid fa-circle-info"></i> About</a></li></ul></nav><div class=nav-bottom><a href=https://mikewebb.tech>Designed by Mike Webb
-</a><a href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target=_blank rel="license noopener noreferrer" style=display:inline-block>&copy; 2025 CC BY-NC 4.0</a><p>created using</p><a href=https://gohugo.io target=_blank><img src=/mikewebb-tech/hugo-logo-wide.svg alt=hugo.io style=width:40%></a><br><br>Git commit
-85efa84
-25-06-16<br><br></div></aside><header class=header><h1>macports, the tools I'm used to</h1></header><main class=main><article class=post><div class=post-header><div class=article-meta><div><i class="fa-solid fa-calendar-days"></i>
-Jul 9, 2015</div><div><i class="fa-solid fa-file-lines"></i>
-266 words</div></div></div><div class=post-content><p>YAY! Awesome, a HUGE amount of tools and libraries that I&rsquo;ve gotten used to having at my fingertips can be had on my Mac&rsquo;s thanks to the efforts of the macports community.  More details and downloads can be found on the <a href=https://www.macports.org>macports website</a>.</p><p>Installation and/or upgrading is easy and clearly explained.  There are a few dependancies that could slow down the process.  Xcode, which is a huge download now along with Apple&rsquo;s Command Line Developer Tools.  Point and click install.  Chances are, if you are interested in macports, you would probably get use out Xcode anyway.</p><p>For the Xwindows optional dependancy (reductive term) I use the XQuartz open source X Org X windows system.  grab the download from the <a href=https://www.xquartz.org>XQuartz homepage</a>.  I had this already on my system as it operates the same as X.org that I&rsquo;m used to from my Linux systems and allows me to run remote apps or whole desktops from the various servers I have access to. Works a treat over the internet as well and performs better then the old X11.app that came with mac os.</p><p>Some of the ports apps perform better then the equivalent native app.  One of my regular tools is rsync and the macports is a later version then stock mac os version and subsequently copies faster over the network.</p><p>There are a fist full of open source ported apps available that can perform a range of tasks that do the same or better job then a paid for app on Mac,  they just require some command line knowledge or a willingness to read a help file.</p></div><div class=post-footer></div></article></main></div></body></html>
+<!doctype html>
+<html lang="en"><head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="generator" content="Hugo 0.147.3">
+  <title>macports, the tools I&#39;m used to</title><link rel="stylesheet" href="https://mikewebbtech.github.io/css/style.min.d6d64c8e1e96f8ebc418788afbac553656e25959340157a14110ac051f23ad11.css" />
+  <link rel="icon" type="image/x-icon"  href="/img/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png" />
+ 
+  <link rel="manifest" href="/img/site.webmanifest" />
+</head>
+<body data-theme="dark">
+    <div class="layout">  <aside class="sidebar">
+    <div class="logo">
+      <img src="/avatar.png" alt="avatar" width="192">
+      <p class="byline">
+        MIKE WEBB TECH
+      </p>
+      <p class="byline">
+        <a href="https://github.com/mikewebbtech" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-github"></i></a>
+        <a href="https://www.linkedin.com/in/michael-webb-1a36b8a5/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+      </p>
+    </div>
+    <nav class="nav">
+  <ul>
+    
+    
+      
+      
+
+      
+      
+      <li>
+        <a href="/" ><i class="fa-solid fa-house"></i> Home</a>
+      </li>
+    
+      
+      
+
+      
+      
+        
+        
+          
+        
+      
+      <li>
+        <a href="/about/" ><i class="fa-solid fa-circle-info"></i> About</a>
+      </li>
+    
+      
+      
+
+      
+      
+        
+        
+          
+        
+      
+      <li>
+        <a href="/articles/" ><i class="fa-solid fa-file-code"></i> Articles</a>
+      </li>
+    
+      
+      
+
+      
+      
+        
+        
+          
+        
+      
+      <li>
+        <a href="/categories/" ><i class="fa-solid fa-list"></i> Categories</a>
+      </li>
+    
+      
+      
+
+      
+      
+        
+        
+          
+        
+      
+      <li>
+        <a href="/series/" ><i class="fa-solid fa-layer-group"></i> Series</a>
+      </li>
+    
+      
+      
+
+      
+      
+        
+        
+          
+        
+      
+      <li>
+        <a href="/tags/" ><i class="fa-solid fa-tags"></i> Tags</a>
+      </li>
+    
+  </ul>
+</nav>
+
+    <div class="nav-bottom">
+      <a href="https://mikewebb.tech">
+        Designed by Mike Webb 
+      </a>
+      <a href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">
+        &copy; 2025 CC BY-NC 4.0
+      </a>
+      <p>
+      created using
+      </p> 
+      <a href="https://gohugo.io" target="_blank">
+        <img src="/hugo-logo-wide.svg" alt="hugo.io" style="width: 40%">
+      </a>
+      <br><br>
+      <br><br>
+    </div>
+  </aside>
+  <header class="header">
+    <h1>macports, the tools I&#39;m used to</h1>
+  </header>
+<main class="main">
+
+<article class="post">
+  <div class="post-header">
+    
+    <div class="article-meta">
+      <div>
+        <i class="fa-solid fa-calendar-days"></i>
+        Jul 9, 2015
+      </div>
+      <div>
+        <i class="fa-solid fa-file-lines"></i>
+        266 words
+      </div>
+      <div>
+        <i class="fa-solid fa-list"></i>
+        <a class="tag" href="/categories/home-lab/">Home Lab</a>
+      </div>
+      <div>
+        <i class="fa-solid fa-tags"></i>
+        <a class="tag" href="/tags/mac/">Mac</a>
+        <a class="tag" href="/tags/macports/">Macports</a>
+        <a class="tag" href="/tags/opensource/">Opensource</a>
+      </div>
+    </div>
+  </div><div class="post-content"><p>YAY! Awesome, a HUGE amount of tools and libraries that I&rsquo;ve gotten used to having at my fingertips can be had on my Mac&rsquo;s thanks to the efforts of the macports community.  More details and downloads can be found on the <a href="https://www.macports.org">macports website</a>.</p>
+<p>Installation and/or upgrading is easy and clearly explained.  There are a few dependancies that could slow down the process.  Xcode, which is a huge download now along with Apple&rsquo;s Command Line Developer Tools.  Point and click install.  Chances are, if you are interested in macports, you would probably get use out Xcode anyway.</p>
+<p>For the Xwindows optional dependancy (reductive term) I use the XQuartz open source X Org X windows system.  grab the download from the <a href="https://www.xquartz.org">XQuartz homepage</a>.  I had this already on my system as it operates the same as X.org that I&rsquo;m used to from my Linux systems and allows me to run remote apps or whole desktops from the various servers I have access to. Works a treat over the internet as well and performs better then the old X11.app that came with mac os.</p>
+<p>Some of the ports apps perform better then the equivalent native app.  One of my regular tools is rsync and the macports is a later version then stock mac os version and subsequently copies faster over the network.</p>
+<p>There are a fist full of open source ported apps available that can perform a range of tasks that do the same or better job then a paid for app on Mac,  they just require some command line knowledge or a willingness to read a help file.</p>
+</div>
+
+  <div class="post-footer"></div></article>
+</main>
+    </div>
+  </body>
+</html>

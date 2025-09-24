@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Juniper on Mike Webb Tech</title>
+    <link>https://mikewebbtech.github.io/tags/juniper/</link>
+    <description>Recent content in Juniper on Mike Webb Tech</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 07 Sep 2018 09:48:15 +0000</lastBuildDate>
+    <atom:link href="https://mikewebbtech.github.io/tags/juniper/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Powering On/Off Juniper SRX320.</title>
+      <link>https://mikewebbtech.github.io/articles/2018/2018-09-07-powering-onoff-juniper-srx320/</link>
+      <pubDate>Fri, 07 Sep 2018 09:48:15 +0000</pubDate>
+      <guid>https://mikewebbtech.github.io/articles/2018/2018-09-07-powering-onoff-juniper-srx320/</guid>
+      <description>Always use the graceful method unless absolutely necessary.  i.e don&amp;rsquo;t just yank the power cord out. There is console less method and a CLI method over the network</description>
+    </item>
+  </channel>
+</rss>

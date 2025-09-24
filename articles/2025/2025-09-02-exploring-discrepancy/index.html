@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en"><head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="generator" content="Hugo 0.147.3">
+  <title>Exploring Implementation Discrepancy</title><link rel="stylesheet" href="https://mikewebbtech.github.io/css/style.min.d6d64c8e1e96f8ebc418788afbac553656e25959340157a14110ac051f23ad11.css" />
+  <link rel="icon" type="image/x-icon"  href="/img/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png" />
+ 
+  <link rel="manifest" href="/img/site.webmanifest" />
+</head>
+<body data-theme="dark">
+    <div class="layout">  <aside class="sidebar">
+    <div class="logo">
+      <img src="/avatar.png" alt="avatar" width="192">
+      <p class="byline">
+        MIKE WEBB TECH
+      </p>
+      <p class="byline">
+        <a href="https://github.com/mikewebbtech" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-github"></i></a>
+        <a href="https://www.linkedin.com/in/michael-webb-1a36b8a5/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+      </p>
+    </div>
+    <nav class="nav">
+  <ul>
+    
+    
+      
+      
+
+      
+      
+      <li>
+        <a href="/" ><i class="fa-solid fa-house"></i> Home</a>
+      </li>
+    
+      
+      
+
+      
+      
+        
+        
+          
+        
+      
+      <li>
+        <a href="/about/" ><i class="fa-solid fa-circle-info"></i> About</a>
+      </li>
+    
+      
+      
+
+      
+      
+        
+        
+          
+        
+      
+      <li>
+        <a href="/articles/" ><i class="fa-solid fa-file-code"></i> Articles</a>
+      </li>
+    
+      
+      
+
+      
+      
+        
+        
+          
+        
+      
+      <li>
+        <a href="/categories/" ><i class="fa-solid fa-list"></i> Categories</a>
+      </li>
+    
+      
+      
+
+      
+      
+        
+        
+          
+        
+      
+      <li>
+        <a href="/series/" ><i class="fa-solid fa-layer-group"></i> Series</a>
+      </li>
+    
+      
+      
+
+      
+      
+        
+        
+          
+        
+      
+      <li>
+        <a href="/tags/" ><i class="fa-solid fa-tags"></i> Tags</a>
+      </li>
+    
+  </ul>
+</nav>
+
+    <div class="nav-bottom">
+      <a href="https://mikewebb.tech">
+        Designed by Mike Webb 
+      </a>
+      <a href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">
+        &copy; 2025 CC BY-NC 4.0
+      </a>
+      <p>
+      created using
+      </p> 
+      <a href="https://gohugo.io" target="_blank">
+        <img src="/hugo-logo-wide.svg" alt="hugo.io" style="width: 40%">
+      </a>
+      <br><br>
+      <br><br>
+    </div>
+  </aside>
+  <header class="header">
+    <h1>Exploring Implementation Discrepancy</h1>
+  </header>
+<main class="main">
+
+<article class="post">
+  <div class="post-header">
+    
+    <div class="article-meta">
+      <div>
+        <i class="fa-solid fa-calendar-days"></i>
+        Sep 2, 2025
+      </div>
+      <div>
+        <i class="fa-solid fa-file-lines"></i>
+        801 words
+      </div>
+      <div>
+        <i class="fa-solid fa-list"></i>
+        <a class="tag" href="/categories/security/">Cyber Security</a>
+      </div>
+      <div>
+        <i class="fa-solid fa-tags"></i>
+        <a class="tag" href="/tags/notes/">Notes</a>
+        <a class="tag" href="/tags/risk/">Risk</a>
+        <a class="tag" href="/tags/threats/">Threats</a>
+      </div>
+      <div>
+        <i class="fa-solid fa-layer-group"></i>
+        Series:
+        <a class="tag" href="/series/intro-cyber-security/">Introduction to Cyber Security</a>     
+           (Article 2 of 17) 
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+      </div>
+    </div>
+  </div><div class="post-series-list"><details class ="series-list">
+      <summary>
+        <span> All articles in the <strong>"Introduction to Cyber Security"</strong> series </span>
+      </summary>
+      <ol><li>
+              <a href="https://mikewebbtech.github.io/articles/2025/2025-07-03-cyber-security-not-what-i-thought/">Cyber Security. Not What I thought</a>
+            </li><li>
+              <a href="https://mikewebbtech.github.io/articles/2025/2025-07-10-basics-cyber-security-requirements/">Basics of Cyber Security Requirements</a>
+            </li><li>
+              <a href="https://mikewebbtech.github.io/articles/2025/2025-07-11-cia-triad/">The CIA Triad</a>
+            </li><li>
+              <a href="https://mikewebbtech.github.io/articles/2025/2025-07-12-intro-to-asd/">Introducing the ASD</a>
+            </li><li>
+              <a href="https://mikewebbtech.github.io/articles/2025/2025-07-13-intro-to-essential-8/">Introducing the Essential 8</a>
+            </li><li>
+              <a href="https://mikewebbtech.github.io/articles/2025/2025-07-15-mapping-to-ism-controls/">Mapping Strategies to controls</a>
+            </li><li>
+              <a href="https://mikewebbtech.github.io/articles/2025/2025-07-22-cruicial-distinction/">Threats, Vulnerabilities, and Risks</a>
+            </li><li>
+              <a href="https://mikewebbtech.github.io/articles/2025/2025-07-28-introduction-to-risk/">Introduction to Risk and Risk Management</a>
+            </li><li>
+              <a href="https://mikewebbtech.github.io/articles/2025/2025-07-13-ict-asset-register/">ICT Assets and Asset Registers</a>
+            </li><li>
+              <a href="https://mikewebbtech.github.io/articles/2025/2025-07-16-cyber-threat-awareness/">Cyber Threat Awareness</a>
+            </li><li>
+              <a href="https://mikewebbtech.github.io/articles/2025/2025-08-01-intro-to-cirp/">Introduction to Cyber Incident Response Plan</a>
+            </li><li>
+              <a href="https://mikewebbtech.github.io/articles/2025/2025-08-10-risk-management-and-cyber-controls/">Risk Management and Cyber Controls</a>
+            </li><li>
+              <a href="https://mikewebbtech.github.io/articles/2025/2025-08-17-risk-mitigation-plans/">Risk Mitigation Plans</a>
+            </li><li>
+              <a href="https://mikewebbtech.github.io/articles/2025/2025-08-19-from-plan-to-action/">Implement Security Controls</a>
+            </li><li>
+              <a href="https://mikewebbtech.github.io/articles/2025/2025-08-30-measuring-security-effectiveness/">Measuring Security</a>
+            </li><li class="active">
+              <b>Exploring Implementation Discrepancy</b>
+            </li><li>
+              <a href="https://mikewebbtech.github.io/articles/2025/2025-09-09-cirp-as-a-strategy/">CIRP as a Mitigation Strategy</a>
+            </li></ol>
+    </details></div><div class="post-content"><p><em>in my article on measuring security, I highlighted the importance of benchmarking control effectiveness.  A  benchmark is only a snapshot in time. The real work, and the true measure of a mature security program, is in  readdressing the discrepancies and remeasuring the effectiveness of controls implemented.   This process goes from static evaluation into <strong>continuous improvement cycle</strong>, ensuring that security controls are not just in place but are actively and effectively protecting an organisation.</em></p>
+<h1 id="understanding-discrepancy-types-and-causes">Understanding Discrepancy Types and Causes</h1>
+<p>Discrepancies in control effectiveness often fall into a few key categories, each with its own set of causes and remediation strategies.  Identifying the root cause is the critical first step to applying a durable fix.</p>
+<p>Let&rsquo;s examine them in greater detail,  some practical expansion for each discrepancy type with root causes, detection signals, remediation actions, and short examples</p>
+<h3 id="improper-or-incomplete-implementation">Improper or incomplete implementation</h3>
+<p>This discrepancy arises when a control is not fully or correctly deployed across the entire environment.</p>
+<ul>
+<li><strong>What it looks like:</strong> Partial rollouts, misconfigurations, environment drift (testing ≠ production), exceptions and whitelist management and oversight.</li>
+<li><strong>Common causes:</strong> Rushed deployments, manual installs, undocumented exceptions, lack of automation, inconsistent baselines, lack of or failure in change control requests</li>
+<li><strong>How to detect:</strong> Configuration drift scans, asset/patch inventories, failed audits, vulnerability scans showing unprotected hosts, discrepancy between change tickets and live state.</li>
+<li><strong>Remediation:</strong> Enforce configuration baselines through templates (<em>Infrastructure as Code</em>), remove undocumented exceptions, automate deployment and patching, validate via post-change scans and peer reviews, close the loop with change control.</li>
+<li><strong>Example:</strong> MFA enabled for interactive users but not enforced for service accounts, leaving authentication gaps.</li>
+</ul>
+<h3 id="insufficient-communication-or-training">Insufficient communication or training</h3>
+<p>The human element is a common point of failure. This type of discrepancy appears when employees are unaware of, or fail to follow, security procedures.</p>
+<ul>
+<li><strong>Example:</strong> Backup restore fails because administrators were never trained on the new backup tool and reverted to an obsolete process.</li>
+<li><strong>What it looks like:</strong> Frequent human errors, workarounds that bypass controls &ldquo;for convenience&rdquo;, low uptake of new procedures, SOPs ignored or unknown.</li>
+<li><strong>Common causes:</strong> Lack of role-based training, inaccessible or outdated documentation, stakeholder exclusion during design, absence of change management.</li>
+<li><strong>How to detect:</strong> High phishing-test fail rates, repeated operational mistakes, help desk trends, audit findings citing non-compliance, low completion rates for mandatory training.</li>
+<li><strong>Remediation:</strong> Implement role-specific training and tabletop exercises, publish concise SOPs and runbooks, appoint local champions, include end users in design reviews, measure training effectiveness and behaviour change.</li>
+</ul>
+<h3 id="changes-in-the-threat-landscape-or-business-environment">Changes in the threat landscape or business environment</h3>
+<p>A security control that was once effective may become insufficient as the threat landscape evolves or the business model changes. This is common when new threat variants emerge, or when an organisation undergoes a significant transition.</p>
+<ul>
+<li><strong>What it looks like:</strong> Controls that were once sufficient but no longer address new attack vectors or business models (cloud, remote workers, new software).</li>
+<li><strong>Common causes:</strong> New threat variants, SaaS/cloud migrations, mergers/acquisitions, changes in data flows, <em>third-party supply chain exposure</em>.</li>
+<li><strong>How to detect:</strong> Spikes in relevant indicators (alerts, <a href="https://www.teramind.co/blog/how-to-recognize-indicators-of-compromise/">IOC hits</a>), threat intel advisories (<a href="https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories">Alerts</a>),  <em>emerging legislation and compliance obligations,</em> or control tests that suddenly fail (audits, pen-tests).</li>
+<li><strong>Remediation:</strong>  Revisit threat models and <em>TRAs</em>, update control selection and priorities, deploy <em>compensating controls</em> where immediate fixes aren’t possible, accelerate detection capabilities, and schedule targeted reassessments after major business changes.</li>
+<li><strong>Example:</strong> An organisation migrates workloads to cloud storage but retains on-premise access controls, exposing data via misconfigured buckets/blobs.</li>
+</ul>
+<h3 id="lack-of-supporting-processes-or-resources">Lack of supporting processes or resources</h3>
+<p>Even with the right controls selected and implemented, a lack of operational support can render them ineffective. This discrepancy is seen in persistent vulnerability backlogs, long times to remediate (MTTR), and a lack of necessary tooling or staff.</p>
+<ul>
+<li><strong>What it looks like:</strong> Vacancies or team skill gaps, long remediation queues, no runbooks, excessive infrastructure technical debt, or missing/insufficient systm observability.</li>
+<li><strong>Common causes:</strong> Constrained budgets, no prioritisation, inadequate tooling, lack of <em>executive sponsorship</em>, or immature operational processes.</li>
+<li><strong>How to detect:</strong> Persistent vulnerability backlogs, long mean-time-to-remediate (MTTR), missed SLAs, insufficient logging coverage, or audit findings that find process deficiencies.</li>
+<li><strong>Remediation:</strong> Define minimum operational standards (logging, monitoring, runbooks), Investing in automation and tooling (patch management, SIEM), consider managed services or temporary contractors to close gaps, and secure executive level investment in prioritisation and funding for critical fixes.</li>
+<li><strong>Example:</strong> A small security team cannot keep up with patching because the process is manual and there is no automation to stage and deploy updates.</li>
+</ul>
+<p>Determining root causes and acting on them is the key to turning benchmarking into tangible improvement. By addressing discrepancies, from improper implementation to shifts in the environment, and following a clear remediation process, an organisation can close security gaps faster and raise its overall control effectiveness.  This <em>action oriented</em> approach ensures that cyber security is not just a static check list but a living, dynamic defence cycle that continuously adapts to protect an organisation’s most valuable assets.</p>
+</div>
+
+  <div class="post-footer"></div><div class="post-series-bottom"><div class="pagination-buttons"><span class="button previous">
+        <a href="https://mikewebbtech.github.io/articles/2025/2025-08-30-measuring-security-effectiveness/" title="PREVIOUS ARTICLE">
+            <span class="button-icon">←</span>
+            <span class="button-ext">15. Measuring Security</span>
+        </a>
+    </span><span class="button next">
+        <a href="https://mikewebbtech.github.io/articles/2025/2025-09-09-cirp-as-a-strategy/" title="NEXT ARTICLE">
+            <span class="button-text">17. CIRP as a Mitigation Strategy</span>
+            <span class="button-icon">→</span>
+        </a>
+    </span></div></div></article>
+</main>
+    </div>
+  </body>
+</html>

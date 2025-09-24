@@ -1,11 +1,167 @@
-<!doctype html><html lang=en><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=generator content="Hugo 0.147.7"><title>Generate new host keys after sysprep</title><link rel=stylesheet href=https://mikewebbtech.github.io/mikewebb-tech/css/style.min.1cf20735f340168887f3a69f2e8572e69284c55776860c0cd0a2e5a75b81d443.css><link rel=icon type=image/x-icon href=/mikewebb-tech/img/favicon.ico><link rel=apple-touch-icon sizes=180x180 href=/mikewebb-tech/img/apple-touch-icon.png><link rel=manifest href=/mikewebb-tech/img/site.webmanifest></head><body data-theme=dark><div class=layout><aside class=sidebar><div class=logo><img src=/mikewebb-tech/avatar.png alt=avatar width=192><p class=byline>MIKE WEBB TECH</p><p class=byline><a href=https://github.com/mikewebbtech target=_blank rel="noopener noreferrer"><i class="fa-brands fa-square-github"></i></a>
-<a href=https://www.linkedin.com/in/michael-webb-1a36b8a5/ target=_blank rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a></p></div><nav class=nav><ul><li><a href=/mikewebb-tech/><i class="fa-solid fa-house"></i> Home</a></li><li><a href=/mikewebb-tech/articles/><i class="fa-solid fa-file-code"></i> Articles</a></li><li><a href=/mikewebb-tech/categories/><i class="fa-solid fa-list"></i> Categories</a></li><li><a href=/mikewebb-tech/series/><i class="fa-solid fa-layer-group"></i> Series</a></li><li><a href=/mikewebb-tech/tags/><i class="fa-solid fa-tags"></i> Tags</a></li><li><a href=/mikewebb-tech/about/><i class="fa-solid fa-circle-info"></i> About</a></li></ul></nav><div class=nav-bottom><a href=https://mikewebb.tech>Designed by Mike Webb
-</a><a href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target=_blank rel="license noopener noreferrer" style=display:inline-block>&copy; 2025 CC BY-NC 4.0</a><p>created using</p><a href=https://gohugo.io target=_blank><img src=/mikewebb-tech/hugo-logo-wide.svg alt=hugo.io style=width:40%></a><br><br>Git commit
-51f1e6f
-25-06-14<br><br></div></aside><header class=header><h1>Generate new host keys after sysprep</h1></header><main class=main><article class=post><div class=post-header><div class=article-meta><div><i class="fa-solid fa-calendar-days"></i>
-Oct 2, 2017</div><div><i class="fa-solid fa-file-lines"></i>
-131 words</div></div></div><div class=post-content><p><a href=http://webby.land/2017/09/14/my-libvirt-work-flow-explained/>libvirt work flow explained</a></p><p>The host ssh keys will be wiped from the guest image (this is a good thing) meaning that you will no longer be able to ssh into that guest VM (this is a bad thing).</p><p>Fortunately this easy fix.</p><p>On Ubuntu, to regenerate new ssh host keys with this simple command
-<code>$ sudo dpkg-reconfigure openssh-server</code></p><p>if successful yoou will get something like</p><pre tabindex=0><code>Creating SSH2 RSA key; this may take some time ...
+<!doctype html>
+<html lang="en"><head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="generator" content="Hugo 0.147.3">
+  <title>Generate new host keys after sysprep</title><link rel="stylesheet" href="https://mikewebbtech.github.io/css/style.min.d6d64c8e1e96f8ebc418788afbac553656e25959340157a14110ac051f23ad11.css" />
+  <link rel="icon" type="image/x-icon"  href="/img/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png" />
+ 
+  <link rel="manifest" href="/img/site.webmanifest" />
+</head>
+<body data-theme="dark">
+    <div class="layout">  <aside class="sidebar">
+    <div class="logo">
+      <img src="/avatar.png" alt="avatar" width="192">
+      <p class="byline">
+        MIKE WEBB TECH
+      </p>
+      <p class="byline">
+        <a href="https://github.com/mikewebbtech" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-github"></i></a>
+        <a href="https://www.linkedin.com/in/michael-webb-1a36b8a5/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+      </p>
+    </div>
+    <nav class="nav">
+  <ul>
+    
+    
+      
+      
+
+      
+      
+      <li>
+        <a href="/" ><i class="fa-solid fa-house"></i> Home</a>
+      </li>
+    
+      
+      
+
+      
+      
+        
+        
+          
+        
+      
+      <li>
+        <a href="/about/" ><i class="fa-solid fa-circle-info"></i> About</a>
+      </li>
+    
+      
+      
+
+      
+      
+        
+        
+          
+        
+      
+      <li>
+        <a href="/articles/" ><i class="fa-solid fa-file-code"></i> Articles</a>
+      </li>
+    
+      
+      
+
+      
+      
+        
+        
+          
+        
+      
+      <li>
+        <a href="/categories/" ><i class="fa-solid fa-list"></i> Categories</a>
+      </li>
+    
+      
+      
+
+      
+      
+        
+        
+          
+        
+      
+      <li>
+        <a href="/series/" ><i class="fa-solid fa-layer-group"></i> Series</a>
+      </li>
+    
+      
+      
+
+      
+      
+        
+        
+          
+        
+      
+      <li>
+        <a href="/tags/" ><i class="fa-solid fa-tags"></i> Tags</a>
+      </li>
+    
+  </ul>
+</nav>
+
+    <div class="nav-bottom">
+      <a href="https://mikewebb.tech">
+        Designed by Mike Webb 
+      </a>
+      <a href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">
+        &copy; 2025 CC BY-NC 4.0
+      </a>
+      <p>
+      created using
+      </p> 
+      <a href="https://gohugo.io" target="_blank">
+        <img src="/hugo-logo-wide.svg" alt="hugo.io" style="width: 40%">
+      </a>
+      <br><br>
+      <br><br>
+    </div>
+  </aside>
+  <header class="header">
+    <h1>Generate new host keys after sysprep</h1>
+  </header>
+<main class="main">
+
+<article class="post">
+  <div class="post-header">
+    
+    <div class="article-meta">
+      <div>
+        <i class="fa-solid fa-calendar-days"></i>
+        Oct 2, 2017
+      </div>
+      <div>
+        <i class="fa-solid fa-file-lines"></i>
+        155 words
+      </div>
+      <div>
+        <i class="fa-solid fa-list"></i>
+        <a class="tag" href="/categories/virtualisation/">Virtualisation</a>
+        <a class="tag" href="/categories/home-lab/">Home Lab</a>
+      </div>
+      <div>
+        <i class="fa-solid fa-tags"></i>
+        <a class="tag" href="/tags/linux/">Linux</a>
+        <a class="tag" href="/tags/solution/">Solution</a>
+        <a class="tag" href="/tags/libvirt/">Libvirt</a>
+        <a class="tag" href="/tags/shell/">Shell</a>
+      </div>
+    </div>
+  </div><div class="post-content"><p>This builds on the previous article explaining my LibVirt work flow.</p>
+<p><a href="2017-09-14-my-libvirt-clonesysprep-work-flow">libvirt work flow explained</a></p>
+<p>When syspreping a linux virtual machine, the host ssh keys will be wiped from the guest image (this is a good thing) meaning that you will no longer be able to ssh into that guest VM (this is a bad thing).</p>
+<p>Fortunately this easy fix.</p>
+<p>On Ubuntu, to regenerate new ssh host keys with this simple command</p>
+<pre tabindex="0"><code>$ sudo dpkg-reconfigure openssh-server`
+</code></pre><p>if successful yoou will get something like</p>
+<pre tabindex="0"><code>Creating SSH2 RSA key; this may take some time ...
 2048 SHA256:ToJkgjGdbcFX4wCsiM0IGjGkdSCex3m/ycnsRo0qEA root@UbuntuLTS-clone (RSA)
 Creating SSH2 DSA key; this may take some time ...
 1024 SHA256:Ug9fJa14YMR9Fud/7bXTokffK/hM/sBVse10nSR/6Y8 root@UbuntuLTS-clone (DSA)
@@ -13,5 +169,13 @@ Creating SSH2 ECDSA key; this may take some time ...
 256 SHA256:Rh6izWEXkCV6HZLIpzlGQje178vhDgb77ItaZgpDsIQ root@UbuntuLTS-clone (ECDSA)
 Creating SSH2 ED25519 key; this may take some time ...
 256 SHA256:UD4b7njwxWp1Q3wYf2R//udgPRzfGaeZ/6kE3VgZM+s root@UbuntuLTS-clone ED25519)
-</code></pre><p>Restart your ssh server
-<code>$ sudo systemctl restart sshd.service</code></p></div><div class=post-footer></div></article></main></div></body></html>
+</code></pre><p>Restart your ssh server</p>
+<pre tabindex="0"><code>$ sudo systemctl restart sshd.service
+</code></pre><p>ssh into the VM.  Enjoy terminal goodness</p>
+</div>
+
+  <div class="post-footer"></div></article>
+</main>
+    </div>
+  </body>
+</html>

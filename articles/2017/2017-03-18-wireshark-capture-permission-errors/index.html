@@ -1,15 +1,198 @@
-<!doctype html><html lang=en><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=generator content="Hugo 0.147.7"><title>Wireshark capture permission errors</title><link rel=stylesheet href=https://mikewebbtech.github.io/mikewebb-tech/css/style.min.1cf20735f340168887f3a69f2e8572e69284c55776860c0cd0a2e5a75b81d443.css><link rel=icon type=image/x-icon href=/mikewebb-tech/img/favicon.ico><link rel=apple-touch-icon sizes=180x180 href=/mikewebb-tech/img/apple-touch-icon.png><link rel=manifest href=/mikewebb-tech/img/site.webmanifest></head><body data-theme=dark><div class=layout><aside class=sidebar><div class=logo><img src=/mikewebb-tech/avatar.png alt=avatar width=192><p class=byline>MIKE WEBB TECH</p><p class=byline><a href=https://github.com/mikewebbtech target=_blank rel="noopener noreferrer"><i class="fa-brands fa-square-github"></i></a>
-<a href=https://www.linkedin.com/in/michael-webb-1a36b8a5/ target=_blank rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a></p></div><nav class=nav><ul><li><a href=/mikewebb-tech/><i class="fa-solid fa-house"></i> Home</a></li><li><a href=/mikewebb-tech/articles/><i class="fa-solid fa-file-code"></i> Articles</a></li><li><a href=/mikewebb-tech/categories/><i class="fa-solid fa-list"></i> Categories</a></li><li><a href=/mikewebb-tech/series/><i class="fa-solid fa-layer-group"></i> Series</a></li><li><a href=/mikewebb-tech/tags/><i class="fa-solid fa-tags"></i> Tags</a></li><li><a href=/mikewebb-tech/about/><i class="fa-solid fa-circle-info"></i> About</a></li></ul></nav><div class=nav-bottom><a href=https://mikewebb.tech>Designed by Mike Webb
-</a><a href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target=_blank rel="license noopener noreferrer" style=display:inline-block>&copy; 2025 CC BY-NC 4.0</a><p>created using</p><a href=https://gohugo.io target=_blank><img src=/mikewebb-tech/hugo-logo-wide.svg alt=hugo.io style=width:40%></a><br><br>Git commit
-51f1e6f
-25-06-14<br><br></div></aside><header class=header><h1>Wireshark capture permission errors</h1></header><main class=main><article class=post><div class=post-header><div class=article-meta><div><i class="fa-solid fa-calendar-days"></i>
-Mar 18, 2017</div><div><i class="fa-solid fa-file-lines"></i>
-457 words</div></div></div><div class=post-content><p>I installed Wireshark the other day on Ubuntu 16.10 so I could analyse what is &ldquo;going over the wire&rdquo; in GNS3 and later on physical network topologies.</p><p>Unfortunately, due to the way I installed wireshark, the way it handles the security of low level device access (PCAP) , coupled with a touch of me not paying the level of attention needed with installing.  I locked myself out of user level access to a network interface. ala &ldquo;&ldquo;You don&rsquo;t have permission to capture on that device&rdquo;.</p><p>According to the wireshark wiki &ldquo;Wireshark has implemented <a href=https://wiki.wireshark.org/Development/PrivilegeSeparation>Privilege Separation</a> which means that the Wireshark GUI (or the tshark CLI) can run as a normal user while the dumpcap capture utility runs as root. This can be achieved by installing dumpcap setuid root. The advantage of this solution is that while dumpcap is run as root the vast majority of Wireshark&rsquo;s code is run as a normal user (where it can do much less damage).&rdquo;
-When Wireshark is installed using a Linux distributions package manager, they usually provide package managers which handle installation, configuration and removal of software packages. Wireshark is provided by several distributions and some of them help in configuring dumpcap to allow capturing even for non-root users. Though with Ubuntu (and other Debian derivatives) when installing Wireshark packages non-root users won&rsquo;t gain rights automatically to capture packets. To allow non-root users to capture packets follow the procedure described in /usr/share/doc/wireshark-common/README.Debian. i.e run
-<em>>$ sudo dpkg-reconfigure wireshark-common</em>
-A more agnostic approach to setting network privileges for dumpcap if your kernel and file system support file capabilities</p><ol><li>Ensure that you have installed the necessary tools, such as the setcap command.</li><li><blockquote><p><em>$ sudo setcap &lsquo;CAP_NET_RAW+eip CAP_NET_ADMIN+eip&rsquo; /usr/sbin/dumpcap</em>
-(NOTE: Replace /usr/sbin with /usr/bin in case you receive an error that indicates that dumpcap isn&rsquo;t in /usr/sbin)</p></blockquote></li><li>Start Wireshark as non-root and ensure you see the list of interfaces and can do live capture.
-Another way of setting network privileges for dumpcap if your kernel and file system don&rsquo;t support file capabilities would require the need to make dumpcap set-UID to root.</li><li><em>>$ sudo chown root /usr/sbin/dumpcap</em>
-(NOTE: Replace /usr/sbin with /usr/bin in this command and the next command in case you receive an error that indicates that dumpcap isn&rsquo;t in /usr/sbin)</li><li><em>>$ sudo chmod u+s /usr/bin/dumpcap</em>
-You can also limit capture permission to only one group after having set dumpcap&rsquo;s network privileges:</li><li>Create user &ldquo;wireshark&rdquo; in group &ldquo;wireshark&rdquo;.</li><li><em>>$ sudo chgrp wireshark /usr/sbin/dumpcap</em></li><li><em>>$ sudo chmod o-rx /usr/sbin/dumpcap</em></li><li>Ensure Wireshark works only from root and from a user in the &ldquo;wireshark&rdquo; group
-If non of those steps work more drastic measures such as reinstalling wireshark maybe needed but that may not solve it as the issue could be underling in the operating system.</li></ol></div><div class=post-footer></div></article></main></div></body></html>
+<!doctype html>
+<html lang="en"><head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="generator" content="Hugo 0.147.3">
+  <title>Wireshark capture permission errors</title><link rel="stylesheet" href="https://mikewebbtech.github.io/css/style.min.d6d64c8e1e96f8ebc418788afbac553656e25959340157a14110ac051f23ad11.css" />
+  <link rel="icon" type="image/x-icon"  href="/img/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png" />
+ 
+  <link rel="manifest" href="/img/site.webmanifest" />
+</head>
+<body data-theme="dark">
+    <div class="layout">  <aside class="sidebar">
+    <div class="logo">
+      <img src="/avatar.png" alt="avatar" width="192">
+      <p class="byline">
+        MIKE WEBB TECH
+      </p>
+      <p class="byline">
+        <a href="https://github.com/mikewebbtech" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-github"></i></a>
+        <a href="https://www.linkedin.com/in/michael-webb-1a36b8a5/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+      </p>
+    </div>
+    <nav class="nav">
+  <ul>
+    
+    
+      
+      
+
+      
+      
+      <li>
+        <a href="/" ><i class="fa-solid fa-house"></i> Home</a>
+      </li>
+    
+      
+      
+
+      
+      
+        
+        
+          
+        
+      
+      <li>
+        <a href="/about/" ><i class="fa-solid fa-circle-info"></i> About</a>
+      </li>
+    
+      
+      
+
+      
+      
+        
+        
+          
+        
+      
+      <li>
+        <a href="/articles/" ><i class="fa-solid fa-file-code"></i> Articles</a>
+      </li>
+    
+      
+      
+
+      
+      
+        
+        
+          
+        
+      
+      <li>
+        <a href="/categories/" ><i class="fa-solid fa-list"></i> Categories</a>
+      </li>
+    
+      
+      
+
+      
+      
+        
+        
+          
+        
+      
+      <li>
+        <a href="/series/" ><i class="fa-solid fa-layer-group"></i> Series</a>
+      </li>
+    
+      
+      
+
+      
+      
+        
+        
+          
+        
+      
+      <li>
+        <a href="/tags/" ><i class="fa-solid fa-tags"></i> Tags</a>
+      </li>
+    
+  </ul>
+</nav>
+
+    <div class="nav-bottom">
+      <a href="https://mikewebb.tech">
+        Designed by Mike Webb 
+      </a>
+      <a href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">
+        &copy; 2025 CC BY-NC 4.0
+      </a>
+      <p>
+      created using
+      </p> 
+      <a href="https://gohugo.io" target="_blank">
+        <img src="/hugo-logo-wide.svg" alt="hugo.io" style="width: 40%">
+      </a>
+      <br><br>
+      <br><br>
+    </div>
+  </aside>
+  <header class="header">
+    <h1>Wireshark capture permission errors</h1>
+  </header>
+<main class="main">
+
+<article class="post">
+  <div class="post-header">
+    
+    <div class="article-meta">
+      <div>
+        <i class="fa-solid fa-calendar-days"></i>
+        Mar 18, 2017
+      </div>
+      <div>
+        <i class="fa-solid fa-file-lines"></i>
+        454 words
+      </div>
+      <div>
+        <i class="fa-solid fa-list"></i>
+        <a class="tag" href="/categories/home-lab/">Home Lab</a>
+        <a class="tag" href="/categories/security/">Cyber Security</a>
+      </div>
+      <div>
+        <i class="fa-solid fa-tags"></i>
+        <a class="tag" href="/tags/linux/">Linux</a>
+        <a class="tag" href="/tags/ubuntu/">Ubuntu</a>
+        <a class="tag" href="/tags/solution/">Solution</a>
+        <a class="tag" href="/tags/opensource/">Opensource</a>
+      </div>
+    </div>
+  </div><div class="post-content"><p>I installed Wireshark the other day on Ubuntu 16.10 so I could analyse what is &ldquo;going over the wire&rdquo; in GNS3 and later on physical network topologies.</p>
+<p>Unfortunately, due to the way I installed wireshark, the way it handles the security of low level device access (PCAP) , coupled with a touch of me not paying the level of attention needed with installing.  I locked myself out of user level access to a network interface. ala &ldquo;&ldquo;You don&rsquo;t have permission to capture on that device&rdquo;.</p>
+<p>According to the wireshark wiki &ldquo;Wireshark has implemented <a href="https://wiki.wireshark.org/Development/PrivilegeSeparation">Privilege Separation</a> which means that the Wireshark GUI (or the tshark CLI) can run as a normal user while the dumpcap capture utility runs as root. This can be achieved by installing dumpcap setuid root. The advantage of this solution is that while dumpcap is run as root the vast majority of Wireshark&rsquo;s code is run as a normal user (where it can do much less damage).&rdquo;
+When Wireshark is installed using a Linux distributions package manager, they usually provide package managers which handle installation, configuration and removal of software packages. Wireshark is provided by several distributions and some of them help in configuring dumpcap to allow capturing even for non-root users. Though with Ubuntu (and other Debian derivatives) when installing Wireshark packages non-root users won&rsquo;t gain rights automatically to capture packets. To allow non-root users to capture packets follow the procedure described in /usr/share/doc/wireshark-common/README.Debian. i.e run</p>
+<pre tabindex="0"><code> $ sudo dpkg-reconfigure wireshark-common*
+</code></pre><p>A more agnostic approach to setting network privileges for dumpcap if your kernel and file system support file capabilities:</p>
+<ol>
+<li>Ensure that you have installed the necessary tools, such as the setcap command.</li>
+<li></li>
+</ol>
+<pre tabindex="0"><code>  sudo setcap &#39;CAP\_NET\_RAW+eip CAP\_NET\_ADMIN+eip&#39; /usr/sbin/dumpcap* 
+</code></pre><blockquote>
+<p>NOTE:
+Replace /usr/sbin with /usr/bin in case you receive an error that indicates that dumpcap isn&rsquo;t in /usr/sbin)</p></blockquote>
+<ol start="3">
+<li>Start Wireshark as non-root and ensure you see the list of interfaces and can do live capture.
+Another way of setting network privileges for dumpcap if your kernel and file system don&rsquo;t support file capabilities would require the need to make dumpcap set-UID to root.</li>
+<li></li>
+</ol>
+<pre tabindex="0"><code>	sudo chown root /usr/sbin/dumpcap*
+</code></pre><blockquote>
+<p>NOTE:
+Replace /usr/sbin with /usr/bin in this command and the next command in case you receive an error that indicates that dumpcap isn&rsquo;t in /usr/sbin)</p></blockquote>
+<ol start="5">
+<li></li>
+</ol>
+<pre tabindex="0"><code>$ sudo chmod u+s /usr/bin/dumpcap* 
+</code></pre><p>You can also limit capture permission to only one group after having set dumpcap&rsquo;s network privileges:
+6. Create user &ldquo;wireshark&rdquo; in group &ldquo;wireshark&rdquo;.</p>
+<pre tabindex="0"><code>sudo chgrp wireshark /usr/sbin/dumpcap* 
+sudo chmod o-rx /usr/sbin/dumpcap*
+</code></pre><ol start="6">
+<li>Ensure Wireshark works only from root and from a user in the &ldquo;wireshark&rdquo; group</li>
+</ol>
+<p>If non of those steps work more drastic measures such as reinstalling wireshark maybe needed but that may not solve it as the issue could be underling in the operating system.</p>
+</div>
+
+  <div class="post-footer"></div></article>
+</main>
+    </div>
+  </body>
+</html>

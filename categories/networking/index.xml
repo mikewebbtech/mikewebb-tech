@@ -1,1 +1,54 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Neworking on Mike Webb Tech</title><link>https://mikewebbtech.github.io/mikewebb-tech/categories/networking/</link><description>Recent content in Neworking on Mike Webb Tech</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://mikewebbtech.github.io/mikewebb-tech/categories/networking/index.xml" rel="self" type="application/rss+xml"/><item><title>Fluba Hugo</title><link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/flubah/</link><pubDate>Sun, 20 Apr 2025 12:08:01 +0800</pubDate><guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/flubah/</guid><description>the static site generator that powers this blog. Learn about my experiences and why I chose Hugo for my journey in tech.</description></item><item><title>Diving into Hugo</title><link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/my-hugo-experience/</link><pubDate>Mon, 10 Feb 2025 12:08:01 +0800</pubDate><guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/my-hugo-experience/</guid><description>Exploring the power and simplicity of Hugo, the static site generator that powers this blog. Learn about my experiences and why I chose Hugo for my journey in tech.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Neworking on Mike Webb Tech</title>
+    <link>https://mikewebbtech.github.io/categories/networking/</link>
+    <description>Recent content in Neworking on Mike Webb Tech</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 06 May 2025 09:47:21 +0800</lastBuildDate>
+    <atom:link href="https://mikewebbtech.github.io/categories/networking/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Auditing Network Assets</title>
+      <link>https://mikewebbtech.github.io/articles/2025/2025-05-06-auditing-system-assets/</link>
+      <pubDate>Tue, 06 May 2025 09:47:21 +0800</pubDate>
+      <guid>https://mikewebbtech.github.io/articles/2025/2025-05-06-auditing-system-assets/</guid>
+      <description>Network system asset audits validate that hardware and software controls align with policies and standards. They uncover vulnerabilities, ensure compliance, and provide assurance for stronger governance and security resilience.</description>
+    </item>
+    <item>
+      <title>Assessing Network and Security Policy</title>
+      <link>https://mikewebbtech.github.io/articles/2025/2025-05-03-assessing-network-policy/</link>
+      <pubDate>Sat, 03 May 2025 18:17:52 +0800</pubDate>
+      <guid>https://mikewebbtech.github.io/articles/2025/2025-05-03-assessing-network-policy/</guid>
+      <description>Strong network security goes beyond firewalls, it relies on policies, access controls, and regular assessments.  Clear governance, technical safeguards, and incident response procedures establish a framework of prevention, detection, and response.  By enforcing least-privilege access and auditing compatibility with organisational requirements, policies become active controls, protecting systems, data, and people against evolving threats.</description>
+    </item>
+    <item>
+      <title>No NFS on boot</title>
+      <link>https://mikewebbtech.github.io/articles/2020/2020-09-29-no-nfs-on-boot/</link>
+      <pubDate>Tue, 29 Sep 2020 10:27:11 +0000</pubDate>
+      <guid>https://mikewebbtech.github.io/articles/2020/2020-09-29-no-nfs-on-boot/</guid>
+      <description>Upgrade my workstation and now NFS mounts in fstab not mounting on boot but working with mount -a command works as expected. in short, systemd is worth learning and I cant believe ubuntu was released with such a basic bug.</description>
+    </item>
+    <item>
+      <title>Powering On/Off Juniper SRX320.</title>
+      <link>https://mikewebbtech.github.io/articles/2018/2018-09-07-powering-onoff-juniper-srx320/</link>
+      <pubDate>Fri, 07 Sep 2018 09:48:15 +0000</pubDate>
+      <guid>https://mikewebbtech.github.io/articles/2018/2018-09-07-powering-onoff-juniper-srx320/</guid>
+      <description>Always use the graceful method unless absolutely necessary.  i.e don&amp;rsquo;t just yank the power cord out. There is console less method and a CLI method over the network</description>
+    </item>
+    <item>
+      <title>eBay Score of the Century</title>
+      <link>https://mikewebbtech.github.io/articles/2018/2018-06-15-infiniband-equipment/</link>
+      <pubDate>Fri, 15 Jun 2018 03:09:38 +0000</pubDate>
+      <guid>https://mikewebbtech.github.io/articles/2018/2018-06-15-infiniband-equipment/</guid>
+      <description>how about a smoking network I&amp;rsquo;m redoing my home and lab network with the goal to go 10Gb/s.  Let&amp;rsquo;s up that and go 40Gb/s and while were are at it let&amp;rsquo;s take it even further with 56Gb/s&amp;hellip;.with a twist. I found Infiniband hardware cheaper then ethernet and it can do both</description>
+    </item>
+    <item>
+      <title>Netplan bridging under Ubuntu 18.04</title>
+      <link>https://mikewebbtech.github.io/articles/2018/2018-04-27-netplan-bridging-under-ubuntu-1804/</link>
+      <pubDate>Fri, 27 Apr 2018 16:40:42 +0000</pubDate>
+      <guid>https://mikewebbtech.github.io/articles/2018/2018-04-27-netplan-bridging-under-ubuntu-1804/</guid>
+      <description>The new trend in linux is the shift to netplan as a network manager that uses either NetworkManager  or  systemd-networkd to manage interfaces is pretty much the default now for Ubuntu Desktops.  This breaks OVS and linux bridging, but there is a way</description>
+    </item>
+  </channel>
+</rss>

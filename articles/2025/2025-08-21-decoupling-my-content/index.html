@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en"><head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="generator" content="Hugo 0.147.3">
+  <title>Decoupling my Content</title><link rel="stylesheet" href="https://mikewebbtech.github.io/css/style.min.d6d64c8e1e96f8ebc418788afbac553656e25959340157a14110ac051f23ad11.css" />
+  <link rel="icon" type="image/x-icon"  href="/img/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png" />
+ 
+  <link rel="manifest" href="/img/site.webmanifest" />
+</head>
+<body data-theme="dark">
+    <div class="layout">  <aside class="sidebar">
+    <div class="logo">
+      <img src="/avatar.png" alt="avatar" width="192">
+      <p class="byline">
+        MIKE WEBB TECH
+      </p>
+      <p class="byline">
+        <a href="https://github.com/mikewebbtech" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-github"></i></a>
+        <a href="https://www.linkedin.com/in/michael-webb-1a36b8a5/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+      </p>
+    </div>
+    <nav class="nav">
+  <ul>
+    
+    
+      
+      
+
+      
+      
+      <li>
+        <a href="/" ><i class="fa-solid fa-house"></i> Home</a>
+      </li>
+    
+      
+      
+
+      
+      
+        
+        
+          
+        
+      
+      <li>
+        <a href="/about/" ><i class="fa-solid fa-circle-info"></i> About</a>
+      </li>
+    
+      
+      
+
+      
+      
+        
+        
+          
+        
+      
+      <li>
+        <a href="/articles/" ><i class="fa-solid fa-file-code"></i> Articles</a>
+      </li>
+    
+      
+      
+
+      
+      
+        
+        
+          
+        
+      
+      <li>
+        <a href="/categories/" ><i class="fa-solid fa-list"></i> Categories</a>
+      </li>
+    
+      
+      
+
+      
+      
+        
+        
+          
+        
+      
+      <li>
+        <a href="/series/" ><i class="fa-solid fa-layer-group"></i> Series</a>
+      </li>
+    
+      
+      
+
+      
+      
+        
+        
+          
+        
+      
+      <li>
+        <a href="/tags/" ><i class="fa-solid fa-tags"></i> Tags</a>
+      </li>
+    
+  </ul>
+</nav>
+
+    <div class="nav-bottom">
+      <a href="https://mikewebb.tech">
+        Designed by Mike Webb 
+      </a>
+      <a href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">
+        &copy; 2025 CC BY-NC 4.0
+      </a>
+      <p>
+      created using
+      </p> 
+      <a href="https://gohugo.io" target="_blank">
+        <img src="/hugo-logo-wide.svg" alt="hugo.io" style="width: 40%">
+      </a>
+      <br><br>
+      <br><br>
+    </div>
+  </aside>
+  <header class="header">
+    <h1>Decoupling my Content</h1>
+  </header>
+<main class="main">
+
+<article class="post">
+  <div class="post-header">
+    
+    <div class="article-meta">
+      <div>
+        <i class="fa-solid fa-calendar-days"></i>
+        Aug 21, 2025
+      </div>
+      <div>
+        <i class="fa-solid fa-file-lines"></i>
+        448 words
+      </div>
+      <div>
+        <i class="fa-solid fa-list"></i>
+        <a class="tag" href="/categories/hugo/">Hugo</a>
+      </div>
+      <div>
+        <i class="fa-solid fa-tags"></i>
+        <a class="tag" href="/tags/workflow/">Workflow</a>
+        <a class="tag" href="/tags/git/">Git</a>
+      </div>
+      <div>
+        <i class="fa-solid fa-layer-group"></i>
+        Series:
+        <a class="tag" href="/series/my-hugo-site/">My Hugo Site</a>       (Article 1 of 3) 
+         
+         
+         
+      </div>
+    </div>
+  </div><div class="post-series-list"><details class ="series-list">
+      <summary>
+        <span> All articles in the <strong>"My Hugo Site"</strong> series </span>
+      </summary>
+      <ol><li>
+              <a href="https://mikewebbtech.github.io/articles/2024/2024-04-27-a-new-blog/">A new blog</a>
+            </li><li>
+              <a href="https://mikewebbtech.github.io/articles/2024/2024-05-25-embracing-hugo/">Embracing Hugo</a>
+            </li><li class="active">
+              <b>Decoupling my Content</b>
+            </li></ol>
+    </details></div><div class="post-content"><h1 id="divide-and-conquer">Divide and Conquer</h1>
+<p>One of my peeves with wordpress as a platform was the way it stored my content&hellip;in a database. I understand the why and that&rsquo;s fine and I have bared my thoughts on this subject in previous articles.</p>
+<p>Now that I can create my content &ldquo;<em>offline</em>&rdquo; as text files, I would like to explore how I can take better(?) advantage of that feature.</p>
+<p>I’ve split my blog articles into their own top level directory and own git repository, separate from my Hugo site’s main codebase. The Hugo site will consume that content at build time. This keeps the directory structure and git repo of the Hugo site generator focused on layout, styling, and configuration, while the content will lives in a cleaner, dedicated space with its own version history.</p>
+<p>This will, hopefully and magically, work as planned by use of the <a href="https://git-scm.com/book/en/v2/Git-Tools-Submodules"><em>git submodule</em></a> feature.</p>
+<p>Here is an overview of my new directory structure:</p>
+<pre tabindex="0"><code>	      Parent Repo (Hugo)
+  /Projects/mikewebbtech-hugo/
+    ├──.git/
+    ├── layout/
+    ├── assets/
+    └── content/
+        ├── index.html
+        ├── about.html
+        └── article --git submodule pointer--
+                                             |
+                      ┌──────────────────────
+                      |
+                      ▼
+┌───────────────────────────────────────┐
+│        Submodule Repo (Articles)      │
+│  /Projects/mikewebbtech-blog/         │
+│   ├──.git/                            │
+│   ├──2008/2008-01-14-test-article.md  │
+│   ├──2025/2025-05-02-article-hugo.md  │
+│   ...                                 │
+│                                       │
+└───────────────────────────────────────┘
+</code></pre><p>There are some advantages I would like to achieve with this setup are:</p>
+<ul>
+<li><strong>Separation of concerns.</strong>  The Hugo site generator only manages the site framework, while the content stays independent. This gives me the freedom to use whatever editing tools I like Obsidian, Neovim, or anything that edits text files, without worrying about mixing them into the site code. It also means the same content repo could be consumed by other static site generators or frameworks that support Markdown.</li>
+<li><strong>Workflow focused.</strong>  My content lives in its own repository, and Hugo simply consumes it. That separation makes it easier to manage code and content without them stepping on each other.</li>
+<li><strong>Version control.</strong> Content and site code now have distinct histories. I’m not changing Hugo’s layout code base or configs nearly as often as I’m writing posts, so this keeps commits cleaner. It also opens the door for collaboration and corrections as others can suggest changes to the content directly via Github pull requests.</li>
+<li><strong>Publishing friendly.</strong> The site build is lighter because Hugo doesn’t need to track content changes beyond pulling them in. Publishing (simply&hellip;hopefully) becomes a matter of syncing the repos.</li>
+</ul>
+<p>Of course, this approach isn’t free of trade offs. Adding another repository, especially as a submodule, increases workflow complexity. I’ll need to refine my process so creating content and publishing online still feels smooth. For example, scripting repo syncs, automating builds, or making sure Git friction doesn’t get in the way of writing and publishing.</p>
+</div>
+
+  <div class="post-footer"></div><div class="post-series-bottom"><div class="pagination-buttons"><span class="button previous">
+        <a href="https://mikewebbtech.github.io/articles/2024/2024-05-25-embracing-hugo/" title="PREVIOUS ARTICLE">
+            <span class="button-icon">←</span>
+            <span class="button-ext">2. Embracing Hugo</span>
+        </a>
+    </span></div></div></article>
+</main>
+    </div>
+  </body>
+</html>

@@ -1,16 +1,47 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo on Mike Webb Tech</title><link>https://mikewebbtech.github.io/mikewebb-tech/categories/hugo/</link><description>Recent content in Hugo on Mike Webb Tech</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://mikewebbtech.github.io/mikewebb-tech/categories/hugo/index.xml" rel="self" type="application/rss+xml"/><item><title>BLAH no Series 2</title><link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/noseries2/</link><pubDate>Sun, 20 Apr 2025 12:08:01 +0800</pubDate><guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/noseries2/</guid><description>&lt;h3 id="embracing-the-speed-and-simplicity-of-hugo">Embracing the Speed and Simplicity of Hugo&lt;/h3>
-&lt;p>As I navigate the ever-evolving landscape of technology, I&amp;rsquo;m always on the
-lookout for tools that are efficient, powerful, and enjoyable to use. When it
-came to building this digital space to document my learning journey in cloud
-computing, networking, cybersecurity, and beyond, I landed on Hugo, a static
-site generator, and I haven&amp;rsquo;t looked back&lt;/p></description></item><item><title>Fluba Hugo</title><link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/flubah/</link><pubDate>Sun, 20 Apr 2025 12:08:01 +0800</pubDate><guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/flubah/</guid><description>the static site generator that powers this blog. Learn about my experiences and why I chose Hugo for my journey in tech.</description></item><item><title>no series 1BLAH</title><link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/noseries1/</link><pubDate>Sun, 20 Apr 2025 12:08:01 +0800</pubDate><guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/noseries1/</guid><description>&lt;h3 id="embracing-the-speed-and-simplicity-of-hugo">Embracing the Speed and Simplicity of Hugo&lt;/h3>
-&lt;p>As I navigate the ever-evolving landscape of technology, I&amp;rsquo;m always on the
-lookout for tools that are efficient, powerful, and enjoyable to use. When it
-came to building this digital space to document my learning journey in cloud
-computing, networking, cybersecurity, and beyond, I landed on Hugo, a static
-site generator, and I haven&amp;rsquo;t looked back&lt;/p></description></item><item><title>Diving into Hugo</title><link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/my-hugo-experience/</link><pubDate>Mon, 10 Feb 2025 12:08:01 +0800</pubDate><guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/my-hugo-experience/</guid><description>Exploring the power and simplicity of Hugo, the static site generator that powers this blog. Learn about my experiences and why I chose Hugo for my journey in tech.</description></item><item><title>BLAH BLAH</title><link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/blah/</link><pubDate>Sat, 25 Jan 2025 12:08:01 +0800</pubDate><guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/blah/</guid><description>&lt;h3 id="embracing-the-speed-and-simplicity-of-hugo">Embracing the Speed and Simplicity of Hugo&lt;/h3>
-&lt;p>As I navigate the ever-evolving landscape of technology, I&amp;rsquo;m always on the
-lookout for tools that are efficient, powerful, and enjoyable to use. When it
-came to building this digital space to document my learning journey in cloud
-computing, networking, cybersecurity, and beyond, I landed on Hugo, a static
-site generator, and I haven&amp;rsquo;t looked back&lt;/p></description></item><item><title>DB30 done and dusted</title><link>https://mikewebbtech.github.io/mikewebb-tech/articles/2008/2008-05-12-db30-done-and-dusted/</link><pubDate>Mon, 12 May 2008 22:56:44 +0000</pubDate><guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2008/2008-05-12-db30-done-and-dusted/</guid><description>&lt;p>Got the official end of contract in the mail the other day, so thayts all folks for the topside work on the barge. McD&amp;rsquo;s were making noises that sounded like there was sat support comming up for air divers, but thats all it turned out to be..just noise. Oh well funn was had and money made by all.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on Mike Webb Tech</title>
+    <link>https://mikewebbtech.github.io/categories/hugo/</link>
+    <description>Recent content in Hugo on Mike Webb Tech</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 21 Aug 2025 00:00:00 +0800</lastBuildDate>
+    <atom:link href="https://mikewebbtech.github.io/categories/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Decoupling my Content</title>
+      <link>https://mikewebbtech.github.io/articles/2025/2025-08-21-decoupling-my-content/</link>
+      <pubDate>Thu, 21 Aug 2025 00:00:00 +0800</pubDate>
+      <guid>https://mikewebbtech.github.io/articles/2025/2025-08-21-decoupling-my-content/</guid>
+      <description>I&amp;rsquo;m exploring moving out my content from the Hugo site code  into a seperate isolated direcrory structure and git repository using git submodules. This should create a cleaner, more focused workflow with independent version histories, making it easier to manage and publish my content.</description>
+    </item>
+    <item>
+      <title>Testing markup callouts</title>
+      <link>https://mikewebbtech.github.io/articles/2025/2025-05-02-testing-hugo-admonitions/</link>
+      <pubDate>Fri, 02 May 2025 10:49:58 +0800</pubDate>
+      <guid>https://mikewebbtech.github.io/articles/2025/2025-05-02-testing-hugo-admonitions/</guid>
+      <description>Testing out markup callout styles from external module and local shortcodes. As I navigate the ever-evolving landscape of technology, I’m always on the lookout for tools that are efficient, powerful, and enjoyable to use.</description>
+    </item>
+    <item>
+      <title>Hugo Codeblock Testing</title>
+      <link>https://mikewebbtech.github.io/articles/2025/2025-02-01-hugo-codeblock-testing/</link>
+      <pubDate>Sat, 01 Feb 2025 06:06:51 +0800</pubDate>
+      <guid>https://mikewebbtech.github.io/articles/2025/2025-02-01-hugo-codeblock-testing/</guid>
+      <description>Testing Hugo codeblocks without using custom layout _default _markup render-codeblock.html. Restyling using CSS and overiding for overflow-x</description>
+    </item>
+    <item>
+      <title>Embracing Hugo</title>
+      <link>https://mikewebbtech.github.io/articles/2024/2024-05-25-embracing-hugo/</link>
+      <pubDate>Sat, 25 Jan 2025 12:08:01 +0800</pubDate>
+      <guid>https://mikewebbtech.github.io/articles/2024/2024-05-25-embracing-hugo/</guid>
+      <description>I’ve embraced Hugo to power my blog, valuing its speed, simplicity, and security over database-driven platforms. Writing in Markdown, version control integration, and easy deployment make it perfect for documenting my journey in cloud, networking, and cybersecurity. Hugo keeps the focus on learning and sharing—not maintenance headaches.</description>
+    </item>
+    <item>
+      <title>A new blog</title>
+      <link>https://mikewebbtech.github.io/articles/2024/2024-04-27-a-new-blog/</link>
+      <pubDate>Sat, 27 Apr 2024 16:37:08 +0800</pubDate>
+      <guid>https://mikewebbtech.github.io/articles/2024/2024-04-27-a-new-blog/</guid>
+      <description>After years of battling WordPress hacks, rising costs, and home-lab hosting experiments, I’ve decided to reboot my blog with a new approach. Moving from dynamic sites to Hugo’s fast, static simplicity feels like the right balance of security, control, and creativity. A fresh start for sharing tech notes and learning.</description>
+    </item>
+  </channel>
+</rss>

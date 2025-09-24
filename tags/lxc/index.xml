@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lxc on Mike Webb Tech</title>
+    <link>https://mikewebbtech.github.io/tags/lxc/</link>
+    <description>Recent content in Lxc on Mike Webb Tech</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 15 Aug 2022 11:13:50 +0000</lastBuildDate>
+    <atom:link href="https://mikewebbtech.github.io/tags/lxc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FreeIPA Centos 8 lxc Replica Server</title>
+      <link>https://mikewebbtech.github.io/articles/2022/2022-08-15-freeipa-centos-8-lxc-replica-server/</link>
+      <pubDate>Mon, 15 Aug 2022 11:13:50 +0000</pubDate>
+      <guid>https://mikewebbtech.github.io/articles/2022/2022-08-15-freeipa-centos-8-lxc-replica-server/</guid>
+      <description>FreeIPA is to linux as Active Directory is to Windows.  Like AD for Windows, FreeIPA should have a replica for high availability. This is a walk though on how I got it setup and running in CentOS 8 LXC container on Proxmox VE server.  Low resource demands compared to a dedicated vurtual machine.</description>
+    </item>
+    <item>
+      <title>FreeIPA in CentOS 8 LXC container</title>
+      <link>https://mikewebbtech.github.io/articles/2021/2021-04-01-freeipa-in-centos-8-lxc-container/</link>
+      <pubDate>Thu, 01 Apr 2021 10:57:39 +0000</pubDate>
+      <guid>https://mikewebbtech.github.io/articles/2021/2021-04-01-freeipa-in-centos-8-lxc-container/</guid>
+      <description>FreeIPA is to linux as Active Directory is to Windows.  This is a walk though on how I got it setup and running in CentOS 8 LXC container on Proxmox VE server.  Low resource demands compared to a dedicated vurtual machine.</description>
+    </item>
+    <item>
+      <title>Netplan bridging under Ubuntu 18.04</title>
+      <link>https://mikewebbtech.github.io/articles/2018/2018-04-27-netplan-bridging-under-ubuntu-1804/</link>
+      <pubDate>Fri, 27 Apr 2018 16:40:42 +0000</pubDate>
+      <guid>https://mikewebbtech.github.io/articles/2018/2018-04-27-netplan-bridging-under-ubuntu-1804/</guid>
+      <description>The new trend in linux is the shift to netplan as a network manager that uses either NetworkManager  or  systemd-networkd to manage interfaces is pretty much the default now for Ubuntu Desktops.  This breaks OVS and linux bridging, but there is a way</description>
+    </item>
+  </channel>
+</rss>
