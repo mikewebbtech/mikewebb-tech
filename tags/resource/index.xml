@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Resource on Mike Webb Tech</title>
-    <link>https://mikewebbtech.github.io/mikewebb-tech/tags/resource/</link>
+    <link>http://localhost:1313/mikewebb-tech/tags/resource/</link>
     <description>Recent content in Resource on Mike Webb Tech</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 22 Jul 2025 09:11:49 +0800</lastBuildDate>
-    <atom:link href="https://mikewebbtech.github.io/mikewebb-tech/tags/resource/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/mikewebb-tech/tags/resource/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Threats, Vulnerabilities, and Risks</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-07-22-cruicial-distinction/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2025/2025-07-22-cruicial-distinction/</link>
       <pubDate>Tue, 22 Jul 2025 09:11:49 +0800</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-07-22-cruicial-distinction/</guid>
-      <description>&lt;h1 id=&#34;threats-vulnerabilities-and-risks&#34;&gt;Threats, Vulnerabilities, and Risks&lt;/h1&gt;&#xA;&lt;h2 id=&#34;a-crucial-distinction&#34;&gt;A Crucial Distinction&lt;/h2&gt;&#xA;&lt;p&gt;In cybersecurity, the terms &lt;strong&gt;threats, vulnerabilities,&lt;/strong&gt; and &lt;strong&gt;risks&lt;/strong&gt; are often used interchangeably, but they are distinct concepts. Understanding their relationship is fundamental to building an effective security program.  Also important that these concepts have a context, namely they relate to &lt;em&gt;assets&lt;/em&gt;.  Think of it as a logical chain: a &lt;strong&gt;threat&lt;/strong&gt; exploits a &lt;strong&gt;vulnerability&lt;/strong&gt; to create a &lt;strong&gt;risk&lt;/strong&gt;.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2025/2025-07-22-cruicial-distinction/</guid>
+      <description>In cybersecurity, the terms threats, vulnerabilities, and risks are sometimes used incorrectly and interchangeably, but they are distinct concepts.  Understanding their relationship is fundamental to building an effective security program. Think of them as a logical chain: a threat exploits a vulnerability to create a risk.</description>
     </item>
     <item>
       <title>explainshell.com is awesome</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-09-25-explainshellcom-is-awesome/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2017/2017-09-25-explainshellcom-is-awesome/</link>
       <pubDate>Mon, 25 Sep 2017 11:45:56 +0000</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-09-25-explainshellcom-is-awesome/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2017/2017-09-25-explainshellcom-is-awesome/</guid>
       <description>Bash shell is under rated and the CLI is very powerful if not arcane with mysterious incantations. Well I came across this site breaks down a command and exlpains the structure and what is it is doing.  preaty cool</description>
     </item>
   </channel>

@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shell on Mike Webb Tech</title>
-    <link>https://mikewebbtech.github.io/mikewebb-tech/tags/shell/</link>
+    <link>http://localhost:1313/mikewebb-tech/tags/shell/</link>
     <description>Recent content in Shell on Mike Webb Tech</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 02 Oct 2017 12:58:14 +0000</lastBuildDate>
-    <atom:link href="https://mikewebbtech.github.io/mikewebb-tech/tags/shell/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/mikewebb-tech/tags/shell/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Generate new host keys after sysprep</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-10-02-generate-new-host-keys-after-sysprep/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2017/2017-10-02-generate-new-host-keys-after-sysprep/</link>
       <pubDate>Mon, 02 Oct 2017 12:58:14 +0000</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-10-02-generate-new-host-keys-after-sysprep/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2017/2017-10-02-generate-new-host-keys-after-sysprep/</guid>
       <description>Sysprep wipes the host ssh keys from the guest image (this is a good thing) meaning that you will no longer be able to ssh in to the guest VM (This is a bad think).  Let&amp;rsquo;s fix that.</description>
     </item>
     <item>
       <title>explainshell.com is awesome</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-09-25-explainshellcom-is-awesome/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2017/2017-09-25-explainshellcom-is-awesome/</link>
       <pubDate>Mon, 25 Sep 2017 11:45:56 +0000</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-09-25-explainshellcom-is-awesome/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2017/2017-09-25-explainshellcom-is-awesome/</guid>
       <description>Bash shell is under rated and the CLI is very powerful if not arcane with mysterious incantations. Well I came across this site breaks down a command and exlpains the structure and what is it is doing.  preaty cool</description>
     </item>
   </channel>

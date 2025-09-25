@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Networking on Mike Webb Tech</title>
-    <link>https://mikewebbtech.github.io/mikewebb-tech/tags/networking/</link>
+    <link>http://localhost:1313/mikewebb-tech/tags/networking/</link>
     <description>Recent content in Networking on Mike Webb Tech</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 29 Sep 2020 10:27:11 +0000</lastBuildDate>
-    <atom:link href="https://mikewebbtech.github.io/mikewebb-tech/tags/networking/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/mikewebb-tech/tags/networking/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>No NFS on boot</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2020/2020-09-29-no-nfs-on-boot/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2020/2020-09-29-no-nfs-on-boot/</link>
       <pubDate>Tue, 29 Sep 2020 10:27:11 +0000</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2020/2020-09-29-no-nfs-on-boot/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2020/2020-09-29-no-nfs-on-boot/</guid>
       <description>Upgrade my workstation and now NFS mounts in fstab not mounting on boot but working with mount -a command works as expected. in short, systemd is worth learning and I cant believe ubuntu was released with such a basic bug.</description>
     </item>
     <item>
       <title>Powering On/Off Juniper SRX320.</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-09-07-powering-onoff-juniper-srx320/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2018/2018-09-07-powering-onoff-juniper-srx320/</link>
       <pubDate>Fri, 07 Sep 2018 09:48:15 +0000</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-09-07-powering-onoff-juniper-srx320/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2018/2018-09-07-powering-onoff-juniper-srx320/</guid>
       <description>Always use the graceful method unless absolutely necessary.  i.e don&amp;rsquo;t just yank the power cord out. There is console less method and a CLI method over the network</description>
     </item>
     <item>
       <title>eBay Score of the Century</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-06-15-infiniband-equipment/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2018/2018-06-15-infiniband-equipment/</link>
       <pubDate>Fri, 15 Jun 2018 03:09:38 +0000</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-06-15-infiniband-equipment/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2018/2018-06-15-infiniband-equipment/</guid>
       <description>how about a smoking network I&amp;rsquo;m redoing my home and lab network with the goal to go 10Gb/s.  Let&amp;rsquo;s up that and go 40Gb/s and while were are at it let&amp;rsquo;s take it even further with 56Gb/s&amp;hellip;.with a twist. I found Infiniband hardware cheaper then ethernet and it can do both</description>
     </item>
     <item>
       <title>Netplan bridging under Ubuntu 18.04</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-04-27-netplan-bridging-under-ubuntu-1804/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2018/2018-04-27-netplan-bridging-under-ubuntu-1804/</link>
       <pubDate>Fri, 27 Apr 2018 16:40:42 +0000</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-04-27-netplan-bridging-under-ubuntu-1804/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2018/2018-04-27-netplan-bridging-under-ubuntu-1804/</guid>
       <description>The new trend in linux is the shift to netplan as a network manager that uses either NetworkManager  or  systemd-networkd to manage interfaces is pretty much the default now for Ubuntu Desktops.  This breaks OVS and linux bridging, but there is a way</description>
     </item>
   </channel>

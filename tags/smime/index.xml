@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Smime on Mike Webb Tech</title>
-    <link>https://mikewebbtech.github.io/mikewebb-tech/tags/smime/</link>
+    <link>http://localhost:1313/mikewebb-tech/tags/smime/</link>
     <description>Recent content in Smime on Mike Webb Tech</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 16 Aug 2017 10:41:21 +0000</lastBuildDate>
-    <atom:link href="https://mikewebbtech.github.io/mikewebb-tech/tags/smime/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/mikewebb-tech/tags/smime/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Peer certificate error when S/MIME signing email</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-08-16-peer-certificate-error-when-smime-signing/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2017/2017-08-16-peer-certificate-error-when-smime-signing/</link>
       <pubDate>Wed, 16 Aug 2017 10:41:21 +0000</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-08-16-peer-certificate-error-when-smime-signing/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2017/2017-08-16-peer-certificate-error-when-smime-signing/</guid>
       <description>Notes on overcoming certificate trusted peer certificate errors when importing and using s/mime for email signing on systems that use NSS instead of OpenSSL libraries</description>
     </item>
   </channel>

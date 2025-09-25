@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Testing on Mike Webb Tech</title>
-    <link>https://mikewebbtech.github.io/mikewebb-tech/tags/testing/</link>
+    <link>http://localhost:1313/mikewebb-tech/tags/testing/</link>
     <description>Recent content in Testing on Mike Webb Tech</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 30 Aug 2025 08:00:00 +0800</lastBuildDate>
-    <atom:link href="https://mikewebbtech.github.io/mikewebb-tech/tags/testing/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/mikewebb-tech/tags/testing/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Measuring Security</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-08-30-measuring-security-effectiveness/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2025/2025-08-30-measuring-security-effectiveness/</link>
       <pubDate>Sat, 30 Aug 2025 08:00:00 +0800</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-08-30-measuring-security-effectiveness/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2025/2025-08-30-measuring-security-effectiveness/</guid>
       <description>This article explores the critical process of benchmarking control effectiveness, which ensures security safeguards provide intended protection. It examines how organizations can leverage frameworks like the Essential Eight, NIST, and ISO to measure maturity and track progress. The summary also highlights the importance of addressing discrepancies for continuous improvement and a stronger defense.</description>
     </item>
     <item>
       <title>Testing markup callouts</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-05-02-testing-hugo-admonitions/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2025/2025-05-02-testing-hugo-admonitions/</link>
       <pubDate>Fri, 02 May 2025 10:49:58 +0800</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-05-02-testing-hugo-admonitions/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2025/2025-05-02-testing-hugo-admonitions/</guid>
       <description>Testing out markup callout styles from external module and local shortcodes. As I navigate the ever-evolving landscape of technology, I’m always on the lookout for tools that are efficient, powerful, and enjoyable to use.</description>
     </item>
     <item>
       <title>Hugo Codeblock Testing</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-02-01-hugo-codeblock-testing/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2025/2025-02-01-hugo-codeblock-testing/</link>
       <pubDate>Sat, 01 Feb 2025 06:06:51 +0800</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-02-01-hugo-codeblock-testing/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2025/2025-02-01-hugo-codeblock-testing/</guid>
       <description>Testing Hugo codeblocks without using custom layout _default _markup render-codeblock.html. Restyling using CSS and overiding for overflow-x</description>
     </item>
   </channel>

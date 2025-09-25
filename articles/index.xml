@@ -2,528 +2,535 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Articles on Mike Webb Tech</title>
-    <link>https://mikewebbtech.github.io/mikewebb-tech/articles/</link>
+    <link>http://localhost:1313/mikewebb-tech/articles/</link>
     <description>Recent content in Articles on Mike Webb Tech</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 09 Sep 2025 00:00:00 +0800</lastBuildDate>
-    <atom:link href="https://mikewebbtech.github.io/mikewebb-tech/articles/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 25 Sep 2025 12:10:33 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/mikewebb-tech/articles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Article Cards on Homepage</title>
+      <link>http://localhost:1313/mikewebb-tech/articles/2025/2025-09-25-article-cards/</link>
+      <pubDate>Thu, 25 Sep 2025 12:10:33 +0800</pubDate>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2025/2025-09-25-article-cards/</guid>
+      <description>The article explains how to display the four most recent articles as styled cards on the homepage by extend Hugo functionality using custom shortcodes and calling them in markdown files and CSS.</description>
+    </item>
     <item>
       <title>CIRP as a Mitigation Strategy</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-09-09-cirp-as-a-strategy/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2025/2025-09-09-cirp-as-a-strategy/</link>
       <pubDate>Tue, 09 Sep 2025 00:00:00 +0800</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-09-09-cirp-as-a-strategy/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2025/2025-09-09-cirp-as-a-strategy/</guid>
       <description>This article looks CIRP beyond being a reactive plan and implementing it is a measurable and proactive component of a security strategy.  It outlines how a CIRP reduces the impact of a breach and discusses key metrics for continuous improvement.</description>
     </item>
     <item>
       <title>Exploring Implementation Discrepancy</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-09-02-exploring-discrepancy/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2025/2025-09-02-exploring-discrepancy/</link>
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0800</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-09-02-exploring-discrepancy/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2025/2025-09-02-exploring-discrepancy/</guid>
       <description>Exploring in more detail the different types of discrepancies that can undermine control effectiveness, including issues with implementation, training, and a changing threat landscape. It provides practical insights into how to detect these gaps and offers a clear, action-oriented remediation checklist to ensure continuous improvement in cybersecurity defences.</description>
     </item>
     <item>
       <title>Measuring Security</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-08-30-measuring-security-effectiveness/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2025/2025-08-30-measuring-security-effectiveness/</link>
       <pubDate>Sat, 30 Aug 2025 08:00:00 +0800</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-08-30-measuring-security-effectiveness/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2025/2025-08-30-measuring-security-effectiveness/</guid>
       <description>This article explores the critical process of benchmarking control effectiveness, which ensures security safeguards provide intended protection. It examines how organizations can leverage frameworks like the Essential Eight, NIST, and ISO to measure maturity and track progress. The summary also highlights the importance of addressing discrepancies for continuous improvement and a stronger defense.</description>
     </item>
     <item>
       <title>Decoupling my Content</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-08-21-decoupling-my-content/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2025/2025-08-21-decoupling-my-content/</link>
       <pubDate>Thu, 21 Aug 2025 00:00:00 +0800</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-08-21-decoupling-my-content/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2025/2025-08-21-decoupling-my-content/</guid>
       <description>I&amp;rsquo;m exploring moving out my content from the Hugo site code  into a seperate isolated direcrory structure and git repository using git submodules. This should create a cleaner, more focused workflow with independent version histories, making it easier to manage and publish my content.</description>
     </item>
     <item>
       <title>Implement Security Controls</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-08-19-from-plan-to-action/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2025/2025-08-19-from-plan-to-action/</link>
       <pubDate>Tue, 19 Aug 2025 00:00:00 +0800</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-08-19-from-plan-to-action/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2025/2025-08-19-from-plan-to-action/</guid>
       <description>This article examines the process of implementing cybersecurity controls, progressing from strategy to implemented controls.  It outlines the steps to plan, execute, and test security defences to effectively address vulnerabilities.  This ensures that controls are not only implemented but also well documented and maintained for effectiveness.</description>
     </item>
     <item>
       <title>Risk Mitigation Plans</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-08-17-risk-mitigation-plans/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2025/2025-08-17-risk-mitigation-plans/</link>
       <pubDate>Sun, 17 Aug 2025 20:33:12 +0800</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-08-17-risk-mitigation-plans/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2025/2025-08-17-risk-mitigation-plans/</guid>
       <description>A risk mitigation plan only works if it&amp;rsquo;s properly executed. This requires change management principles to communicate with everyone, get their buy-in, and continuously monitor that the new processes are being followed. This turns the plan from a static document into a living part of the organisation&amp;rsquo;s culture.</description>
     </item>
     <item>
       <title>Risk Management and Cyber Controls</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-08-10-risk-management-and-cyber-controls/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2025/2025-08-10-risk-management-and-cyber-controls/</link>
       <pubDate>Sun, 10 Aug 2025 08:37:12 +0800</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-08-10-risk-management-and-cyber-controls/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2025/2025-08-10-risk-management-and-cyber-controls/</guid>
       <description>Risk management frameworks integrate decision-making to reduce risk to ALARP. Cyber controls, preventative, detective, and corrective, address assessed threats. Assess the security gap and controls that align with the sccepted risk appetite and objectives.</description>
     </item>
     <item>
       <title>Introduction to Cyber Incident Response Plan</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-08-01-intro-to-cirp/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2025/2025-08-01-intro-to-cirp/</link>
       <pubDate>Fri, 01 Aug 2025 11:42:52 +0800</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-08-01-intro-to-cirp/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2025/2025-08-01-intro-to-cirp/</guid>
       <description>A Cyber Incident Response Plan (CIRP) is needed to transform an organisation&amp;rsquo;s approach to security incidents from panic to preparedness. It provides a structured playbook  for preparing, detecting, responding to, and recovering from a cybersecurity events.  A CIRP provides clear responsibilities and procedures, minimising harm and accelerating recovery.  Its value is in creating coordinated action in high-pressure situations, preventing disorganisation, and reducing the downtime, costs, and reputational damage that can result from a breach.</description>
     </item>
     <item>
       <title>Cyber Threat Awareness</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-07-16-cyber-threat-awareness/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2025/2025-07-16-cyber-threat-awareness/</link>
       <pubDate>Tue, 29 Jul 2025 22:17:47 +0800</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-07-16-cyber-threat-awareness/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2025/2025-07-16-cyber-threat-awareness/</guid>
       <description>To build proactive cybersecurity defenses, a foundational understanding of the threat landscape is required. By comprehending common cyber threats like phishing, ransomware, and viruses, an organization can inform risk assessments and prioritise security controls.</description>
     </item>
     <item>
       <title>ICT Assets and Asset Registers</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-07-13-ict-asset-register/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2025/2025-07-13-ict-asset-register/</link>
       <pubDate>Tue, 29 Jul 2025 20:30:33 +0800</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-07-13-ict-asset-register/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2025/2025-07-13-ict-asset-register/</guid>
       <description>ICT assets include hardware, software, information, infrastructure, skilled personnel, and outsourced services. An asset register systematically documents these, forming the foundation of IT asset management.  It tracks lifecycle, reduces risks, prevents waste, and documents vulnerabilities.  Maintaining a detailed register ensures risk management focuses on protecting the organisation’s most valuable resources.</description>
     </item>
     <item>
       <title>Introduction to Risk and Risk Management</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-07-28-introduction-to-risk/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2025/2025-07-28-introduction-to-risk/</link>
       <pubDate>Mon, 28 Jul 2025 12:22:12 +0800</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-07-28-introduction-to-risk/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2025/2025-07-28-introduction-to-risk/</guid>
       <description>Risk in cybersecurity is the probability of threats exploiting vulnerabilities to impact assets. Risk management involves identifying, assessing, and controlling threats through structured approach of identification, analysis, evaluation, treatment, and monitoring. This strengthens resilience, improves efficiency, and aligns security contols with organisational strategy while addressing evolving digital threats.</description>
     </item>
     <item>
       <title>Threats, Vulnerabilities, and Risks</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-07-22-cruicial-distinction/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2025/2025-07-22-cruicial-distinction/</link>
       <pubDate>Tue, 22 Jul 2025 09:11:49 +0800</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-07-22-cruicial-distinction/</guid>
-      <description>&lt;h1 id=&#34;threats-vulnerabilities-and-risks&#34;&gt;Threats, Vulnerabilities, and Risks&lt;/h1&gt;&#xA;&lt;h2 id=&#34;a-crucial-distinction&#34;&gt;A Crucial Distinction&lt;/h2&gt;&#xA;&lt;p&gt;In cybersecurity, the terms &lt;strong&gt;threats, vulnerabilities,&lt;/strong&gt; and &lt;strong&gt;risks&lt;/strong&gt; are often used interchangeably, but they are distinct concepts. Understanding their relationship is fundamental to building an effective security program.  Also important that these concepts have a context, namely they relate to &lt;em&gt;assets&lt;/em&gt;.  Think of it as a logical chain: a &lt;strong&gt;threat&lt;/strong&gt; exploits a &lt;strong&gt;vulnerability&lt;/strong&gt; to create a &lt;strong&gt;risk&lt;/strong&gt;.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2025/2025-07-22-cruicial-distinction/</guid>
+      <description>In cybersecurity, the terms threats, vulnerabilities, and risks are sometimes used incorrectly and interchangeably, but they are distinct concepts.  Understanding their relationship is fundamental to building an effective security program. Think of them as a logical chain: a threat exploits a vulnerability to create a risk.</description>
     </item>
     <item>
       <title>Mapping Strategies to controls</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-07-15-mapping-to-ism-controls/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2025/2025-07-15-mapping-to-ism-controls/</link>
       <pubDate>Tue, 15 Jul 2025 00:00:00 +0800</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-07-15-mapping-to-ism-controls/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2025/2025-07-15-mapping-to-ism-controls/</guid>
       <description>Mapping the Essential Eight to the Information Security Manual (ISM) gives organisations a clear and actionable guide for implementing each security strategy at the desired maturity level. This mapping translates objectives into controls that aligns with priorities and obligations, ensures progress is measurable and outcome driven</description>
     </item>
     <item>
       <title>Introducing the Essential 8</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-07-13-intro-to-essential-8/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2025/2025-07-13-intro-to-essential-8/</link>
       <pubDate>Sun, 13 Jul 2025 09:23:39 +0800</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-07-13-intro-to-essential-8/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2025/2025-07-13-intro-to-essential-8/</guid>
       <description>The Essential Eight is a set of mitigation strategies from the Australian Cyber Security Centre that helps organisations build cyber resilience. The framework&amp;rsquo;s four maturity levels provide a progressive roadmap for implementing control strategies.</description>
     </item>
     <item>
       <title>Introducing the ASD</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-07-12-intro-to-asd/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2025/2025-07-12-intro-to-asd/</link>
       <pubDate>Sat, 12 Jul 2025 00:00:00 +0800</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-07-12-intro-to-asd/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2025/2025-07-12-intro-to-asd/</guid>
       <description>The Australian Signals Directorate (ASD) leads the nation’s cyber defence through the Essential Eight, the Information Security Manual, and the Cyber Incident Response Plan. Together with the Australian Cyber Security Centre, this guidance empowers organisations to strengthen defences, benchmark maturity, and contribute to Australia’s collective digital resilience.</description>
     </item>
     <item>
       <title>The CIA Triad</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-07-11-cia-triad/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2025/2025-07-11-cia-triad/</link>
       <pubDate>Fri, 11 Jul 2025 23:38:04 +0800</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-07-11-cia-triad/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2025/2025-07-11-cia-triad/</guid>
       <description>Confidentiality, Integrity, and Availability is the foundation of cybersecurity. It ensures sensitive data remains private, accurate, and accessible to authorised users.  Balancing these three elements strengthens resilience and tailors security priorities to the needs of an organisation.</description>
     </item>
     <item>
       <title>Basics of Cyber Security Requirements</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-07-10-basics-cyber-security-requirements/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2025/2025-07-10-basics-cyber-security-requirements/</link>
       <pubDate>Thu, 10 Jul 2025 08:30:33 +0800</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-07-10-basics-cyber-security-requirements/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2025/2025-07-10-basics-cyber-security-requirements/</guid>
       <description>Cybersecurity is a core business requirement built on analysing assets, threats, and risks. Using frameworks and maturity models, organisations align security with objectives and compliance. A proactive, structured approach ensures resilience, safeguards assets, and strengthens business continuity against evolving threats.</description>
     </item>
     <item>
       <title>Cyber Security. Not What I thought</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-07-03-cyber-security-not-what-i-thought/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2025/2025-07-03-cyber-security-not-what-i-thought/</link>
       <pubDate>Thu, 03 Jul 2025 21:09:33 +0800</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-07-03-cyber-security-not-what-i-thought/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2025/2025-07-03-cyber-security-not-what-i-thought/</guid>
       <description>When introduced to cybersecurity after a career in industrial commissioning, I discovered it is less dramatic then Hollywood movies and more about structured processes, testing, documentation, and discipline. a commissioning and testing background proved surprisingly relevant, making cybersecurity familiar and less intimidating.</description>
     </item>
     <item>
       <title>Auditing Network Assets</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-05-06-auditing-system-assets/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2025/2025-05-06-auditing-system-assets/</link>
       <pubDate>Tue, 06 May 2025 09:47:21 +0800</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-05-06-auditing-system-assets/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2025/2025-05-06-auditing-system-assets/</guid>
       <description>Network system asset audits validate that hardware and software controls align with policies and standards. They uncover vulnerabilities, ensure compliance, and provide assurance for stronger governance and security resilience.</description>
     </item>
     <item>
       <title>Assessing Network and Security Policy</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-05-03-assessing-network-policy/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2025/2025-05-03-assessing-network-policy/</link>
       <pubDate>Sat, 03 May 2025 18:17:52 +0800</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-05-03-assessing-network-policy/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2025/2025-05-03-assessing-network-policy/</guid>
       <description>Strong network security goes beyond firewalls, it relies on policies, access controls, and regular assessments.  Clear governance, technical safeguards, and incident response procedures establish a framework of prevention, detection, and response.  By enforcing least-privilege access and auditing compatibility with organisational requirements, policies become active controls, protecting systems, data, and people against evolving threats.</description>
     </item>
     <item>
       <title>Testing markup callouts</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-05-02-testing-hugo-admonitions/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2025/2025-05-02-testing-hugo-admonitions/</link>
       <pubDate>Fri, 02 May 2025 10:49:58 +0800</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-05-02-testing-hugo-admonitions/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2025/2025-05-02-testing-hugo-admonitions/</guid>
       <description>Testing out markup callout styles from external module and local shortcodes. As I navigate the ever-evolving landscape of technology, I’m always on the lookout for tools that are efficient, powerful, and enjoyable to use.</description>
     </item>
     <item>
       <title>Hugo Codeblock Testing</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-02-01-hugo-codeblock-testing/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2025/2025-02-01-hugo-codeblock-testing/</link>
       <pubDate>Sat, 01 Feb 2025 06:06:51 +0800</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-02-01-hugo-codeblock-testing/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2025/2025-02-01-hugo-codeblock-testing/</guid>
       <description>Testing Hugo codeblocks without using custom layout _default _markup render-codeblock.html. Restyling using CSS and overiding for overflow-x</description>
     </item>
     <item>
       <title>Embracing Hugo</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2024/2024-05-25-embracing-hugo/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2024/2024-05-25-embracing-hugo/</link>
       <pubDate>Sat, 25 Jan 2025 12:08:01 +0800</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2024/2024-05-25-embracing-hugo/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2024/2024-05-25-embracing-hugo/</guid>
       <description>I’ve embraced Hugo to power my blog, valuing its speed, simplicity, and security over database-driven platforms. Writing in Markdown, version control integration, and easy deployment make it perfect for documenting my journey in cloud, networking, and cybersecurity. Hugo keeps the focus on learning and sharing—not maintenance headaches.</description>
     </item>
     <item>
       <title>A new blog</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2024/2024-04-27-a-new-blog/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2024/2024-04-27-a-new-blog/</link>
       <pubDate>Sat, 27 Apr 2024 16:37:08 +0800</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2024/2024-04-27-a-new-blog/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2024/2024-04-27-a-new-blog/</guid>
       <description>After years of battling WordPress hacks, rising costs, and home-lab hosting experiments, I’ve decided to reboot my blog with a new approach. Moving from dynamic sites to Hugo’s fast, static simplicity feels like the right balance of security, control, and creativity. A fresh start for sharing tech notes and learning.</description>
     </item>
     <item>
       <title>Big move...Hang in  there</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2022/2022-12-19-big-movehang-in-there/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2022/2022-12-19-big-movehang-in-there/</link>
       <pubDate>Mon, 19 Dec 2022 10:04:08 +0800</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2022/2022-12-19-big-movehang-in-there/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2022/2022-12-19-big-movehang-in-there/</guid>
       <description>The Wordpress.com gouging is over. Since moving to a new house with business class internet and a new server rack with a High availability server/storage solution.  Its a process&amp;hellip;</description>
     </item>
     <item>
       <title>FreeIPA Centos 8 lxc Replica Server</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2022/2022-08-15-freeipa-centos-8-lxc-replica-server/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2022/2022-08-15-freeipa-centos-8-lxc-replica-server/</link>
       <pubDate>Mon, 15 Aug 2022 11:13:50 +0000</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2022/2022-08-15-freeipa-centos-8-lxc-replica-server/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2022/2022-08-15-freeipa-centos-8-lxc-replica-server/</guid>
       <description>FreeIPA is to linux as Active Directory is to Windows.  Like AD for Windows, FreeIPA should have a replica for high availability. This is a walk though on how I got it setup and running in CentOS 8 LXC container on Proxmox VE server.  Low resource demands compared to a dedicated vurtual machine.</description>
     </item>
     <item>
       <title>FreeIPA in CentOS 8 LXC container</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2021/2021-04-01-freeipa-in-centos-8-lxc-container/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2021/2021-04-01-freeipa-in-centos-8-lxc-container/</link>
       <pubDate>Thu, 01 Apr 2021 10:57:39 +0000</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2021/2021-04-01-freeipa-in-centos-8-lxc-container/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2021/2021-04-01-freeipa-in-centos-8-lxc-container/</guid>
       <description>FreeIPA is to linux as Active Directory is to Windows.  This is a walk though on how I got it setup and running in CentOS 8 LXC container on Proxmox VE server.  Low resource demands compared to a dedicated vurtual machine.</description>
     </item>
     <item>
       <title>No NFS on boot</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2020/2020-09-29-no-nfs-on-boot/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2020/2020-09-29-no-nfs-on-boot/</link>
       <pubDate>Tue, 29 Sep 2020 10:27:11 +0000</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2020/2020-09-29-no-nfs-on-boot/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2020/2020-09-29-no-nfs-on-boot/</guid>
       <description>Upgrade my workstation and now NFS mounts in fstab not mounting on boot but working with mount -a command works as expected. in short, systemd is worth learning and I cant believe ubuntu was released with such a basic bug.</description>
     </item>
     <item>
       <title>Busy busy</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2020/2020-03-21-busy-busy/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2020/2020-03-21-busy-busy/</link>
       <pubDate>Sat, 21 Mar 2020 11:25:23 +0000</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2020/2020-03-21-busy-busy/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2020/2020-03-21-busy-busy/</guid>
       <description>It’s been a flat out year so far with work doing various commissioning and testing jobs around OZ. With all that has been happening lately with COVID-19, lockdowns and essential workers to keep it all ticking along.</description>
     </item>
     <item>
       <title>iCloud contacts on Linux. 2 years on</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2019/2019-09-12-icloud-contacts-on-linux-2-years-on/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2019/2019-09-12-icloud-contacts-on-linux-2-years-on/</link>
       <pubDate>Thu, 12 Sep 2019 08:42:26 +0000</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2019/2019-09-12-icloud-contacts-on-linux-2-years-on/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2019/2019-09-12-icloud-contacts-on-linux-2-years-on/</guid>
       <description>Two years ago I began migrating looking at ways to use the Appleverse without Apple and extending collaborative features to Linux and open source. The solutions where technical and so &amp;ldquo;kludgy&amp;rdquo;.  Time and need of the masses has now made this now near native and easy to implement.</description>
     </item>
     <item>
       <title>Created a GitHub Repo</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2019/2019-01-17-created-a-github-repo/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2019/2019-01-17-created-a-github-repo/</link>
       <pubDate>Thu, 17 Jan 2019 14:28:12 +0000</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2019/2019-01-17-created-a-github-repo/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2019/2019-01-17-created-a-github-repo/</guid>
       <description>Lately I&amp;rsquo;ve been focusing on home automation using Home Assistant and I&amp;rsquo;ve created a GitHub repository for my configuration to help version control and roll backs. I&amp;rsquo;m sure I will find more uses</description>
     </item>
     <item>
       <title>Toe dip into Home Automation</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2019/2019-01-05-toe-dip-into-home-automation/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2019/2019-01-05-toe-dip-into-home-automation/</link>
       <pubDate>Sat, 05 Jan 2019 13:24:45 +0000</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2019/2019-01-05-toe-dip-into-home-automation/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2019/2019-01-05-toe-dip-into-home-automation/</guid>
       <description>I see the need for home automation.  Well&amp;hellip;I would like to explore this technology and make it work for me.  There are so many options and there are some very expensive options, not just cost but in privacy and closed ecosystem risks.</description>
     </item>
     <item>
       <title>Beatport Pro working on MacOS Mojave</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-10-24-beatport-pro-working-on-macos-mojave/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2018/2018-10-24-beatport-pro-working-on-macos-mojave/</link>
       <pubDate>Wed, 24 Oct 2018 16:59:13 +0000</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-10-24-beatport-pro-working-on-macos-mojave/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2018/2018-10-24-beatport-pro-working-on-macos-mojave/</guid>
       <description>Upgrading MacOS from High Sierra to Mojave introduces some new security requirements that cause issues with some applications. The fix for apps created in electron is simple onse you know how.</description>
     </item>
     <item>
       <title>SAS disk power mode control</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-10-08-sas-disk-power-mode-control/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2018/2018-10-08-sas-disk-power-mode-control/</link>
       <pubDate>Mon, 08 Oct 2018 15:54:58 +0000</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-10-08-sas-disk-power-mode-control/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2018/2018-10-08-sas-disk-power-mode-control/</guid>
       <description>My hard drives were spinning at 7600 RPM 24/7, this is fine for aa actual server for the masses or in DC, but total overkill for my intermittent needs. Why do I want power control over my spinning rust&amp;hellip;spin down to save noise and heat = save energy.</description>
     </item>
     <item>
       <title>Powering On/Off Juniper SRX320.</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-09-07-powering-onoff-juniper-srx320/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2018/2018-09-07-powering-onoff-juniper-srx320/</link>
       <pubDate>Fri, 07 Sep 2018 09:48:15 +0000</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-09-07-powering-onoff-juniper-srx320/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2018/2018-09-07-powering-onoff-juniper-srx320/</guid>
       <description>Always use the graceful method unless absolutely necessary.  i.e don&amp;rsquo;t just yank the power cord out. There is console less method and a CLI method over the network</description>
     </item>
     <item>
       <title>eBay Score of the Century</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-06-15-infiniband-equipment/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2018/2018-06-15-infiniband-equipment/</link>
       <pubDate>Fri, 15 Jun 2018 03:09:38 +0000</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-06-15-infiniband-equipment/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2018/2018-06-15-infiniband-equipment/</guid>
       <description>how about a smoking network I&amp;rsquo;m redoing my home and lab network with the goal to go 10Gb/s.  Let&amp;rsquo;s up that and go 40Gb/s and while were are at it let&amp;rsquo;s take it even further with 56Gb/s&amp;hellip;.with a twist. I found Infiniband hardware cheaper then ethernet and it can do both</description>
     </item>
     <item>
       <title>Using IPMI to control PWM fans	References:</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-06-01-using-ipmi-to-control-pwm-fans-reference/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2018/2018-06-01-using-ipmi-to-control-pwm-fans-reference/</link>
       <pubDate>Fri, 01 Jun 2018 10:02:55 +0000</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-06-01-using-ipmi-to-control-pwm-fans-reference/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2018/2018-06-01-using-ipmi-to-control-pwm-fans-reference/</guid>
       <description>IPMI is more then a way to access servers over the network without them powered up (lights out, out of band etc).  It is an Intelligent Platform Management Interface,  it can be used to interface with the hardware layer in ways the OS can&amp;rsquo;t.  Let&amp;rsquo;s use it  to control some fans.</description>
     </item>
     <item>
       <title>Etcher does away with dd*</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-04-28-etcher-does-away-with-dd/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2018/2018-04-28-etcher-does-away-with-dd/</link>
       <pubDate>Sat, 28 Apr 2018 15:53:25 +0000</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-04-28-etcher-does-away-with-dd/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2018/2018-04-28-etcher-does-away-with-dd/</guid>
       <description>dd has being my go to tool for &amp;ldquo;everything-imges-and-iso&amp;rdquo;, especially ever since the usb stick became ubiquitous and norm for installing new a OS.  There is a new kid on the block now&amp;hellip;but it needs a GUI.</description>
     </item>
     <item>
       <title>Netplan bridging under Ubuntu 18.04</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-04-27-netplan-bridging-under-ubuntu-1804/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2018/2018-04-27-netplan-bridging-under-ubuntu-1804/</link>
       <pubDate>Fri, 27 Apr 2018 16:40:42 +0000</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-04-27-netplan-bridging-under-ubuntu-1804/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2018/2018-04-27-netplan-bridging-under-ubuntu-1804/</guid>
       <description>The new trend in linux is the shift to netplan as a network manager that uses either NetworkManager  or  systemd-networkd to manage interfaces is pretty much the default now for Ubuntu Desktops.  This breaks OVS and linux bridging, but there is a way</description>
     </item>
     <item>
       <title>Kernel patch and compile the Debian/Ubuntu way</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-01-20-kernel-patch-and-compile-the-ubuntu-way/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2018/2018-01-20-kernel-patch-and-compile-the-ubuntu-way/</link>
       <pubDate>Sat, 20 Jan 2018 23:31:53 +0000</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-01-20-kernel-patch-and-compile-the-ubuntu-way/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2018/2018-01-20-kernel-patch-and-compile-the-ubuntu-way/</guid>
       <description>Continuing on with my theme of compiling and patching linux kernels.  Let&amp;rsquo;s look at the Ubuntu way that creates a .deb file for use with  apt package manager.  Git work flow thrown in for free.</description>
     </item>
     <item>
       <title>A more elegant: Quick and dirty kernel</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-01-19-a-more-elegant-quick-and-dirty-kernel/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2018/2018-01-19-a-more-elegant-quick-and-dirty-kernel/</link>
       <pubDate>Fri, 19 Jan 2018 09:28:51 +0000</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-01-19-a-more-elegant-quick-and-dirty-kernel/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2018/2018-01-19-a-more-elegant-quick-and-dirty-kernel/</guid>
       <description>As we have seen, the original/traditional/generic way to install new kernels or patch existing kernels is a relatively straight forward affair but requires manual management.  Let&amp;rsquo;s use git to help</description>
     </item>
     <item>
       <title>Kernel patch and compile the Fedora way</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-01-18-kernel-patch-and-compile-the-fedora-way/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2018/2018-01-18-kernel-patch-and-compile-the-fedora-way/</link>
       <pubDate>Thu, 18 Jan 2018 21:15:04 +0000</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-01-18-kernel-patch-and-compile-the-fedora-way/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2018/2018-01-18-kernel-patch-and-compile-the-fedora-way/</guid>
       <description>Each distribution has a preferred way which tends to result in a nice reusable packaged compatible to specific package management system. For this scenario I&amp;rsquo;ll focus on Fedora 27</description>
     </item>
     <item>
       <title>Generate new host keys after sysprep</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-10-02-generate-new-host-keys-after-sysprep/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2017/2017-10-02-generate-new-host-keys-after-sysprep/</link>
       <pubDate>Mon, 02 Oct 2017 12:58:14 +0000</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-10-02-generate-new-host-keys-after-sysprep/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2017/2017-10-02-generate-new-host-keys-after-sysprep/</guid>
       <description>Sysprep wipes the host ssh keys from the guest image (this is a good thing) meaning that you will no longer be able to ssh in to the guest VM (This is a bad think).  Let&amp;rsquo;s fix that.</description>
     </item>
     <item>
       <title>explainshell.com is awesome</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-09-25-explainshellcom-is-awesome/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2017/2017-09-25-explainshellcom-is-awesome/</link>
       <pubDate>Mon, 25 Sep 2017 11:45:56 +0000</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-09-25-explainshellcom-is-awesome/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2017/2017-09-25-explainshellcom-is-awesome/</guid>
       <description>Bash shell is under rated and the CLI is very powerful if not arcane with mysterious incantations. Well I came across this site breaks down a command and exlpains the structure and what is it is doing.  preaty cool</description>
     </item>
     <item>
       <title>GDM display on the monitor you want</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-09-24-gdm-display-on-the-monitor-you-want/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2017/2017-09-24-gdm-display-on-the-monitor-you-want/</link>
       <pubDate>Sun, 24 Sep 2017 17:58:32 +0000</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-09-24-gdm-display-on-the-monitor-you-want/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2017/2017-09-24-gdm-display-on-the-monitor-you-want/</guid>
       <description>How configure gdm when running a duel monitor setup. I&amp;rsquo;m running Gnome3 and the GNOME Display Manager (GDM) which handles graphical user login, as well as other duties&amp;hellip;.My primary monitor&amp;hellip;</description>
     </item>
     <item>
       <title>My libVirt clone/sysprep work flow</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-09-14-my-libvirt-clonesysprep-work-flow/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2017/2017-09-14-my-libvirt-clonesysprep-work-flow/</link>
       <pubDate>Thu, 14 Sep 2017 09:21:42 +0000</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-09-14-my-libvirt-clonesysprep-work-flow/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2017/2017-09-14-my-libvirt-clonesysprep-work-flow/</guid>
       <description>An insight in to my workflow for creating KVM, LibVirt virtual machines on my Linux Workstation. Using KVM for my virtual environment makes sense, it is kernel level native, very powerful, flexible, well documented and community supported.</description>
     </item>
     <item>
       <title>Peer certificate error when S/MIME signing email</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-08-16-peer-certificate-error-when-smime-signing/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2017/2017-08-16-peer-certificate-error-when-smime-signing/</link>
       <pubDate>Wed, 16 Aug 2017 10:41:21 +0000</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-08-16-peer-certificate-error-when-smime-signing/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2017/2017-08-16-peer-certificate-error-when-smime-signing/</guid>
       <description>Notes on overcoming certificate trusted peer certificate errors when importing and using s/mime for email signing on systems that use NSS instead of OpenSSL libraries</description>
     </item>
     <item>
       <title>Using your iCloud address book in Linux</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-08-11-using-your-icloud-address-book-in-linux/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2017/2017-08-11-using-your-icloud-address-book-in-linux/</link>
       <pubDate>Fri, 11 Aug 2017 13:11:32 +0000</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-08-11-using-your-icloud-address-book-in-linux/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2017/2017-08-11-using-your-icloud-address-book-in-linux/</guid>
       <description>Notes on how to get any application that supports WebDAV or CardDAV to access apple iCloud resources. Following on from previous posts about using Apples iCloud services on non Apple devices or operating systems.</description>
     </item>
     <item>
       <title>youtube-dl bombs and needs updating</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-07-08-youtube-dl-bombs-and-needs-updating/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2017/2017-07-08-youtube-dl-bombs-and-needs-updating/</link>
       <pubDate>Sat, 08 Jul 2017 16:59:01 +0000</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-07-08-youtube-dl-bombs-and-needs-updating/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2017/2017-07-08-youtube-dl-bombs-and-needs-updating/</guid>
       <description>youtuble-dl bombs when trying to extract from html5 player sites and updating it solves this but the native update command has stopped working and package managers are inconsistant</description>
     </item>
     <item>
       <title>Storage Clustering....a living project</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-06-06-storage-clusteringa-living-project/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2017/2017-06-06-storage-clusteringa-living-project/</link>
       <pubDate>Tue, 06 Jun 2017 18:46:10 +0000</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-06-06-storage-clusteringa-living-project/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2017/2017-06-06-storage-clusteringa-living-project/</guid>
       <description>Exploring various storage clustering solutions as high available backend for virtual machine clusters.  What is out there, what fits the needs, is it open source and how hard will it be to implement it.</description>
     </item>
     <item>
       <title>Improve FFmpeg x264/AAC quality</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-05-24-improve-ffmpeg-x264aac-quality/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2017/2017-05-24-improve-ffmpeg-x264aac-quality/</link>
       <pubDate>Wed, 24 May 2017 11:30:43 +0000</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-05-24-improve-ffmpeg-x264aac-quality/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2017/2017-05-24-improve-ffmpeg-x264aac-quality/</guid>
       <description>Install and use the open source FFmpeg utility on macOS for high quality audio and video encoding and transcoding with support for x two AAC-LC encoders (aac &amp;amp; libfdk_aac) and one HE-AAC(v1/2) encoder (libfdk_aac).</description>
     </item>
     <item>
       <title>Bootable USB install device in MacOS</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-04-27-bootable-usb-install-device-in-macos/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2017/2017-04-27-bootable-usb-install-device-in-macos/</link>
       <pubDate>Thu, 27 Apr 2017 10:48:52 +0000</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-04-27-bootable-usb-install-device-in-macos/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2017/2017-04-27-bootable-usb-install-device-in-macos/</guid>
       <description>These instructions will create a bootable install medium for the installation of a operating system using a .iso file downloaded from the network, the dd command and a standard USB&amp;hellip;</description>
     </item>
     <item>
       <title>Bootable USB install device in Linux</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-04-27-bootable-usb-install-device-in-linux/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2017/2017-04-27-bootable-usb-install-device-in-linux/</link>
       <pubDate>Thu, 27 Apr 2017 10:31:03 +0000</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-04-27-bootable-usb-install-device-in-linux/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2017/2017-04-27-bootable-usb-install-device-in-linux/</guid>
       <description>These instructions will create a bootable install medium for the installation of a operating system using a .iso file downloaded from the network, the dd command and a standard USB&amp;hellip;</description>
     </item>
     <item>
       <title>Kernel fatal error: openssl/aes.h</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-04-24-kernel-fatal-error-openssl/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2017/2017-04-24-kernel-fatal-error-openssl/</link>
       <pubDate>Mon, 24 Apr 2017 23:23:28 +0000</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-04-24-kernel-fatal-error-openssl/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2017/2017-04-24-kernel-fatal-error-openssl/</guid>
       <description>Missing OpenSSL blows up kernel compile..Oh Why? So, I&amp;rsquo;ve walked into this one a few times when compiling a new kernel for the first time after a new distro install. Each time I shake my head.</description>
     </item>
     <item>
       <title>Apple CalDAV address...without .plist</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-04-24-apple-caldav-addresswithout-plist/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2017/2017-04-24-apple-caldav-addresswithout-plist/</link>
       <pubDate>Mon, 24 Apr 2017 00:25:18 +0000</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-04-24-apple-caldav-addresswithout-plist/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2017/2017-04-24-apple-caldav-addresswithout-plist/</guid>
       <description>Alternate method to get non apple devices to acces iCal. Using three ingredients.  Your calendar&amp;rsquo;s server address . Your user ID dsid.  The calendar name (cal_name).</description>
     </item>
     <item>
       <title>Your Apple secret CalDAV address</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-04-23-your-apple-secret-caldav-address/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2017/2017-04-23-your-apple-secret-caldav-address/</link>
       <pubDate>Sun, 23 Apr 2017 23:56:21 +0000</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-04-23-your-apple-secret-caldav-address/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2017/2017-04-23-your-apple-secret-caldav-address/</guid>
       <description>Having a small collection idevices in our household, we tend use the icloud calendar app and iCal coordinate our lives. With some work, non apple devices can share the same calendar</description>
     </item>
     <item>
       <title>PPA Public Key Error</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-03-30-ppa-public-key-error-apt-get/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2017/2017-03-30-ppa-public-key-error-apt-get/</link>
       <pubDate>Thu, 30 Mar 2017 12:35:52 +0000</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-03-30-ppa-public-key-error-apt-get/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2017/2017-03-30-ppa-public-key-error-apt-get/</guid>
       <description>Though, every now and then I hit a snag when installing a new package, especially from a PPA. The most common of these relate to security/verification using PKI.</description>
     </item>
     <item>
       <title>QEMU-GlusterFS native integration</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-03-27-qemu-glusterfs-native-integration/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2017/2017-03-27-qemu-glusterfs-native-integration/</link>
       <pubDate>Mon, 27 Mar 2017 10:13:52 +0000</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-03-27-qemu-glusterfs-native-integration/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2017/2017-03-27-qemu-glusterfs-native-integration/</guid>
       <description>GlusterFS Software Defined Storage cluster provides a robusts solution for oVirt self hosted engine yields positive results using native integration</description>
     </item>
     <item>
       <title>Nested Virtualisation</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-03-22-nested-virtualisation/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2017/2017-03-22-nested-virtualisation/</link>
       <pubDate>Wed, 22 Mar 2017 17:16:48 +0000</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-03-22-nested-virtualisation/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2017/2017-03-22-nested-virtualisation/</guid>
       <description>Hosting a virtual machine inside a virtual machine KVM trickery for conceptualisation and testing. If your server/host supports VT-x, it goes to say so should the guests.</description>
     </item>
     <item>
       <title>Wireshark capture permission errors</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-03-18-wireshark-capture-permission-errors/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2017/2017-03-18-wireshark-capture-permission-errors/</link>
       <pubDate>Sat, 18 Mar 2017 14:30:06 +0000</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-03-18-wireshark-capture-permission-errors/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2017/2017-03-18-wireshark-capture-permission-errors/</guid>
       <description>I installed Wireshark the other day on Ubuntu 16.10 so I could analyse what is going over the wire in GNS3 and later on physical network topologies. Unfortunately, Wireshark has implemented Privilege Separation which means that the Wireshark GUI (or the tshark CLI) can run as a normal user while the dumpcap capture utility runs as root</description>
     </item>
     <item>
       <title>Bluetooth USB dongle firmware error in Ubuntu</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-02-13-bluetooth-usb-dongle-firmware-error/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2017/2017-02-13-bluetooth-usb-dongle-firmware-error/</link>
       <pubDate>Mon, 13 Feb 2017 10:44:09 +0000</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-02-13-bluetooth-usb-dongle-firmware-error/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2017/2017-02-13-bluetooth-usb-dongle-firmware-error/</guid>
       <description>After having a running battle with my, what turns out, cheap Chinese CSR clone bluetooth USB adaptor (maybe more on that in another post). I purchased a more expensive adaptor&amp;hellip;</description>
     </item>
     <item>
       <title>Arch Linux UEFI install on NVMe drives</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-02-10-arch-linux-uefi-install-on-nvme-drives/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2017/2017-02-10-arch-linux-uefi-install-on-nvme-drives/</link>
       <pubDate>Fri, 10 Feb 2017 15:45:36 +0000</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-02-10-arch-linux-uefi-install-on-nvme-drives/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2017/2017-02-10-arch-linux-uefi-install-on-nvme-drives/</guid>
       <description>A guide  created from memory and some notes on how I installed Arch Linux (BTW) using UEFI settings, NVMe storage. and LVM filesystem.  Grub now supports NVMe but not &amp;ldquo;exotic&amp;rdquo; filesystems like LVM or LUKS encryption as the root (/) filesystem</description>
     </item>
     <item>
       <title>Debian 8 installed on UEFI systems</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-01-27-debian-8-installed-on-uefi-systems/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2017/2017-01-27-debian-8-installed-on-uefi-systems/</link>
       <pubDate>Fri, 27 Jan 2017 20:27:41 +0000</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-01-27-debian-8-installed-on-uefi-systems/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2017/2017-01-27-debian-8-installed-on-uefi-systems/</guid>
       <description>Absolute pain getting Debian installed on my UEFI only sytem. When working through the installation process until the boot loader tries to install and this message occurs.</description>
     </item>
     <item>
       <title>The iMove to Appleverse</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2015/2015-11-06-the-imove-to-appleverse/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2015/2015-11-06-the-imove-to-appleverse/</link>
       <pubDate>Fri, 06 Nov 2015 10:01:42 +0000</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2015/2015-11-06-the-imove-to-appleverse/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2015/2015-11-06-the-imove-to-appleverse/</guid>
       <description>Mac and their OS&amp;rsquo;s have always been spouted as being a pinnacle of consumer grade IT design and user interface experience. Pfft, what ever. I&amp;rsquo;ve been using Mac ever since&amp;hellip;</description>
     </item>
     <item>
       <title>macports, the tools I&#39;m used to</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2015/2015-07-09-macports-the-tools-im-used-to/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2015/2015-07-09-macports-the-tools-im-used-to/</link>
       <pubDate>Thu, 09 Jul 2015 20:02:07 +0000</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2015/2015-07-09-macports-the-tools-im-used-to/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2015/2015-07-09-macports-the-tools-im-used-to/</guid>
       <description>YAY! Awesome, a HUGE amount of tools and libraries that I&amp;rsquo;ve gotten used to having at my fingertips can be had on my Mac&amp;rsquo;s thanks to macports</description>
     </item>
     <item>
       <title>DB30 done and dusted</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2008/2008-05-12-db30-done-and-dusted/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2008/2008-05-12-db30-done-and-dusted/</link>
       <pubDate>Mon, 12 May 2008 22:56:44 +0000</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2008/2008-05-12-db30-done-and-dusted/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2008/2008-05-12-db30-done-and-dusted/</guid>
       <description>Got the official end of contract in the mail the other day, so thayts all folks for the topside work on the barge. McD&amp;rsquo;s were making noises that sounded like</description>
     </item>
     <item>
       <title>Been a while..Been busy</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2008/2008-05-01-been-a-whilebeen-busy/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2008/2008-05-01-been-a-whilebeen-busy/</link>
       <pubDate>Thu, 01 May 2008 15:19:31 +0000</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2008/2008-05-01-been-a-whilebeen-busy/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2008/2008-05-01-been-a-whilebeen-busy/</guid>
       <description>After a busy stretch offshore, I’ve been focused on sending out CVs and chasing dive opportunities with larger, reputable companies. I’m steering clear of small civils outfits, sticking with offshore work for now. It’s been easier jobs lately, but I’m planning ahead with training courses to stay sharp.</description>
     </item>
     <item>
       <title>Lost in Sydney with sore thumbs</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2008/2008-03-18-lost-in-sydney-with-sore-thumbs/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2008/2008-03-18-lost-in-sydney-with-sore-thumbs/</link>
       <pubDate>Tue, 18 Mar 2008 10:19:41 +0000</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2008/2008-03-18-lost-in-sydney-with-sore-thumbs/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2008/2008-03-18-lost-in-sydney-with-sore-thumbs/</guid>
       <description>It’s been a hectic month! The Caltex TAR in Sydney started with a rough arrival—no one to meet me, no info, and no answers. Luckily, an ex-supervisor helped me out. Once on-site, the job was easier than expected, with just 12 days of console operations. But some parts were tricky, like handling pyrophoric tube bundles. I even got a day off in Sydney, but ended up getting hopelessly lost trying to see the sights. At least I got home early to Tanja!</description>
     </item>
     <item>
       <title>On the go again</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2008/2008-02-10-on-the-go-again/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2008/2008-02-10-on-the-go-again/</link>
       <pubDate>Sun, 10 Feb 2008 15:27:31 +0000</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2008/2008-02-10-on-the-go-again/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2008/2008-02-10-on-the-go-again/</guid>
       <description>Well after a short stay at home, I&amp;rsquo;m waiting at Perth airport off to another job. Caltex in Sydney for 20 odd days doing something, not to sure&amp;hellip;</description>
     </item>
     <item>
       <title>Thank god that&#39;s over with</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2008/2008-02-09-thank-god-thats-over-with/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2008/2008-02-09-thank-god-thats-over-with/</link>
       <pubDate>Sat, 09 Feb 2008 11:45:44 +0000</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2008/2008-02-09-thank-god-thats-over-with/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2008/2008-02-09-thank-god-thats-over-with/</guid>
       <description>The last offshore trip was a mix of challenges—oil, sand, and mud, plus a malfunctioning pig. But Veranus Island was a paradise with its stunning beaches, clear waters, and turtle breeding season. Despite the intense heat and humidity, it’s great to be home and plan for more dive work ahead.</description>
     </item>
     <item>
       <title>Seems to be the order of the month</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2008/seems-to-be-the-order-of-the-month/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2008/seems-to-be-the-order-of-the-month/</link>
       <pubDate>Fri, 25 Jan 2008 19:51:51 +0000</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2008/seems-to-be-the-order-of-the-month/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2008/seems-to-be-the-order-of-the-month/</guid>
       <description>Getting shafted by companies canning a job last minute is the name of the game I guess. First they rang me up, booked me in and gave me the onboarding headache then go to ground ghosting or dangle the carrot or worst, the next week, next week&amp;hellip;then no go.  while turning down other opportunities.</description>
     </item>
     <item>
       <title>Damit</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2008/2008-01-14-damit-damit/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2008/2008-01-14-damit-damit/</link>
       <pubDate>Mon, 14 Jan 2008 06:22:50 +0800</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2008/2008-01-14-damit-damit/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2008/2008-01-14-damit-damit/</guid>
       <description>In the diving industry, it&amp;rsquo;s frustrating when companies rush to secure divers for urgent projects, only to cancel the job at the last minute. While it makes sense from a company’s perspective, it’s a hassle for divers who’ve already turned down other work. Sometimes, rushed jobs are just a sign of trouble ahead.</description>
     </item>
     <item>
       <title></title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/readme/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/readme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/readme/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/readme/</guid>
       <description>&lt;p&gt;markdown content files for mikewebb.tech hugo site&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/welcome/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/welcome/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/welcome/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/welcome/</guid>
       <description>&lt;p&gt;This is your new &lt;em&gt;vault&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Make a note of something, [[create a link]], or try &lt;a href=&#34;https://help.obsidian.md/Plugins/Importer&#34;&gt;the Importer&lt;/a&gt;!&lt;/p&gt;&#xA;&lt;p&gt;When you&amp;rsquo;re ready, delete this note and make the vault your own.&lt;/p&gt;</description>
     </item>
   </channel>

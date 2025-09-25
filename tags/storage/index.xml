@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Storage on Mike Webb Tech</title>
-    <link>https://mikewebbtech.github.io/mikewebb-tech/tags/storage/</link>
+    <link>http://localhost:1313/mikewebb-tech/tags/storage/</link>
     <description>Recent content in Storage on Mike Webb Tech</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 08 Oct 2018 15:54:58 +0000</lastBuildDate>
-    <atom:link href="https://mikewebbtech.github.io/mikewebb-tech/tags/storage/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/mikewebb-tech/tags/storage/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SAS disk power mode control</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-10-08-sas-disk-power-mode-control/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2018/2018-10-08-sas-disk-power-mode-control/</link>
       <pubDate>Mon, 08 Oct 2018 15:54:58 +0000</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-10-08-sas-disk-power-mode-control/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2018/2018-10-08-sas-disk-power-mode-control/</guid>
       <description>My hard drives were spinning at 7600 RPM 24/7, this is fine for aa actual server for the masses or in DC, but total overkill for my intermittent needs. Why do I want power control over my spinning rust&amp;hellip;spin down to save noise and heat = save energy.</description>
     </item>
     <item>
       <title>eBay Score of the Century</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-06-15-infiniband-equipment/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2018/2018-06-15-infiniband-equipment/</link>
       <pubDate>Fri, 15 Jun 2018 03:09:38 +0000</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-06-15-infiniband-equipment/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2018/2018-06-15-infiniband-equipment/</guid>
       <description>how about a smoking network I&amp;rsquo;m redoing my home and lab network with the goal to go 10Gb/s.  Let&amp;rsquo;s up that and go 40Gb/s and while were are at it let&amp;rsquo;s take it even further with 56Gb/s&amp;hellip;.with a twist. I found Infiniband hardware cheaper then ethernet and it can do both</description>
     </item>
     <item>
       <title>Storage Clustering....a living project</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-06-06-storage-clusteringa-living-project/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2017/2017-06-06-storage-clusteringa-living-project/</link>
       <pubDate>Tue, 06 Jun 2017 18:46:10 +0000</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-06-06-storage-clusteringa-living-project/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2017/2017-06-06-storage-clusteringa-living-project/</guid>
       <description>Exploring various storage clustering solutions as high available backend for virtual machine clusters.  What is out there, what fits the needs, is it open source and how hard will it be to implement it.</description>
     </item>
     <item>
       <title>QEMU-GlusterFS native integration</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-03-27-qemu-glusterfs-native-integration/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2017/2017-03-27-qemu-glusterfs-native-integration/</link>
       <pubDate>Mon, 27 Mar 2017 10:13:52 +0000</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-03-27-qemu-glusterfs-native-integration/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2017/2017-03-27-qemu-glusterfs-native-integration/</guid>
       <description>GlusterFS Software Defined Storage cluster provides a robusts solution for oVirt self hosted engine yields positive results using native integration</description>
     </item>
   </channel>
