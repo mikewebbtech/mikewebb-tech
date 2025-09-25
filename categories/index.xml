@@ -2,73 +2,73 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Mike Webb Tech</title>
-    <link>/categories/</link>
+    <link>https://mikewebbtech.github.io/mikewebb-tech/categories/</link>
     <description>Recent content in Categories on Mike Webb Tech</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 25 Sep 2025 12:10:33 +0800</lastBuildDate>
-    <atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mikewebbtech.github.io/mikewebb-tech/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugo</title>
-      <link>/categories/hugo/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/categories/hugo/</link>
       <pubDate>Thu, 25 Sep 2025 12:10:33 +0800</pubDate>
-      <guid>/categories/hugo/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/categories/hugo/</guid>
       <description>&lt;p&gt;Creating my site using Hugo static site generator. Learn its architecture, templating system, shortcodes, and data organization. Explore practical examples of site development, theme creation and content creation, with a touch of deployment pipelines. Discover techniques for building performant and maintainable websites with a focus on speed and simplicity.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Cyber Security</title>
-      <link>/categories/security/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/categories/security/</link>
       <pubDate>Tue, 09 Sep 2025 00:00:00 +0800</pubDate>
-      <guid>/categories/security/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/categories/security/</guid>
       <description>&lt;p&gt;Fortifying my digital defences. Explore topics like threat detection, vulnerability analysis, security best practices, and ethical hacking. Learning how to protect my home network lab and personal data with transferable skill in a connected world.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Neworking</title>
-      <link>/categories/networking/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/categories/networking/</link>
       <pubDate>Tue, 06 May 2025 09:47:21 +0800</pubDate>
-      <guid>/categories/networking/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/categories/networking/</guid>
       <description>&lt;p&gt;Connecting and securing your digital landscape. Explore network fundamentals, routing and switching concepts, firewall configurations, and VPN technologies. Discover how to build a secure and reliable network for your home lab. Inbound, Outbound and Beyond.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Home Lab</title>
-      <link>/categories/home-lab/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/categories/home-lab/</link>
       <pubDate>Mon, 19 Dec 2022 10:04:08 +0800</pubDate>
-      <guid>/categories/home-lab/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/categories/home-lab/</guid>
       <description>&lt;p&gt;Building and experimenting in a personal tech playground. Exploring hardware setups, network configurations, virtualisation technologies, and homelab project ideas. Satisfying hands-on breaking and creating of personal services and infrastructure cos-playing.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Virtualisation</title>
-      <link>/categories/virtualisation/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/categories/virtualisation/</link>
       <pubDate>Mon, 15 Aug 2022 11:13:50 +0000</pubDate>
-      <guid>/categories/virtualisation/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/categories/virtualisation/</guid>
       <description>&lt;p&gt;Creating and managing virtual environments. Exploring containers with docker and kubernetes. Deploy opensource hypervisors solutions like Proxmox, OpenStack and Incus. Going hands on with virtual machine setup, resource allocation, and machine containers with lxc and LXD. How I maximize hardware utilisation and build services for fun and profit and flexible test environments in my lab.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Automation</title>
-      <link>/categories/automation/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/categories/automation/</link>
       <pubDate>Thu, 17 Jan 2019 14:28:12 +0000</pubDate>
-      <guid>/categories/automation/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/categories/automation/</guid>
       <description>&lt;p&gt;Streamlining workflows and boosting efficiency through automation. Explore scripting with Python and PowerShell, infrastructure as code tools like Ansible and Terraform, and CI/CD pipelines. Discovering how to automate repetitive tasks for production and development environment.&lt;/p&gt;</description>
     </item>
     <item>
       <title>IoT</title>
-      <link>/categories/iot/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/categories/iot/</link>
       <pubDate>Thu, 17 Jan 2019 14:28:12 +0000</pubDate>
-      <guid>/categories/iot/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/categories/iot/</guid>
       <description>&lt;p&gt;Connecting the physical and digital worlds. Explore projects involving microcontrollers like Raspberry Pi and Arduino, sensor integration, data acquisition, and home automation. Learn about Matter, Thread and MQTT protocols and the potential of interconnected devices and build your own smart solutions.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Cloud</title>
-      <link>/categories/cloud/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/categories/cloud/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/categories/cloud/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/categories/cloud/</guid>
       <description>&lt;p&gt;Diving into platforms like AWS, Azure, and GCP, deploying scalable solutions for technical projects. Exploring serverless architectures, cloud networking, and essential security controls. Discoving leveraging on-demand resources enhancing infrastructure and expand my skill set in the world of Everything As A Service and Code.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Kubernetes</title>
-      <link>/categories/kubernetes/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/categories/kubernetes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/categories/kubernetes/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/categories/kubernetes/</guid>
       <description>&lt;p&gt;Orchestrating containerised applications at scale(not). Explore the fundamentals of Kubernetes, including pods, deployments, and services. Learn about cluster management, scaling strategies, storage and networking, observability and security, and deploying resilient applications in your my lab environment. Here I will also cover Docker and containerd.&lt;/p&gt;</description>
     </item>
   </channel>

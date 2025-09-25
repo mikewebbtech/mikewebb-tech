@@ -2,122 +2,122 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Solution on Mike Webb Tech</title>
-    <link>/tags/solution/</link>
+    <link>https://mikewebbtech.github.io/mikewebb-tech/tags/solution/</link>
     <description>Recent content in Solution on Mike Webb Tech</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 25 Sep 2025 12:10:33 +0800</lastBuildDate>
-    <atom:link href="/tags/solution/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mikewebbtech.github.io/mikewebb-tech/tags/solution/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Article Cards on Homepage</title>
-      <link>/articles/2025/2025-09-25-article-cards/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-09-25-article-cards/</link>
       <pubDate>Thu, 25 Sep 2025 12:10:33 +0800</pubDate>
-      <guid>/articles/2025/2025-09-25-article-cards/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-09-25-article-cards/</guid>
       <description>The article explains how to display the four most recent articles as styled cards on the homepage by extend Hugo functionality using custom shortcodes and calling them in markdown files and CSS.</description>
     </item>
     <item>
       <title>Beatport Pro working on MacOS Mojave</title>
-      <link>/articles/2018/2018-10-24-beatport-pro-working-on-macos-mojave/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-10-24-beatport-pro-working-on-macos-mojave/</link>
       <pubDate>Wed, 24 Oct 2018 16:59:13 +0000</pubDate>
-      <guid>/articles/2018/2018-10-24-beatport-pro-working-on-macos-mojave/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-10-24-beatport-pro-working-on-macos-mojave/</guid>
       <description>Upgrading MacOS from High Sierra to Mojave introduces some new security requirements that cause issues with some applications. The fix for apps created in electron is simple onse you know how.</description>
     </item>
     <item>
       <title>Generate new host keys after sysprep</title>
-      <link>/articles/2017/2017-10-02-generate-new-host-keys-after-sysprep/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-10-02-generate-new-host-keys-after-sysprep/</link>
       <pubDate>Mon, 02 Oct 2017 12:58:14 +0000</pubDate>
-      <guid>/articles/2017/2017-10-02-generate-new-host-keys-after-sysprep/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-10-02-generate-new-host-keys-after-sysprep/</guid>
       <description>Sysprep wipes the host ssh keys from the guest image (this is a good thing) meaning that you will no longer be able to ssh in to the guest VM (This is a bad think).  Let&amp;rsquo;s fix that.</description>
     </item>
     <item>
       <title>GDM display on the monitor you want</title>
-      <link>/articles/2017/2017-09-24-gdm-display-on-the-monitor-you-want/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-09-24-gdm-display-on-the-monitor-you-want/</link>
       <pubDate>Sun, 24 Sep 2017 17:58:32 +0000</pubDate>
-      <guid>/articles/2017/2017-09-24-gdm-display-on-the-monitor-you-want/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-09-24-gdm-display-on-the-monitor-you-want/</guid>
       <description>How configure gdm when running a duel monitor setup. I&amp;rsquo;m running Gnome3 and the GNOME Display Manager (GDM) which handles graphical user login, as well as other duties&amp;hellip;.My primary monitor&amp;hellip;</description>
     </item>
     <item>
       <title>My libVirt clone/sysprep work flow</title>
-      <link>/articles/2017/2017-09-14-my-libvirt-clonesysprep-work-flow/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-09-14-my-libvirt-clonesysprep-work-flow/</link>
       <pubDate>Thu, 14 Sep 2017 09:21:42 +0000</pubDate>
-      <guid>/articles/2017/2017-09-14-my-libvirt-clonesysprep-work-flow/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-09-14-my-libvirt-clonesysprep-work-flow/</guid>
       <description>An insight in to my workflow for creating KVM, LibVirt virtual machines on my Linux Workstation. Using KVM for my virtual environment makes sense, it is kernel level native, very powerful, flexible, well documented and community supported.</description>
     </item>
     <item>
       <title>Peer certificate error when S/MIME signing email</title>
-      <link>/articles/2017/2017-08-16-peer-certificate-error-when-smime-signing/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-08-16-peer-certificate-error-when-smime-signing/</link>
       <pubDate>Wed, 16 Aug 2017 10:41:21 +0000</pubDate>
-      <guid>/articles/2017/2017-08-16-peer-certificate-error-when-smime-signing/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-08-16-peer-certificate-error-when-smime-signing/</guid>
       <description>Notes on overcoming certificate trusted peer certificate errors when importing and using s/mime for email signing on systems that use NSS instead of OpenSSL libraries</description>
     </item>
     <item>
       <title>Using your iCloud address book in Linux</title>
-      <link>/articles/2017/2017-08-11-using-your-icloud-address-book-in-linux/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-08-11-using-your-icloud-address-book-in-linux/</link>
       <pubDate>Fri, 11 Aug 2017 13:11:32 +0000</pubDate>
-      <guid>/articles/2017/2017-08-11-using-your-icloud-address-book-in-linux/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-08-11-using-your-icloud-address-book-in-linux/</guid>
       <description>Notes on how to get any application that supports WebDAV or CardDAV to access apple iCloud resources. Following on from previous posts about using Apples iCloud services on non Apple devices or operating systems.</description>
     </item>
     <item>
       <title>youtube-dl bombs and needs updating</title>
-      <link>/articles/2017/2017-07-08-youtube-dl-bombs-and-needs-updating/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-07-08-youtube-dl-bombs-and-needs-updating/</link>
       <pubDate>Sat, 08 Jul 2017 16:59:01 +0000</pubDate>
-      <guid>/articles/2017/2017-07-08-youtube-dl-bombs-and-needs-updating/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-07-08-youtube-dl-bombs-and-needs-updating/</guid>
       <description>youtuble-dl bombs when trying to extract from html5 player sites and updating it solves this but the native update command has stopped working and package managers are inconsistant</description>
     </item>
     <item>
       <title>Kernel fatal error: openssl/aes.h</title>
-      <link>/articles/2017/2017-04-24-kernel-fatal-error-openssl/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-04-24-kernel-fatal-error-openssl/</link>
       <pubDate>Mon, 24 Apr 2017 23:23:28 +0000</pubDate>
-      <guid>/articles/2017/2017-04-24-kernel-fatal-error-openssl/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-04-24-kernel-fatal-error-openssl/</guid>
       <description>Missing OpenSSL blows up kernel compile..Oh Why? So, I&amp;rsquo;ve walked into this one a few times when compiling a new kernel for the first time after a new distro install. Each time I shake my head.</description>
     </item>
     <item>
       <title>Apple CalDAV address...without .plist</title>
-      <link>/articles/2017/2017-04-24-apple-caldav-addresswithout-plist/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-04-24-apple-caldav-addresswithout-plist/</link>
       <pubDate>Mon, 24 Apr 2017 00:25:18 +0000</pubDate>
-      <guid>/articles/2017/2017-04-24-apple-caldav-addresswithout-plist/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-04-24-apple-caldav-addresswithout-plist/</guid>
       <description>Alternate method to get non apple devices to acces iCal. Using three ingredients.  Your calendar&amp;rsquo;s server address . Your user ID dsid.  The calendar name (cal_name).</description>
     </item>
     <item>
       <title>Your Apple secret CalDAV address</title>
-      <link>/articles/2017/2017-04-23-your-apple-secret-caldav-address/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-04-23-your-apple-secret-caldav-address/</link>
       <pubDate>Sun, 23 Apr 2017 23:56:21 +0000</pubDate>
-      <guid>/articles/2017/2017-04-23-your-apple-secret-caldav-address/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-04-23-your-apple-secret-caldav-address/</guid>
       <description>Having a small collection idevices in our household, we tend use the icloud calendar app and iCal coordinate our lives. With some work, non apple devices can share the same calendar</description>
     </item>
     <item>
       <title>PPA Public Key Error</title>
-      <link>/articles/2017/2017-03-30-ppa-public-key-error-apt-get/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-03-30-ppa-public-key-error-apt-get/</link>
       <pubDate>Thu, 30 Mar 2017 12:35:52 +0000</pubDate>
-      <guid>/articles/2017/2017-03-30-ppa-public-key-error-apt-get/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-03-30-ppa-public-key-error-apt-get/</guid>
       <description>Though, every now and then I hit a snag when installing a new package, especially from a PPA. The most common of these relate to security/verification using PKI.</description>
     </item>
     <item>
       <title>Wireshark capture permission errors</title>
-      <link>/articles/2017/2017-03-18-wireshark-capture-permission-errors/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-03-18-wireshark-capture-permission-errors/</link>
       <pubDate>Sat, 18 Mar 2017 14:30:06 +0000</pubDate>
-      <guid>/articles/2017/2017-03-18-wireshark-capture-permission-errors/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-03-18-wireshark-capture-permission-errors/</guid>
       <description>I installed Wireshark the other day on Ubuntu 16.10 so I could analyse what is going over the wire in GNS3 and later on physical network topologies. Unfortunately, Wireshark has implemented Privilege Separation which means that the Wireshark GUI (or the tshark CLI) can run as a normal user while the dumpcap capture utility runs as root</description>
     </item>
     <item>
       <title>Bluetooth USB dongle firmware error in Ubuntu</title>
-      <link>/articles/2017/2017-02-13-bluetooth-usb-dongle-firmware-error/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-02-13-bluetooth-usb-dongle-firmware-error/</link>
       <pubDate>Mon, 13 Feb 2017 10:44:09 +0000</pubDate>
-      <guid>/articles/2017/2017-02-13-bluetooth-usb-dongle-firmware-error/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-02-13-bluetooth-usb-dongle-firmware-error/</guid>
       <description>After having a running battle with my, what turns out, cheap Chinese CSR clone bluetooth USB adaptor (maybe more on that in another post). I purchased a more expensive adaptor&amp;hellip;</description>
     </item>
     <item>
       <title>Arch Linux UEFI install on NVMe drives</title>
-      <link>/articles/2017/2017-02-10-arch-linux-uefi-install-on-nvme-drives/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-02-10-arch-linux-uefi-install-on-nvme-drives/</link>
       <pubDate>Fri, 10 Feb 2017 15:45:36 +0000</pubDate>
-      <guid>/articles/2017/2017-02-10-arch-linux-uefi-install-on-nvme-drives/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-02-10-arch-linux-uefi-install-on-nvme-drives/</guid>
       <description>A guide  created from memory and some notes on how I installed Arch Linux (BTW) using UEFI settings, NVMe storage. and LVM filesystem.  Grub now supports NVMe but not &amp;ldquo;exotic&amp;rdquo; filesystems like LVM or LUKS encryption as the root (/) filesystem</description>
     </item>
     <item>
       <title>Debian 8 installed on UEFI systems</title>
-      <link>/articles/2017/2017-01-27-debian-8-installed-on-uefi-systems/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-01-27-debian-8-installed-on-uefi-systems/</link>
       <pubDate>Fri, 27 Jan 2017 20:27:41 +0000</pubDate>
-      <guid>/articles/2017/2017-01-27-debian-8-installed-on-uefi-systems/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-01-27-debian-8-installed-on-uefi-systems/</guid>
       <description>Absolute pain getting Debian installed on my UEFI only sytem. When working through the installation process until the boot loader tries to install and this message occurs.</description>
     </item>
   </channel>

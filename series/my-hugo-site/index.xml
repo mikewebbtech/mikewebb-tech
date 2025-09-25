@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>My Hugo Site on Mike Webb Tech</title>
-    <link>/series/my-hugo-site/</link>
+    <link>https://mikewebbtech.github.io/mikewebb-tech/series/my-hugo-site/</link>
     <description>Recent content in My Hugo Site on Mike Webb Tech</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 25 Sep 2025 12:10:33 +0800</lastBuildDate>
-    <atom:link href="/series/my-hugo-site/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mikewebbtech.github.io/mikewebb-tech/series/my-hugo-site/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Article Cards on Homepage</title>
-      <link>/articles/2025/2025-09-25-article-cards/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-09-25-article-cards/</link>
       <pubDate>Thu, 25 Sep 2025 12:10:33 +0800</pubDate>
-      <guid>/articles/2025/2025-09-25-article-cards/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-09-25-article-cards/</guid>
       <description>The article explains how to display the four most recent articles as styled cards on the homepage by extend Hugo functionality using custom shortcodes and calling them in markdown files and CSS.</description>
     </item>
     <item>
       <title>Decoupling my Content</title>
-      <link>/articles/2025/2025-08-21-decoupling-my-content/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-08-21-decoupling-my-content/</link>
       <pubDate>Thu, 21 Aug 2025 00:00:00 +0800</pubDate>
-      <guid>/articles/2025/2025-08-21-decoupling-my-content/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-08-21-decoupling-my-content/</guid>
       <description>I&amp;rsquo;m exploring moving out my content from the Hugo site code  into a seperate isolated direcrory structure and git repository using git submodules. This should create a cleaner, more focused workflow with independent version histories, making it easier to manage and publish my content.</description>
     </item>
     <item>
       <title>Embracing Hugo</title>
-      <link>/articles/2024/2024-05-25-embracing-hugo/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2024/2024-05-25-embracing-hugo/</link>
       <pubDate>Sat, 25 Jan 2025 12:08:01 +0800</pubDate>
-      <guid>/articles/2024/2024-05-25-embracing-hugo/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2024/2024-05-25-embracing-hugo/</guid>
       <description>I’ve embraced Hugo to power my blog, valuing its speed, simplicity, and security over database-driven platforms. Writing in Markdown, version control integration, and easy deployment make it perfect for documenting my journey in cloud, networking, and cybersecurity. Hugo keeps the focus on learning and sharing—not maintenance headaches.</description>
     </item>
     <item>
       <title>A new blog</title>
-      <link>/articles/2024/2024-04-27-a-new-blog/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2024/2024-04-27-a-new-blog/</link>
       <pubDate>Sat, 27 Apr 2024 16:37:08 +0800</pubDate>
-      <guid>/articles/2024/2024-04-27-a-new-blog/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2024/2024-04-27-a-new-blog/</guid>
       <description>After years of battling WordPress hacks, rising costs, and home-lab hosting experiments, I’ve decided to reboot my blog with a new approach. Moving from dynamic sites to Hugo’s fast, static simplicity feels like the right balance of security, control, and creativity. A fresh start for sharing tech notes and learning.</description>
     </item>
   </channel>

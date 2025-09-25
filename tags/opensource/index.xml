@@ -2,108 +2,108 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Opensource on Mike Webb Tech</title>
-    <link>/tags/opensource/</link>
+    <link>https://mikewebbtech.github.io/mikewebb-tech/tags/opensource/</link>
     <description>Recent content in Opensource on Mike Webb Tech</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 19 Dec 2022 10:04:08 +0800</lastBuildDate>
-    <atom:link href="/tags/opensource/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mikewebbtech.github.io/mikewebb-tech/tags/opensource/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Big move...Hang in  there</title>
-      <link>/articles/2022/2022-12-19-big-movehang-in-there/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2022/2022-12-19-big-movehang-in-there/</link>
       <pubDate>Mon, 19 Dec 2022 10:04:08 +0800</pubDate>
-      <guid>/articles/2022/2022-12-19-big-movehang-in-there/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2022/2022-12-19-big-movehang-in-there/</guid>
       <description>The Wordpress.com gouging is over. Since moving to a new house with business class internet and a new server rack with a High availability server/storage solution.  Its a process&amp;hellip;</description>
     </item>
     <item>
       <title>iCloud contacts on Linux. 2 years on</title>
-      <link>/articles/2019/2019-09-12-icloud-contacts-on-linux-2-years-on/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2019/2019-09-12-icloud-contacts-on-linux-2-years-on/</link>
       <pubDate>Thu, 12 Sep 2019 08:42:26 +0000</pubDate>
-      <guid>/articles/2019/2019-09-12-icloud-contacts-on-linux-2-years-on/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2019/2019-09-12-icloud-contacts-on-linux-2-years-on/</guid>
       <description>Two years ago I began migrating looking at ways to use the Appleverse without Apple and extending collaborative features to Linux and open source. The solutions where technical and so &amp;ldquo;kludgy&amp;rdquo;.  Time and need of the masses has now made this now near native and easy to implement.</description>
     </item>
     <item>
       <title>Etcher does away with dd*</title>
-      <link>/articles/2018/2018-04-28-etcher-does-away-with-dd/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-04-28-etcher-does-away-with-dd/</link>
       <pubDate>Sat, 28 Apr 2018 15:53:25 +0000</pubDate>
-      <guid>/articles/2018/2018-04-28-etcher-does-away-with-dd/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-04-28-etcher-does-away-with-dd/</guid>
       <description>dd has being my go to tool for &amp;ldquo;everything-imges-and-iso&amp;rdquo;, especially ever since the usb stick became ubiquitous and norm for installing new a OS.  There is a new kid on the block now&amp;hellip;but it needs a GUI.</description>
     </item>
     <item>
       <title>Kernel patch and compile the Debian/Ubuntu way</title>
-      <link>/articles/2018/2018-01-20-kernel-patch-and-compile-the-ubuntu-way/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-01-20-kernel-patch-and-compile-the-ubuntu-way/</link>
       <pubDate>Sat, 20 Jan 2018 23:31:53 +0000</pubDate>
-      <guid>/articles/2018/2018-01-20-kernel-patch-and-compile-the-ubuntu-way/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-01-20-kernel-patch-and-compile-the-ubuntu-way/</guid>
       <description>Continuing on with my theme of compiling and patching linux kernels.  Let&amp;rsquo;s look at the Ubuntu way that creates a .deb file for use with  apt package manager.  Git work flow thrown in for free.</description>
     </item>
     <item>
       <title>A more elegant: Quick and dirty kernel</title>
-      <link>/articles/2018/2018-01-19-a-more-elegant-quick-and-dirty-kernel/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-01-19-a-more-elegant-quick-and-dirty-kernel/</link>
       <pubDate>Fri, 19 Jan 2018 09:28:51 +0000</pubDate>
-      <guid>/articles/2018/2018-01-19-a-more-elegant-quick-and-dirty-kernel/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-01-19-a-more-elegant-quick-and-dirty-kernel/</guid>
       <description>As we have seen, the original/traditional/generic way to install new kernels or patch existing kernels is a relatively straight forward affair but requires manual management.  Let&amp;rsquo;s use git to help</description>
     </item>
     <item>
       <title>Kernel patch and compile the Fedora way</title>
-      <link>/articles/2018/2018-01-18-kernel-patch-and-compile-the-fedora-way/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-01-18-kernel-patch-and-compile-the-fedora-way/</link>
       <pubDate>Thu, 18 Jan 2018 21:15:04 +0000</pubDate>
-      <guid>/articles/2018/2018-01-18-kernel-patch-and-compile-the-fedora-way/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-01-18-kernel-patch-and-compile-the-fedora-way/</guid>
       <description>Each distribution has a preferred way which tends to result in a nice reusable packaged compatible to specific package management system. For this scenario I&amp;rsquo;ll focus on Fedora 27</description>
     </item>
     <item>
       <title>Peer certificate error when S/MIME signing email</title>
-      <link>/articles/2017/2017-08-16-peer-certificate-error-when-smime-signing/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-08-16-peer-certificate-error-when-smime-signing/</link>
       <pubDate>Wed, 16 Aug 2017 10:41:21 +0000</pubDate>
-      <guid>/articles/2017/2017-08-16-peer-certificate-error-when-smime-signing/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-08-16-peer-certificate-error-when-smime-signing/</guid>
       <description>Notes on overcoming certificate trusted peer certificate errors when importing and using s/mime for email signing on systems that use NSS instead of OpenSSL libraries</description>
     </item>
     <item>
       <title>Using your iCloud address book in Linux</title>
-      <link>/articles/2017/2017-08-11-using-your-icloud-address-book-in-linux/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-08-11-using-your-icloud-address-book-in-linux/</link>
       <pubDate>Fri, 11 Aug 2017 13:11:32 +0000</pubDate>
-      <guid>/articles/2017/2017-08-11-using-your-icloud-address-book-in-linux/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-08-11-using-your-icloud-address-book-in-linux/</guid>
       <description>Notes on how to get any application that supports WebDAV or CardDAV to access apple iCloud resources. Following on from previous posts about using Apples iCloud services on non Apple devices or operating systems.</description>
     </item>
     <item>
       <title>Storage Clustering....a living project</title>
-      <link>/articles/2017/2017-06-06-storage-clusteringa-living-project/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-06-06-storage-clusteringa-living-project/</link>
       <pubDate>Tue, 06 Jun 2017 18:46:10 +0000</pubDate>
-      <guid>/articles/2017/2017-06-06-storage-clusteringa-living-project/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-06-06-storage-clusteringa-living-project/</guid>
       <description>Exploring various storage clustering solutions as high available backend for virtual machine clusters.  What is out there, what fits the needs, is it open source and how hard will it be to implement it.</description>
     </item>
     <item>
       <title>Improve FFmpeg x264/AAC quality</title>
-      <link>/articles/2017/2017-05-24-improve-ffmpeg-x264aac-quality/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-05-24-improve-ffmpeg-x264aac-quality/</link>
       <pubDate>Wed, 24 May 2017 11:30:43 +0000</pubDate>
-      <guid>/articles/2017/2017-05-24-improve-ffmpeg-x264aac-quality/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-05-24-improve-ffmpeg-x264aac-quality/</guid>
       <description>Install and use the open source FFmpeg utility on macOS for high quality audio and video encoding and transcoding with support for x two AAC-LC encoders (aac &amp;amp; libfdk_aac) and one HE-AAC(v1/2) encoder (libfdk_aac).</description>
     </item>
     <item>
       <title>Bootable USB install device in MacOS</title>
-      <link>/articles/2017/2017-04-27-bootable-usb-install-device-in-macos/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-04-27-bootable-usb-install-device-in-macos/</link>
       <pubDate>Thu, 27 Apr 2017 10:48:52 +0000</pubDate>
-      <guid>/articles/2017/2017-04-27-bootable-usb-install-device-in-macos/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-04-27-bootable-usb-install-device-in-macos/</guid>
       <description>These instructions will create a bootable install medium for the installation of a operating system using a .iso file downloaded from the network, the dd command and a standard USB&amp;hellip;</description>
     </item>
     <item>
       <title>Bootable USB install device in Linux</title>
-      <link>/articles/2017/2017-04-27-bootable-usb-install-device-in-linux/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-04-27-bootable-usb-install-device-in-linux/</link>
       <pubDate>Thu, 27 Apr 2017 10:31:03 +0000</pubDate>
-      <guid>/articles/2017/2017-04-27-bootable-usb-install-device-in-linux/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-04-27-bootable-usb-install-device-in-linux/</guid>
       <description>These instructions will create a bootable install medium for the installation of a operating system using a .iso file downloaded from the network, the dd command and a standard USB&amp;hellip;</description>
     </item>
     <item>
       <title>Wireshark capture permission errors</title>
-      <link>/articles/2017/2017-03-18-wireshark-capture-permission-errors/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-03-18-wireshark-capture-permission-errors/</link>
       <pubDate>Sat, 18 Mar 2017 14:30:06 +0000</pubDate>
-      <guid>/articles/2017/2017-03-18-wireshark-capture-permission-errors/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-03-18-wireshark-capture-permission-errors/</guid>
       <description>I installed Wireshark the other day on Ubuntu 16.10 so I could analyse what is going over the wire in GNS3 and later on physical network topologies. Unfortunately, Wireshark has implemented Privilege Separation which means that the Wireshark GUI (or the tshark CLI) can run as a normal user while the dumpcap capture utility runs as root</description>
     </item>
     <item>
       <title>macports, the tools I&#39;m used to</title>
-      <link>/articles/2015/2015-07-09-macports-the-tools-im-used-to/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2015/2015-07-09-macports-the-tools-im-used-to/</link>
       <pubDate>Thu, 09 Jul 2015 20:02:07 +0000</pubDate>
-      <guid>/articles/2015/2015-07-09-macports-the-tools-im-used-to/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2015/2015-07-09-macports-the-tools-im-used-to/</guid>
       <description>YAY! Awesome, a HUGE amount of tools and libraries that I&amp;rsquo;ve gotten used to having at my fingertips can be had on my Mac&amp;rsquo;s thanks to macports</description>
     </item>
   </channel>

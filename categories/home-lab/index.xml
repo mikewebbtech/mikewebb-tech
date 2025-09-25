@@ -2,290 +2,290 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Home Lab on Mike Webb Tech</title>
-    <link>/categories/home-lab/</link>
+    <link>https://mikewebbtech.github.io/mikewebb-tech/categories/home-lab/</link>
     <description>Recent content in Home Lab on Mike Webb Tech</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 19 Dec 2022 10:04:08 +0800</lastBuildDate>
-    <atom:link href="/categories/home-lab/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mikewebbtech.github.io/mikewebb-tech/categories/home-lab/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Big move...Hang in  there</title>
-      <link>/articles/2022/2022-12-19-big-movehang-in-there/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2022/2022-12-19-big-movehang-in-there/</link>
       <pubDate>Mon, 19 Dec 2022 10:04:08 +0800</pubDate>
-      <guid>/articles/2022/2022-12-19-big-movehang-in-there/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2022/2022-12-19-big-movehang-in-there/</guid>
       <description>The Wordpress.com gouging is over. Since moving to a new house with business class internet and a new server rack with a High availability server/storage solution.  Its a process&amp;hellip;</description>
     </item>
     <item>
       <title>FreeIPA Centos 8 lxc Replica Server</title>
-      <link>/articles/2022/2022-08-15-freeipa-centos-8-lxc-replica-server/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2022/2022-08-15-freeipa-centos-8-lxc-replica-server/</link>
       <pubDate>Mon, 15 Aug 2022 11:13:50 +0000</pubDate>
-      <guid>/articles/2022/2022-08-15-freeipa-centos-8-lxc-replica-server/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2022/2022-08-15-freeipa-centos-8-lxc-replica-server/</guid>
       <description>FreeIPA is to linux as Active Directory is to Windows.  Like AD for Windows, FreeIPA should have a replica for high availability. This is a walk though on how I got it setup and running in CentOS 8 LXC container on Proxmox VE server.  Low resource demands compared to a dedicated vurtual machine.</description>
     </item>
     <item>
       <title>FreeIPA in CentOS 8 LXC container</title>
-      <link>/articles/2021/2021-04-01-freeipa-in-centos-8-lxc-container/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2021/2021-04-01-freeipa-in-centos-8-lxc-container/</link>
       <pubDate>Thu, 01 Apr 2021 10:57:39 +0000</pubDate>
-      <guid>/articles/2021/2021-04-01-freeipa-in-centos-8-lxc-container/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2021/2021-04-01-freeipa-in-centos-8-lxc-container/</guid>
       <description>FreeIPA is to linux as Active Directory is to Windows.  This is a walk though on how I got it setup and running in CentOS 8 LXC container on Proxmox VE server.  Low resource demands compared to a dedicated vurtual machine.</description>
     </item>
     <item>
       <title>No NFS on boot</title>
-      <link>/articles/2020/2020-09-29-no-nfs-on-boot/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2020/2020-09-29-no-nfs-on-boot/</link>
       <pubDate>Tue, 29 Sep 2020 10:27:11 +0000</pubDate>
-      <guid>/articles/2020/2020-09-29-no-nfs-on-boot/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2020/2020-09-29-no-nfs-on-boot/</guid>
       <description>Upgrade my workstation and now NFS mounts in fstab not mounting on boot but working with mount -a command works as expected. in short, systemd is worth learning and I cant believe ubuntu was released with such a basic bug.</description>
     </item>
     <item>
       <title>iCloud contacts on Linux. 2 years on</title>
-      <link>/articles/2019/2019-09-12-icloud-contacts-on-linux-2-years-on/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2019/2019-09-12-icloud-contacts-on-linux-2-years-on/</link>
       <pubDate>Thu, 12 Sep 2019 08:42:26 +0000</pubDate>
-      <guid>/articles/2019/2019-09-12-icloud-contacts-on-linux-2-years-on/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2019/2019-09-12-icloud-contacts-on-linux-2-years-on/</guid>
       <description>Two years ago I began migrating looking at ways to use the Appleverse without Apple and extending collaborative features to Linux and open source. The solutions where technical and so &amp;ldquo;kludgy&amp;rdquo;.  Time and need of the masses has now made this now near native and easy to implement.</description>
     </item>
     <item>
       <title>Created a GitHub Repo</title>
-      <link>/articles/2019/2019-01-17-created-a-github-repo/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2019/2019-01-17-created-a-github-repo/</link>
       <pubDate>Thu, 17 Jan 2019 14:28:12 +0000</pubDate>
-      <guid>/articles/2019/2019-01-17-created-a-github-repo/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2019/2019-01-17-created-a-github-repo/</guid>
       <description>Lately I&amp;rsquo;ve been focusing on home automation using Home Assistant and I&amp;rsquo;ve created a GitHub repository for my configuration to help version control and roll backs. I&amp;rsquo;m sure I will find more uses</description>
     </item>
     <item>
       <title>Toe dip into Home Automation</title>
-      <link>/articles/2019/2019-01-05-toe-dip-into-home-automation/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2019/2019-01-05-toe-dip-into-home-automation/</link>
       <pubDate>Sat, 05 Jan 2019 13:24:45 +0000</pubDate>
-      <guid>/articles/2019/2019-01-05-toe-dip-into-home-automation/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2019/2019-01-05-toe-dip-into-home-automation/</guid>
       <description>I see the need for home automation.  Well&amp;hellip;I would like to explore this technology and make it work for me.  There are so many options and there are some very expensive options, not just cost but in privacy and closed ecosystem risks.</description>
     </item>
     <item>
       <title>Beatport Pro working on MacOS Mojave</title>
-      <link>/articles/2018/2018-10-24-beatport-pro-working-on-macos-mojave/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-10-24-beatport-pro-working-on-macos-mojave/</link>
       <pubDate>Wed, 24 Oct 2018 16:59:13 +0000</pubDate>
-      <guid>/articles/2018/2018-10-24-beatport-pro-working-on-macos-mojave/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-10-24-beatport-pro-working-on-macos-mojave/</guid>
       <description>Upgrading MacOS from High Sierra to Mojave introduces some new security requirements that cause issues with some applications. The fix for apps created in electron is simple onse you know how.</description>
     </item>
     <item>
       <title>SAS disk power mode control</title>
-      <link>/articles/2018/2018-10-08-sas-disk-power-mode-control/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-10-08-sas-disk-power-mode-control/</link>
       <pubDate>Mon, 08 Oct 2018 15:54:58 +0000</pubDate>
-      <guid>/articles/2018/2018-10-08-sas-disk-power-mode-control/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-10-08-sas-disk-power-mode-control/</guid>
       <description>My hard drives were spinning at 7600 RPM 24/7, this is fine for aa actual server for the masses or in DC, but total overkill for my intermittent needs. Why do I want power control over my spinning rust&amp;hellip;spin down to save noise and heat = save energy.</description>
     </item>
     <item>
       <title>Powering On/Off Juniper SRX320.</title>
-      <link>/articles/2018/2018-09-07-powering-onoff-juniper-srx320/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-09-07-powering-onoff-juniper-srx320/</link>
       <pubDate>Fri, 07 Sep 2018 09:48:15 +0000</pubDate>
-      <guid>/articles/2018/2018-09-07-powering-onoff-juniper-srx320/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-09-07-powering-onoff-juniper-srx320/</guid>
       <description>Always use the graceful method unless absolutely necessary.  i.e don&amp;rsquo;t just yank the power cord out. There is console less method and a CLI method over the network</description>
     </item>
     <item>
       <title>eBay Score of the Century</title>
-      <link>/articles/2018/2018-06-15-infiniband-equipment/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-06-15-infiniband-equipment/</link>
       <pubDate>Fri, 15 Jun 2018 03:09:38 +0000</pubDate>
-      <guid>/articles/2018/2018-06-15-infiniband-equipment/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-06-15-infiniband-equipment/</guid>
       <description>how about a smoking network I&amp;rsquo;m redoing my home and lab network with the goal to go 10Gb/s.  Let&amp;rsquo;s up that and go 40Gb/s and while were are at it let&amp;rsquo;s take it even further with 56Gb/s&amp;hellip;.with a twist. I found Infiniband hardware cheaper then ethernet and it can do both</description>
     </item>
     <item>
       <title>Using IPMI to control PWM fans	References:</title>
-      <link>/articles/2018/2018-06-01-using-ipmi-to-control-pwm-fans-reference/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-06-01-using-ipmi-to-control-pwm-fans-reference/</link>
       <pubDate>Fri, 01 Jun 2018 10:02:55 +0000</pubDate>
-      <guid>/articles/2018/2018-06-01-using-ipmi-to-control-pwm-fans-reference/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-06-01-using-ipmi-to-control-pwm-fans-reference/</guid>
       <description>IPMI is more then a way to access servers over the network without them powered up (lights out, out of band etc).  It is an Intelligent Platform Management Interface,  it can be used to interface with the hardware layer in ways the OS can&amp;rsquo;t.  Let&amp;rsquo;s use it  to control some fans.</description>
     </item>
     <item>
       <title>Etcher does away with dd*</title>
-      <link>/articles/2018/2018-04-28-etcher-does-away-with-dd/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-04-28-etcher-does-away-with-dd/</link>
       <pubDate>Sat, 28 Apr 2018 15:53:25 +0000</pubDate>
-      <guid>/articles/2018/2018-04-28-etcher-does-away-with-dd/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-04-28-etcher-does-away-with-dd/</guid>
       <description>dd has being my go to tool for &amp;ldquo;everything-imges-and-iso&amp;rdquo;, especially ever since the usb stick became ubiquitous and norm for installing new a OS.  There is a new kid on the block now&amp;hellip;but it needs a GUI.</description>
     </item>
     <item>
       <title>Netplan bridging under Ubuntu 18.04</title>
-      <link>/articles/2018/2018-04-27-netplan-bridging-under-ubuntu-1804/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-04-27-netplan-bridging-under-ubuntu-1804/</link>
       <pubDate>Fri, 27 Apr 2018 16:40:42 +0000</pubDate>
-      <guid>/articles/2018/2018-04-27-netplan-bridging-under-ubuntu-1804/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-04-27-netplan-bridging-under-ubuntu-1804/</guid>
       <description>The new trend in linux is the shift to netplan as a network manager that uses either NetworkManager  or  systemd-networkd to manage interfaces is pretty much the default now for Ubuntu Desktops.  This breaks OVS and linux bridging, but there is a way</description>
     </item>
     <item>
       <title>Kernel patch and compile the Debian/Ubuntu way</title>
-      <link>/articles/2018/2018-01-20-kernel-patch-and-compile-the-ubuntu-way/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-01-20-kernel-patch-and-compile-the-ubuntu-way/</link>
       <pubDate>Sat, 20 Jan 2018 23:31:53 +0000</pubDate>
-      <guid>/articles/2018/2018-01-20-kernel-patch-and-compile-the-ubuntu-way/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-01-20-kernel-patch-and-compile-the-ubuntu-way/</guid>
       <description>Continuing on with my theme of compiling and patching linux kernels.  Let&amp;rsquo;s look at the Ubuntu way that creates a .deb file for use with  apt package manager.  Git work flow thrown in for free.</description>
     </item>
     <item>
       <title>A more elegant: Quick and dirty kernel</title>
-      <link>/articles/2018/2018-01-19-a-more-elegant-quick-and-dirty-kernel/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-01-19-a-more-elegant-quick-and-dirty-kernel/</link>
       <pubDate>Fri, 19 Jan 2018 09:28:51 +0000</pubDate>
-      <guid>/articles/2018/2018-01-19-a-more-elegant-quick-and-dirty-kernel/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-01-19-a-more-elegant-quick-and-dirty-kernel/</guid>
       <description>As we have seen, the original/traditional/generic way to install new kernels or patch existing kernels is a relatively straight forward affair but requires manual management.  Let&amp;rsquo;s use git to help</description>
     </item>
     <item>
       <title>Kernel patch and compile the Fedora way</title>
-      <link>/articles/2018/2018-01-18-kernel-patch-and-compile-the-fedora-way/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-01-18-kernel-patch-and-compile-the-fedora-way/</link>
       <pubDate>Thu, 18 Jan 2018 21:15:04 +0000</pubDate>
-      <guid>/articles/2018/2018-01-18-kernel-patch-and-compile-the-fedora-way/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-01-18-kernel-patch-and-compile-the-fedora-way/</guid>
       <description>Each distribution has a preferred way which tends to result in a nice reusable packaged compatible to specific package management system. For this scenario I&amp;rsquo;ll focus on Fedora 27</description>
     </item>
     <item>
       <title>Generate new host keys after sysprep</title>
-      <link>/articles/2017/2017-10-02-generate-new-host-keys-after-sysprep/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-10-02-generate-new-host-keys-after-sysprep/</link>
       <pubDate>Mon, 02 Oct 2017 12:58:14 +0000</pubDate>
-      <guid>/articles/2017/2017-10-02-generate-new-host-keys-after-sysprep/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-10-02-generate-new-host-keys-after-sysprep/</guid>
       <description>Sysprep wipes the host ssh keys from the guest image (this is a good thing) meaning that you will no longer be able to ssh in to the guest VM (This is a bad think).  Let&amp;rsquo;s fix that.</description>
     </item>
     <item>
       <title>explainshell.com is awesome</title>
-      <link>/articles/2017/2017-09-25-explainshellcom-is-awesome/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-09-25-explainshellcom-is-awesome/</link>
       <pubDate>Mon, 25 Sep 2017 11:45:56 +0000</pubDate>
-      <guid>/articles/2017/2017-09-25-explainshellcom-is-awesome/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-09-25-explainshellcom-is-awesome/</guid>
       <description>Bash shell is under rated and the CLI is very powerful if not arcane with mysterious incantations. Well I came across this site breaks down a command and exlpains the structure and what is it is doing.  preaty cool</description>
     </item>
     <item>
       <title>GDM display on the monitor you want</title>
-      <link>/articles/2017/2017-09-24-gdm-display-on-the-monitor-you-want/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-09-24-gdm-display-on-the-monitor-you-want/</link>
       <pubDate>Sun, 24 Sep 2017 17:58:32 +0000</pubDate>
-      <guid>/articles/2017/2017-09-24-gdm-display-on-the-monitor-you-want/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-09-24-gdm-display-on-the-monitor-you-want/</guid>
       <description>How configure gdm when running a duel monitor setup. I&amp;rsquo;m running Gnome3 and the GNOME Display Manager (GDM) which handles graphical user login, as well as other duties&amp;hellip;.My primary monitor&amp;hellip;</description>
     </item>
     <item>
       <title>My libVirt clone/sysprep work flow</title>
-      <link>/articles/2017/2017-09-14-my-libvirt-clonesysprep-work-flow/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-09-14-my-libvirt-clonesysprep-work-flow/</link>
       <pubDate>Thu, 14 Sep 2017 09:21:42 +0000</pubDate>
-      <guid>/articles/2017/2017-09-14-my-libvirt-clonesysprep-work-flow/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-09-14-my-libvirt-clonesysprep-work-flow/</guid>
       <description>An insight in to my workflow for creating KVM, LibVirt virtual machines on my Linux Workstation. Using KVM for my virtual environment makes sense, it is kernel level native, very powerful, flexible, well documented and community supported.</description>
     </item>
     <item>
       <title>Peer certificate error when S/MIME signing email</title>
-      <link>/articles/2017/2017-08-16-peer-certificate-error-when-smime-signing/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-08-16-peer-certificate-error-when-smime-signing/</link>
       <pubDate>Wed, 16 Aug 2017 10:41:21 +0000</pubDate>
-      <guid>/articles/2017/2017-08-16-peer-certificate-error-when-smime-signing/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-08-16-peer-certificate-error-when-smime-signing/</guid>
       <description>Notes on overcoming certificate trusted peer certificate errors when importing and using s/mime for email signing on systems that use NSS instead of OpenSSL libraries</description>
     </item>
     <item>
       <title>Using your iCloud address book in Linux</title>
-      <link>/articles/2017/2017-08-11-using-your-icloud-address-book-in-linux/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-08-11-using-your-icloud-address-book-in-linux/</link>
       <pubDate>Fri, 11 Aug 2017 13:11:32 +0000</pubDate>
-      <guid>/articles/2017/2017-08-11-using-your-icloud-address-book-in-linux/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-08-11-using-your-icloud-address-book-in-linux/</guid>
       <description>Notes on how to get any application that supports WebDAV or CardDAV to access apple iCloud resources. Following on from previous posts about using Apples iCloud services on non Apple devices or operating systems.</description>
     </item>
     <item>
       <title>youtube-dl bombs and needs updating</title>
-      <link>/articles/2017/2017-07-08-youtube-dl-bombs-and-needs-updating/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-07-08-youtube-dl-bombs-and-needs-updating/</link>
       <pubDate>Sat, 08 Jul 2017 16:59:01 +0000</pubDate>
-      <guid>/articles/2017/2017-07-08-youtube-dl-bombs-and-needs-updating/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-07-08-youtube-dl-bombs-and-needs-updating/</guid>
       <description>youtuble-dl bombs when trying to extract from html5 player sites and updating it solves this but the native update command has stopped working and package managers are inconsistant</description>
     </item>
     <item>
       <title>Storage Clustering....a living project</title>
-      <link>/articles/2017/2017-06-06-storage-clusteringa-living-project/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-06-06-storage-clusteringa-living-project/</link>
       <pubDate>Tue, 06 Jun 2017 18:46:10 +0000</pubDate>
-      <guid>/articles/2017/2017-06-06-storage-clusteringa-living-project/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-06-06-storage-clusteringa-living-project/</guid>
       <description>Exploring various storage clustering solutions as high available backend for virtual machine clusters.  What is out there, what fits the needs, is it open source and how hard will it be to implement it.</description>
     </item>
     <item>
       <title>Improve FFmpeg x264/AAC quality</title>
-      <link>/articles/2017/2017-05-24-improve-ffmpeg-x264aac-quality/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-05-24-improve-ffmpeg-x264aac-quality/</link>
       <pubDate>Wed, 24 May 2017 11:30:43 +0000</pubDate>
-      <guid>/articles/2017/2017-05-24-improve-ffmpeg-x264aac-quality/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-05-24-improve-ffmpeg-x264aac-quality/</guid>
       <description>Install and use the open source FFmpeg utility on macOS for high quality audio and video encoding and transcoding with support for x two AAC-LC encoders (aac &amp;amp; libfdk_aac) and one HE-AAC(v1/2) encoder (libfdk_aac).</description>
     </item>
     <item>
       <title>Bootable USB install device in MacOS</title>
-      <link>/articles/2017/2017-04-27-bootable-usb-install-device-in-macos/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-04-27-bootable-usb-install-device-in-macos/</link>
       <pubDate>Thu, 27 Apr 2017 10:48:52 +0000</pubDate>
-      <guid>/articles/2017/2017-04-27-bootable-usb-install-device-in-macos/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-04-27-bootable-usb-install-device-in-macos/</guid>
       <description>These instructions will create a bootable install medium for the installation of a operating system using a .iso file downloaded from the network, the dd command and a standard USB&amp;hellip;</description>
     </item>
     <item>
       <title>Bootable USB install device in Linux</title>
-      <link>/articles/2017/2017-04-27-bootable-usb-install-device-in-linux/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-04-27-bootable-usb-install-device-in-linux/</link>
       <pubDate>Thu, 27 Apr 2017 10:31:03 +0000</pubDate>
-      <guid>/articles/2017/2017-04-27-bootable-usb-install-device-in-linux/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-04-27-bootable-usb-install-device-in-linux/</guid>
       <description>These instructions will create a bootable install medium for the installation of a operating system using a .iso file downloaded from the network, the dd command and a standard USB&amp;hellip;</description>
     </item>
     <item>
       <title>Kernel fatal error: openssl/aes.h</title>
-      <link>/articles/2017/2017-04-24-kernel-fatal-error-openssl/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-04-24-kernel-fatal-error-openssl/</link>
       <pubDate>Mon, 24 Apr 2017 23:23:28 +0000</pubDate>
-      <guid>/articles/2017/2017-04-24-kernel-fatal-error-openssl/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-04-24-kernel-fatal-error-openssl/</guid>
       <description>Missing OpenSSL blows up kernel compile..Oh Why? So, I&amp;rsquo;ve walked into this one a few times when compiling a new kernel for the first time after a new distro install. Each time I shake my head.</description>
     </item>
     <item>
       <title>Apple CalDAV address...without .plist</title>
-      <link>/articles/2017/2017-04-24-apple-caldav-addresswithout-plist/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-04-24-apple-caldav-addresswithout-plist/</link>
       <pubDate>Mon, 24 Apr 2017 00:25:18 +0000</pubDate>
-      <guid>/articles/2017/2017-04-24-apple-caldav-addresswithout-plist/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-04-24-apple-caldav-addresswithout-plist/</guid>
       <description>Alternate method to get non apple devices to acces iCal. Using three ingredients.  Your calendar&amp;rsquo;s server address . Your user ID dsid.  The calendar name (cal_name).</description>
     </item>
     <item>
       <title>Your Apple secret CalDAV address</title>
-      <link>/articles/2017/2017-04-23-your-apple-secret-caldav-address/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-04-23-your-apple-secret-caldav-address/</link>
       <pubDate>Sun, 23 Apr 2017 23:56:21 +0000</pubDate>
-      <guid>/articles/2017/2017-04-23-your-apple-secret-caldav-address/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-04-23-your-apple-secret-caldav-address/</guid>
       <description>Having a small collection idevices in our household, we tend use the icloud calendar app and iCal coordinate our lives. With some work, non apple devices can share the same calendar</description>
     </item>
     <item>
       <title>PPA Public Key Error</title>
-      <link>/articles/2017/2017-03-30-ppa-public-key-error-apt-get/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-03-30-ppa-public-key-error-apt-get/</link>
       <pubDate>Thu, 30 Mar 2017 12:35:52 +0000</pubDate>
-      <guid>/articles/2017/2017-03-30-ppa-public-key-error-apt-get/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-03-30-ppa-public-key-error-apt-get/</guid>
       <description>Though, every now and then I hit a snag when installing a new package, especially from a PPA. The most common of these relate to security/verification using PKI.</description>
     </item>
     <item>
       <title>QEMU-GlusterFS native integration</title>
-      <link>/articles/2017/2017-03-27-qemu-glusterfs-native-integration/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-03-27-qemu-glusterfs-native-integration/</link>
       <pubDate>Mon, 27 Mar 2017 10:13:52 +0000</pubDate>
-      <guid>/articles/2017/2017-03-27-qemu-glusterfs-native-integration/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-03-27-qemu-glusterfs-native-integration/</guid>
       <description>GlusterFS Software Defined Storage cluster provides a robusts solution for oVirt self hosted engine yields positive results using native integration</description>
     </item>
     <item>
       <title>Nested Virtualisation</title>
-      <link>/articles/2017/2017-03-22-nested-virtualisation/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-03-22-nested-virtualisation/</link>
       <pubDate>Wed, 22 Mar 2017 17:16:48 +0000</pubDate>
-      <guid>/articles/2017/2017-03-22-nested-virtualisation/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-03-22-nested-virtualisation/</guid>
       <description>Hosting a virtual machine inside a virtual machine KVM trickery for conceptualisation and testing. If your server/host supports VT-x, it goes to say so should the guests.</description>
     </item>
     <item>
       <title>Wireshark capture permission errors</title>
-      <link>/articles/2017/2017-03-18-wireshark-capture-permission-errors/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-03-18-wireshark-capture-permission-errors/</link>
       <pubDate>Sat, 18 Mar 2017 14:30:06 +0000</pubDate>
-      <guid>/articles/2017/2017-03-18-wireshark-capture-permission-errors/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-03-18-wireshark-capture-permission-errors/</guid>
       <description>I installed Wireshark the other day on Ubuntu 16.10 so I could analyse what is going over the wire in GNS3 and later on physical network topologies. Unfortunately, Wireshark has implemented Privilege Separation which means that the Wireshark GUI (or the tshark CLI) can run as a normal user while the dumpcap capture utility runs as root</description>
     </item>
     <item>
       <title>Bluetooth USB dongle firmware error in Ubuntu</title>
-      <link>/articles/2017/2017-02-13-bluetooth-usb-dongle-firmware-error/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-02-13-bluetooth-usb-dongle-firmware-error/</link>
       <pubDate>Mon, 13 Feb 2017 10:44:09 +0000</pubDate>
-      <guid>/articles/2017/2017-02-13-bluetooth-usb-dongle-firmware-error/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-02-13-bluetooth-usb-dongle-firmware-error/</guid>
       <description>After having a running battle with my, what turns out, cheap Chinese CSR clone bluetooth USB adaptor (maybe more on that in another post). I purchased a more expensive adaptor&amp;hellip;</description>
     </item>
     <item>
       <title>Arch Linux UEFI install on NVMe drives</title>
-      <link>/articles/2017/2017-02-10-arch-linux-uefi-install-on-nvme-drives/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-02-10-arch-linux-uefi-install-on-nvme-drives/</link>
       <pubDate>Fri, 10 Feb 2017 15:45:36 +0000</pubDate>
-      <guid>/articles/2017/2017-02-10-arch-linux-uefi-install-on-nvme-drives/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-02-10-arch-linux-uefi-install-on-nvme-drives/</guid>
       <description>A guide  created from memory and some notes on how I installed Arch Linux (BTW) using UEFI settings, NVMe storage. and LVM filesystem.  Grub now supports NVMe but not &amp;ldquo;exotic&amp;rdquo; filesystems like LVM or LUKS encryption as the root (/) filesystem</description>
     </item>
     <item>
       <title>Debian 8 installed on UEFI systems</title>
-      <link>/articles/2017/2017-01-27-debian-8-installed-on-uefi-systems/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-01-27-debian-8-installed-on-uefi-systems/</link>
       <pubDate>Fri, 27 Jan 2017 20:27:41 +0000</pubDate>
-      <guid>/articles/2017/2017-01-27-debian-8-installed-on-uefi-systems/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-01-27-debian-8-installed-on-uefi-systems/</guid>
       <description>Absolute pain getting Debian installed on my UEFI only sytem. When working through the installation process until the boot loader tries to install and this message occurs.</description>
     </item>
     <item>
       <title>The iMove to Appleverse</title>
-      <link>/articles/2015/2015-11-06-the-imove-to-appleverse/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2015/2015-11-06-the-imove-to-appleverse/</link>
       <pubDate>Fri, 06 Nov 2015 10:01:42 +0000</pubDate>
-      <guid>/articles/2015/2015-11-06-the-imove-to-appleverse/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2015/2015-11-06-the-imove-to-appleverse/</guid>
       <description>Mac and their OS&amp;rsquo;s have always been spouted as being a pinnacle of consumer grade IT design and user interface experience. Pfft, what ever. I&amp;rsquo;ve been using Mac ever since&amp;hellip;</description>
     </item>
     <item>
       <title>macports, the tools I&#39;m used to</title>
-      <link>/articles/2015/2015-07-09-macports-the-tools-im-used-to/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2015/2015-07-09-macports-the-tools-im-used-to/</link>
       <pubDate>Thu, 09 Jul 2015 20:02:07 +0000</pubDate>
-      <guid>/articles/2015/2015-07-09-macports-the-tools-im-used-to/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2015/2015-07-09-macports-the-tools-im-used-to/</guid>
       <description>YAY! Awesome, a HUGE amount of tools and libraries that I&amp;rsquo;ve gotten used to having at my fingertips can be had on my Mac&amp;rsquo;s thanks to macports</description>
     </item>
   </channel>

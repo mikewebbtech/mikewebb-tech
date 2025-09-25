@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Arch on Mike Webb Tech</title>
-    <link>/tags/arch/</link>
+    <link>https://mikewebbtech.github.io/mikewebb-tech/tags/arch/</link>
     <description>Recent content in Arch on Mike Webb Tech</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 10 Feb 2017 15:45:36 +0000</lastBuildDate>
-    <atom:link href="/tags/arch/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mikewebbtech.github.io/mikewebb-tech/tags/arch/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Arch Linux UEFI install on NVMe drives</title>
-      <link>/articles/2017/2017-02-10-arch-linux-uefi-install-on-nvme-drives/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-02-10-arch-linux-uefi-install-on-nvme-drives/</link>
       <pubDate>Fri, 10 Feb 2017 15:45:36 +0000</pubDate>
-      <guid>/articles/2017/2017-02-10-arch-linux-uefi-install-on-nvme-drives/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-02-10-arch-linux-uefi-install-on-nvme-drives/</guid>
       <description>A guide  created from memory and some notes on how I installed Arch Linux (BTW) using UEFI settings, NVMe storage. and LVM filesystem.  Grub now supports NVMe but not &amp;ldquo;exotic&amp;rdquo; filesystems like LVM or LUKS encryption as the root (/) filesystem</description>
     </item>
   </channel>
