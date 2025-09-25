@@ -2,87 +2,87 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mac on Mike Webb Tech</title>
-    <link>http://localhost:1313/mikewebb-tech/tags/mac/</link>
+    <link>/tags/mac/</link>
     <description>Recent content in Mac on Mike Webb Tech</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 12 Sep 2019 08:42:26 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/mikewebb-tech/tags/mac/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/mac/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>iCloud contacts on Linux. 2 years on</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2019/2019-09-12-icloud-contacts-on-linux-2-years-on/</link>
+      <link>/articles/2019/2019-09-12-icloud-contacts-on-linux-2-years-on/</link>
       <pubDate>Thu, 12 Sep 2019 08:42:26 +0000</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2019/2019-09-12-icloud-contacts-on-linux-2-years-on/</guid>
+      <guid>/articles/2019/2019-09-12-icloud-contacts-on-linux-2-years-on/</guid>
       <description>Two years ago I began migrating looking at ways to use the Appleverse without Apple and extending collaborative features to Linux and open source. The solutions where technical and so &amp;ldquo;kludgy&amp;rdquo;.  Time and need of the masses has now made this now near native and easy to implement.</description>
     </item>
     <item>
       <title>Beatport Pro working on MacOS Mojave</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2018/2018-10-24-beatport-pro-working-on-macos-mojave/</link>
+      <link>/articles/2018/2018-10-24-beatport-pro-working-on-macos-mojave/</link>
       <pubDate>Wed, 24 Oct 2018 16:59:13 +0000</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2018/2018-10-24-beatport-pro-working-on-macos-mojave/</guid>
+      <guid>/articles/2018/2018-10-24-beatport-pro-working-on-macos-mojave/</guid>
       <description>Upgrading MacOS from High Sierra to Mojave introduces some new security requirements that cause issues with some applications. The fix for apps created in electron is simple onse you know how.</description>
     </item>
     <item>
       <title>Etcher does away with dd*</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2018/2018-04-28-etcher-does-away-with-dd/</link>
+      <link>/articles/2018/2018-04-28-etcher-does-away-with-dd/</link>
       <pubDate>Sat, 28 Apr 2018 15:53:25 +0000</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2018/2018-04-28-etcher-does-away-with-dd/</guid>
+      <guid>/articles/2018/2018-04-28-etcher-does-away-with-dd/</guid>
       <description>dd has being my go to tool for &amp;ldquo;everything-imges-and-iso&amp;rdquo;, especially ever since the usb stick became ubiquitous and norm for installing new a OS.  There is a new kid on the block now&amp;hellip;but it needs a GUI.</description>
     </item>
     <item>
       <title>Using your iCloud address book in Linux</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2017/2017-08-11-using-your-icloud-address-book-in-linux/</link>
+      <link>/articles/2017/2017-08-11-using-your-icloud-address-book-in-linux/</link>
       <pubDate>Fri, 11 Aug 2017 13:11:32 +0000</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2017/2017-08-11-using-your-icloud-address-book-in-linux/</guid>
+      <guid>/articles/2017/2017-08-11-using-your-icloud-address-book-in-linux/</guid>
       <description>Notes on how to get any application that supports WebDAV or CardDAV to access apple iCloud resources. Following on from previous posts about using Apples iCloud services on non Apple devices or operating systems.</description>
     </item>
     <item>
       <title>Improve FFmpeg x264/AAC quality</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2017/2017-05-24-improve-ffmpeg-x264aac-quality/</link>
+      <link>/articles/2017/2017-05-24-improve-ffmpeg-x264aac-quality/</link>
       <pubDate>Wed, 24 May 2017 11:30:43 +0000</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2017/2017-05-24-improve-ffmpeg-x264aac-quality/</guid>
+      <guid>/articles/2017/2017-05-24-improve-ffmpeg-x264aac-quality/</guid>
       <description>Install and use the open source FFmpeg utility on macOS for high quality audio and video encoding and transcoding with support for x two AAC-LC encoders (aac &amp;amp; libfdk_aac) and one HE-AAC(v1/2) encoder (libfdk_aac).</description>
     </item>
     <item>
       <title>Bootable USB install device in MacOS</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2017/2017-04-27-bootable-usb-install-device-in-macos/</link>
+      <link>/articles/2017/2017-04-27-bootable-usb-install-device-in-macos/</link>
       <pubDate>Thu, 27 Apr 2017 10:48:52 +0000</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2017/2017-04-27-bootable-usb-install-device-in-macos/</guid>
+      <guid>/articles/2017/2017-04-27-bootable-usb-install-device-in-macos/</guid>
       <description>These instructions will create a bootable install medium for the installation of a operating system using a .iso file downloaded from the network, the dd command and a standard USB&amp;hellip;</description>
     </item>
     <item>
       <title>Bootable USB install device in Linux</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2017/2017-04-27-bootable-usb-install-device-in-linux/</link>
+      <link>/articles/2017/2017-04-27-bootable-usb-install-device-in-linux/</link>
       <pubDate>Thu, 27 Apr 2017 10:31:03 +0000</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2017/2017-04-27-bootable-usb-install-device-in-linux/</guid>
+      <guid>/articles/2017/2017-04-27-bootable-usb-install-device-in-linux/</guid>
       <description>These instructions will create a bootable install medium for the installation of a operating system using a .iso file downloaded from the network, the dd command and a standard USB&amp;hellip;</description>
     </item>
     <item>
       <title>Apple CalDAV address...without .plist</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2017/2017-04-24-apple-caldav-addresswithout-plist/</link>
+      <link>/articles/2017/2017-04-24-apple-caldav-addresswithout-plist/</link>
       <pubDate>Mon, 24 Apr 2017 00:25:18 +0000</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2017/2017-04-24-apple-caldav-addresswithout-plist/</guid>
+      <guid>/articles/2017/2017-04-24-apple-caldav-addresswithout-plist/</guid>
       <description>Alternate method to get non apple devices to acces iCal. Using three ingredients.  Your calendar&amp;rsquo;s server address . Your user ID dsid.  The calendar name (cal_name).</description>
     </item>
     <item>
       <title>Your Apple secret CalDAV address</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2017/2017-04-23-your-apple-secret-caldav-address/</link>
+      <link>/articles/2017/2017-04-23-your-apple-secret-caldav-address/</link>
       <pubDate>Sun, 23 Apr 2017 23:56:21 +0000</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2017/2017-04-23-your-apple-secret-caldav-address/</guid>
+      <guid>/articles/2017/2017-04-23-your-apple-secret-caldav-address/</guid>
       <description>Having a small collection idevices in our household, we tend use the icloud calendar app and iCal coordinate our lives. With some work, non apple devices can share the same calendar</description>
     </item>
     <item>
       <title>The iMove to Appleverse</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2015/2015-11-06-the-imove-to-appleverse/</link>
+      <link>/articles/2015/2015-11-06-the-imove-to-appleverse/</link>
       <pubDate>Fri, 06 Nov 2015 10:01:42 +0000</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2015/2015-11-06-the-imove-to-appleverse/</guid>
+      <guid>/articles/2015/2015-11-06-the-imove-to-appleverse/</guid>
       <description>Mac and their OS&amp;rsquo;s have always been spouted as being a pinnacle of consumer grade IT design and user interface experience. Pfft, what ever. I&amp;rsquo;ve been using Mac ever since&amp;hellip;</description>
     </item>
     <item>
       <title>macports, the tools I&#39;m used to</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2015/2015-07-09-macports-the-tools-im-used-to/</link>
+      <link>/articles/2015/2015-07-09-macports-the-tools-im-used-to/</link>
       <pubDate>Thu, 09 Jul 2015 20:02:07 +0000</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2015/2015-07-09-macports-the-tools-im-used-to/</guid>
+      <guid>/articles/2015/2015-07-09-macports-the-tools-im-used-to/</guid>
       <description>YAY! Awesome, a HUGE amount of tools and libraries that I&amp;rsquo;ve gotten used to having at my fingertips can be had on my Mac&amp;rsquo;s thanks to macports</description>
     </item>
   </channel>

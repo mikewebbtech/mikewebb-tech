@@ -2,325 +2,325 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Mike Webb Tech</title>
-    <link>http://localhost:1313/mikewebb-tech/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in Tags on Mike Webb Tech</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 25 Sep 2025 12:10:33 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/mikewebb-tech/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Blog</title>
-      <link>http://localhost:1313/mikewebb-tech/tags/blog/</link>
+      <link>/tags/blog/</link>
       <pubDate>Thu, 25 Sep 2025 12:10:33 +0800</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/tags/blog/</guid>
+      <guid>/tags/blog/</guid>
       <description></description>
     </item>
     <item>
       <title>Solution</title>
-      <link>http://localhost:1313/mikewebb-tech/tags/solution/</link>
+      <link>/tags/solution/</link>
       <pubDate>Thu, 25 Sep 2025 12:10:33 +0800</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/tags/solution/</guid>
+      <guid>/tags/solution/</guid>
       <description></description>
     </item>
     <item>
       <title>Controls</title>
-      <link>http://localhost:1313/mikewebb-tech/tags/controls/</link>
+      <link>/tags/controls/</link>
       <pubDate>Tue, 09 Sep 2025 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/tags/controls/</guid>
+      <guid>/tags/controls/</guid>
       <description></description>
     </item>
     <item>
       <title>Notes</title>
-      <link>http://localhost:1313/mikewebb-tech/tags/notes/</link>
+      <link>/tags/notes/</link>
       <pubDate>Tue, 09 Sep 2025 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/tags/notes/</guid>
+      <guid>/tags/notes/</guid>
       <description></description>
     </item>
     <item>
       <title>Risk</title>
-      <link>http://localhost:1313/mikewebb-tech/tags/risk/</link>
+      <link>/tags/risk/</link>
       <pubDate>Tue, 09 Sep 2025 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/tags/risk/</guid>
+      <guid>/tags/risk/</guid>
       <description></description>
     </item>
     <item>
       <title>Threats</title>
-      <link>http://localhost:1313/mikewebb-tech/tags/threats/</link>
+      <link>/tags/threats/</link>
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/tags/threats/</guid>
+      <guid>/tags/threats/</guid>
       <description></description>
     </item>
     <item>
       <title>Managment</title>
-      <link>http://localhost:1313/mikewebb-tech/tags/managment/</link>
+      <link>/tags/managment/</link>
       <pubDate>Sat, 30 Aug 2025 08:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/tags/managment/</guid>
+      <guid>/tags/managment/</guid>
       <description></description>
     </item>
     <item>
       <title>Testing</title>
-      <link>http://localhost:1313/mikewebb-tech/tags/testing/</link>
+      <link>/tags/testing/</link>
       <pubDate>Sat, 30 Aug 2025 08:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/tags/testing/</guid>
+      <guid>/tags/testing/</guid>
       <description></description>
     </item>
     <item>
       <title>Git</title>
-      <link>http://localhost:1313/mikewebb-tech/tags/git/</link>
+      <link>/tags/git/</link>
       <pubDate>Thu, 21 Aug 2025 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/tags/git/</guid>
+      <guid>/tags/git/</guid>
       <description></description>
     </item>
     <item>
       <title>Workflow</title>
-      <link>http://localhost:1313/mikewebb-tech/tags/workflow/</link>
+      <link>/tags/workflow/</link>
       <pubDate>Thu, 21 Aug 2025 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/tags/workflow/</guid>
+      <guid>/tags/workflow/</guid>
       <description></description>
     </item>
     <item>
       <title>Assets</title>
-      <link>http://localhost:1313/mikewebb-tech/tags/assets/</link>
+      <link>/tags/assets/</link>
       <pubDate>Tue, 29 Jul 2025 20:30:33 +0800</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/tags/assets/</guid>
+      <guid>/tags/assets/</guid>
       <description></description>
     </item>
     <item>
       <title>Resource</title>
-      <link>http://localhost:1313/mikewebb-tech/tags/resource/</link>
+      <link>/tags/resource/</link>
       <pubDate>Tue, 22 Jul 2025 09:11:49 +0800</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/tags/resource/</guid>
+      <guid>/tags/resource/</guid>
       <description></description>
     </item>
     <item>
       <title>Ramble</title>
-      <link>http://localhost:1313/mikewebb-tech/tags/ramble/</link>
+      <link>/tags/ramble/</link>
       <pubDate>Sat, 27 Apr 2024 16:37:08 +0800</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/tags/ramble/</guid>
+      <guid>/tags/ramble/</guid>
       <description></description>
     </item>
     <item>
       <title>Opensource</title>
-      <link>http://localhost:1313/mikewebb-tech/tags/opensource/</link>
+      <link>/tags/opensource/</link>
       <pubDate>Mon, 19 Dec 2022 10:04:08 +0800</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/tags/opensource/</guid>
+      <guid>/tags/opensource/</guid>
       <description></description>
     </item>
     <item>
       <title>FreeIPA</title>
-      <link>http://localhost:1313/mikewebb-tech/tags/freeipa/</link>
+      <link>/tags/freeipa/</link>
       <pubDate>Mon, 15 Aug 2022 11:13:50 +0000</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/tags/freeipa/</guid>
+      <guid>/tags/freeipa/</guid>
       <description></description>
     </item>
     <item>
       <title>Linux</title>
-      <link>http://localhost:1313/mikewebb-tech/tags/linux/</link>
+      <link>/tags/linux/</link>
       <pubDate>Mon, 15 Aug 2022 11:13:50 +0000</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/tags/linux/</guid>
+      <guid>/tags/linux/</guid>
       <description></description>
     </item>
     <item>
       <title>Lxc</title>
-      <link>http://localhost:1313/mikewebb-tech/tags/lxc/</link>
+      <link>/tags/lxc/</link>
       <pubDate>Mon, 15 Aug 2022 11:13:50 +0000</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/tags/lxc/</guid>
+      <guid>/tags/lxc/</guid>
       <description></description>
     </item>
     <item>
       <title>Redhat</title>
-      <link>http://localhost:1313/mikewebb-tech/tags/redhat/</link>
+      <link>/tags/redhat/</link>
       <pubDate>Mon, 15 Aug 2022 11:13:50 +0000</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/tags/redhat/</guid>
+      <guid>/tags/redhat/</guid>
       <description></description>
     </item>
     <item>
       <title>Server</title>
-      <link>http://localhost:1313/mikewebb-tech/tags/server/</link>
+      <link>/tags/server/</link>
       <pubDate>Mon, 15 Aug 2022 11:13:50 +0000</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/tags/server/</guid>
+      <guid>/tags/server/</guid>
       <description></description>
     </item>
     <item>
       <title>Networking</title>
-      <link>http://localhost:1313/mikewebb-tech/tags/networking/</link>
+      <link>/tags/networking/</link>
       <pubDate>Tue, 29 Sep 2020 10:27:11 +0000</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/tags/networking/</guid>
+      <guid>/tags/networking/</guid>
       <description></description>
     </item>
     <item>
       <title>Ubuntu</title>
-      <link>http://localhost:1313/mikewebb-tech/tags/ubuntu/</link>
+      <link>/tags/ubuntu/</link>
       <pubDate>Tue, 29 Sep 2020 10:27:11 +0000</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/tags/ubuntu/</guid>
+      <guid>/tags/ubuntu/</guid>
       <description></description>
     </item>
     <item>
       <title>Archive</title>
-      <link>http://localhost:1313/mikewebb-tech/tags/archive/</link>
+      <link>/tags/archive/</link>
       <pubDate>Sat, 21 Mar 2020 11:25:23 +0000</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/tags/archive/</guid>
+      <guid>/tags/archive/</guid>
       <description></description>
     </item>
     <item>
       <title>Before</title>
-      <link>http://localhost:1313/mikewebb-tech/tags/before/</link>
+      <link>/tags/before/</link>
       <pubDate>Sat, 21 Mar 2020 11:25:23 +0000</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/tags/before/</guid>
+      <guid>/tags/before/</guid>
       <description></description>
     </item>
     <item>
       <title>Mac</title>
-      <link>http://localhost:1313/mikewebb-tech/tags/mac/</link>
+      <link>/tags/mac/</link>
       <pubDate>Thu, 12 Sep 2019 08:42:26 +0000</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/tags/mac/</guid>
+      <guid>/tags/mac/</guid>
       <description></description>
     </item>
     <item>
       <title>Homeassitant</title>
-      <link>http://localhost:1313/mikewebb-tech/tags/homeassitant/</link>
+      <link>/tags/homeassitant/</link>
       <pubDate>Thu, 17 Jan 2019 14:28:12 +0000</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/tags/homeassitant/</guid>
+      <guid>/tags/homeassitant/</guid>
       <description></description>
     </item>
     <item>
       <title>Maker</title>
-      <link>http://localhost:1313/mikewebb-tech/tags/maker/</link>
+      <link>/tags/maker/</link>
       <pubDate>Thu, 17 Jan 2019 14:28:12 +0000</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/tags/maker/</guid>
+      <guid>/tags/maker/</guid>
       <description></description>
     </item>
     <item>
       <title>Hardware</title>
-      <link>http://localhost:1313/mikewebb-tech/tags/hardware/</link>
+      <link>/tags/hardware/</link>
       <pubDate>Sat, 05 Jan 2019 13:24:45 +0000</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/tags/hardware/</guid>
+      <guid>/tags/hardware/</guid>
       <description></description>
     </item>
     <item>
       <title>Storage</title>
-      <link>http://localhost:1313/mikewebb-tech/tags/storage/</link>
+      <link>/tags/storage/</link>
       <pubDate>Mon, 08 Oct 2018 15:54:58 +0000</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/tags/storage/</guid>
+      <guid>/tags/storage/</guid>
       <description></description>
     </item>
     <item>
       <title>Juniper</title>
-      <link>http://localhost:1313/mikewebb-tech/tags/juniper/</link>
+      <link>/tags/juniper/</link>
       <pubDate>Fri, 07 Sep 2018 09:48:15 +0000</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/tags/juniper/</guid>
+      <guid>/tags/juniper/</guid>
       <description></description>
     </item>
     <item>
       <title>Kernel</title>
-      <link>http://localhost:1313/mikewebb-tech/tags/kernel/</link>
+      <link>/tags/kernel/</link>
       <pubDate>Sat, 20 Jan 2018 23:31:53 +0000</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/tags/kernel/</guid>
+      <guid>/tags/kernel/</guid>
       <description></description>
     </item>
     <item>
       <title>Fedora</title>
-      <link>http://localhost:1313/mikewebb-tech/tags/fedora/</link>
+      <link>/tags/fedora/</link>
       <pubDate>Thu, 18 Jan 2018 21:15:04 +0000</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/tags/fedora/</guid>
+      <guid>/tags/fedora/</guid>
       <description></description>
     </item>
     <item>
       <title>Libvirt</title>
-      <link>http://localhost:1313/mikewebb-tech/tags/libvirt/</link>
+      <link>/tags/libvirt/</link>
       <pubDate>Mon, 02 Oct 2017 12:58:14 +0000</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/tags/libvirt/</guid>
+      <guid>/tags/libvirt/</guid>
       <description></description>
     </item>
     <item>
       <title>Shell</title>
-      <link>http://localhost:1313/mikewebb-tech/tags/shell/</link>
+      <link>/tags/shell/</link>
       <pubDate>Mon, 02 Oct 2017 12:58:14 +0000</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/tags/shell/</guid>
+      <guid>/tags/shell/</guid>
       <description></description>
     </item>
     <item>
       <title>Gnome</title>
-      <link>http://localhost:1313/mikewebb-tech/tags/gnome/</link>
+      <link>/tags/gnome/</link>
       <pubDate>Sun, 24 Sep 2017 17:58:32 +0000</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/tags/gnome/</guid>
+      <guid>/tags/gnome/</guid>
       <description></description>
     </item>
     <item>
       <title>Kvm</title>
-      <link>http://localhost:1313/mikewebb-tech/tags/kvm/</link>
+      <link>/tags/kvm/</link>
       <pubDate>Thu, 14 Sep 2017 09:21:42 +0000</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/tags/kvm/</guid>
+      <guid>/tags/kvm/</guid>
       <description></description>
     </item>
     <item>
       <title>Smime</title>
-      <link>http://localhost:1313/mikewebb-tech/tags/smime/</link>
+      <link>/tags/smime/</link>
       <pubDate>Wed, 16 Aug 2017 10:41:21 +0000</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/tags/smime/</guid>
+      <guid>/tags/smime/</guid>
       <description></description>
     </item>
     <item>
       <title>Icloud</title>
-      <link>http://localhost:1313/mikewebb-tech/tags/icloud/</link>
+      <link>/tags/icloud/</link>
       <pubDate>Fri, 11 Aug 2017 13:11:32 +0000</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/tags/icloud/</guid>
+      <guid>/tags/icloud/</guid>
       <description></description>
     </item>
     <item>
       <title>Ffmpeg</title>
-      <link>http://localhost:1313/mikewebb-tech/tags/ffmpeg/</link>
+      <link>/tags/ffmpeg/</link>
       <pubDate>Wed, 24 May 2017 11:30:43 +0000</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/tags/ffmpeg/</guid>
+      <guid>/tags/ffmpeg/</guid>
       <description></description>
     </item>
     <item>
       <title>Macports</title>
-      <link>http://localhost:1313/mikewebb-tech/tags/macports/</link>
+      <link>/tags/macports/</link>
       <pubDate>Wed, 24 May 2017 11:30:43 +0000</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/tags/macports/</guid>
+      <guid>/tags/macports/</guid>
       <description></description>
     </item>
     <item>
       <title>Cluster</title>
-      <link>http://localhost:1313/mikewebb-tech/tags/cluster/</link>
+      <link>/tags/cluster/</link>
       <pubDate>Mon, 27 Mar 2017 10:13:52 +0000</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/tags/cluster/</guid>
+      <guid>/tags/cluster/</guid>
       <description></description>
     </item>
     <item>
       <title>GlusterFS</title>
-      <link>http://localhost:1313/mikewebb-tech/tags/glusterfs/</link>
+      <link>/tags/glusterfs/</link>
       <pubDate>Mon, 27 Mar 2017 10:13:52 +0000</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/tags/glusterfs/</guid>
+      <guid>/tags/glusterfs/</guid>
       <description></description>
     </item>
     <item>
       <title>OVirt</title>
-      <link>http://localhost:1313/mikewebb-tech/tags/ovirt/</link>
+      <link>/tags/ovirt/</link>
       <pubDate>Mon, 27 Mar 2017 10:13:52 +0000</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/tags/ovirt/</guid>
+      <guid>/tags/ovirt/</guid>
       <description></description>
     </item>
     <item>
       <title>Arch</title>
-      <link>http://localhost:1313/mikewebb-tech/tags/arch/</link>
+      <link>/tags/arch/</link>
       <pubDate>Fri, 10 Feb 2017 15:45:36 +0000</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/tags/arch/</guid>
+      <guid>/tags/arch/</guid>
       <description></description>
     </item>
     <item>
       <title>Debian</title>
-      <link>http://localhost:1313/mikewebb-tech/tags/debian/</link>
+      <link>/tags/debian/</link>
       <pubDate>Fri, 27 Jan 2017 20:27:41 +0000</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/tags/debian/</guid>
+      <guid>/tags/debian/</guid>
       <description></description>
     </item>
     <item>
       <title>Fanboy</title>
-      <link>http://localhost:1313/mikewebb-tech/tags/fanboy/</link>
+      <link>/tags/fanboy/</link>
       <pubDate>Fri, 06 Nov 2015 10:01:42 +0000</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/tags/fanboy/</guid>
+      <guid>/tags/fanboy/</guid>
       <description></description>
     </item>
   </channel>

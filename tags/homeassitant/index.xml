@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Homeassitant on Mike Webb Tech</title>
-    <link>http://localhost:1313/mikewebb-tech/tags/homeassitant/</link>
+    <link>/tags/homeassitant/</link>
     <description>Recent content in Homeassitant on Mike Webb Tech</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 17 Jan 2019 14:28:12 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/mikewebb-tech/tags/homeassitant/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/homeassitant/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Created a GitHub Repo</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2019/2019-01-17-created-a-github-repo/</link>
+      <link>/articles/2019/2019-01-17-created-a-github-repo/</link>
       <pubDate>Thu, 17 Jan 2019 14:28:12 +0000</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2019/2019-01-17-created-a-github-repo/</guid>
+      <guid>/articles/2019/2019-01-17-created-a-github-repo/</guid>
       <description>Lately I&amp;rsquo;ve been focusing on home automation using Home Assistant and I&amp;rsquo;ve created a GitHub repository for my configuration to help version control and roll backs. I&amp;rsquo;m sure I will find more uses</description>
     </item>
     <item>
       <title>Toe dip into Home Automation</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2019/2019-01-05-toe-dip-into-home-automation/</link>
+      <link>/articles/2019/2019-01-05-toe-dip-into-home-automation/</link>
       <pubDate>Sat, 05 Jan 2019 13:24:45 +0000</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2019/2019-01-05-toe-dip-into-home-automation/</guid>
+      <guid>/articles/2019/2019-01-05-toe-dip-into-home-automation/</guid>
       <description>I see the need for home automation.  Well&amp;hellip;I would like to explore this technology and make it work for me.  There are so many options and there are some very expensive options, not just cost but in privacy and closed ecosystem risks.</description>
     </item>
   </channel>

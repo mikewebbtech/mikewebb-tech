@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Libvirt on Mike Webb Tech</title>
-    <link>http://localhost:1313/mikewebb-tech/tags/libvirt/</link>
+    <link>/tags/libvirt/</link>
     <description>Recent content in Libvirt on Mike Webb Tech</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 02 Oct 2017 12:58:14 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/mikewebb-tech/tags/libvirt/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/libvirt/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Generate new host keys after sysprep</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2017/2017-10-02-generate-new-host-keys-after-sysprep/</link>
+      <link>/articles/2017/2017-10-02-generate-new-host-keys-after-sysprep/</link>
       <pubDate>Mon, 02 Oct 2017 12:58:14 +0000</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2017/2017-10-02-generate-new-host-keys-after-sysprep/</guid>
+      <guid>/articles/2017/2017-10-02-generate-new-host-keys-after-sysprep/</guid>
       <description>Sysprep wipes the host ssh keys from the guest image (this is a good thing) meaning that you will no longer be able to ssh in to the guest VM (This is a bad think).  Let&amp;rsquo;s fix that.</description>
     </item>
     <item>
       <title>My libVirt clone/sysprep work flow</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2017/2017-09-14-my-libvirt-clonesysprep-work-flow/</link>
+      <link>/articles/2017/2017-09-14-my-libvirt-clonesysprep-work-flow/</link>
       <pubDate>Thu, 14 Sep 2017 09:21:42 +0000</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2017/2017-09-14-my-libvirt-clonesysprep-work-flow/</guid>
+      <guid>/articles/2017/2017-09-14-my-libvirt-clonesysprep-work-flow/</guid>
       <description>An insight in to my workflow for creating KVM, LibVirt virtual machines on my Linux Workstation. Using KVM for my virtual environment makes sense, it is kernel level native, very powerful, flexible, well documented and community supported.</description>
     </item>
     <item>
       <title>QEMU-GlusterFS native integration</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2017/2017-03-27-qemu-glusterfs-native-integration/</link>
+      <link>/articles/2017/2017-03-27-qemu-glusterfs-native-integration/</link>
       <pubDate>Mon, 27 Mar 2017 10:13:52 +0000</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2017/2017-03-27-qemu-glusterfs-native-integration/</guid>
+      <guid>/articles/2017/2017-03-27-qemu-glusterfs-native-integration/</guid>
       <description>GlusterFS Software Defined Storage cluster provides a robusts solution for oVirt self hosted engine yields positive results using native integration</description>
     </item>
     <item>
       <title>Nested Virtualisation</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2017/2017-03-22-nested-virtualisation/</link>
+      <link>/articles/2017/2017-03-22-nested-virtualisation/</link>
       <pubDate>Wed, 22 Mar 2017 17:16:48 +0000</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2017/2017-03-22-nested-virtualisation/</guid>
+      <guid>/articles/2017/2017-03-22-nested-virtualisation/</guid>
       <description>Hosting a virtual machine inside a virtual machine KVM trickery for conceptualisation and testing. If your server/host supports VT-x, it goes to say so should the guests.</description>
     </item>
   </channel>

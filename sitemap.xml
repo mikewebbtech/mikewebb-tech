@@ -2,413 +2,413 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/mikewebb-tech/articles/</loc>
+    <loc>/articles/</loc>
     <lastmod>2026-08-03T10:18:57+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/articles/2025/2025-09-25-article-cards/</loc>
+    <loc>/articles/2025/2025-09-25-article-cards/</loc>
     <lastmod>2025-09-25T12:10:33+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/tags/blog/</loc>
+    <loc>/tags/blog/</loc>
     <lastmod>2025-09-25T12:10:33+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/categories/</loc>
+    <loc>/categories/</loc>
     <lastmod>2025-09-25T12:10:33+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/categories/hugo/</loc>
+    <loc>/categories/hugo/</loc>
     <lastmod>2025-09-25T12:10:33+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/series/my-hugo-site/</loc>
+    <loc>/series/my-hugo-site/</loc>
     <lastmod>2025-09-25T12:10:33+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/series/</loc>
+    <loc>/series/</loc>
     <lastmod>2025-09-25T12:10:33+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/tags/solution/</loc>
+    <loc>/tags/solution/</loc>
     <lastmod>2025-09-25T12:10:33+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/tags/</loc>
+    <loc>/tags/</loc>
     <lastmod>2025-09-25T12:10:33+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/articles/2025/2025-09-09-cirp-as-a-strategy/</loc>
+    <loc>/articles/2025/2025-09-09-cirp-as-a-strategy/</loc>
     <lastmod>2025-09-09T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/tags/controls/</loc>
+    <loc>/tags/controls/</loc>
     <lastmod>2025-09-09T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/categories/security/</loc>
+    <loc>/categories/security/</loc>
     <lastmod>2025-09-09T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/series/intro-cyber-security/</loc>
+    <loc>/series/intro-cyber-security/</loc>
     <lastmod>2025-09-09T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/tags/notes/</loc>
+    <loc>/tags/notes/</loc>
     <lastmod>2025-09-09T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/tags/risk/</loc>
+    <loc>/tags/risk/</loc>
     <lastmod>2025-09-09T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/articles/2025/2025-09-02-exploring-discrepancy/</loc>
+    <loc>/articles/2025/2025-09-02-exploring-discrepancy/</loc>
     <lastmod>2025-09-02T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/tags/threats/</loc>
+    <loc>/tags/threats/</loc>
     <lastmod>2025-09-02T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/tags/managment/</loc>
+    <loc>/tags/managment/</loc>
     <lastmod>2025-08-30T08:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/articles/2025/2025-08-30-measuring-security-effectiveness/</loc>
+    <loc>/articles/2025/2025-08-30-measuring-security-effectiveness/</loc>
     <lastmod>2025-08-30T08:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/tags/testing/</loc>
+    <loc>/tags/testing/</loc>
     <lastmod>2025-08-30T08:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/articles/2025/2025-08-21-decoupling-my-content/</loc>
+    <loc>/articles/2025/2025-08-21-decoupling-my-content/</loc>
     <lastmod>2025-08-21T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/tags/git/</loc>
+    <loc>/tags/git/</loc>
     <lastmod>2025-08-21T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/tags/workflow/</loc>
+    <loc>/tags/workflow/</loc>
     <lastmod>2025-08-21T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/articles/2025/2025-08-19-from-plan-to-action/</loc>
+    <loc>/articles/2025/2025-08-19-from-plan-to-action/</loc>
     <lastmod>2025-08-19T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/articles/2025/2025-08-17-risk-mitigation-plans/</loc>
+    <loc>/articles/2025/2025-08-17-risk-mitigation-plans/</loc>
     <lastmod>2025-08-17T20:33:12+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/articles/2025/2025-08-10-risk-management-and-cyber-controls/</loc>
+    <loc>/articles/2025/2025-08-10-risk-management-and-cyber-controls/</loc>
     <lastmod>2025-08-10T08:37:12+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/articles/2025/2025-08-01-intro-to-cirp/</loc>
+    <loc>/articles/2025/2025-08-01-intro-to-cirp/</loc>
     <lastmod>2025-08-01T11:42:52+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/articles/2025/2025-07-16-cyber-threat-awareness/</loc>
+    <loc>/articles/2025/2025-07-16-cyber-threat-awareness/</loc>
     <lastmod>2025-07-29T22:17:47+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/tags/assets/</loc>
+    <loc>/tags/assets/</loc>
     <lastmod>2025-07-29T20:30:33+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/articles/2025/2025-07-13-ict-asset-register/</loc>
+    <loc>/articles/2025/2025-07-13-ict-asset-register/</loc>
     <lastmod>2025-07-29T20:30:33+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/articles/2025/2025-07-28-introduction-to-risk/</loc>
+    <loc>/articles/2025/2025-07-28-introduction-to-risk/</loc>
     <lastmod>2025-07-28T12:22:12+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/tags/resource/</loc>
+    <loc>/tags/resource/</loc>
     <lastmod>2025-07-22T09:11:49+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/articles/2025/2025-07-22-cruicial-distinction/</loc>
+    <loc>/articles/2025/2025-07-22-cruicial-distinction/</loc>
     <lastmod>2025-07-22T09:11:49+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/articles/2025/2025-07-15-mapping-to-ism-controls/</loc>
+    <loc>/articles/2025/2025-07-15-mapping-to-ism-controls/</loc>
     <lastmod>2025-07-15T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/articles/2025/2025-07-13-intro-to-essential-8/</loc>
+    <loc>/articles/2025/2025-07-13-intro-to-essential-8/</loc>
     <lastmod>2025-07-13T09:23:39+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/articles/2025/2025-07-12-intro-to-asd/</loc>
+    <loc>/articles/2025/2025-07-12-intro-to-asd/</loc>
     <lastmod>2025-07-12T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/articles/2025/2025-07-11-cia-triad/</loc>
+    <loc>/articles/2025/2025-07-11-cia-triad/</loc>
     <lastmod>2025-07-11T23:38:04+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/articles/2025/2025-07-10-basics-cyber-security-requirements/</loc>
+    <loc>/articles/2025/2025-07-10-basics-cyber-security-requirements/</loc>
     <lastmod>2025-07-10T08:30:33+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/articles/2025/2025-07-03-cyber-security-not-what-i-thought/</loc>
+    <loc>/articles/2025/2025-07-03-cyber-security-not-what-i-thought/</loc>
     <lastmod>2025-07-03T21:09:33+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/articles/2025/2025-05-06-auditing-system-assets/</loc>
+    <loc>/articles/2025/2025-05-06-auditing-system-assets/</loc>
     <lastmod>2025-05-06T09:47:21+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/categories/networking/</loc>
+    <loc>/categories/networking/</loc>
     <lastmod>2025-05-06T09:47:21+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/articles/2025/2025-05-03-assessing-network-policy/</loc>
+    <loc>/articles/2025/2025-05-03-assessing-network-policy/</loc>
     <lastmod>2025-05-03T18:17:52+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/articles/2025/2025-05-02-testing-hugo-admonitions/</loc>
+    <loc>/articles/2025/2025-05-02-testing-hugo-admonitions/</loc>
     <lastmod>2025-05-02T10:49:58+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/about/</loc>
+    <loc>/about/</loc>
     <lastmod>2025-04-20T14:28:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/articles/2025/2025-02-01-hugo-codeblock-testing/</loc>
+    <loc>/articles/2025/2025-02-01-hugo-codeblock-testing/</loc>
     <lastmod>2025-02-01T06:06:51+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/</loc>
+    <loc>/</loc>
     <lastmod>2025-01-30T03:36:57-08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/articles/2024/2024-05-25-embracing-hugo/</loc>
+    <loc>/articles/2024/2024-05-25-embracing-hugo/</loc>
     <lastmod>2025-01-25T12:08:01+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/articles/2024/2024-04-27-a-new-blog/</loc>
+    <loc>/articles/2024/2024-04-27-a-new-blog/</loc>
     <lastmod>2024-04-27T16:37:08+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/tags/ramble/</loc>
+    <loc>/tags/ramble/</loc>
     <lastmod>2024-04-27T16:37:08+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/articles/2022/2022-12-19-big-movehang-in-there/</loc>
+    <loc>/articles/2022/2022-12-19-big-movehang-in-there/</loc>
     <lastmod>2022-12-19T10:04:08+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/categories/home-lab/</loc>
+    <loc>/categories/home-lab/</loc>
     <lastmod>2022-12-19T10:04:08+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/tags/opensource/</loc>
+    <loc>/tags/opensource/</loc>
     <lastmod>2022-12-19T10:04:08+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/tags/freeipa/</loc>
+    <loc>/tags/freeipa/</loc>
     <lastmod>2022-08-15T11:13:50+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/articles/2022/2022-08-15-freeipa-centos-8-lxc-replica-server/</loc>
+    <loc>/articles/2022/2022-08-15-freeipa-centos-8-lxc-replica-server/</loc>
     <lastmod>2022-08-15T11:13:50+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/tags/linux/</loc>
+    <loc>/tags/linux/</loc>
     <lastmod>2022-08-15T11:13:50+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/tags/lxc/</loc>
+    <loc>/tags/lxc/</loc>
     <lastmod>2022-08-15T11:13:50+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/tags/redhat/</loc>
+    <loc>/tags/redhat/</loc>
     <lastmod>2022-08-15T11:13:50+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/tags/server/</loc>
+    <loc>/tags/server/</loc>
     <lastmod>2022-08-15T11:13:50+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/categories/virtualisation/</loc>
+    <loc>/categories/virtualisation/</loc>
     <lastmod>2022-08-15T11:13:50+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/articles/2021/2021-04-01-freeipa-in-centos-8-lxc-container/</loc>
+    <loc>/articles/2021/2021-04-01-freeipa-in-centos-8-lxc-container/</loc>
     <lastmod>2021-04-01T10:57:39+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/tags/networking/</loc>
+    <loc>/tags/networking/</loc>
     <lastmod>2020-09-29T10:27:11+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/articles/2020/2020-09-29-no-nfs-on-boot/</loc>
+    <loc>/articles/2020/2020-09-29-no-nfs-on-boot/</loc>
     <lastmod>2020-09-29T10:27:11+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/tags/ubuntu/</loc>
+    <loc>/tags/ubuntu/</loc>
     <lastmod>2020-09-29T10:27:11+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/tags/archive/</loc>
+    <loc>/tags/archive/</loc>
     <lastmod>2020-03-21T11:25:23+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/tags/before/</loc>
+    <loc>/tags/before/</loc>
     <lastmod>2020-03-21T11:25:23+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/articles/2020/2020-03-21-busy-busy/</loc>
+    <loc>/articles/2020/2020-03-21-busy-busy/</loc>
     <lastmod>2020-03-21T11:25:23+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/articles/2019/2019-09-12-icloud-contacts-on-linux-2-years-on/</loc>
+    <loc>/articles/2019/2019-09-12-icloud-contacts-on-linux-2-years-on/</loc>
     <lastmod>2019-09-12T08:42:26+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/tags/mac/</loc>
+    <loc>/tags/mac/</loc>
     <lastmod>2019-09-12T08:42:26+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/categories/automation/</loc>
+    <loc>/categories/automation/</loc>
     <lastmod>2019-01-17T14:28:12+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/articles/2019/2019-01-17-created-a-github-repo/</loc>
+    <loc>/articles/2019/2019-01-17-created-a-github-repo/</loc>
     <lastmod>2019-01-17T14:28:12+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/tags/homeassitant/</loc>
+    <loc>/tags/homeassitant/</loc>
     <lastmod>2019-01-17T14:28:12+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/categories/iot/</loc>
+    <loc>/categories/iot/</loc>
     <lastmod>2019-01-17T14:28:12+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/tags/maker/</loc>
+    <loc>/tags/maker/</loc>
     <lastmod>2019-01-17T14:28:12+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/tags/hardware/</loc>
+    <loc>/tags/hardware/</loc>
     <lastmod>2019-01-05T13:24:45+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/articles/2019/2019-01-05-toe-dip-into-home-automation/</loc>
+    <loc>/articles/2019/2019-01-05-toe-dip-into-home-automation/</loc>
     <lastmod>2019-01-05T13:24:45+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/articles/2018/2018-10-24-beatport-pro-working-on-macos-mojave/</loc>
+    <loc>/articles/2018/2018-10-24-beatport-pro-working-on-macos-mojave/</loc>
     <lastmod>2018-10-24T16:59:13+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/articles/2018/2018-10-08-sas-disk-power-mode-control/</loc>
+    <loc>/articles/2018/2018-10-08-sas-disk-power-mode-control/</loc>
     <lastmod>2018-10-08T15:54:58+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/tags/storage/</loc>
+    <loc>/tags/storage/</loc>
     <lastmod>2018-10-08T15:54:58+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/tags/juniper/</loc>
+    <loc>/tags/juniper/</loc>
     <lastmod>2018-09-07T09:48:15+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/articles/2018/2018-09-07-powering-onoff-juniper-srx320/</loc>
+    <loc>/articles/2018/2018-09-07-powering-onoff-juniper-srx320/</loc>
     <lastmod>2018-09-07T09:48:15+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/articles/2018/2018-06-15-infiniband-equipment/</loc>
+    <loc>/articles/2018/2018-06-15-infiniband-equipment/</loc>
     <lastmod>2018-06-15T03:09:38+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/articles/2018/2018-06-01-using-ipmi-to-control-pwm-fans-reference/</loc>
+    <loc>/articles/2018/2018-06-01-using-ipmi-to-control-pwm-fans-reference/</loc>
     <lastmod>2018-06-01T10:02:55+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/articles/2018/2018-04-28-etcher-does-away-with-dd/</loc>
+    <loc>/articles/2018/2018-04-28-etcher-does-away-with-dd/</loc>
     <lastmod>2018-04-28T15:53:25+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/articles/2018/2018-04-27-netplan-bridging-under-ubuntu-1804/</loc>
+    <loc>/articles/2018/2018-04-27-netplan-bridging-under-ubuntu-1804/</loc>
     <lastmod>2018-04-27T16:40:42+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/tags/kernel/</loc>
+    <loc>/tags/kernel/</loc>
     <lastmod>2018-01-20T23:31:53+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/articles/2018/2018-01-20-kernel-patch-and-compile-the-ubuntu-way/</loc>
+    <loc>/articles/2018/2018-01-20-kernel-patch-and-compile-the-ubuntu-way/</loc>
     <lastmod>2018-01-20T23:31:53+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/articles/2018/2018-01-19-a-more-elegant-quick-and-dirty-kernel/</loc>
+    <loc>/articles/2018/2018-01-19-a-more-elegant-quick-and-dirty-kernel/</loc>
     <lastmod>2018-01-19T09:28:51+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/tags/fedora/</loc>
+    <loc>/tags/fedora/</loc>
     <lastmod>2018-01-18T21:15:04+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/articles/2018/2018-01-18-kernel-patch-and-compile-the-fedora-way/</loc>
+    <loc>/articles/2018/2018-01-18-kernel-patch-and-compile-the-fedora-way/</loc>
     <lastmod>2018-01-18T21:15:04+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/articles/2017/2017-10-02-generate-new-host-keys-after-sysprep/</loc>
+    <loc>/articles/2017/2017-10-02-generate-new-host-keys-after-sysprep/</loc>
     <lastmod>2017-10-02T12:58:14+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/tags/libvirt/</loc>
+    <loc>/tags/libvirt/</loc>
     <lastmod>2017-10-02T12:58:14+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/tags/shell/</loc>
+    <loc>/tags/shell/</loc>
     <lastmod>2017-10-02T12:58:14+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/articles/2017/2017-09-25-explainshellcom-is-awesome/</loc>
+    <loc>/articles/2017/2017-09-25-explainshellcom-is-awesome/</loc>
     <lastmod>2017-09-25T11:45:56+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/articles/2017/2017-09-24-gdm-display-on-the-monitor-you-want/</loc>
+    <loc>/articles/2017/2017-09-24-gdm-display-on-the-monitor-you-want/</loc>
     <lastmod>2017-09-24T17:58:32+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/tags/gnome/</loc>
+    <loc>/tags/gnome/</loc>
     <lastmod>2017-09-24T17:58:32+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/tags/kvm/</loc>
+    <loc>/tags/kvm/</loc>
     <lastmod>2017-09-14T09:21:42+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/articles/2017/2017-09-14-my-libvirt-clonesysprep-work-flow/</loc>
+    <loc>/articles/2017/2017-09-14-my-libvirt-clonesysprep-work-flow/</loc>
     <lastmod>2017-09-14T09:21:42+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/articles/2017/2017-08-16-peer-certificate-error-when-smime-signing/</loc>
+    <loc>/articles/2017/2017-08-16-peer-certificate-error-when-smime-signing/</loc>
     <lastmod>2017-08-16T10:41:21+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/tags/smime/</loc>
+    <loc>/tags/smime/</loc>
     <lastmod>2017-08-16T10:41:21+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/tags/icloud/</loc>
+    <loc>/tags/icloud/</loc>
     <lastmod>2017-08-11T13:11:32+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/articles/2017/2017-08-11-using-your-icloud-address-book-in-linux/</loc>
+    <loc>/articles/2017/2017-08-11-using-your-icloud-address-book-in-linux/</loc>
     <lastmod>2017-08-11T13:11:32+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/articles/2017/2017-07-08-youtube-dl-bombs-and-needs-updating/</loc>
+    <loc>/articles/2017/2017-07-08-youtube-dl-bombs-and-needs-updating/</loc>
     <lastmod>2017-07-08T16:59:01+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/articles/2017/2017-06-06-storage-clusteringa-living-project/</loc>
+    <loc>/articles/2017/2017-06-06-storage-clusteringa-living-project/</loc>
     <lastmod>2017-06-06T18:46:10+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/tags/ffmpeg/</loc>
+    <loc>/tags/ffmpeg/</loc>
     <lastmod>2017-05-24T11:30:43+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/articles/2017/2017-05-24-improve-ffmpeg-x264aac-quality/</loc>
+    <loc>/articles/2017/2017-05-24-improve-ffmpeg-x264aac-quality/</loc>
     <lastmod>2017-05-24T11:30:43+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/tags/macports/</loc>
+    <loc>/tags/macports/</loc>
     <lastmod>2017-05-24T11:30:43+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/articles/2017/2017-04-27-bootable-usb-install-device-in-macos/</loc>
+    <loc>/articles/2017/2017-04-27-bootable-usb-install-device-in-macos/</loc>
     <lastmod>2017-04-27T10:48:52+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/articles/2017/2017-04-27-bootable-usb-install-device-in-linux/</loc>
+    <loc>/articles/2017/2017-04-27-bootable-usb-install-device-in-linux/</loc>
     <lastmod>2017-04-27T10:31:03+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/articles/2017/2017-04-24-kernel-fatal-error-openssl/</loc>
+    <loc>/articles/2017/2017-04-24-kernel-fatal-error-openssl/</loc>
     <lastmod>2017-04-24T23:23:28+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/articles/2017/2017-04-24-apple-caldav-addresswithout-plist/</loc>
+    <loc>/articles/2017/2017-04-24-apple-caldav-addresswithout-plist/</loc>
     <lastmod>2017-04-24T00:25:18+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/articles/2017/2017-04-23-your-apple-secret-caldav-address/</loc>
+    <loc>/articles/2017/2017-04-23-your-apple-secret-caldav-address/</loc>
     <lastmod>2017-04-23T23:56:21+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/articles/2017/2017-03-30-ppa-public-key-error-apt-get/</loc>
+    <loc>/articles/2017/2017-03-30-ppa-public-key-error-apt-get/</loc>
     <lastmod>2017-03-30T12:35:52+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/tags/cluster/</loc>
+    <loc>/tags/cluster/</loc>
     <lastmod>2017-03-27T10:13:52+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/tags/glusterfs/</loc>
+    <loc>/tags/glusterfs/</loc>
     <lastmod>2017-03-27T10:13:52+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/tags/ovirt/</loc>
+    <loc>/tags/ovirt/</loc>
     <lastmod>2017-03-27T10:13:52+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/articles/2017/2017-03-27-qemu-glusterfs-native-integration/</loc>
+    <loc>/articles/2017/2017-03-27-qemu-glusterfs-native-integration/</loc>
     <lastmod>2017-03-27T10:13:52+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/articles/2017/2017-03-22-nested-virtualisation/</loc>
+    <loc>/articles/2017/2017-03-22-nested-virtualisation/</loc>
     <lastmod>2017-03-22T17:16:48+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/articles/2017/2017-03-18-wireshark-capture-permission-errors/</loc>
+    <loc>/articles/2017/2017-03-18-wireshark-capture-permission-errors/</loc>
     <lastmod>2017-03-18T14:30:06+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/articles/2017/2017-02-13-bluetooth-usb-dongle-firmware-error/</loc>
+    <loc>/articles/2017/2017-02-13-bluetooth-usb-dongle-firmware-error/</loc>
     <lastmod>2017-02-13T10:44:09+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/tags/arch/</loc>
+    <loc>/tags/arch/</loc>
     <lastmod>2017-02-10T15:45:36+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/articles/2017/2017-02-10-arch-linux-uefi-install-on-nvme-drives/</loc>
+    <loc>/articles/2017/2017-02-10-arch-linux-uefi-install-on-nvme-drives/</loc>
     <lastmod>2017-02-10T15:45:36+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/tags/debian/</loc>
+    <loc>/tags/debian/</loc>
     <lastmod>2017-01-27T20:27:41+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/articles/2017/2017-01-27-debian-8-installed-on-uefi-systems/</loc>
+    <loc>/articles/2017/2017-01-27-debian-8-installed-on-uefi-systems/</loc>
     <lastmod>2017-01-27T20:27:41+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/tags/fanboy/</loc>
+    <loc>/tags/fanboy/</loc>
     <lastmod>2015-11-06T10:01:42+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/articles/2015/2015-11-06-the-imove-to-appleverse/</loc>
+    <loc>/articles/2015/2015-11-06-the-imove-to-appleverse/</loc>
     <lastmod>2015-11-06T10:01:42+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/articles/2015/2015-07-09-macports-the-tools-im-used-to/</loc>
+    <loc>/articles/2015/2015-07-09-macports-the-tools-im-used-to/</loc>
     <lastmod>2015-07-09T20:02:07+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/articles/2008/2008-05-12-db30-done-and-dusted/</loc>
+    <loc>/articles/2008/2008-05-12-db30-done-and-dusted/</loc>
     <lastmod>2008-05-12T22:56:44+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/articles/2008/2008-05-01-been-a-whilebeen-busy/</loc>
+    <loc>/articles/2008/2008-05-01-been-a-whilebeen-busy/</loc>
     <lastmod>2008-05-01T15:19:31+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/articles/2008/2008-03-18-lost-in-sydney-with-sore-thumbs/</loc>
+    <loc>/articles/2008/2008-03-18-lost-in-sydney-with-sore-thumbs/</loc>
     <lastmod>2008-03-18T10:19:41+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/articles/2008/2008-02-10-on-the-go-again/</loc>
+    <loc>/articles/2008/2008-02-10-on-the-go-again/</loc>
     <lastmod>2008-02-10T15:27:31+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/articles/2008/2008-02-09-thank-god-thats-over-with/</loc>
+    <loc>/articles/2008/2008-02-09-thank-god-thats-over-with/</loc>
     <lastmod>2008-02-09T11:45:44+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/articles/2008/seems-to-be-the-order-of-the-month/</loc>
+    <loc>/articles/2008/seems-to-be-the-order-of-the-month/</loc>
     <lastmod>2008-01-25T19:51:51+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/articles/2008/2008-01-14-damit-damit/</loc>
+    <loc>/articles/2008/2008-01-14-damit-damit/</loc>
     <lastmod>2008-01-14T06:22:50+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/articles/readme/</loc>
+    <loc>/articles/readme/</loc>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/articles/welcome/</loc>
+    <loc>/articles/welcome/</loc>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/categories/cloud/</loc>
+    <loc>/categories/cloud/</loc>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/categories/kubernetes/</loc>
+    <loc>/categories/kubernetes/</loc>
   </url><url>
-    <loc>http://localhost:1313/mikewebb-tech/series/proxmox-gitops/</loc>
+    <loc>/series/proxmox-gitops/</loc>
   </url>
 </urlset>

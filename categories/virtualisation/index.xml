@@ -2,73 +2,73 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Virtualisation on Mike Webb Tech</title>
-    <link>http://localhost:1313/mikewebb-tech/categories/virtualisation/</link>
+    <link>/categories/virtualisation/</link>
     <description>Recent content in Virtualisation on Mike Webb Tech</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 15 Aug 2022 11:13:50 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/mikewebb-tech/categories/virtualisation/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/categories/virtualisation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>FreeIPA Centos 8 lxc Replica Server</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2022/2022-08-15-freeipa-centos-8-lxc-replica-server/</link>
+      <link>/articles/2022/2022-08-15-freeipa-centos-8-lxc-replica-server/</link>
       <pubDate>Mon, 15 Aug 2022 11:13:50 +0000</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2022/2022-08-15-freeipa-centos-8-lxc-replica-server/</guid>
+      <guid>/articles/2022/2022-08-15-freeipa-centos-8-lxc-replica-server/</guid>
       <description>FreeIPA is to linux as Active Directory is to Windows.  Like AD for Windows, FreeIPA should have a replica for high availability. This is a walk though on how I got it setup and running in CentOS 8 LXC container on Proxmox VE server.  Low resource demands compared to a dedicated vurtual machine.</description>
     </item>
     <item>
       <title>FreeIPA in CentOS 8 LXC container</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2021/2021-04-01-freeipa-in-centos-8-lxc-container/</link>
+      <link>/articles/2021/2021-04-01-freeipa-in-centos-8-lxc-container/</link>
       <pubDate>Thu, 01 Apr 2021 10:57:39 +0000</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2021/2021-04-01-freeipa-in-centos-8-lxc-container/</guid>
+      <guid>/articles/2021/2021-04-01-freeipa-in-centos-8-lxc-container/</guid>
       <description>FreeIPA is to linux as Active Directory is to Windows.  This is a walk though on how I got it setup and running in CentOS 8 LXC container on Proxmox VE server.  Low resource demands compared to a dedicated vurtual machine.</description>
     </item>
     <item>
       <title>Etcher does away with dd*</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2018/2018-04-28-etcher-does-away-with-dd/</link>
+      <link>/articles/2018/2018-04-28-etcher-does-away-with-dd/</link>
       <pubDate>Sat, 28 Apr 2018 15:53:25 +0000</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2018/2018-04-28-etcher-does-away-with-dd/</guid>
+      <guid>/articles/2018/2018-04-28-etcher-does-away-with-dd/</guid>
       <description>dd has being my go to tool for &amp;ldquo;everything-imges-and-iso&amp;rdquo;, especially ever since the usb stick became ubiquitous and norm for installing new a OS.  There is a new kid on the block now&amp;hellip;but it needs a GUI.</description>
     </item>
     <item>
       <title>Netplan bridging under Ubuntu 18.04</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2018/2018-04-27-netplan-bridging-under-ubuntu-1804/</link>
+      <link>/articles/2018/2018-04-27-netplan-bridging-under-ubuntu-1804/</link>
       <pubDate>Fri, 27 Apr 2018 16:40:42 +0000</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2018/2018-04-27-netplan-bridging-under-ubuntu-1804/</guid>
+      <guid>/articles/2018/2018-04-27-netplan-bridging-under-ubuntu-1804/</guid>
       <description>The new trend in linux is the shift to netplan as a network manager that uses either NetworkManager  or  systemd-networkd to manage interfaces is pretty much the default now for Ubuntu Desktops.  This breaks OVS and linux bridging, but there is a way</description>
     </item>
     <item>
       <title>Generate new host keys after sysprep</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2017/2017-10-02-generate-new-host-keys-after-sysprep/</link>
+      <link>/articles/2017/2017-10-02-generate-new-host-keys-after-sysprep/</link>
       <pubDate>Mon, 02 Oct 2017 12:58:14 +0000</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2017/2017-10-02-generate-new-host-keys-after-sysprep/</guid>
+      <guid>/articles/2017/2017-10-02-generate-new-host-keys-after-sysprep/</guid>
       <description>Sysprep wipes the host ssh keys from the guest image (this is a good thing) meaning that you will no longer be able to ssh in to the guest VM (This is a bad think).  Let&amp;rsquo;s fix that.</description>
     </item>
     <item>
       <title>My libVirt clone/sysprep work flow</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2017/2017-09-14-my-libvirt-clonesysprep-work-flow/</link>
+      <link>/articles/2017/2017-09-14-my-libvirt-clonesysprep-work-flow/</link>
       <pubDate>Thu, 14 Sep 2017 09:21:42 +0000</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2017/2017-09-14-my-libvirt-clonesysprep-work-flow/</guid>
+      <guid>/articles/2017/2017-09-14-my-libvirt-clonesysprep-work-flow/</guid>
       <description>An insight in to my workflow for creating KVM, LibVirt virtual machines on my Linux Workstation. Using KVM for my virtual environment makes sense, it is kernel level native, very powerful, flexible, well documented and community supported.</description>
     </item>
     <item>
       <title>Storage Clustering....a living project</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2017/2017-06-06-storage-clusteringa-living-project/</link>
+      <link>/articles/2017/2017-06-06-storage-clusteringa-living-project/</link>
       <pubDate>Tue, 06 Jun 2017 18:46:10 +0000</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2017/2017-06-06-storage-clusteringa-living-project/</guid>
+      <guid>/articles/2017/2017-06-06-storage-clusteringa-living-project/</guid>
       <description>Exploring various storage clustering solutions as high available backend for virtual machine clusters.  What is out there, what fits the needs, is it open source and how hard will it be to implement it.</description>
     </item>
     <item>
       <title>QEMU-GlusterFS native integration</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2017/2017-03-27-qemu-glusterfs-native-integration/</link>
+      <link>/articles/2017/2017-03-27-qemu-glusterfs-native-integration/</link>
       <pubDate>Mon, 27 Mar 2017 10:13:52 +0000</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2017/2017-03-27-qemu-glusterfs-native-integration/</guid>
+      <guid>/articles/2017/2017-03-27-qemu-glusterfs-native-integration/</guid>
       <description>GlusterFS Software Defined Storage cluster provides a robusts solution for oVirt self hosted engine yields positive results using native integration</description>
     </item>
     <item>
       <title>Nested Virtualisation</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2017/2017-03-22-nested-virtualisation/</link>
+      <link>/articles/2017/2017-03-22-nested-virtualisation/</link>
       <pubDate>Wed, 22 Mar 2017 17:16:48 +0000</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2017/2017-03-22-nested-virtualisation/</guid>
+      <guid>/articles/2017/2017-03-22-nested-virtualisation/</guid>
       <description>Hosting a virtual machine inside a virtual machine KVM trickery for conceptualisation and testing. If your server/host supports VT-x, it goes to say so should the guests.</description>
     </item>
   </channel>

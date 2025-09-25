@@ -2,150 +2,150 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cyber Security on Mike Webb Tech</title>
-    <link>http://localhost:1313/mikewebb-tech/categories/security/</link>
+    <link>/categories/security/</link>
     <description>Recent content in Cyber Security on Mike Webb Tech</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 09 Sep 2025 00:00:00 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/mikewebb-tech/categories/security/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/categories/security/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CIRP as a Mitigation Strategy</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2025/2025-09-09-cirp-as-a-strategy/</link>
+      <link>/articles/2025/2025-09-09-cirp-as-a-strategy/</link>
       <pubDate>Tue, 09 Sep 2025 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2025/2025-09-09-cirp-as-a-strategy/</guid>
+      <guid>/articles/2025/2025-09-09-cirp-as-a-strategy/</guid>
       <description>This article looks CIRP beyond being a reactive plan and implementing it is a measurable and proactive component of a security strategy.  It outlines how a CIRP reduces the impact of a breach and discusses key metrics for continuous improvement.</description>
     </item>
     <item>
       <title>Exploring Implementation Discrepancy</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2025/2025-09-02-exploring-discrepancy/</link>
+      <link>/articles/2025/2025-09-02-exploring-discrepancy/</link>
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2025/2025-09-02-exploring-discrepancy/</guid>
+      <guid>/articles/2025/2025-09-02-exploring-discrepancy/</guid>
       <description>Exploring in more detail the different types of discrepancies that can undermine control effectiveness, including issues with implementation, training, and a changing threat landscape. It provides practical insights into how to detect these gaps and offers a clear, action-oriented remediation checklist to ensure continuous improvement in cybersecurity defences.</description>
     </item>
     <item>
       <title>Measuring Security</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2025/2025-08-30-measuring-security-effectiveness/</link>
+      <link>/articles/2025/2025-08-30-measuring-security-effectiveness/</link>
       <pubDate>Sat, 30 Aug 2025 08:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2025/2025-08-30-measuring-security-effectiveness/</guid>
+      <guid>/articles/2025/2025-08-30-measuring-security-effectiveness/</guid>
       <description>This article explores the critical process of benchmarking control effectiveness, which ensures security safeguards provide intended protection. It examines how organizations can leverage frameworks like the Essential Eight, NIST, and ISO to measure maturity and track progress. The summary also highlights the importance of addressing discrepancies for continuous improvement and a stronger defense.</description>
     </item>
     <item>
       <title>Implement Security Controls</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2025/2025-08-19-from-plan-to-action/</link>
+      <link>/articles/2025/2025-08-19-from-plan-to-action/</link>
       <pubDate>Tue, 19 Aug 2025 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2025/2025-08-19-from-plan-to-action/</guid>
+      <guid>/articles/2025/2025-08-19-from-plan-to-action/</guid>
       <description>This article examines the process of implementing cybersecurity controls, progressing from strategy to implemented controls.  It outlines the steps to plan, execute, and test security defences to effectively address vulnerabilities.  This ensures that controls are not only implemented but also well documented and maintained for effectiveness.</description>
     </item>
     <item>
       <title>Risk Mitigation Plans</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2025/2025-08-17-risk-mitigation-plans/</link>
+      <link>/articles/2025/2025-08-17-risk-mitigation-plans/</link>
       <pubDate>Sun, 17 Aug 2025 20:33:12 +0800</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2025/2025-08-17-risk-mitigation-plans/</guid>
+      <guid>/articles/2025/2025-08-17-risk-mitigation-plans/</guid>
       <description>A risk mitigation plan only works if it&amp;rsquo;s properly executed. This requires change management principles to communicate with everyone, get their buy-in, and continuously monitor that the new processes are being followed. This turns the plan from a static document into a living part of the organisation&amp;rsquo;s culture.</description>
     </item>
     <item>
       <title>Risk Management and Cyber Controls</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2025/2025-08-10-risk-management-and-cyber-controls/</link>
+      <link>/articles/2025/2025-08-10-risk-management-and-cyber-controls/</link>
       <pubDate>Sun, 10 Aug 2025 08:37:12 +0800</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2025/2025-08-10-risk-management-and-cyber-controls/</guid>
+      <guid>/articles/2025/2025-08-10-risk-management-and-cyber-controls/</guid>
       <description>Risk management frameworks integrate decision-making to reduce risk to ALARP. Cyber controls, preventative, detective, and corrective, address assessed threats. Assess the security gap and controls that align with the sccepted risk appetite and objectives.</description>
     </item>
     <item>
       <title>Introduction to Cyber Incident Response Plan</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2025/2025-08-01-intro-to-cirp/</link>
+      <link>/articles/2025/2025-08-01-intro-to-cirp/</link>
       <pubDate>Fri, 01 Aug 2025 11:42:52 +0800</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2025/2025-08-01-intro-to-cirp/</guid>
+      <guid>/articles/2025/2025-08-01-intro-to-cirp/</guid>
       <description>A Cyber Incident Response Plan (CIRP) is needed to transform an organisation&amp;rsquo;s approach to security incidents from panic to preparedness. It provides a structured playbook  for preparing, detecting, responding to, and recovering from a cybersecurity events.  A CIRP provides clear responsibilities and procedures, minimising harm and accelerating recovery.  Its value is in creating coordinated action in high-pressure situations, preventing disorganisation, and reducing the downtime, costs, and reputational damage that can result from a breach.</description>
     </item>
     <item>
       <title>Cyber Threat Awareness</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2025/2025-07-16-cyber-threat-awareness/</link>
+      <link>/articles/2025/2025-07-16-cyber-threat-awareness/</link>
       <pubDate>Tue, 29 Jul 2025 22:17:47 +0800</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2025/2025-07-16-cyber-threat-awareness/</guid>
+      <guid>/articles/2025/2025-07-16-cyber-threat-awareness/</guid>
       <description>To build proactive cybersecurity defenses, a foundational understanding of the threat landscape is required. By comprehending common cyber threats like phishing, ransomware, and viruses, an organization can inform risk assessments and prioritise security controls.</description>
     </item>
     <item>
       <title>ICT Assets and Asset Registers</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2025/2025-07-13-ict-asset-register/</link>
+      <link>/articles/2025/2025-07-13-ict-asset-register/</link>
       <pubDate>Tue, 29 Jul 2025 20:30:33 +0800</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2025/2025-07-13-ict-asset-register/</guid>
+      <guid>/articles/2025/2025-07-13-ict-asset-register/</guid>
       <description>ICT assets include hardware, software, information, infrastructure, skilled personnel, and outsourced services. An asset register systematically documents these, forming the foundation of IT asset management.  It tracks lifecycle, reduces risks, prevents waste, and documents vulnerabilities.  Maintaining a detailed register ensures risk management focuses on protecting the organisation’s most valuable resources.</description>
     </item>
     <item>
       <title>Introduction to Risk and Risk Management</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2025/2025-07-28-introduction-to-risk/</link>
+      <link>/articles/2025/2025-07-28-introduction-to-risk/</link>
       <pubDate>Mon, 28 Jul 2025 12:22:12 +0800</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2025/2025-07-28-introduction-to-risk/</guid>
+      <guid>/articles/2025/2025-07-28-introduction-to-risk/</guid>
       <description>Risk in cybersecurity is the probability of threats exploiting vulnerabilities to impact assets. Risk management involves identifying, assessing, and controlling threats through structured approach of identification, analysis, evaluation, treatment, and monitoring. This strengthens resilience, improves efficiency, and aligns security contols with organisational strategy while addressing evolving digital threats.</description>
     </item>
     <item>
       <title>Threats, Vulnerabilities, and Risks</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2025/2025-07-22-cruicial-distinction/</link>
+      <link>/articles/2025/2025-07-22-cruicial-distinction/</link>
       <pubDate>Tue, 22 Jul 2025 09:11:49 +0800</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2025/2025-07-22-cruicial-distinction/</guid>
+      <guid>/articles/2025/2025-07-22-cruicial-distinction/</guid>
       <description>In cybersecurity, the terms threats, vulnerabilities, and risks are sometimes used incorrectly and interchangeably, but they are distinct concepts.  Understanding their relationship is fundamental to building an effective security program. Think of them as a logical chain: a threat exploits a vulnerability to create a risk.</description>
     </item>
     <item>
       <title>Mapping Strategies to controls</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2025/2025-07-15-mapping-to-ism-controls/</link>
+      <link>/articles/2025/2025-07-15-mapping-to-ism-controls/</link>
       <pubDate>Tue, 15 Jul 2025 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2025/2025-07-15-mapping-to-ism-controls/</guid>
+      <guid>/articles/2025/2025-07-15-mapping-to-ism-controls/</guid>
       <description>Mapping the Essential Eight to the Information Security Manual (ISM) gives organisations a clear and actionable guide for implementing each security strategy at the desired maturity level. This mapping translates objectives into controls that aligns with priorities and obligations, ensures progress is measurable and outcome driven</description>
     </item>
     <item>
       <title>Introducing the Essential 8</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2025/2025-07-13-intro-to-essential-8/</link>
+      <link>/articles/2025/2025-07-13-intro-to-essential-8/</link>
       <pubDate>Sun, 13 Jul 2025 09:23:39 +0800</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2025/2025-07-13-intro-to-essential-8/</guid>
+      <guid>/articles/2025/2025-07-13-intro-to-essential-8/</guid>
       <description>The Essential Eight is a set of mitigation strategies from the Australian Cyber Security Centre that helps organisations build cyber resilience. The framework&amp;rsquo;s four maturity levels provide a progressive roadmap for implementing control strategies.</description>
     </item>
     <item>
       <title>Introducing the ASD</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2025/2025-07-12-intro-to-asd/</link>
+      <link>/articles/2025/2025-07-12-intro-to-asd/</link>
       <pubDate>Sat, 12 Jul 2025 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2025/2025-07-12-intro-to-asd/</guid>
+      <guid>/articles/2025/2025-07-12-intro-to-asd/</guid>
       <description>The Australian Signals Directorate (ASD) leads the nation’s cyber defence through the Essential Eight, the Information Security Manual, and the Cyber Incident Response Plan. Together with the Australian Cyber Security Centre, this guidance empowers organisations to strengthen defences, benchmark maturity, and contribute to Australia’s collective digital resilience.</description>
     </item>
     <item>
       <title>The CIA Triad</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2025/2025-07-11-cia-triad/</link>
+      <link>/articles/2025/2025-07-11-cia-triad/</link>
       <pubDate>Fri, 11 Jul 2025 23:38:04 +0800</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2025/2025-07-11-cia-triad/</guid>
+      <guid>/articles/2025/2025-07-11-cia-triad/</guid>
       <description>Confidentiality, Integrity, and Availability is the foundation of cybersecurity. It ensures sensitive data remains private, accurate, and accessible to authorised users.  Balancing these three elements strengthens resilience and tailors security priorities to the needs of an organisation.</description>
     </item>
     <item>
       <title>Basics of Cyber Security Requirements</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2025/2025-07-10-basics-cyber-security-requirements/</link>
+      <link>/articles/2025/2025-07-10-basics-cyber-security-requirements/</link>
       <pubDate>Thu, 10 Jul 2025 08:30:33 +0800</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2025/2025-07-10-basics-cyber-security-requirements/</guid>
+      <guid>/articles/2025/2025-07-10-basics-cyber-security-requirements/</guid>
       <description>Cybersecurity is a core business requirement built on analysing assets, threats, and risks. Using frameworks and maturity models, organisations align security with objectives and compliance. A proactive, structured approach ensures resilience, safeguards assets, and strengthens business continuity against evolving threats.</description>
     </item>
     <item>
       <title>Cyber Security. Not What I thought</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2025/2025-07-03-cyber-security-not-what-i-thought/</link>
+      <link>/articles/2025/2025-07-03-cyber-security-not-what-i-thought/</link>
       <pubDate>Thu, 03 Jul 2025 21:09:33 +0800</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2025/2025-07-03-cyber-security-not-what-i-thought/</guid>
+      <guid>/articles/2025/2025-07-03-cyber-security-not-what-i-thought/</guid>
       <description>When introduced to cybersecurity after a career in industrial commissioning, I discovered it is less dramatic then Hollywood movies and more about structured processes, testing, documentation, and discipline. a commissioning and testing background proved surprisingly relevant, making cybersecurity familiar and less intimidating.</description>
     </item>
     <item>
       <title>Auditing Network Assets</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2025/2025-05-06-auditing-system-assets/</link>
+      <link>/articles/2025/2025-05-06-auditing-system-assets/</link>
       <pubDate>Tue, 06 May 2025 09:47:21 +0800</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2025/2025-05-06-auditing-system-assets/</guid>
+      <guid>/articles/2025/2025-05-06-auditing-system-assets/</guid>
       <description>Network system asset audits validate that hardware and software controls align with policies and standards. They uncover vulnerabilities, ensure compliance, and provide assurance for stronger governance and security resilience.</description>
     </item>
     <item>
       <title>Assessing Network and Security Policy</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2025/2025-05-03-assessing-network-policy/</link>
+      <link>/articles/2025/2025-05-03-assessing-network-policy/</link>
       <pubDate>Sat, 03 May 2025 18:17:52 +0800</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2025/2025-05-03-assessing-network-policy/</guid>
+      <guid>/articles/2025/2025-05-03-assessing-network-policy/</guid>
       <description>Strong network security goes beyond firewalls, it relies on policies, access controls, and regular assessments.  Clear governance, technical safeguards, and incident response procedures establish a framework of prevention, detection, and response.  By enforcing least-privilege access and auditing compatibility with organisational requirements, policies become active controls, protecting systems, data, and people against evolving threats.</description>
     </item>
     <item>
       <title>Wireshark capture permission errors</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2017/2017-03-18-wireshark-capture-permission-errors/</link>
+      <link>/articles/2017/2017-03-18-wireshark-capture-permission-errors/</link>
       <pubDate>Sat, 18 Mar 2017 14:30:06 +0000</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2017/2017-03-18-wireshark-capture-permission-errors/</guid>
+      <guid>/articles/2017/2017-03-18-wireshark-capture-permission-errors/</guid>
       <description>I installed Wireshark the other day on Ubuntu 16.10 so I could analyse what is going over the wire in GNS3 and later on physical network topologies. Unfortunately, Wireshark has implemented Privilege Separation which means that the Wireshark GUI (or the tshark CLI) can run as a normal user while the dumpcap capture utility runs as root</description>
     </item>
   </channel>

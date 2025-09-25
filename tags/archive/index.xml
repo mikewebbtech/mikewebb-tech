@@ -2,66 +2,66 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Archive on Mike Webb Tech</title>
-    <link>http://localhost:1313/mikewebb-tech/tags/archive/</link>
+    <link>/tags/archive/</link>
     <description>Recent content in Archive on Mike Webb Tech</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 21 Mar 2020 11:25:23 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/mikewebb-tech/tags/archive/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/archive/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Busy busy</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2020/2020-03-21-busy-busy/</link>
+      <link>/articles/2020/2020-03-21-busy-busy/</link>
       <pubDate>Sat, 21 Mar 2020 11:25:23 +0000</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2020/2020-03-21-busy-busy/</guid>
+      <guid>/articles/2020/2020-03-21-busy-busy/</guid>
       <description>It’s been a flat out year so far with work doing various commissioning and testing jobs around OZ. With all that has been happening lately with COVID-19, lockdowns and essential workers to keep it all ticking along.</description>
     </item>
     <item>
       <title>DB30 done and dusted</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2008/2008-05-12-db30-done-and-dusted/</link>
+      <link>/articles/2008/2008-05-12-db30-done-and-dusted/</link>
       <pubDate>Mon, 12 May 2008 22:56:44 +0000</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2008/2008-05-12-db30-done-and-dusted/</guid>
+      <guid>/articles/2008/2008-05-12-db30-done-and-dusted/</guid>
       <description>Got the official end of contract in the mail the other day, so thayts all folks for the topside work on the barge. McD&amp;rsquo;s were making noises that sounded like</description>
     </item>
     <item>
       <title>Been a while..Been busy</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2008/2008-05-01-been-a-whilebeen-busy/</link>
+      <link>/articles/2008/2008-05-01-been-a-whilebeen-busy/</link>
       <pubDate>Thu, 01 May 2008 15:19:31 +0000</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2008/2008-05-01-been-a-whilebeen-busy/</guid>
+      <guid>/articles/2008/2008-05-01-been-a-whilebeen-busy/</guid>
       <description>After a busy stretch offshore, I’ve been focused on sending out CVs and chasing dive opportunities with larger, reputable companies. I’m steering clear of small civils outfits, sticking with offshore work for now. It’s been easier jobs lately, but I’m planning ahead with training courses to stay sharp.</description>
     </item>
     <item>
       <title>Lost in Sydney with sore thumbs</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2008/2008-03-18-lost-in-sydney-with-sore-thumbs/</link>
+      <link>/articles/2008/2008-03-18-lost-in-sydney-with-sore-thumbs/</link>
       <pubDate>Tue, 18 Mar 2008 10:19:41 +0000</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2008/2008-03-18-lost-in-sydney-with-sore-thumbs/</guid>
+      <guid>/articles/2008/2008-03-18-lost-in-sydney-with-sore-thumbs/</guid>
       <description>It’s been a hectic month! The Caltex TAR in Sydney started with a rough arrival—no one to meet me, no info, and no answers. Luckily, an ex-supervisor helped me out. Once on-site, the job was easier than expected, with just 12 days of console operations. But some parts were tricky, like handling pyrophoric tube bundles. I even got a day off in Sydney, but ended up getting hopelessly lost trying to see the sights. At least I got home early to Tanja!</description>
     </item>
     <item>
       <title>On the go again</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2008/2008-02-10-on-the-go-again/</link>
+      <link>/articles/2008/2008-02-10-on-the-go-again/</link>
       <pubDate>Sun, 10 Feb 2008 15:27:31 +0000</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2008/2008-02-10-on-the-go-again/</guid>
+      <guid>/articles/2008/2008-02-10-on-the-go-again/</guid>
       <description>Well after a short stay at home, I&amp;rsquo;m waiting at Perth airport off to another job. Caltex in Sydney for 20 odd days doing something, not to sure&amp;hellip;</description>
     </item>
     <item>
       <title>Thank god that&#39;s over with</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2008/2008-02-09-thank-god-thats-over-with/</link>
+      <link>/articles/2008/2008-02-09-thank-god-thats-over-with/</link>
       <pubDate>Sat, 09 Feb 2008 11:45:44 +0000</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2008/2008-02-09-thank-god-thats-over-with/</guid>
+      <guid>/articles/2008/2008-02-09-thank-god-thats-over-with/</guid>
       <description>The last offshore trip was a mix of challenges—oil, sand, and mud, plus a malfunctioning pig. But Veranus Island was a paradise with its stunning beaches, clear waters, and turtle breeding season. Despite the intense heat and humidity, it’s great to be home and plan for more dive work ahead.</description>
     </item>
     <item>
       <title>Seems to be the order of the month</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2008/seems-to-be-the-order-of-the-month/</link>
+      <link>/articles/2008/seems-to-be-the-order-of-the-month/</link>
       <pubDate>Fri, 25 Jan 2008 19:51:51 +0000</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2008/seems-to-be-the-order-of-the-month/</guid>
+      <guid>/articles/2008/seems-to-be-the-order-of-the-month/</guid>
       <description>Getting shafted by companies canning a job last minute is the name of the game I guess. First they rang me up, booked me in and gave me the onboarding headache then go to ground ghosting or dangle the carrot or worst, the next week, next week&amp;hellip;then no go.  while turning down other opportunities.</description>
     </item>
     <item>
       <title>Damit</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2008/2008-01-14-damit-damit/</link>
+      <link>/articles/2008/2008-01-14-damit-damit/</link>
       <pubDate>Mon, 14 Jan 2008 06:22:50 +0800</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2008/2008-01-14-damit-damit/</guid>
+      <guid>/articles/2008/2008-01-14-damit-damit/</guid>
       <description>In the diving industry, it&amp;rsquo;s frustrating when companies rush to secure divers for urgent projects, only to cancel the job at the last minute. While it makes sense from a company’s perspective, it’s a hassle for divers who’ve already turned down other work. Sometimes, rushed jobs are just a sign of trouble ahead.</description>
     </item>
   </channel>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Fedora on Mike Webb Tech</title>
-    <link>http://localhost:1313/mikewebb-tech/tags/fedora/</link>
+    <link>/tags/fedora/</link>
     <description>Recent content in Fedora on Mike Webb Tech</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 18 Jan 2018 21:15:04 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/mikewebb-tech/tags/fedora/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/fedora/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Kernel patch and compile the Fedora way</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2018/2018-01-18-kernel-patch-and-compile-the-fedora-way/</link>
+      <link>/articles/2018/2018-01-18-kernel-patch-and-compile-the-fedora-way/</link>
       <pubDate>Thu, 18 Jan 2018 21:15:04 +0000</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2018/2018-01-18-kernel-patch-and-compile-the-fedora-way/</guid>
+      <guid>/articles/2018/2018-01-18-kernel-patch-and-compile-the-fedora-way/</guid>
       <description>Each distribution has a preferred way which tends to result in a nice reusable packaged compatible to specific package management system. For this scenario I&amp;rsquo;ll focus on Fedora 27</description>
     </item>
   </channel>

@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Assets on Mike Webb Tech</title>
-    <link>http://localhost:1313/mikewebb-tech/tags/assets/</link>
+    <link>/tags/assets/</link>
     <description>Recent content in Assets on Mike Webb Tech</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 29 Jul 2025 20:30:33 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/mikewebb-tech/tags/assets/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/assets/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ICT Assets and Asset Registers</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2025/2025-07-13-ict-asset-register/</link>
+      <link>/articles/2025/2025-07-13-ict-asset-register/</link>
       <pubDate>Tue, 29 Jul 2025 20:30:33 +0800</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2025/2025-07-13-ict-asset-register/</guid>
+      <guid>/articles/2025/2025-07-13-ict-asset-register/</guid>
       <description>ICT assets include hardware, software, information, infrastructure, skilled personnel, and outsourced services. An asset register systematically documents these, forming the foundation of IT asset management.  It tracks lifecycle, reduces risks, prevents waste, and documents vulnerabilities.  Maintaining a detailed register ensures risk management focuses on protecting the organisation’s most valuable resources.</description>
     </item>
     <item>
       <title>Auditing Network Assets</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2025/2025-05-06-auditing-system-assets/</link>
+      <link>/articles/2025/2025-05-06-auditing-system-assets/</link>
       <pubDate>Tue, 06 May 2025 09:47:21 +0800</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2025/2025-05-06-auditing-system-assets/</guid>
+      <guid>/articles/2025/2025-05-06-auditing-system-assets/</guid>
       <description>Network system asset audits validate that hardware and software controls align with policies and standards. They uncover vulnerabilities, ensure compliance, and provide assurance for stronger governance and security resilience.</description>
     </item>
   </channel>

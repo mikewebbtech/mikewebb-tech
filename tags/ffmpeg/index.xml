@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ffmpeg on Mike Webb Tech</title>
-    <link>http://localhost:1313/mikewebb-tech/tags/ffmpeg/</link>
+    <link>/tags/ffmpeg/</link>
     <description>Recent content in Ffmpeg on Mike Webb Tech</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 24 May 2017 11:30:43 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/mikewebb-tech/tags/ffmpeg/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/ffmpeg/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Improve FFmpeg x264/AAC quality</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2017/2017-05-24-improve-ffmpeg-x264aac-quality/</link>
+      <link>/articles/2017/2017-05-24-improve-ffmpeg-x264aac-quality/</link>
       <pubDate>Wed, 24 May 2017 11:30:43 +0000</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2017/2017-05-24-improve-ffmpeg-x264aac-quality/</guid>
+      <guid>/articles/2017/2017-05-24-improve-ffmpeg-x264aac-quality/</guid>
       <description>Install and use the open source FFmpeg utility on macOS for high quality audio and video encoding and transcoding with support for x two AAC-LC encoders (aac &amp;amp; libfdk_aac) and one HE-AAC(v1/2) encoder (libfdk_aac).</description>
     </item>
   </channel>
