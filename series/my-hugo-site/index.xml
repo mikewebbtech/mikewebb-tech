@@ -6,14 +6,28 @@
     <description>Recent content in My Hugo Site on Mike Webb Tech</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 25 Sep 2025 12:10:33 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 28 Sep 2025 00:00:00 +0800</lastBuildDate>
     <atom:link href="https://mikewebbtech.github.io/mikewebb-tech/series/my-hugo-site/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Creating a Hugo Taxonomy</title>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-04-28-create-hugo-series/</link>
+      <pubDate>Sun, 28 Sep 2025 00:00:00 +0800</pubDate>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-04-28-create-hugo-series/</guid>
+      <description>I outline the process I used to create a custom Hugo Taxonomy so could have articles ordered into a series.  There are a lot of moving parts in getting this to work.  Hopefully gets the broad strokes explained with the resources I used to help me.</description>
+    </item>
+    <item>
+      <title>Hugo Breadcrumbs</title>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-09-26-hugo-breadcrumbs/</link>
+      <pubDate>Sat, 27 Sep 2025 08:57:08 +0800</pubDate>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-09-26-hugo-breadcrumbs/</guid>
+      <description>Getting breadcrumbs to work using Hugo shortcodes is doable with some effort and a lot of CSS.  But it might not work as expected.  Let me explain</description>
+    </item>
     <item>
       <title>Article Cards on Homepage</title>
       <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-09-25-article-cards/</link>
       <pubDate>Thu, 25 Sep 2025 12:10:33 +0800</pubDate>
       <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-09-25-article-cards/</guid>
-      <description>The article explains how to display the four most recent articles as styled cards on the homepage by extend Hugo functionality using custom shortcodes and calling them in markdown files and CSS.</description>
+      <description>This is how I display the four most recent articles as styled cards on the homepage by extend Hugo functionality using custom shortcodes and calling them in markdown files and CSS.</description>
     </item>
     <item>
       <title>Decoupling my Content</title>

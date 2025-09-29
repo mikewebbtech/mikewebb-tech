@@ -6,12 +6,12 @@
     <description>Recent content in Categories on Mike Webb Tech</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 25 Sep 2025 12:10:33 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 28 Sep 2025 00:00:00 +0800</lastBuildDate>
     <atom:link href="https://mikewebbtech.github.io/mikewebb-tech/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugo</title>
       <link>https://mikewebbtech.github.io/mikewebb-tech/categories/hugo/</link>
-      <pubDate>Thu, 25 Sep 2025 12:10:33 +0800</pubDate>
+      <pubDate>Sun, 28 Sep 2025 00:00:00 +0800</pubDate>
       <guid>https://mikewebbtech.github.io/mikewebb-tech/categories/hugo/</guid>
       <description>&lt;p&gt;Creating my site using Hugo static site generator. Learn its architecture, templating system, shortcodes, and data organization. Explore practical examples of site development, theme creation and content creation, with a touch of deployment pipelines. Discover techniques for building performant and maintainable websites with a focus on speed and simplicity.&lt;/p&gt;</description>
     </item>

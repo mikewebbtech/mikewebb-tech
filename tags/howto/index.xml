@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Howto on Mike Webb Tech</title>
+    <link>https://mikewebbtech.github.io/mikewebb-tech/tags/howto/</link>
+    <description>Recent content in Howto on Mike Webb Tech</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 28 Sep 2025 00:00:00 +0800</lastBuildDate>
+    <atom:link href="https://mikewebbtech.github.io/mikewebb-tech/tags/howto/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Creating a Hugo Taxonomy</title>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-04-28-create-hugo-series/</link>
+      <pubDate>Sun, 28 Sep 2025 00:00:00 +0800</pubDate>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-04-28-create-hugo-series/</guid>
+      <description>I outline the process I used to create a custom Hugo Taxonomy so could have articles ordered into a series.  There are a lot of moving parts in getting this to work.  Hopefully gets the broad strokes explained with the resources I used to help me.</description>
+    </item>
+  </channel>
+</rss>

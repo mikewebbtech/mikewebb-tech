@@ -6,12 +6,12 @@
     <description>Recent content in Series on Mike Webb Tech</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 25 Sep 2025 12:10:33 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 28 Sep 2025 00:00:00 +0800</lastBuildDate>
     <atom:link href="https://mikewebbtech.github.io/mikewebb-tech/series/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My Hugo Site</title>
       <link>https://mikewebbtech.github.io/mikewebb-tech/series/my-hugo-site/</link>
-      <pubDate>Thu, 25 Sep 2025 12:10:33 +0800</pubDate>
+      <pubDate>Sun, 28 Sep 2025 00:00:00 +0800</pubDate>
       <guid>https://mikewebbtech.github.io/mikewebb-tech/series/my-hugo-site/</guid>
       <description>&lt;p&gt;How I am creating this site using the HUGO Static Site Generator framework&lt;/p&gt;</description>
     </item>
