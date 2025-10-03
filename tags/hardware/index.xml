@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hardware on Mike Webb Tech</title>
-    <link>https://mikewebbtech.github.io/mikewebb-tech/tags/hardware/</link>
+    <link>http://localhost:1313/mikewebb-tech/tags/hardware/</link>
     <description>Recent content in Hardware on Mike Webb Tech</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 05 Jan 2019 13:24:45 +0000</lastBuildDate>
-    <atom:link href="https://mikewebbtech.github.io/mikewebb-tech/tags/hardware/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/mikewebb-tech/tags/hardware/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Toe dip into Home Automation</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2019/2019-01-05-toe-dip-into-home-automation/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2019/2019-01-05-toe-dip-into-home-automation/</link>
       <pubDate>Sat, 05 Jan 2019 13:24:45 +0000</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2019/2019-01-05-toe-dip-into-home-automation/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2019/2019-01-05-toe-dip-into-home-automation/</guid>
       <description>I see the need for home automation.  Well&amp;hellip;I would like to explore this technology and make it work for me.  There are so many options and there are some very expensive options, not just cost but in privacy and closed ecosystem risks.</description>
     </item>
     <item>
       <title>Powering On/Off Juniper SRX320.</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-09-07-powering-onoff-juniper-srx320/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2018/2018-09-07-powering-onoff-juniper-srx320/</link>
       <pubDate>Fri, 07 Sep 2018 09:48:15 +0000</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-09-07-powering-onoff-juniper-srx320/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2018/2018-09-07-powering-onoff-juniper-srx320/</guid>
       <description>Always use the graceful method unless absolutely necessary.  i.e don&amp;rsquo;t just yank the power cord out. There is console less method and a CLI method over the network</description>
     </item>
     <item>
       <title>Using IPMI to control PWM fans	References:</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-06-01-using-ipmi-to-control-pwm-fans-reference/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2018/2018-06-01-using-ipmi-to-control-pwm-fans-reference/</link>
       <pubDate>Fri, 01 Jun 2018 10:02:55 +0000</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-06-01-using-ipmi-to-control-pwm-fans-reference/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2018/2018-06-01-using-ipmi-to-control-pwm-fans-reference/</guid>
       <description>IPMI is more then a way to access servers over the network without them powered up (lights out, out of band etc).  It is an Intelligent Platform Management Interface,  it can be used to interface with the hardware layer in ways the OS can&amp;rsquo;t.  Let&amp;rsquo;s use it  to control some fans.</description>
     </item>
     <item>
       <title>Nested Virtualisation</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-03-22-nested-virtualisation/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2017/2017-03-22-nested-virtualisation/</link>
       <pubDate>Wed, 22 Mar 2017 17:16:48 +0000</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-03-22-nested-virtualisation/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2017/2017-03-22-nested-virtualisation/</guid>
       <description>Hosting a virtual machine inside a virtual machine KVM trickery for conceptualisation and testing. If your server/host supports VT-x, it goes to say so should the guests.</description>
     </item>
     <item>
       <title>Bluetooth USB dongle firmware error in Ubuntu</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-02-13-bluetooth-usb-dongle-firmware-error/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2017/2017-02-13-bluetooth-usb-dongle-firmware-error/</link>
       <pubDate>Mon, 13 Feb 2017 10:44:09 +0000</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-02-13-bluetooth-usb-dongle-firmware-error/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2017/2017-02-13-bluetooth-usb-dongle-firmware-error/</guid>
       <description>After having a running battle with my, what turns out, cheap Chinese CSR clone bluetooth USB adaptor (maybe more on that in another post). I purchased a more expensive adaptor&amp;hellip;</description>
     </item>
   </channel>

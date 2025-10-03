@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Server on Mike Webb Tech</title>
-    <link>https://mikewebbtech.github.io/mikewebb-tech/tags/server/</link>
+    <link>http://localhost:1313/mikewebb-tech/tags/server/</link>
     <description>Recent content in Server on Mike Webb Tech</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 15 Aug 2022 11:13:50 +0000</lastBuildDate>
-    <atom:link href="https://mikewebbtech.github.io/mikewebb-tech/tags/server/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/mikewebb-tech/tags/server/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>FreeIPA Centos 8 lxc Replica Server</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2022/2022-08-15-freeipa-centos-8-lxc-replica-server/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2022/2022-08-15-freeipa-centos-8-lxc-replica-server/</link>
       <pubDate>Mon, 15 Aug 2022 11:13:50 +0000</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2022/2022-08-15-freeipa-centos-8-lxc-replica-server/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2022/2022-08-15-freeipa-centos-8-lxc-replica-server/</guid>
       <description>FreeIPA is to linux as Active Directory is to Windows.  Like AD for Windows, FreeIPA should have a replica for high availability. This is a walk though on how I got it setup and running in CentOS 8 LXC container on Proxmox VE server.  Low resource demands compared to a dedicated vurtual machine.</description>
     </item>
     <item>
       <title>FreeIPA in CentOS 8 LXC container</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2021/2021-04-01-freeipa-in-centos-8-lxc-container/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2021/2021-04-01-freeipa-in-centos-8-lxc-container/</link>
       <pubDate>Thu, 01 Apr 2021 10:57:39 +0000</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2021/2021-04-01-freeipa-in-centos-8-lxc-container/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2021/2021-04-01-freeipa-in-centos-8-lxc-container/</guid>
       <description>FreeIPA is to linux as Active Directory is to Windows.  This is a walk though on how I got it setup and running in CentOS 8 LXC container on Proxmox VE server.  Low resource demands compared to a dedicated vurtual machine.</description>
     </item>
     <item>
       <title>SAS disk power mode control</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-10-08-sas-disk-power-mode-control/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2018/2018-10-08-sas-disk-power-mode-control/</link>
       <pubDate>Mon, 08 Oct 2018 15:54:58 +0000</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-10-08-sas-disk-power-mode-control/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2018/2018-10-08-sas-disk-power-mode-control/</guid>
       <description>My hard drives were spinning at 7600 RPM 24/7, this is fine for aa actual server for the masses or in DC, but total overkill for my intermittent needs. Why do I want power control over my spinning rust&amp;hellip;spin down to save noise and heat = save energy.</description>
     </item>
     <item>
       <title>eBay Score of the Century</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-06-15-infiniband-equipment/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2018/2018-06-15-infiniband-equipment/</link>
       <pubDate>Fri, 15 Jun 2018 03:09:38 +0000</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-06-15-infiniband-equipment/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2018/2018-06-15-infiniband-equipment/</guid>
       <description>how about a smoking network I&amp;rsquo;m redoing my home and lab network with the goal to go 10Gb/s.  Let&amp;rsquo;s up that and go 40Gb/s and while were are at it let&amp;rsquo;s take it even further with 56Gb/s&amp;hellip;.with a twist. I found Infiniband hardware cheaper then ethernet and it can do both</description>
     </item>
     <item>
       <title>Using IPMI to control PWM fans	References:</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-06-01-using-ipmi-to-control-pwm-fans-reference/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2018/2018-06-01-using-ipmi-to-control-pwm-fans-reference/</link>
       <pubDate>Fri, 01 Jun 2018 10:02:55 +0000</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-06-01-using-ipmi-to-control-pwm-fans-reference/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2018/2018-06-01-using-ipmi-to-control-pwm-fans-reference/</guid>
       <description>IPMI is more then a way to access servers over the network without them powered up (lights out, out of band etc).  It is an Intelligent Platform Management Interface,  it can be used to interface with the hardware layer in ways the OS can&amp;rsquo;t.  Let&amp;rsquo;s use it  to control some fans.</description>
     </item>
     <item>
       <title>Debian 8 installed on UEFI systems</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-01-27-debian-8-installed-on-uefi-systems/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2017/2017-01-27-debian-8-installed-on-uefi-systems/</link>
       <pubDate>Fri, 27 Jan 2017 20:27:41 +0000</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-01-27-debian-8-installed-on-uefi-systems/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2017/2017-01-27-debian-8-installed-on-uefi-systems/</guid>
       <description>Absolute pain getting Debian installed on my UEFI only sytem. When working through the installation process until the boot loader tries to install and this message occurs.</description>
     </item>
   </channel>

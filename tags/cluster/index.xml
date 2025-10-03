@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cluster on Mike Webb Tech</title>
-    <link>https://mikewebbtech.github.io/mikewebb-tech/tags/cluster/</link>
+    <link>http://localhost:1313/mikewebb-tech/tags/cluster/</link>
     <description>Recent content in Cluster on Mike Webb Tech</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 27 Mar 2017 10:13:52 +0000</lastBuildDate>
-    <atom:link href="https://mikewebbtech.github.io/mikewebb-tech/tags/cluster/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/mikewebb-tech/tags/cluster/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>QEMU-GlusterFS native integration</title>
-      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-03-27-qemu-glusterfs-native-integration/</link>
+      <link>http://localhost:1313/mikewebb-tech/articles/2017/2017-03-27-qemu-glusterfs-native-integration/</link>
       <pubDate>Mon, 27 Mar 2017 10:13:52 +0000</pubDate>
-      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-03-27-qemu-glusterfs-native-integration/</guid>
+      <guid>http://localhost:1313/mikewebb-tech/articles/2017/2017-03-27-qemu-glusterfs-native-integration/</guid>
       <description>GlusterFS Software Defined Storage cluster provides a robusts solution for oVirt self hosted engine yields positive results using native integration</description>
     </item>
   </channel>

@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="en"><head>
+<html lang="en"><head><script src="/mikewebb-tech/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=mikewebb-tech/livereload" data-no-instant defer></script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="generator" content="Hugo 0.147.3">
-  <title>Hugo Breadcrumbs</title><link rel="stylesheet" href="https://mikewebbtech.github.io/mikewebb-tech/css/style.min.8a67defbf8fdf558fcd442b56150ff3b6b45a77db618d153fed74316ded5f38e.css" />
+  <title>Hugo Breadcrumbs</title><link rel="stylesheet" href="http://localhost:1313/mikewebb-tech/css/style.min.57c0fda3a2cb88fa284d3e21ea197c5f5f0942167fa49f388d04a2573c580cb8.css" />
   <link rel="icon" type="image/x-icon"  href="/mikewebb-tech/img/favicon.ico" />
   <link rel="apple-touch-icon" sizes="180x180" href="/mikewebb-tech/img/apple-touch-icon.png" />
  
@@ -131,16 +131,7 @@
   </aside>
 <header class="header">
   <h1>Hugo Breadcrumbs</h1>
-  <nav aria-label="breadcrumb" class="breadcrumb">
-  <ol><li>
-      <a href="https://mikewebbtech.github.io/mikewebb-tech/">Home</a>
-    </li><li>
-      <a href="https://mikewebbtech.github.io/mikewebb-tech/articles/">Articles</a>
-    </li><li class="active">
-      <a aria-current="page" href="https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-09-26-hugo-breadcrumbs/">Hugo Breadcrumbs</a>
-    </li></ol>
-</nav>
-
+  
 </header>
 <main class="main">
 
@@ -168,7 +159,8 @@
         <i class="fa-solid fa-layer-group"></i>
         Series:
         <a class="tag" href="/mikewebb-tech/series/my-hugo-site/">My Hugo Site</a>     
-           (Article 2 of 6) 
+           (Article 2 of 7) 
+         
          
          
          
@@ -181,17 +173,19 @@
         <span> All articles in the <strong>"My Hugo Site"</strong> series </span>
       </summary>
       <ol><li>
-              <a href="https://mikewebbtech.github.io/mikewebb-tech/articles/2024/2024-04-27-a-new-blog/">A new blog</a>
+              <a href="http://localhost:1313/mikewebb-tech/articles/2024/2024-04-27-a-new-blog/">A new blog</a>
             </li><li>
-              <a href="https://mikewebbtech.github.io/mikewebb-tech/articles/2024/2024-05-25-embracing-hugo/">Embracing Hugo</a>
+              <a href="http://localhost:1313/mikewebb-tech/articles/2024/2024-05-25-embracing-hugo/">Embracing Hugo</a>
             </li><li>
-              <a href="https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-08-21-decoupling-my-content/">Decoupling my Content</a>
+              <a href="http://localhost:1313/mikewebb-tech/articles/2025/2025-04-28-create-hugo-series/">Creating a Hugo Taxonomy</a>
             </li><li>
-              <a href="https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-09-25-article-cards/">Article Cards on Homepage</a>
+              <a href="http://localhost:1313/mikewebb-tech/articles/2025/2025-08-21-decoupling-my-content/">Decoupling my Content</a>
+            </li><li>
+              <a href="http://localhost:1313/mikewebb-tech/articles/2025/2025-09-25-article-cards/">Article Cards on Homepage</a>
             </li><li class="active">
               <b>Hugo Breadcrumbs</b>
             </li><li>
-              <a href="https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-04-28-create-hugo-series/">Creating a Hugo Taxonomy</a>
+              <a href="http://localhost:1313/mikewebb-tech/articles/2025/2025-10-02-hugo-pagination/">Hugo Pagination</a>
             </li></ol>
     </details></div><div class="post-content"><h1 id="navigation-breadcrumbs">Navigation Breadcrumbs</h1>
 <p>Breadcrumbs are a common navigational aid used on websites to help users keep track of their location in the website by providing a <em>breadcrumb</em> trail back to the start page.  Like a visual link click history displayed on the webpage or a way directly jump back to any point in the history of links that lead to the user arriving at that webpage, starting with the site root.</p>
@@ -314,7 +308,7 @@
     └── tags
         └── _index.md
 </code></pre>
-            <link rel="stylesheet" href="/mikewebb-tech/css/vendors/admonitions.2ffb6a45fb9d5110b10a58395f1bbcc86b1d83a6aa16f7ab1d96498079fa2a86.css" integrity="sha256-L/tqRfudURCxClg5Xxu8yGsdg6aqFverHZZJgHn6KoY=" crossorigin="anonymous">
+          <link rel="stylesheet" href="/mikewebb-tech/css/vendors/admonitions.css">
     <div class="admonition important">
       <div class="admonition-header"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-384c13.3 0 24 10.7 24 24l0 112c0 13.3-10.7 24-24 24s-24-10.7-24-24l0-112c0-13.3 10.7-24 24-24zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/></svg>
         <span>Important</span>
@@ -322,29 +316,29 @@
       <div class="admonition-content">
         <p>Hugo&rsquo;s template methods  (<code>.Ancestors</code>, <code>.Parent</code>, etc.) can only build a <strong>hierarchical breadcrumb</strong> based on the static file structure (e.g., <code>/articels/2025/article</code> always has <code>/articles/</code> as its parent).  It knows nothing about the user&rsquo;s click history. 😒</p>
       </div>
-    </div><p>When navigating to an article via the article pathway:
-Expected : HOME &gt; ARTICLES &gt; &ldquo;TITLE&rdquo;
-✅ Result : HOME &gt;ARTICLES &gt; &ldquo;TITLE&rdquo;</p>
-<p>When navigating to an article via the categories pathway:
-Expected : HOME &gt; CATEGORIES &gt; CLOUD &gt; &ldquo;TITLE&rdquo;
-❌ Result : HOME &gt;ARTICLES &gt; &ldquo;TITLE&rdquo;</p>
-<p>When navigating to an article via the tags pathway:
-Expected : HOME &gt;TAGS &gt; GIT &gt; &ldquo;TITILE&rdquo;
-❌ Result : HOME &gt;ARTICLES &gt; &ldquo;TITLE&rdquo;</p>
-<p>This is the expected behaviour for Hugo breadcrumbs and it makes sense when I stop to think about it.  For Hugo to meet my expectation and render every combination of pathways to an article as static pages, it would need to create thousands of web pages.  This is unrealistic expectation and would produce a massive website.</p>
+    </div><p>When navigating to an article via the article pathway:</p>
+<pre tabindex="0"><code>Expected : HOME &gt; ARTICLES &gt; &#34;TITLE&#34;
+ ✅ Result : HOME &gt;ARTICLES &gt; &#34;TITLE&#34;
+</code></pre><p>When navigating to an article via the categories pathway:</p>
+<pre tabindex="0"><code> Expected : HOME &gt; CATEGORIES &gt; CLOUD &gt; &#34;TITLE&#34;
+ ❌ Result : HOME &gt;ARTICLES &gt; &#34;TITLE&#34;
+</code></pre><p>When navigating to an article via the tags pathway:</p>
+<pre tabindex="0"><code> Expected : HOME &gt;TAGS &gt; GIT &gt; &#34;TITILE&#34;
+ ❌ Result : HOME &gt;ARTICLES &gt; &#34;TITLE&#34;
+</code></pre><p>This is the expected behaviour for Hugo breadcrumbs and it makes sense when I stop to think about it.  For Hugo to meet my expectation and render every combination of pathways to an article as static pages, it would need to create thousands of web pages.  This is unrealistic expectation and would produce a massive website.</p>
 <p>So in my attempt to help a user know where they are in my site and have a logical way back,  I think I might have created a something confusing and non linear.  I guess I was after something similar to the way a browser back button works.</p>
 <p>Maybe I can solve this with a sprinkling of JavaScript 🤔.</p>
 <p>The complete code and site layout is available in my <a href="https://github.com/mikewebbtech">github repo</a>.  I will link to directly to the <a href="https://github.com/mikewebbtech/mikewebbtech-hugo/tree/339f5b149e93c9cf97514f8d5e4e578b4048393d">commit shown in this article</a> for consistency.  There is good chance that this will evolve</p>
 </div>
 
   <div class="post-footer"></div><div class="post-series-bottom"><div class="pagination-buttons"><span class="button previous">
-    <a href="https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-09-25-article-cards/" title="PREVIOUS ARTICLE">
+    <a href="http://localhost:1313/mikewebb-tech/articles/2025/2025-09-25-article-cards/" title="PREVIOUS ARTICLE">
       <span class="button-icon">←</span>
-      <span class="button-ext">4. Article Cards on Homepage</span>
+      <span class="button-text">5. Article Cards on Homepage</span>
     </a>
   </span><span class="button next">
-    <a href="https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-04-28-create-hugo-series/" title="NEXT ARTICLE">
-      <span class="button-text">6. Creating a Hugo Taxonomy</span>
+    <a href="http://localhost:1313/mikewebb-tech/articles/2025/2025-10-02-hugo-pagination/" title="NEXT ARTICLE">
+      <span class="button-text">7. Hugo Pagination</span>
       <span class="button-icon">→</span>
     </a>
   </span></div></div></article>
