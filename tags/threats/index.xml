@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Threats on Mike Webb Tech</title>
-    <link>http://localhost:1313/mikewebb-tech/tags/threats/</link>
+    <link>https://mikewebbtech.github.io/mikewebb-tech/tags/threats/</link>
     <description>Recent content in Threats on Mike Webb Tech</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 02 Sep 2025 00:00:00 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/mikewebb-tech/tags/threats/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mikewebbtech.github.io/mikewebb-tech/tags/threats/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Exploring Implementation Discrepancy</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2025/2025-09-02-exploring-discrepancy/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-09-02-exploring-discrepancy/</link>
       <pubDate>Tue, 02 Sep 2025 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2025/2025-09-02-exploring-discrepancy/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-09-02-exploring-discrepancy/</guid>
       <description>Exploring in more detail the different types of discrepancies that can undermine control effectiveness, including issues with implementation, training, and a changing threat landscape. It provides practical insights into how to detect these gaps and offers a clear, action-oriented remediation checklist to ensure continuous improvement in cybersecurity defences.</description>
     </item>
     <item>
       <title>Cyber Threat Awareness</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2025/2025-07-16-cyber-threat-awareness/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-07-16-cyber-threat-awareness/</link>
       <pubDate>Tue, 29 Jul 2025 22:17:47 +0800</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2025/2025-07-16-cyber-threat-awareness/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-07-16-cyber-threat-awareness/</guid>
       <description>To build proactive cybersecurity defenses, a foundational understanding of the threat landscape is required. By comprehending common cyber threats like phishing, ransomware, and viruses, an organization can inform risk assessments and prioritise security controls.</description>
     </item>
     <item>
       <title>ICT Assets and Asset Registers</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2025/2025-07-29-ict-asset-register/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-07-29-ict-asset-register/</link>
       <pubDate>Tue, 29 Jul 2025 20:30:33 +0800</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2025/2025-07-29-ict-asset-register/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-07-29-ict-asset-register/</guid>
       <description>ICT assets include hardware, software, information, infrastructure, skilled personnel, and outsourced services. An asset register systematically documents these, forming the foundation of IT asset management.  It tracks lifecycle, reduces risks, prevents waste, and documents vulnerabilities.  Maintaining a detailed register ensures risk management focuses on protecting the organisation’s most valuable resources.</description>
     </item>
   </channel>

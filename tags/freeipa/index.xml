@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>FreeIPA on Mike Webb Tech</title>
-    <link>http://localhost:1313/mikewebb-tech/tags/freeipa/</link>
+    <link>https://mikewebbtech.github.io/mikewebb-tech/tags/freeipa/</link>
     <description>Recent content in FreeIPA on Mike Webb Tech</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 15 Aug 2022 11:13:50 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/mikewebb-tech/tags/freeipa/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mikewebbtech.github.io/mikewebb-tech/tags/freeipa/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>FreeIPA Centos 8 lxc Replica Server</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2022/2022-08-15-freeipa-centos-8-lxc-replica-server/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2022/2022-08-15-freeipa-centos-8-lxc-replica-server/</link>
       <pubDate>Mon, 15 Aug 2022 11:13:50 +0000</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2022/2022-08-15-freeipa-centos-8-lxc-replica-server/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2022/2022-08-15-freeipa-centos-8-lxc-replica-server/</guid>
       <description>FreeIPA is to linux as Active Directory is to Windows.  Like AD for Windows, FreeIPA should have a replica for high availability. This is a walk though on how I got it setup and running in CentOS 8 LXC container on Proxmox VE server.  Low resource demands compared to a dedicated vurtual machine.</description>
     </item>
     <item>
       <title>FreeIPA in CentOS 8 LXC container</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2021/2021-04-01-freeipa-in-centos-8-lxc-container/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2021/2021-04-01-freeipa-in-centos-8-lxc-container/</link>
       <pubDate>Thu, 01 Apr 2021 10:57:39 +0000</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2021/2021-04-01-freeipa-in-centos-8-lxc-container/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2021/2021-04-01-freeipa-in-centos-8-lxc-container/</guid>
       <description>FreeIPA is to linux as Active Directory is to Windows.  This is a walk though on how I got it setup and running in CentOS 8 LXC container on Proxmox VE server.  Low resource demands compared to a dedicated vurtual machine.</description>
     </item>
   </channel>

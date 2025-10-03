@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Howto on Mike Webb Tech</title>
-    <link>http://localhost:1313/mikewebb-tech/tags/howto/</link>
+    <link>https://mikewebbtech.github.io/mikewebb-tech/tags/howto/</link>
     <description>Recent content in Howto on Mike Webb Tech</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 02 Oct 2025 00:00:00 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/mikewebb-tech/tags/howto/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mikewebbtech.github.io/mikewebb-tech/tags/howto/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugo Pagination</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2025/2025-10-02-hugo-pagination/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-10-02-hugo-pagination/</link>
       <pubDate>Thu, 02 Oct 2025 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2025/2025-10-02-hugo-pagination/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-10-02-hugo-pagination/</guid>
       <description>In implementing a list pagination feature for my site, I pivoted from complex custom code to using Hugo&amp;rsquo;s robust built-in template. This saved development time, which was better spent styling the default HTML output with custom CSS.</description>
     </item>
     <item>
       <title>Creating a Hugo Taxonomy</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2025/2025-04-28-create-hugo-series/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-04-28-create-hugo-series/</link>
       <pubDate>Mon, 28 Apr 2025 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2025/2025-04-28-create-hugo-series/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-04-28-create-hugo-series/</guid>
       <description>I outline the process I used to create a custom Hugo Taxonomy so could have articles ordered into a series.  There are a lot of moving parts in getting this to work.  Hopefully gets the broad strokes explained with the resources I used to help me.</description>
     </item>
   </channel>

@@ -2,59 +2,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Managment on Mike Webb Tech</title>
-    <link>http://localhost:1313/mikewebb-tech/tags/managment/</link>
+    <link>https://mikewebbtech.github.io/mikewebb-tech/tags/managment/</link>
     <description>Recent content in Managment on Mike Webb Tech</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 30 Aug 2025 08:00:00 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/mikewebb-tech/tags/managment/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mikewebbtech.github.io/mikewebb-tech/tags/managment/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Measuring Security</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2025/2025-08-30-measuring-security-effectiveness/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-08-30-measuring-security-effectiveness/</link>
       <pubDate>Sat, 30 Aug 2025 08:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2025/2025-08-30-measuring-security-effectiveness/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-08-30-measuring-security-effectiveness/</guid>
       <description>This article explores the critical process of benchmarking control effectiveness, which ensures security safeguards provide intended protection. It examines how organizations can leverage frameworks like the Essential Eight, NIST, and ISO to measure maturity and track progress. The summary also highlights the importance of addressing discrepancies for continuous improvement and a stronger defense.</description>
     </item>
     <item>
       <title>Implement Security Controls</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2025/2025-08-19-from-plan-to-action/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-08-19-from-plan-to-action/</link>
       <pubDate>Tue, 19 Aug 2025 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2025/2025-08-19-from-plan-to-action/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-08-19-from-plan-to-action/</guid>
       <description>This article examines the process of implementing cybersecurity controls, progressing from strategy to implemented controls.  It outlines the steps to plan, execute, and test security defences to effectively address vulnerabilities.  This ensures that controls are not only implemented but also well documented and maintained for effectiveness.</description>
     </item>
     <item>
       <title>Introduction to Risk and Risk Management</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2025/2025-07-28-introduction-to-risk/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-07-28-introduction-to-risk/</link>
       <pubDate>Mon, 28 Jul 2025 12:22:12 +0800</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2025/2025-07-28-introduction-to-risk/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-07-28-introduction-to-risk/</guid>
       <description>Risk in cybersecurity is the probability of threats exploiting vulnerabilities to impact assets. Risk management involves identifying, assessing, and controlling threats through structured approach of identification, analysis, evaluation, treatment, and monitoring. This strengthens resilience, improves efficiency, and aligns security contols with organisational strategy while addressing evolving digital threats.</description>
     </item>
     <item>
       <title>Introducing the Essential 8</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2025/2025-07-13-intro-to-essential-8/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-07-13-intro-to-essential-8/</link>
       <pubDate>Sun, 13 Jul 2025 09:23:39 +0800</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2025/2025-07-13-intro-to-essential-8/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-07-13-intro-to-essential-8/</guid>
       <description>The Essential Eight is a set of mitigation strategies from the Australian Cyber Security Centre that helps organisations build cyber resilience. The framework&amp;rsquo;s four maturity levels provide a progressive roadmap for implementing control strategies.</description>
     </item>
     <item>
       <title>Basics of Cyber Security Requirements</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2025/2025-07-10-basics-cyber-security-requirements/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-07-10-basics-cyber-security-requirements/</link>
       <pubDate>Thu, 10 Jul 2025 08:30:33 +0800</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2025/2025-07-10-basics-cyber-security-requirements/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-07-10-basics-cyber-security-requirements/</guid>
       <description>Cybersecurity is a core business requirement built on analysing assets, threats, and risks. Using frameworks and maturity models, organisations align security with objectives and compliance. A proactive, structured approach ensures resilience, safeguards assets, and strengthens business continuity against evolving threats.</description>
     </item>
     <item>
       <title>Auditing Network Assets</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2025/2025-05-06-auditing-system-assets/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-05-06-auditing-system-assets/</link>
       <pubDate>Tue, 06 May 2025 09:47:21 +0800</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2025/2025-05-06-auditing-system-assets/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-05-06-auditing-system-assets/</guid>
       <description>Network system asset audits validate that hardware and software controls align with policies and standards. They uncover vulnerabilities, ensure compliance, and provide assurance for stronger governance and security resilience.</description>
     </item>
     <item>
       <title>Assessing Network and Security Policy</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2025/2025-05-03-assessing-network-policy/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-05-03-assessing-network-policy/</link>
       <pubDate>Sat, 03 May 2025 18:17:52 +0800</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2025/2025-05-03-assessing-network-policy/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-05-03-assessing-network-policy/</guid>
       <description>Strong network security goes beyond firewalls, it relies on policies, access controls, and regular assessments.  Clear governance, technical safeguards, and incident response procedures establish a framework of prevention, detection, and response.  By enforcing least-privilege access and auditing compatibility with organisational requirements, policies become active controls, protecting systems, data, and people against evolving threats.</description>
     </item>
   </channel>

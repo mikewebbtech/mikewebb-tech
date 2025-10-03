@@ -2,73 +2,73 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog on Mike Webb Tech</title>
-    <link>http://localhost:1313/mikewebb-tech/tags/blog/</link>
+    <link>https://mikewebbtech.github.io/mikewebb-tech/tags/blog/</link>
     <description>Recent content in Blog on Mike Webb Tech</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 02 Oct 2025 00:00:00 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/mikewebb-tech/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mikewebbtech.github.io/mikewebb-tech/tags/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugo Pagination</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2025/2025-10-02-hugo-pagination/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-10-02-hugo-pagination/</link>
       <pubDate>Thu, 02 Oct 2025 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2025/2025-10-02-hugo-pagination/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-10-02-hugo-pagination/</guid>
       <description>In implementing a list pagination feature for my site, I pivoted from complex custom code to using Hugo&amp;rsquo;s robust built-in template. This saved development time, which was better spent styling the default HTML output with custom CSS.</description>
     </item>
     <item>
       <title>Hugo Breadcrumbs</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2025/2025-09-26-hugo-breadcrumbs/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-09-26-hugo-breadcrumbs/</link>
       <pubDate>Sat, 27 Sep 2025 08:57:08 +0800</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2025/2025-09-26-hugo-breadcrumbs/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-09-26-hugo-breadcrumbs/</guid>
       <description>Getting breadcrumbs to work using Hugo shortcodes is doable with some effort and a lot of CSS.  But it might not work as expected.  Let me explain</description>
     </item>
     <item>
       <title>Article Cards on Homepage</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2025/2025-09-25-article-cards/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-09-25-article-cards/</link>
       <pubDate>Thu, 25 Sep 2025 12:10:33 +0800</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2025/2025-09-25-article-cards/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-09-25-article-cards/</guid>
       <description>This is how I display the four most recent articles as styled cards on the homepage by extend Hugo functionality using custom shortcodes and calling them in markdown files and CSS.</description>
     </item>
     <item>
       <title>Testing markup callouts</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2025/2025-05-02-testing-hugo-admonitions/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-05-02-testing-hugo-admonitions/</link>
       <pubDate>Fri, 02 May 2025 10:49:58 +0800</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2025/2025-05-02-testing-hugo-admonitions/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-05-02-testing-hugo-admonitions/</guid>
       <description>Testing out markup callout styles from external module and local shortcodes. As I navigate the ever-evolving landscape of technology, I’m always on the lookout for tools that are efficient, powerful, and enjoyable to use.</description>
     </item>
     <item>
       <title>Creating a Hugo Taxonomy</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2025/2025-04-28-create-hugo-series/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-04-28-create-hugo-series/</link>
       <pubDate>Mon, 28 Apr 2025 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2025/2025-04-28-create-hugo-series/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-04-28-create-hugo-series/</guid>
       <description>I outline the process I used to create a custom Hugo Taxonomy so could have articles ordered into a series.  There are a lot of moving parts in getting this to work.  Hopefully gets the broad strokes explained with the resources I used to help me.</description>
     </item>
     <item>
       <title>Hugo Codeblock Testing</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2025/2025-02-01-hugo-codeblock-testing/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-02-01-hugo-codeblock-testing/</link>
       <pubDate>Sat, 01 Feb 2025 06:06:51 +0800</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2025/2025-02-01-hugo-codeblock-testing/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-02-01-hugo-codeblock-testing/</guid>
       <description>Testing Hugo codeblocks without using custom layout _default _markup render-codeblock.html. Restyling using CSS and overiding for overflow-x</description>
     </item>
     <item>
       <title>Embracing Hugo</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2024/2024-05-25-embracing-hugo/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2024/2024-05-25-embracing-hugo/</link>
       <pubDate>Sat, 25 Jan 2025 12:08:01 +0800</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2024/2024-05-25-embracing-hugo/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2024/2024-05-25-embracing-hugo/</guid>
       <description>I’ve embraced Hugo to power my blog, valuing its speed, simplicity, and security over database-driven platforms. Writing in Markdown, version control integration, and easy deployment make it perfect for documenting my journey in cloud, networking, and cybersecurity. Hugo keeps the focus on learning and sharing—not maintenance headaches.</description>
     </item>
     <item>
       <title>A new blog</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2024/2024-04-27-a-new-blog/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2024/2024-04-27-a-new-blog/</link>
       <pubDate>Sat, 27 Apr 2024 16:37:08 +0800</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2024/2024-04-27-a-new-blog/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2024/2024-04-27-a-new-blog/</guid>
       <description>After years of battling WordPress hacks, rising costs, and home-lab hosting experiments, I’ve decided to reboot my blog with a new approach. Moving from dynamic sites to Hugo’s fast, static simplicity feels like the right balance of security, control, and creativity. A fresh start for sharing tech notes and learning.</description>
     </item>
     <item>
       <title>Big move...Hang in  there</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2022/2022-12-19-big-movehang-in-there/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2022/2022-12-19-big-movehang-in-there/</link>
       <pubDate>Mon, 19 Dec 2022 10:04:08 +0800</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2022/2022-12-19-big-movehang-in-there/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2022/2022-12-19-big-movehang-in-there/</guid>
       <description>The Wordpress.com gouging is over. Since moving to a new house with business class internet and a new server rack with a High availability server/storage solution.  Its a process&amp;hellip;</description>
     </item>
   </channel>

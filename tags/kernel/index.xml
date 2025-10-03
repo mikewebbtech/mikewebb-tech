@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Kernel on Mike Webb Tech</title>
-    <link>http://localhost:1313/mikewebb-tech/tags/kernel/</link>
+    <link>https://mikewebbtech.github.io/mikewebb-tech/tags/kernel/</link>
     <description>Recent content in Kernel on Mike Webb Tech</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 20 Jan 2018 23:31:53 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/mikewebb-tech/tags/kernel/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mikewebbtech.github.io/mikewebb-tech/tags/kernel/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Kernel patch and compile the Debian/Ubuntu way</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2018/2018-01-20-kernel-patch-and-compile-the-ubuntu-way/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-01-20-kernel-patch-and-compile-the-ubuntu-way/</link>
       <pubDate>Sat, 20 Jan 2018 23:31:53 +0000</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2018/2018-01-20-kernel-patch-and-compile-the-ubuntu-way/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-01-20-kernel-patch-and-compile-the-ubuntu-way/</guid>
       <description>Continuing on with my theme of compiling and patching linux kernels.  Let&amp;rsquo;s look at the Ubuntu way that creates a .deb file for use with  apt package manager.  Git work flow thrown in for free.</description>
     </item>
     <item>
       <title>A more elegant: Quick and dirty kernel</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2018/2018-01-19-a-more-elegant-quick-and-dirty-kernel/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-01-19-a-more-elegant-quick-and-dirty-kernel/</link>
       <pubDate>Fri, 19 Jan 2018 09:28:51 +0000</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2018/2018-01-19-a-more-elegant-quick-and-dirty-kernel/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-01-19-a-more-elegant-quick-and-dirty-kernel/</guid>
       <description>As we have seen, the original/traditional/generic way to install new kernels or patch existing kernels is a relatively straight forward affair but requires manual management.  Let&amp;rsquo;s use git to help</description>
     </item>
     <item>
       <title>Kernel patch and compile the Fedora way</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2018/2018-01-18-kernel-patch-and-compile-the-fedora-way/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-01-18-kernel-patch-and-compile-the-fedora-way/</link>
       <pubDate>Thu, 18 Jan 2018 21:15:04 +0000</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2018/2018-01-18-kernel-patch-and-compile-the-fedora-way/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2018/2018-01-18-kernel-patch-and-compile-the-fedora-way/</guid>
       <description>Each distribution has a preferred way which tends to result in a nice reusable packaged compatible to specific package management system. For this scenario I&amp;rsquo;ll focus on Fedora 27</description>
     </item>
     <item>
       <title>Kernel fatal error: openssl/aes.h</title>
-      <link>http://localhost:1313/mikewebb-tech/articles/2017/2017-04-24-kernel-fatal-error-openssl/</link>
+      <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-04-24-kernel-fatal-error-openssl/</link>
       <pubDate>Mon, 24 Apr 2017 23:23:28 +0000</pubDate>
-      <guid>http://localhost:1313/mikewebb-tech/articles/2017/2017-04-24-kernel-fatal-error-openssl/</guid>
+      <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2017/2017-04-24-kernel-fatal-error-openssl/</guid>
       <description>Missing OpenSSL blows up kernel compile..Oh Why? So, I&amp;rsquo;ve walked into this one a few times when compiling a new kernel for the first time after a new distro install. Each time I shake my head.</description>
     </item>
   </channel>
