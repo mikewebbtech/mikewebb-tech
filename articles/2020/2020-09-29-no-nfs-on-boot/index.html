@@ -3,11 +3,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="generator" content="Hugo 0.147.3">
-  <title>No NFS on boot</title><link rel="stylesheet" href="https://mikewebbtech.github.io/mikewebb-tech/css/style.min.57c0fda3a2cb88fa284d3e21ea197c5f5f0942167fa49f388d04a2573c580cb8.css" />
+  <title>No NFS on boot</title><link rel="stylesheet" href="https://mikewebbtech.github.io/mikewebb-tech/css/style.min.686c9b56167535e5c96c35361fdaf8397d1d25d425ae031b72d6e0d23c9e6ad4.css" />
   <link rel="icon" type="image/x-icon"  href="/mikewebb-tech/img/favicon.ico" />
   <link rel="apple-touch-icon" sizes="180x180" href="/mikewebb-tech/img/apple-touch-icon.png" />
- 
   <link rel="manifest" href="/mikewebb-tech/img/site.webmanifest" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 </head>
 <body data-theme="dark">
     <div class="layout">  <aside class="sidebar">
@@ -22,94 +24,19 @@
       </p>
     </div>
     <nav class="nav">
-  <ul>
-    
-    
-      
-      
-
-      
-      
-        
-        
-          
-        
-      
-      <li>
-        <a href="/mikewebb-tech/" ><i class="fa-solid fa-house"></i> Home</a>
-      </li>
-    
-      
-      
-
-      
-      
-        
-        
-          
-        
-      
-      <li>
-        <a href="/mikewebb-tech/about/" ><i class="fa-solid fa-circle-info"></i> About</a>
-      </li>
-    
-      
-      
-
-      
-      
-        
-        
-          
-        
-      
-      <li>
-        <a href="/mikewebb-tech/articles/" ><i class="fa-solid fa-file-code"></i> Articles</a>
-      </li>
-    
-      
-      
-
-      
-      
-        
-        
-          
-        
-      
-      <li>
-        <a href="/mikewebb-tech/categories/" ><i class="fa-solid fa-list"></i> Categories</a>
-      </li>
-    
-      
-      
-
-      
-      
-        
-        
-          
-        
-      
-      <li>
-        <a href="/mikewebb-tech/series/" ><i class="fa-solid fa-layer-group"></i> Series</a>
-      </li>
-    
-      
-      
-
-      
-      
-        
-        
-          
-        
-      
-      <li>
-        <a href="/mikewebb-tech/tags/" ><i class="fa-solid fa-tags"></i> Tags</a>
-      </li>
-    
-  </ul>
+  <ul><li>
+        <a href="/mikewebb-tech/"><i class="fa-solid fa-house"></i> Home</a>
+      </li><li>
+        <a href="/mikewebb-tech/about/"><i class="fa-solid fa-circle-info"></i> About</a>
+      </li><li>
+        <a href="/mikewebb-tech/articles/"><i class="fa-solid fa-file-code"></i> Articles</a>
+      </li><li>
+        <a href="/mikewebb-tech/categories/"><i class="fa-solid fa-list"></i> Categories</a>
+      </li><li>
+        <a href="/mikewebb-tech/series/"><i class="fa-solid fa-layer-group"></i> Series</a>
+      </li><li>
+        <a href="/mikewebb-tech/tags/"><i class="fa-solid fa-tags"></i> Tags</a>
+      </li></ul>
 </nav>
 
     <div class="nav-bottom">
@@ -149,17 +76,22 @@
       </div>
       <div>
         <i class="fa-solid fa-list"></i>
+        
         <a class="tag" href="/mikewebb-tech/categories/home-lab/">Home Lab</a>
+        
         <a class="tag" href="/mikewebb-tech/categories/networking/">Neworking</a>
+        
       </div>
+      
       <div>
         <i class="fa-solid fa-tags"></i>
+        
         <a class="tag" href="/mikewebb-tech/tags/ubuntu/">Ubuntu</a>
         <a class="tag" href="/mikewebb-tech/tags/linux/">Linux</a>
         <a class="tag" href="/mikewebb-tech/tags/networking/">Networking</a>
       </div>
-    </div>
-  </div><div class="post-content"><p>Issue: NFS mounts in fstab not mounting on boot but working with mount -a command works as expected..</p>
+      </div>
+    </div><div class="post-content"><p>Issue: NFS mounts in fstab not mounting on boot but working with mount -a command works as expected..</p>
 <p>I upgraded to Ubuntu 20.04 an noticed that my NFS (v3 and v4) mounts from my file server weren&rsquo;t populate i.e. they weren&rsquo;t being mount on boot (mount command didn&rsquo;t show the NFS mounts). But when I ran a sudo mount -a command everything mounted as expected and confirmed with the mount command. This led me to conclude that my fstab entries were fine and the issue laid else where. Also I marked this issue as an inconvenience and maybe I should look at autofs in the future.</p>
 <p>Roll on Covid-19 and lockdowns, I had some spare time to investigate this (f#%k you 2020) and noticed an error in my logs</p>
 <pre tabindex="0"><code> mount.nfs: Network is unreachable 

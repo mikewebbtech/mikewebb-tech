@@ -3,11 +3,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="generator" content="Hugo 0.147.3">
-  <title>Hugo Pagination</title><link rel="stylesheet" href="https://mikewebbtech.github.io/mikewebb-tech/css/style.min.57c0fda3a2cb88fa284d3e21ea197c5f5f0942167fa49f388d04a2573c580cb8.css" />
+  <title>Implementing Hugo Pagination Template</title><link rel="stylesheet" href="https://mikewebbtech.github.io/mikewebb-tech/css/style.min.686c9b56167535e5c96c35361fdaf8397d1d25d425ae031b72d6e0d23c9e6ad4.css" />
   <link rel="icon" type="image/x-icon"  href="/mikewebb-tech/img/favicon.ico" />
   <link rel="apple-touch-icon" sizes="180x180" href="/mikewebb-tech/img/apple-touch-icon.png" />
- 
   <link rel="manifest" href="/mikewebb-tech/img/site.webmanifest" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 </head>
 <body data-theme="dark">
     <div class="layout">  <aside class="sidebar">
@@ -22,94 +24,19 @@
       </p>
     </div>
     <nav class="nav">
-  <ul>
-    
-    
-      
-      
-
-      
-      
-        
-        
-          
-        
-      
-      <li>
-        <a href="/mikewebb-tech/" ><i class="fa-solid fa-house"></i> Home</a>
-      </li>
-    
-      
-      
-
-      
-      
-        
-        
-          
-        
-      
-      <li>
-        <a href="/mikewebb-tech/about/" ><i class="fa-solid fa-circle-info"></i> About</a>
-      </li>
-    
-      
-      
-
-      
-      
-        
-        
-          
-        
-      
-      <li>
-        <a href="/mikewebb-tech/articles/" ><i class="fa-solid fa-file-code"></i> Articles</a>
-      </li>
-    
-      
-      
-
-      
-      
-        
-        
-          
-        
-      
-      <li>
-        <a href="/mikewebb-tech/categories/" ><i class="fa-solid fa-list"></i> Categories</a>
-      </li>
-    
-      
-      
-
-      
-      
-        
-        
-          
-        
-      
-      <li>
-        <a href="/mikewebb-tech/series/" ><i class="fa-solid fa-layer-group"></i> Series</a>
-      </li>
-    
-      
-      
-
-      
-      
-        
-        
-          
-        
-      
-      <li>
-        <a href="/mikewebb-tech/tags/" ><i class="fa-solid fa-tags"></i> Tags</a>
-      </li>
-    
-  </ul>
+  <ul><li>
+        <a href="/mikewebb-tech/"><i class="fa-solid fa-house"></i> Home</a>
+      </li><li>
+        <a href="/mikewebb-tech/about/"><i class="fa-solid fa-circle-info"></i> About</a>
+      </li><li>
+        <a href="/mikewebb-tech/articles/"><i class="fa-solid fa-file-code"></i> Articles</a>
+      </li><li>
+        <a href="/mikewebb-tech/categories/"><i class="fa-solid fa-list"></i> Categories</a>
+      </li><li>
+        <a href="/mikewebb-tech/series/"><i class="fa-solid fa-layer-group"></i> Series</a>
+      </li><li>
+        <a href="/mikewebb-tech/tags/"><i class="fa-solid fa-tags"></i> Tags</a>
+      </li></ul>
 </nav>
 
     <div class="nav-bottom">
@@ -130,7 +57,7 @@
     </div>
   </aside>
 <header class="header">
-  <h1>Hugo Pagination</h1>
+  <h1>Implementing Hugo Pagination Template</h1>
   
 </header>
 <main class="main">
@@ -145,31 +72,31 @@
       </div>
       <div>
         <i class="fa-solid fa-file-lines"></i>
-        855 words
+        956 words
       </div>
       <div>
         <i class="fa-solid fa-list"></i>
+        
         <a class="tag" href="/mikewebb-tech/categories/hugo/">Hugo</a>
+        
       </div>
+      
       <div>
         <i class="fa-solid fa-tags"></i>
+        
         <a class="tag" href="/mikewebb-tech/tags/blog/">Blog</a>
         <a class="tag" href="/mikewebb-tech/tags/howto/">Howto</a>
       </div>
+      
       <div>
         <i class="fa-solid fa-layer-group"></i>
-        Series:
-        <a class="tag" href="/mikewebb-tech/series/my-hugo-site/">My Hugo Site</a>       (Article 1 of 7) 
-         
-         
-         
-         
-         
-         
-         
+        Series: 
+        <a class="tag" href="/mikewebb-tech/series/my-hugo-site/">My Hugo Site</a>     (Article 1 of 7) 
+        
+      </div>
       </div>
     </div>
-  </div><div class="post-series-list"><details class ="series-list">
+  <div class="post-series-list"><details class ="series-list">
       <summary>
         <span> All articles in the <strong>"My Hugo Site"</strong> series </span>
       </summary>
@@ -184,11 +111,12 @@
             </li><li>
               <a href="https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-09-25-article-cards/">Article Cards on Homepage</a>
             </li><li>
-              <a href="https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-09-26-hugo-breadcrumbs/">Hugo Breadcrumbs</a>
+              <a href="https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-09-26-hugo-breadcrumbs/">Hugo Breadcrumbs.  Did I Win?</a>
             </li><li class="active">
-              <b>Hugo Pagination</b>
+              <b>Implementing Hugo Pagination Template</b>
             </li></ol>
-    </details></div><div class="post-content"><h1 id="using-hugos-built-in-power">Using Hugo&rsquo;s Built-in Power</h1>
+    </details></div>
+  <div class="post-content"><h1 id="using-hugos-built-in-power">Using Hugo&rsquo;s Built-in Power</h1>
 <p>The process of building a personal website is often a balance between the fun of custom coding and the efficiency of using existing tools.  My recent work on creating &ldquo;<a href="../2025-09-26-hugo-breadcrumbs">breadcrumb feature</a>&rdquo; is a good example, culminating in a decision that saved time and simplified the code by using Hugo&rsquo;s built-in <a href="https://gohugo.io/methods/page/ancestors/">Page.ancestors method</a>.</p>
 <h4 id="ending-a-never-ending-scroll">Ending A Never Ending Scroll</h4>
 <p>As the article count on the site grew, the main article listing page became an overwhelming, endless scroll. I knew I needed <strong>pagination</strong> a way to limit the articles to 10 per page and provide simple &ldquo;Previous&rdquo; and &ldquo;Next&rdquo; navigation.</p>
@@ -238,69 +166,99 @@
 </ol>
 <h4 id="shifting-focus-to-css">Shifting Focus to CSS</h4>
 <p>Once the functionality was solved, my focus shifted from programming logic to <strong>visual design</strong>. The HTML rendered by the internal template was plain, using standard classes like <code>.pagination-default</code> and <code>.page-item</code>, which clashed with my site&rsquo;s custom look and feel.</p>
-<p>This became the most effective use of my time. Instead of fighting with Go templates, I spent time in my <strong>style.css</strong> file, using specific CSS selectors to map my custom styles onto the default HTML structure.</p>
+<p>This is HTML that is rendered by the internal pagination.html template:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">ul</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;pagination pagination-default&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;page-item disabled&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">aria-disabled</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;true&#34;</span> <span style="color:#a6e22e">aria-label</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;First&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;page-link&#34;</span> <span style="color:#a6e22e">role</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;button&#34;</span> <span style="color:#a6e22e">tabindex</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;-1&#34;</span>&gt;&lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">aria-hidden</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;true&#34;</span>&gt;&amp;laquo;&amp;laquo;&lt;/<span style="color:#f92672">span</span>&gt;&lt;/<span style="color:#f92672">a</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;/<span style="color:#f92672">li</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;page-item disabled&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">aria-disabled</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;true&#34;</span> <span style="color:#a6e22e">aria-label</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Previous&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;page-link&#34;</span> <span style="color:#a6e22e">role</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;button&#34;</span> <span style="color:#a6e22e">tabindex</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;-1&#34;</span>&gt;&lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">aria-hidden</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;true&#34;</span>&gt;&amp;laquo;&lt;/<span style="color:#f92672">span</span>&gt;&lt;/<span style="color:#f92672">a</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;/<span style="color:#f92672">li</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;page-item active&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">aria-current</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;page&#34;</span> <span style="color:#a6e22e">aria-label</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Page 1&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;page-link&#34;</span> <span style="color:#a6e22e">role</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;button&#34;</span>&gt;1&lt;/<span style="color:#f92672">a</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;/<span style="color:#f92672">li</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;page-item&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/mikewebb-tech/articles/page/2/&#34;</span> <span style="color:#a6e22e">aria-label</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Page 2&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;page-link&#34;</span> <span style="color:#a6e22e">role</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;button&#34;</span>&gt;2&lt;/<span style="color:#f92672">a</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;/<span style="color:#f92672">li</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;page-item&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/mikewebb-tech/articles/page/3/&#34;</span> <span style="color:#a6e22e">aria-label</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Page 3&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;page-link&#34;</span> <span style="color:#a6e22e">role</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;button&#34;</span>&gt;3&lt;/<span style="color:#f92672">a</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;/<span style="color:#f92672">li</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;page-item&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/mikewebb-tech/articles/page/4/&#34;</span> <span style="color:#a6e22e">aria-label</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Page 4&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;page-link&#34;</span> <span style="color:#a6e22e">role</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;button&#34;</span>&gt;4&lt;/<span style="color:#f92672">a</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;/<span style="color:#f92672">li</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;page-item&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/mikewebb-tech/articles/page/5/&#34;</span> <span style="color:#a6e22e">aria-label</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Page 5&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;page-link&#34;</span> <span style="color:#a6e22e">role</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;button&#34;</span>&gt;5&lt;/<span style="color:#f92672">a</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;/<span style="color:#f92672">li</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;page-item&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/mikewebb-tech/articles/page/2/&#34;</span> <span style="color:#a6e22e">aria-label</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Next&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;page-link&#34;</span> <span style="color:#a6e22e">role</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;button&#34;</span>&gt;&lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">aria-hidden</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;true&#34;</span>&gt;&amp;raquo;&lt;/<span style="color:#f92672">span</span>&gt;&lt;/<span style="color:#f92672">a</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;/<span style="color:#f92672">li</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;page-item&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/mikewebb-tech/articles/page/12/&#34;</span> <span style="color:#a6e22e">aria-label</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Last&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;page-link&#34;</span> <span style="color:#a6e22e">role</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;button&#34;</span>&gt;&lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">aria-hidden</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;true&#34;</span>&gt;&amp;raquo;&amp;raquo;&lt;/<span style="color:#f92672">span</span>&gt;&lt;/<span style="color:#f92672">a</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;/<span style="color:#f92672">li</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">ul</span>&gt;
+</span></span></code></pre></div><p>This became the most effective use of my time. Instead of fighting with Go templates, I spent time in my <strong>style.css</strong> file, using specific CSS selectors to map my custom styles onto the default HTML structure.</p>
 <p><a href="https://github.com/mikewebbtech/mikewebbtech-hugo/blob/main/assets/css/style.css">assets/css/style.css</a>:</p>
-<pre tabindex="0"><code>/* I mapped my custom class styles to Hugo&#39;s generated classes */
-
-/* 
- * Apply Styling to Hugo default pagination template text
- */
- 
-.pagination-default {
-  list-style: none; /* Ensure no bullets */
-  margin: 3rem auto 0 auto; /* Margin-top and center the list */
-  padding: 0;
-  display: flex;
-  gap: 1rem; /* Space between buttons */
-  justify-content: center;
-}
-
-.page-item {
-  display: inline-flex; /* Use inline-flex on the li container */
-  /* Remove default list styling */
-  margin: 0;
-  padding: 0;
-}
-
-
-/* Target the list wrapper */
-.page-item a.page-link,
-.page-item.active a.page-link,
-.page-item.disabled a.page-link {
-  /* Apply core button styles to the link element (a.page-link) */
-  display: inline-flex;
-  align-items: center;
-  padding: 0.6rem 1rem;
-  border-radius: 0.2rem;
-  text-decoration: none;
-  /* ... etc. ... */
-}
-
-...
-etc
-...
-
-
-/* Target the specific link with the &#34;Previous&#34; aria-label */
-/* Hide the original content &#34;«&#34; (&amp;laquo;) */
-.page-item a[aria-label=&#34;Next&#34;] span[aria-hidden=&#34;true&#34;] {
-  display: none;
-}
-/* Insert the new text &#34;First&#34; using the ::after pseudo-element */
-.page-item a[aria-label=&#34;Next&#34;]::after {
-  content: &#34;Next →&#34;;
-}
-
-/* Target the specific link with the &#34;Last&#34; aria-label */
-/* Hide the original content &#34;»»&#34;&#34; (&amp;raquo;&amp;raquo;) */
-.page-item a[aria-label=&#34;Last&#34;] span[aria-hidden=&#34;true&#34;] {
-  display: none;
-}
-/* Insert the new text &#34;First&#34; using the ::after pseudo-element */
-.page-item a[aria-label=&#34;Last&#34;]::after {
-  content: &#34;Last&#34;;
-}
-</code></pre><p>I am happy with the results and it was a feature I had been putting off, feeling that it was beyond me and take considerable time to learn how to achieve it</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-CSS" data-lang="CSS"><span style="display:flex;"><span><span style="color:#75715e">/* I mapped my custom class styles to Hugo&#39;s generated classes */</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/* 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> * Apply Styling to Hugo default pagination template text
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> */</span>
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">pagination-default</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">list-style</span>: <span style="color:#66d9ef">none</span>; <span style="color:#75715e">/* Ensure no bullets */</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">margin</span>: <span style="color:#ae81ff">3</span><span style="color:#66d9ef">rem</span> <span style="color:#66d9ef">auto</span> <span style="color:#ae81ff">0</span> <span style="color:#66d9ef">auto</span>; <span style="color:#75715e">/* Margin-top and center the list */</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">flex</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">gap</span>: <span style="color:#ae81ff">1</span><span style="color:#66d9ef">rem</span>; <span style="color:#75715e">/* Space between buttons */</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">justify-content</span>: <span style="color:#66d9ef">center</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">page-item</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">inline-flex</span>; <span style="color:#75715e">/* Use inline-flex on the li container */</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">/* Remove default list styling */</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">margin</span>: <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/* Target the list wrapper */</span>
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">page-item</span> <span style="color:#f92672">a</span>.<span style="color:#a6e22e">page-link</span><span style="color:#f92672">,</span>
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">page-item</span>.<span style="color:#a6e22e">active</span> <span style="color:#f92672">a</span>.<span style="color:#a6e22e">page-link</span><span style="color:#f92672">,</span>
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">page-item</span>.<span style="color:#a6e22e">disabled</span> <span style="color:#f92672">a</span>.<span style="color:#a6e22e">page-link</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">/* Apply core button styles to the link element (a.page-link) */</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">inline-flex</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">align-items</span>: <span style="color:#66d9ef">center</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">0.6</span><span style="color:#66d9ef">rem</span> <span style="color:#ae81ff">1</span><span style="color:#66d9ef">rem</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">0.2</span><span style="color:#66d9ef">rem</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">text-decoration</span>: <span style="color:#66d9ef">none</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">/* ... etc. ... */</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">etc</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/* Target the specific link with the &#34;Previous&#34; aria-label */</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/* Hide the original content &#34;«&#34; (&amp;laquo;) */</span>
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">page-item</span> <span style="color:#f92672">a</span><span style="color:#f92672">[</span><span style="color:#f92672">aria-label</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Next&#34;</span><span style="color:#f92672">]</span> <span style="color:#f92672">span</span><span style="color:#f92672">[</span><span style="color:#f92672">aria-hidden</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;true&#34;</span><span style="color:#f92672">]</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">none</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/* Insert the new text &#34;First&#34; using the ::after pseudo-element */</span>
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">page-item</span> <span style="color:#f92672">a</span><span style="color:#f92672">[</span><span style="color:#f92672">aria-label</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Next&#34;</span><span style="color:#f92672">]</span>::<span style="color:#a6e22e">after</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">content</span>: <span style="color:#e6db74">&#34;Next →&#34;</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/* Target the specific link with the &#34;Last&#34; aria-label */</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/* Hide the original content &#34;»»&#34;&#34; (&amp;raquo;&amp;raquo;) */</span>
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">page-item</span> <span style="color:#f92672">a</span><span style="color:#f92672">[</span><span style="color:#f92672">aria-label</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Last&#34;</span><span style="color:#f92672">]</span> <span style="color:#f92672">span</span><span style="color:#f92672">[</span><span style="color:#f92672">aria-hidden</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;true&#34;</span><span style="color:#f92672">]</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">none</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/* Insert the new text &#34;First&#34; using the ::after pseudo-element */</span>
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">page-item</span> <span style="color:#f92672">a</span><span style="color:#f92672">[</span><span style="color:#f92672">aria-label</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Last&#34;</span><span style="color:#f92672">]</span>::<span style="color:#a6e22e">after</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">content</span>: <span style="color:#e6db74">&#34;Last&#34;</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>I am happy with the results and it was a feature I had been putting off, feeling that it was beyond me and take considerable time to learn how to achieve it</p>
 <p>This whole process reinforced the principle of: <strong>Don&rsquo;t reinvent the wheel, but perfect the paint job.</strong>  By leveraging Hugo&rsquo;s power for functionality and applying custom CSS for styling,  I achieved my result faster and with cleaner code.</p>
 <p>The complete code and site layout is available in my <a href="https://github.com/mikewebbtech">github repo</a>.</p>
 </div>
@@ -308,7 +266,7 @@ etc
   <div class="post-footer"></div><div class="post-series-bottom"><div class="pagination-buttons"><span class="button previous">
     <a href="https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-09-26-hugo-breadcrumbs/" title="PREVIOUS ARTICLE">
       <span class="button-icon">←</span>
-      <span class="button-text">6. Hugo Breadcrumbs</span>
+      <span class="button-text">6. Hugo Breadcrumbs.  Did I Win?</span>
     </a>
   </span></div></div></article>
 </main>

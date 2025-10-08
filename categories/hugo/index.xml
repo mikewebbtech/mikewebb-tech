@@ -9,14 +9,14 @@
     <lastBuildDate>Thu, 02 Oct 2025 00:00:00 +0800</lastBuildDate>
     <atom:link href="https://mikewebbtech.github.io/mikewebb-tech/categories/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Hugo Pagination</title>
+      <title>Implementing Hugo Pagination Template</title>
       <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-10-02-hugo-pagination/</link>
       <pubDate>Thu, 02 Oct 2025 00:00:00 +0800</pubDate>
       <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-10-02-hugo-pagination/</guid>
       <description>In implementing a list pagination feature for my site, I pivoted from complex custom code to using Hugo&amp;rsquo;s robust built-in template. This saved development time, which was better spent styling the default HTML output with custom CSS.</description>
     </item>
     <item>
-      <title>Hugo Breadcrumbs</title>
+      <title>Hugo Breadcrumbs.  Did I Win?</title>
       <link>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-09-26-hugo-breadcrumbs/</link>
       <pubDate>Sat, 27 Sep 2025 08:57:08 +0800</pubDate>
       <guid>https://mikewebbtech.github.io/mikewebb-tech/articles/2025/2025-09-26-hugo-breadcrumbs/</guid>
